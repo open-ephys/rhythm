@@ -1,0 +1,2 @@
+verilog work "RAM_block.v"
+verilog work "RAM_bank.v"

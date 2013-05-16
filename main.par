@@ -1,0 +1,424 @@
+Release 14.2 par P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+INTAN-PC-2012::  Sat Feb 02 17:01:18 2013
+
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+
+
+Constraints file: main.pcf.
+Loading device for application Rf_Device from file '6slx45.nph' in environment C:\Xilinx\14.2\ISE_DS\ISE\.
+   "main" is an NCD, version 3.2, device xc6slx45, package fgg484, speed -2
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.22 2012-07-09".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                 4,063 out of  54,576    7%
+    Number used as Flip Flops:               4,063
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      6,463 out of  27,288   23%
+    Number used as logic:                    6,252 out of  27,288   22%
+      Number using O6 output only:           5,511
+      Number using O5 output only:             169
+      Number using O5 and O6:                  572
+      Number used as ROM:                        0
+    Number used as Memory:                      48 out of   6,408    1%
+      Number used as Dual Port RAM:             20
+        Number using O6 output only:            12
+        Number using O5 output only:             0
+        Number using O5 and O6:                  8
+      Number used as Single Port RAM:           24
+        Number using O6 output only:            16
+        Number using O5 output only:             0
+        Number using O5 and O6:                  8
+      Number used as Shift Register:             4
+        Number using O6 output only:             4
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:    163
+      Number with same-slice register load:    135
+      Number with same-slice carry load:        28
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 2,419 out of   6,822   35%
+  Nummber of MUXCYs used:                      640 out of  13,644    4%
+  Number of LUT Flip Flop pairs used:        7,678
+    Number with an unused Flip Flop:         3,838 out of   7,678   49%
+    Number with an unused LUT:               1,215 out of   7,678   15%
+    Number of fully used LUT-FF pairs:       2,625 out of   7,678   34%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  54,576    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       186 out of     316   58%
+    Number of LOCed IOBs:                      186 out of     186  100%
+    IOB Flip Flops:                             64
+    IOB Master Pads:                            12
+    IOB Slave Pads:                             12
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        53 out of     116   45%
+  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 2 out of      32    6%
+    Number used as BUFIO2s:                      2
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
+    Number used as BUFIO2FBs:                    1
+    Number used as BUFIO2FB_2CLKs:               0
+  Number of BUFG/BUFGMUXs:                       4 out of      16   25%
+    Number used as BUFGs:                        4
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     2 out of       8   25%
+    Number used as DCMs:                         1
+    Number used as DCM_CLKGENs:                  1
+  Number of ILOGIC2/ISERDES2s:                  16 out of     376    4%
+    Number used as ILOGIC2s:                    16
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:        53 out of     376   14%
+    Number used as IODELAY2s:                   29
+    Number used as IODRP2s:                      2
+    Number used as IODRP2_MCBs:                 22
+  Number of OLOGIC2/OSERDES2s:                  77 out of     376   20%
+    Number used as OLOGIC2s:                    32
+    Number used as OSERDES2s:                   45
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         1 out of       4   25%
+  Number of DSP48A1s:                            0 out of      58    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                1 out of       2   50%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       4   25%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+WARNING:Timing:3159 - The DCM, variable_freq_clk_generator_inst/DCM_CLKGEN_1, has the attribute DFS_OSCILLATOR_MODE not set to
+   PHASE_FREQ_LOCK. No phase relationship exists between the input clock and CLKFX or CLKFX180 outputs of this DCM. Data paths between these
+   clock domains must be constrained using FROM/TO constraints.
+WARNING:Timing:3175 - hi_in<0> does not clock data to hi_out<1>
+WARNING:Timing:3225 - Timing constraint COMP "hi_out<1>" OFFSET = OUT 11.93 ns AFTER COMP "hi_in<0>" "RISING"; ignored during timing
+   analysis
+Starting initial Timing Analysis.  REAL time: 8 secs 
+Finished initial Timing Analysis.  REAL time: 8 secs 
+
+WARNING:Par:288 - The signal host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAMD_O has no load.  PAR will not attempt to route
+   this signal.
+WARNING:Par:288 - The signal host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAMD_O has no load.  PAR will not attempt to route
+   this signal.
+Starting Router
+
+
+Phase  1  : 46615 unrouted;      REAL time: 9 secs 
+
+Phase  2  : 39698 unrouted;      REAL time: 11 secs 
+
+Phase  3  : 18131 unrouted;      REAL time: 26 secs 
+
+Phase  4  : 18145 unrouted; (Setup:99950, Hold:22883, Component Switching Limit:0)     REAL time: 30 secs 
+
+Updating file: main.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:111410, Hold:34420, Component Switching Limit:0)     REAL time: 54 secs 
+
+Phase  6  : 0 unrouted; (Setup:111410, Hold:34420, Component Switching Limit:0)     REAL time: 57 secs 
+
+Phase  7  : 0 unrouted; (Setup:111410, Hold:34420, Component Switching Limit:0)     REAL time: 1 mins 8 secs 
+
+Phase  8  : 0 unrouted; (Setup:111410, Hold:34420, Component Switching Limit:0)     REAL time: 1 mins 8 secs 
+WARNING:Route:522 - Unusually high hold time violation detected among 9 connections.The router will continue and try to fix it 
+	SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<7>:BQ ->
+SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<3>:DX -3948
+	SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<7>:AQ ->
+SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<3>:BX -3934
+	SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<7>:CMUX ->
+SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<7>:AX -3866
+	SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<7>:AMUX ->
+SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<3>:AX -3849
+	SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<7>:BMUX ->
+SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<3>:CX -3820
+	SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<7>:DQ ->
+SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<7>:DX -3801
+	SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<7>:CQ ->
+SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<7>:BX -3752
+	SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<8>:DQ ->
+SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<8>:AX -3732
+	SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<7>:DMUX ->
+SDRAM_FIFO_inst/okPipeIn_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<7>:CX -3718
+
+
+Phase  9  : 0 unrouted; (Setup:111410, Hold:34420, Component Switching Limit:0)     REAL time: 2 mins 20 secs 
+
+Phase 10  : 0 unrouted; (Setup:111410, Hold:34420, Component Switching Limit:0)     REAL time: 2 mins 21 secs 
+Total REAL time to Router completion: 2 mins 21 secs 
+Total CPU time to Router completion: 2 mins 25 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|             dataclk |  BUFGMUX_X2Y4| No   |  764 |  0.670     |  2.378      |
++---------------------+--------------+------+------+------------+-------------+
+|             ok1<24> |  BUFGMUX_X2Y3| No   |  535 |  0.706     |  2.414      |
++---------------------+--------------+------+------+------------+-------------+
+|SDRAM_FIFO_inst/c3_c |              |      |      |            |             |
+|                 lk0 |  BUFGMUX_X2Y2| No   |  128 |  0.043     |  1.773      |
++---------------------+--------------+------+------+------------+-------------+
+|SDRAM_FIFO_inst/c3_m |              |      |      |            |             |
+|          cb_drp_clk | BUFGMUX_X3Y13| No   |  102 |  0.092     |  1.809      |
++---------------------+--------------+------+------+------------+-------------+
+|host/core0/core0/a0/ |              |      |      |            |             |
+|           d0/div<4> |         Local|      |    3 |  0.000     |  7.213      |
++---------------------+--------------+------+------+------------+-------------+
+|       hi_in_0_IBUFG |         Local|      |    3 |  0.414     |  2.989      |
++---------------------+--------------+------+------+------------+-------------+
+|SDRAM_FIFO_inst/c3_s |              |      |      |            |             |
+|            ysclk_2x |         Local|      |   34 |  0.704     |  1.551      |
++---------------------+--------------+------+------+------------+-------------+
+|SDRAM_FIFO_inst/c3_s |              |      |      |            |             |
+|        ysclk_2x_180 |         Local|      |   37 |  0.723     |  1.570      |
++---------------------+--------------+------+------+------------+-------------+
+|SDRAM_FIFO_inst/memc |              |      |      |            |             |
+|3_wrapper_inst/memc3 |              |      |      |            |             |
+|_mcb_raw_wrapper_ins |              |      |      |            |             |
+|       t/ioi_drp_clk |         Local|      |   22 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|SDRAM_FIFO_inst/memc |              |      |      |            |             |
+|3_wrapper_inst/memc3 |              |      |      |            |             |
+|_mcb_raw_wrapper_ins |              |      |      |            |             |
+|  t/idelay_dqs_ioi_s |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|SDRAM_FIFO_inst/memc |              |      |      |            |             |
+|3_wrapper_inst/memc3 |              |      |      |            |             |
+|_mcb_raw_wrapper_ins |              |      |      |            |             |
+|  t/idelay_dqs_ioi_m |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|SDRAM_FIFO_inst/memc |              |      |      |            |             |
+|3_wrapper_inst/memc3 |              |      |      |            |             |
+|_mcb_raw_wrapper_ins |              |      |      |            |             |
+| t/idelay_udqs_ioi_s |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|SDRAM_FIFO_inst/memc |              |      |      |            |             |
+|3_wrapper_inst/memc3 |              |      |      |            |             |
+|_mcb_raw_wrapper_ins |              |      |      |            |             |
+| t/idelay_udqs_ioi_m |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 145830 (Setup: 111410, Hold: 34420, Component Switching Limit: 0)
+
+WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
+
+   Review the timing report using Timing Analyzer (In ISE select "Post-Place &
+   Route Static Timing Report"). Go to the failing constraint(s) and evaluate the failing paths for each constraint.
+
+   Try the Design Goal and Strategies for Timing Performance(In ISE select Project -> Design Goals & Strategies) to ensure the best options
+   are set in the tools for timing closure.
+
+   Use the Xilinx "SmartXplorer" script to try special combinations of
+   options known to produce very good results.
+
+   Visit the Xilinx technical support web at http://support.xilinx.com and go to
+   either "Troubleshoot->Tech Tips->Timing & Constraints" or "
+   TechXclusives->Timing Closure" for tips and suggestions for meeting timing
+   in your design.
+
+Number of Timing Constraints that were not applied: 4
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_SDRAM_FIFO_inst_memc3_infrastructure_i | SETUP       |   -12.666ns|  4059.520ns|       9|      111410
+  nst_clk0_bufg_in = PERIOD TIMEGRP         | HOLD        |     0.302ns|            |       0|           0
+   "SDRAM_FIFO_inst_memc3_infrastructure_in |             |            |            |        |            
+  st_clk0_bufg_in" TS_SYS_CLK3 /         1. |             |            |            |        |            
+  5625 HIGH 50%                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_variable_freq_clk_generator_inst_clkou | SETUP       |     0.312ns|    11.592ns|       0|           0
+  t_i = PERIOD TIMEGRP         "variable_fr | HOLD        |    -3.948ns|            |       9|       34420
+  eq_clk_generator_inst_clkout_i" TS_SYS_CL |             |            |            |        |            
+  K3 / 0.84 HIGH         50%                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     0.001ns|     1.599ns|       0|           0
+  nst_clk_2x_180 = PERIOD TIMEGRP         " |             |            |            |        |            
+  SDRAM_FIFO_inst_memc3_infrastructure_inst |             |            |            |        |            
+  _clk_2x_180" TS_SYS_CLK3 /         6.25 P |             |            |            |        |            
+  HASE 0.8 ns HIGH 50%                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     0.001ns|     1.599ns|       0|           0
+  nst_clk_2x_0 = PERIOD TIMEGRP         "SD |             |            |            |        |            
+  RAM_FIFO_inst_memc3_infrastructure_inst_c |             |            |            |        |            
+  lk_2x_0" TS_SYS_CLK3 /         6.25 HIGH  |             |            |            |        |            
+  50%                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_SYS_CLK3 = PERIOD TIMEGRP "SYS_CLK3" 1 | MINLOWPULSE |     4.660ns|     5.340ns|       0|           0
+  0 ns HIGH 50%                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | SETUP       |     0.614ns|    12.186ns|       0|           0
+  nst_mcb_drp_clk_bufg_in = PERIOD          | HOLD        |     0.418ns|            |       0|           0
+  TIMEGRP         "SDRAM_FIFO_inst_memc3_in |             |            |            |        |            
+  frastructure_inst_mcb_drp_clk_bufg_in"    |             |            |            |        |            
+        TS_SYS_CLK3 / 0.78125 HIGH 50%      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "hi_out<0>" OFFSET = OUT 11.93 ns AF | MAXDELAY    |     2.929ns|     9.001ns|       0|           0
+  TER COMP "hi_in<0>" "RISING"              |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "hi_in<5>" OFFSET = IN 13.33 ns VALI | SETUP       |     3.845ns|     9.485ns|       0|           0
+  D 20.83 ns BEFORE COMP "hi_in<0>"         | HOLD        |     8.833ns|            |       0|           0
+   "RISING"                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TIMEGRP "okHostINOUT_grp" OFFSET = IN 9.8 | SETUP       |     4.110ns|     5.720ns|       0|           0
+  3 ns VALID 9.83 ns BEFORE COMP         "h | HOLD        |     0.471ns|            |       0|           0
+  i_in<0>" "RISING"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "hi_in<4>" OFFSET = IN 13.33 ns VALI | SETUP       |     4.172ns|     9.158ns|       0|           0
+  D 20.83 ns BEFORE COMP "hi_in<0>"         | HOLD        |     9.036ns|            |       0|           0
+   "RISING"                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "hi_in<6>" OFFSET = IN 13.33 ns VALI | SETUP       |     4.189ns|     9.141ns|       0|           0
+  D 20.83 ns BEFORE COMP "hi_in<0>"         | HOLD        |     8.706ns|            |       0|           0
+   "RISING"                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "hi_in<7>" OFFSET = IN 13.33 ns VALI | SETUP       |     4.545ns|     8.785ns|       0|           0
+  D 20.83 ns BEFORE COMP "hi_in<0>"         | HOLD        |     8.746ns|            |       0|           0
+   "RISING"                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_okHostClk = PERIOD TIMEGRP "okHostClk" | SETUP       |    19.420ns|     1.410ns|       0|           0
+   20.83 ns HIGH 50%                        | HOLD        |     0.233ns|            |       0|           0
+                                            | MINLOWPULSE |     4.830ns|    16.000ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TIMEGRP "okHostINOUT_grp" OFFSET = OUT 11 | MAXDELAY    |     4.852ns|     6.778ns|       0|           0
+  .63 ns AFTER COMP "hi_in<0>"         "RIS |             |            |            |        |            
+  ING"                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_host_dcm_clk0 = PERIOD TIMEGRP "host_d | SETUP       |     5.342ns|    15.488ns|       0|           0
+  cm_clk0" TS_okHostClk HIGH 50%            | HOLD        |     0.296ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  COMP "hi_in<1>" OFFSET = IN 14.13 ns VALI | SETUP       |     7.758ns|     6.372ns|       0|           0
+  D 20.83 ns BEFORE COMP "hi_in<0>"         | HOLD        |     8.450ns|            |       0|           0
+   "RISING"                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "hi_in<2>" OFFSET = IN 14.13 ns VALI | SETUP       |     8.384ns|     5.746ns|       0|           0
+  D 20.83 ns BEFORE COMP "hi_in<0>"         | HOLD        |     8.076ns|            |       0|           0
+   "RISING"                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "hi_in<3>" OFFSET = IN 14.13 ns VALI | SETUP       |     8.727ns|     5.403ns|       0|           0
+  D 20.83 ns BEFORE COMP "hi_in<0>"         | HOLD        |     7.907ns|            |       0|           0
+   "RISING"                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "hi_out<1>" OFFSET = OUT 11.93 ns AF | N/A         |         N/A|         N/A|     N/A|         N/A
+  TER COMP "hi_in<0>" "RISING"              |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_okHostClk
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_okHostClk                   |     20.830ns|     16.000ns|     15.488ns|            0|            0|            3|        42364|
+| TS_host_dcm_clk0              |     20.830ns|     15.488ns|          N/A|            0|            0|        42364|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_SYS_CLK3
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_SYS_CLK3                    |     10.000ns|      5.340ns|   6343.000ns|            0|           18|            0|       375726|
+| TS_SDRAM_FIFO_inst_memc3_infra|     12.800ns|     12.186ns|          N/A|            0|            0|        12837|            0|
+| structure_inst_mcb_drp_clk_buf|             |             |             |             |             |             |             |
+| g_in                          |             |             |             |             |             |             |             |
+| TS_SDRAM_FIFO_inst_memc3_infra|      1.600ns|      1.599ns|          N/A|            0|            0|            0|            0|
+| structure_inst_clk_2x_180     |             |             |             |             |             |             |             |
+| TS_SDRAM_FIFO_inst_memc3_infra|      1.600ns|      1.599ns|          N/A|            0|            0|            0|            0|
+| structure_inst_clk_2x_0       |             |             |             |             |             |             |             |
+| TS_SDRAM_FIFO_inst_memc3_infra|      6.400ns|   4059.520ns|          N/A|            9|            0|         4315|            0|
+| structure_inst_clk0_bufg_in   |             |             |             |             |             |             |             |
+| TS_variable_freq_clk_generator|     11.905ns|     11.592ns|          N/A|            9|            0|       358574|            0|
+| _inst_clkout_i                |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+2 constraints not met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 2 mins 23 secs 
+Total CPU time to PAR completion: 2 mins 27 secs 
+
+Peak Memory Usage:  598 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - 18 errors found.
+
+Number of error messages: 0
+Number of warning messages: 9
+Number of info messages: 0
+
+Writing design to file main.ncd
+
+
+
+PAR done!

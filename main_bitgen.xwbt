@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.ncd
+OUTFILE=C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.bit
+FAMILY=Spartan6
+PART=xc6slx45-2fgg484
+WORKINGDIR=C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010
+LICENSE=WebPack
+USER_INFO=210661529_0_0_655

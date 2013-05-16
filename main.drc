@@ -1,0 +1,89 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sat Feb 02 17:04:03 2013
+
+drc -z main.ncd main.pcf
+
+Now executing Pdr_LogDcm_DeskewExtern::DoCheck for block<host/hi_dcm>. 
+Now executing Pdr_LogDcm_DeskewExtern::DoCheck for block<host/hi_dcm> and
+DESKEW(5). 
+Now executing Pdr_LogDcm_DeskewExtern::DoCheck for block<host/hi_dcm> found no
+EXTERN driver in CLKFB path. 
+Now executing Pdr_LogDcm_DeskewExtern::DoCheck for block<host/hi_dcm> found
+non-EXTERN block <BUFG> in CLKFB path. 
+Now executing Pdr_LogDcm_DeskewExtern::DoCheck for block<host/hi_dcm> found NO
+extern 
+WARNING:PhysDesignRules:367 - The signal
+   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
+   on
+   block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
+   _delay_obuft[5].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
+   IO programming the T input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
+   on
+   block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
+   _delay_obuft[6].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
+   IO programming the T input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
+   on
+   block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
+   _delay_obuft[7].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
+   IO programming the T input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
+   on
+   block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
+   _delay_obuft[8].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
+   IO programming the T input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
+   on
+   block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
+   _delay_obuft[9].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
+   IO programming the T input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
+   on
+   block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
+   _delay_obuft[10].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
+   IO programming the T input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
+   on
+   block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
+   _delay_obuft[0].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
+   IO programming the T input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
+   on
+   block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
+   _delay_obuft[11].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
+   IO programming the T input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
+   on
+   block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
+   _delay_obuft[1].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
+   IO programming the T input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
+   on
+   block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
+   _delay_obuft[12].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
+   IO programming the T input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
+   on
+   block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
+   _delay_obuft[2].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
+   IO programming the T input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
+   on
+   block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
+   _delay_obuft[3].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
+   IO programming the T input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
+   on
+   block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
+   _delay_obuft[4].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
+   IO programming the T input pin is not used and will be ignored.
+DRC detected 0 errors and 15 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
