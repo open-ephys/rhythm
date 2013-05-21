@@ -188,67 +188,67 @@ module ADC_input #(
 					ADC_SCLK <= 1'b1;
 					case (channel)
 					
-						4: begin
+						7: begin
 							ADC_register[15] <= ADC_DOUT;
 						end
 
-						5: begin
+						8: begin
 							ADC_register[14] <= ADC_DOUT;
 						end
 
-						6: begin
+						9: begin
 							ADC_register[13] <= ADC_DOUT;
 						end
 
-						7: begin
+						10: begin
 							ADC_register[12] <= ADC_DOUT;
 						end
 
-						8: begin
+						11: begin
 							ADC_register[11] <= ADC_DOUT;
 						end
 
-						9: begin
+						12: begin
 							ADC_register[10] <= ADC_DOUT;
 						end
 
-						10: begin
+						13: begin
 							ADC_register[9] <= ADC_DOUT;
 						end
 
-						11: begin
+						14: begin
 							ADC_register[8] <= ADC_DOUT;
 						end
 
-						12: begin
+						15: begin
 							ADC_register[7] <= ADC_DOUT;
 						end
 
-						13: begin
+						16: begin
 							ADC_register[6] <= ADC_DOUT;
 						end
 
-						14: begin
+						17: begin
 							ADC_register[5] <= ADC_DOUT;
 						end
 
-						15: begin
+						18: begin
 							ADC_register[4] <= ADC_DOUT;
 						end
 
-						16: begin
+						19: begin
 							ADC_register[3] <= ADC_DOUT;
 						end
 
-						17: begin
+						20: begin
 							ADC_register[2] <= ADC_DOUT;
 						end
 
-						18: begin
+						21: begin
 							ADC_register[1] <= ADC_DOUT;
 						end
 
-						19: begin
+						22: begin
 							ADC_register[0] <= ADC_DOUT;
 						end
 						
