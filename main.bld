@@ -1,36 +1,26 @@
-Release 14.2 ngdbuild P.28xd (nt64)
+Release 14.3 ngdbuild P.40xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Command Line: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+Command Line: C:\Xilinx\14.3\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2
 main.ngc main.ngd
 
-Reading NGO file
-"C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.ngc" ...
+Reading NGO file "C:/Users/jvoigts/Documents/GitHub/rhythm/main.ngc" ...
 Loading design module
-"C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/okWireOut.ngc"
-...
+"C:\Users\jvoigts\Documents\GitHub\rhythm/okWireOut.ngc"...
+Loading design module "C:\Users\jvoigts\Documents\GitHub\rhythm/okWireIn.ngc"...
 Loading design module
-"C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/okWireIn.ngc".
-..
+"C:\Users\jvoigts\Documents\GitHub\rhythm/okTriggerIn.ngc"...
 Loading design module
-"C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/okTriggerIn.ng
-c"...
+"C:\Users\jvoigts\Documents\GitHub\rhythm/okPipeOut.ngc"...
 Loading design module
-"C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/okPipeOut.ngc"
-...
+"C:\Users\jvoigts\Documents\GitHub\rhythm/okCoreHarness.ngc"...
 Loading design module
-"C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/okCoreHarness.
-ngc"...
+"C:\Users\jvoigts\Documents\GitHub\rhythm/TFIFO64x8a_64x8b.ngc"...
 Loading design module
-"C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/TFIFO64x8a_64x
-8b.ngc"...
+"C:\Users\jvoigts\Documents\GitHub\rhythm/fifo_w16_2048_r64_512.ngc"...
 Loading design module
-"C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/fifo_w16_2048_
-r64_512.ngc"...
-Loading design module
-"C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/fifo_w64_512_r
-16_2048.ngc"...
+"C:\Users\jvoigts\Documents\GitHub\rhythm/fifo_w64_512_r16_2048.ngc"...
 Gathering constraint information from source properties...
 Done.
 
@@ -106,8 +96,8 @@ WARNING:NgdBuild:443 - SFF primitive
    'host/core0/core0/a0/pc0/k_write_strobe_flop' has unconnected output pin
 WARNING:NgdBuild:440 - FF primitive 'host/core0/core0/a0/pc0/interrupt_ack_flop'
    has unconnected output pin
-WARNING:NgdBuild:452 - logical net 'N1448' has no driver
-WARNING:NgdBuild:452 - logical net 'N1452' has no driver
+WARNING:NgdBuild:452 - logical net 'N1447' has no driver
+WARNING:NgdBuild:452 - logical net 'N1451' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -120,7 +110,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   6
 
-Total memory usage is 213624 kilobytes
+Total memory usage is 214696 kilobytes
 
 Writing NGD file "main.ngd" ...
 Total REAL time to NGDBUILD completion:  7 sec

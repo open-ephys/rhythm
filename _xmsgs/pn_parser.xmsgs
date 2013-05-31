@@ -8,64 +8,13 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/ADC_input.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jvoigts/Documents/GitHub/rhythm/LED_controller.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/DAC_output.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jvoigts/Documents/GitHub/rhythm/led_controller_test.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/DAC_output_scalable.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/MISO_phase_selector.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/RAM_bank.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/RAM_block.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/SDRAM_FIFO.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/ddr2_state_machine.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/fifo_w16_2048_r64_512.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/fifo_w64_512_r16_2048.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/iodrp_controller.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/iodrp_mcb_controller.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/mcb_raw_wrapper.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/mcb_soft_calibration.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/mcb_soft_calibration_top.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/memc3_infrastructure.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/memc3_wrapper.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/okLibrary.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/variable_freq_clk_generator.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jvoigts/Documents/GitHub/rhythm/main.v&quot; into library work</arg>
 </msg>
 
 </messages>

@@ -1,4 +1,4 @@
-Release 14.2 - xst P.28xd (nt64)
+Release 14.3 - xst P.40xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
@@ -105,35 +105,35 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\iodrp_mcb_controller.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\iodrp_mcb_controller.v" into library work
 Parsing module <iodrp_mcb_controller>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\iodrp_controller.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\iodrp_controller.v" into library work
 Parsing module <iodrp_controller>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" into library work
 Parsing module <mcb_soft_calibration>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration_top.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration_top.v" into library work
 Parsing module <mcb_soft_calibration_top>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_raw_wrapper.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_raw_wrapper.v" into library work
 Parsing module <mcb_raw_wrapper>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\RAM_block.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\RAM_block.v" into library work
 Parsing module <RAM_1024x16bit>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" into library work
 Parsing module <memc3_wrapper>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_infrastructure.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_infrastructure.v" into library work
 Parsing module <memc3_infrastructure>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\fifo_w64_512_r16_2048.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\fifo_w64_512_r16_2048.v" into library work
 Parsing module <fifo_w64_512_r16_2048>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\fifo_w16_2048_r64_512.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\fifo_w16_2048_r64_512.v" into library work
 Parsing module <fifo_w16_2048_r64_512>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\ddr2_state_machine.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\ddr2_state_machine.v" into library work
 Parsing module <ddr2_state_machine>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\variable_freq_clk_generator.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\variable_freq_clk_generator.v" into library work
 Parsing module <variable_freq_clk_generator>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" into library work
 Parsing module <SDRAM_FIFO>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\RAM_bank.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\RAM_bank.v" into library work
 Parsing module <RAM_bank>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\okLibrary.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\okLibrary.v" into library work
 Parsing module <okHost>.
 Parsing module <okCoreHarness>.
 Parsing module <okWireIn>.
@@ -145,14 +145,16 @@ Parsing module <okPipeOut>.
 Parsing module <okBTPipeIn>.
 Parsing module <okBTPipeOut>.
 Parsing module <okWireOR>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\MISO_phase_selector.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\MISO_phase_selector.v" into library work
 Parsing module <MISO_phase_selector>.
 Parsing module <MISO_DDR_phase_selector>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\DAC_output_scalable.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\LED_controller.v" into library work
+Parsing module <LED_controller>.
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\DAC_output_scalable.v" into library work
 Parsing module <DAC_output_scalable>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\ADC_input.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\ADC_input.v" into library work
 Parsing module <ADC_input>.
-Analyzing Verilog file "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" into library work
+Analyzing Verilog file "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" into library work
 Parsing module <main>.
 Parsing module <command_selector>.
 
@@ -165,17 +167,26 @@ Elaborating module <main>.
 Elaborating module <OBUFDS>.
 
 Elaborating module <IBUFDS>.
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 519: Assignment to led_c1_dat ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 520: Assignment to led_c2_dat ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 522: Assignment to led_d1_dat ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 523: Assignment to led_d2_dat ignored, since the identifier is never used
+
+Elaborating module <LED_controller>.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\LED_controller.v" Line 100: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\LED_controller.v" Line 113: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\LED_controller.v" Line 130: Result of 17-bit expression is truncated to fit in 16-bit target.
 
 Elaborating module <variable_freq_clk_generator(M_DEFAULT=42,D_DEFAULT=25)>.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\variable_freq_clk_generator.v" Line 94: Result of 32-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\variable_freq_clk_generator.v" Line 95: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\variable_freq_clk_generator.v" Line 94: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\variable_freq_clk_generator.v" Line 95: Result of 32-bit expression is truncated to fit in 9-bit target.
 
 Elaborating module <DCM_CLKGEN(CLKFXDV_DIVIDE=2,CLKFX_DIVIDE=25,CLKFX_MD_MAX=0.0,CLKFX_MULTIPLY=42,CLKIN_PERIOD=0.0,SPREAD_SPECTRUM="NONE",STARTUP_WAIT="FALSE")>.
 
 Elaborating module <BUFG>.
 
 Elaborating module <SDRAM_FIFO(C3_P0_MASK_SIZE=4,C3_P0_DATA_PORT_SIZE=32,C3_P1_MASK_SIZE=4,C3_P1_DATA_PORT_SIZE=32,DEBUG_EN=0,C3_MEMCLK_PERIOD=3200,C3_CALIB_SOFT_IP="TRUE",C3_SIMULATION="FALSE",C3_HW_TESTING="FALSE",C3_RST_ACT_LOW=0,C3_INPUT_CLK_TYPE="DIFFERENTIAL",C3_MEM_ADDR_ORDER="ROW_BANK_COLUMN",C3_NUM_DQ_PINS=16,C3_MEM_ADDR_WIDTH=13,C3_MEM_BANKADDR_WIDTH=3)>.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 266: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" Line 266: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <memc3_infrastructure(C_MEMCLK_PERIOD=3200,C_RST_ACT_LOW=0,C_INPUT_CLK_TYPE="DIFFERENTIAL")>.
 
@@ -188,13 +199,13 @@ Elaborating module <BUFPLL_MCB>.
 Elaborating module
 <memc3_wrapper(C_MEMCLK_PERIOD=3200,C_CALIB_SOFT_IP="TRUE",C_SIMULATION="FALSE",C_ARB_NUM_TIME_SLOTS=12,C_ARB_TIME_SLOT_0=3'b0,C_ARB_TIME_SLOT_1=3'b0,C_ARB_TIME_SLOT_2=3'b0,C_ARB_TIME_SLOT_3=3'b0,C_ARB_TIME_SLOT_4=3'b0,C_ARB_TIME_SLOT_5=3'b0,C_ARB_TIME_SLOT_6=3'b0,C_ARB_TIME_SLOT_7=3'b0,C_ARB_TIME_SLOT_8=3'b0,C_ARB_TIME_SLOT_9=3'b0,C_ARB_TIME_SLOT_10=3'b0,C_ARB_TIME_SLOT_11=3'b0,C_MEM_TRAS=40000,C_MEM_TRCD=15000,C_MEM_TREFI=7800000,C_MEM_TRFC=127500,C_MEM_TRP=15000,C_MEM_TWR=15000,C_MEM_TRTP=7500,C_MEM_TWTR=7500,C_MEM_ADDR_ORDER="ROW_BANK_COLUMN",C_NUM_DQ_PINS=16,C_MEM_TYPE="DDR2",C_MEM_DENSITY="1Gb",C_MEM_BURST_LEN=4,C_MEM_CAS_LATENCY=5,C_MEM_ADDR_WIDTH=13,C_MEM_BANKADDR_WIDTH=3,C_MEM_NUM_COL_BITS=10,C_MEM_DDR1_2_ODS="FULL",C_MEM_DDR2_RTT="50OHMS",C_MEM_DDR2_DIFF_DQS_EN="YES",C_MEM_DDR2_3_PA_SR="FULL",C_MEM_DDR2_3_HIGH_TEMP_SR="NORMAL",C_MEM_DDR3_CAS_LATENCY=6,C_MEM_DDR3_ODS="DIV6",C_MEM_DDR3_RTT="DIV2",C_MEM_DDR3_CAS_WR_LATENCY=5,C_MEM_DDR3_AUTO_SR="ENABLED",C_MEM_DDR3_DYN_WRT_ODT="OFF",C_MEM_MOBILE_PA_SR="
 FULL",C_MEM_MDDR_ODS="FULL",C_MC_CALIB_BYPASS="NO",C_MC_CALIBRATION_MODE="CALIBRATION",C_MC_CALIBRATION_DELAY="HALF",C_SKIP_IN_TERM_CAL=0,C_SKIP_DYNAMIC_CAL=0,C_LDQSP_TAP_DELAY_VAL=0,C_LDQSN_TAP_DELAY_VAL=0,C_UDQSP_TAP_DELAY_VAL=0,C_UDQSN_TAP_DELAY_VAL=0,C_DQ0_TAP_DELAY_VAL=0,C_DQ1_TAP_DELAY_VAL=0,C_DQ2_TAP_DELAY_VAL=0,C_DQ3_TAP_DELAY_VAL=0,C_DQ4_TAP_DELAY_VAL=0,C_DQ5_TAP_DELAY_VAL=0,C_DQ6_TAP_DELAY_VAL=0,C_DQ7_TAP_DELAY_VAL=0,C_DQ8_TAP_DELAY_VAL=0,C_DQ9_TAP_DELAY_VAL=0,C_DQ10_TAP_DELAY_VAL=0,C_DQ11_TAP_DELAY_VAL=0,C_DQ12_TAP_DELAY_VAL=0,C_DQ13_TAP_DELAY_VAL=0,C_DQ14_TAP_DELAY_VAL=0,C_DQ15_TAP_DELAY_VAL=0)>.
-WARNING:HDLCompiler:1016 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_raw_wrapper.v" Line 6346: Port BUSY is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_raw_wrapper.v" Line 6346: Port BUSY is not connected to this instance
 
 Elaborating module
 <mcb_raw_wrapper(C_MEMCLK_PERIOD=3200,C_P0_MASK_SIZE=4,C_P0_DATA_PORT_SIZE=32,C_P1_MASK_SIZE=4,C_P1_DATA_PORT_SIZE=32,C_ARB_NUM_TIME_SLOTS=12,C_ARB_TIME_SLOT_0=18'b111111111111111000,C_ARB_TIME_SLOT_1=18'b111111111111111000,C_ARB_TIME_SLOT_2=18'b111111111111111000,C_ARB_TIME_SLOT_3=18'b111111111111111000,C_ARB_TIME_SLOT_4=18'b111111111111111000,C_ARB_TIME_SLOT_5=18'b111111111111111000,C_ARB_TIME_SLOT_6=18'b111111111111111000,C_ARB_TIME_SLOT_7=18'b111111111111111000,C_ARB_TIME_SLOT_8=18'b111111111111111000,C_ARB_TIME_SLOT_9=18'b111111111111111000,C_ARB_TIME_SLOT_10=18'b111111111111111000,C_ARB_TIME_SLOT_11=18'b111111111111111000,C_PORT_CONFIG="B32_B32_R32_R32_R32_R32",C_PORT_ENABLE=6'b01,C_MEM_TRAS=40000,C_MEM_TRCD=15000,C_MEM_TREFI=7800000,C_MEM_TRFC=127500,C_MEM_TRP=15000,C_MEM_TWR=15000,C_MEM_TRTP=7500,C_MEM_TWTR=7500,C_MEM_ADDR_ORDER="ROW_BANK_COLUMN",C_NUM_DQ_PINS=16,C_MEM_TYPE="DDR2",C_MEM_DENSITY="1Gb",C_MEM_BURST_LEN=4,C_MEM_CAS_LATENCY=5,C_MEM_ADDR_WIDTH=13,C_MEM_BANKADDR_WIDTH=3,C_MEM_NUM_COL_BITS=10
 ,C_MEM_DDR1_2_ODS="FULL",C_MEM_DDR2_RTT="50OHMS",C_MEM_DDR2_DIFF_DQS_EN="YES",C_MEM_DDR2_3_PA_SR="FULL",C_MEM_DDR2_3_HIGH_TEMP_SR="NORMAL",C_MEM_DDR3_CAS_LATENCY=6,C_MEM_DDR3_ODS="DIV6",C_MEM_DDR3_RTT="DIV2",C_MEM_DDR3_CAS_WR_LATENCY=5,C_MEM_DDR3_AUTO_SR="ENABLED",C_MEM_DDR3_DYN_WRT_ODT="OFF",C_MEM_MOBILE_PA_SR="FULL",C_MEM_MDDR_ODS="FULL",C_MC_CALIBRATION_CLK_DIV=1,C_MC_CALIBRATION_MODE="CALIBRATION",C_MC_CALIBRATION_DELAY="HALF",C_MC_CALIB_BYPASS="NO",C_MC_CALIBRATION_RA=16'b0,C_MC_CALIBRATION_BA=4'b0,C_MC_CALIBRATION_CA=12'b0,C_CALIB_SOFT_IP="TRUE",C_SKIP_IN_TERM_CAL=0,C_SKIP_DYNAMIC_CAL=0,C_MEM_TZQINIT_MAXCNT=10'b1000000000,C_SKIP_DYN_IN_TERM=1'b1,C_SIMULATION="FALSE",LDQSP_TAP_DELAY_VAL=0,UDQSP_TAP_DELAY_VAL=0,LDQSN_TAP_DELAY_VAL=0,UDQSN_TAP_DELAY_VAL=0,DQ0_TAP_DELAY_VAL=0,DQ1_TAP_DELAY_VAL=0,DQ2_TAP_DELAY_VAL=0,DQ3_TAP_DELAY_VAL=0,DQ4_TAP_DELAY_VAL=0,DQ5_TAP_DELAY_VAL=0,DQ6_TAP_DELAY_VAL=0,DQ7_TAP_DELAY_VAL=0,DQ8_TAP_DELAY_VAL=0,DQ9_TAP_DELAY_VAL=0,DQ10_TAP_DELAY_VAL=0,DQ11_TAP_DELAY_VAL=0,DQ12_TAP_DELA
 Y_VAL=0,DQ13_TAP_DELAY_VAL=0,DQ14_TAP_DELAY_VAL=0,DQ15_TAP_DELAY_VAL=0)>.
-WARNING:HDLCompiler:872 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_raw_wrapper.v" Line 685: Using initial value of allzero since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_raw_wrapper.v" Line 685: Using initial value of allzero since it is never assigned
 
 Elaborating module
 <MCB(PORT_CONFIG="B32_B32_R32_R32_R32_R32",MEM_WIDTH=16,MEM_TYPE="DDR2",MEM_BURST_LEN=4,MEM_ADDR_ORDER="ROW_BANK_COLUMN",MEM_CAS_LATENCY=5,MEM_DDR3_CAS_LATENCY=6,MEM_DDR2_WRT_RECOVERY=32'sb0101,MEM_DDR3_WRT_RECOVERY=5,MEM_MOBILE_PA_SR="FULL",MEM_DDR1_2_ODS="FULL",MEM_DDR3_ODS="DIV6",MEM_DDR2_RTT="50OHMS",MEM_DDR3_RTT="DIV2",MEM_DDR3_ADD_LATENCY="OFF",MEM_DDR2_ADD_LATENCY=0,MEM_MOBILE_TC_SR=0,MEM_MDDR_ODS="FULL",MEM_DDR2_DIFF_DQS_EN="YES",MEM_DDR2_3_PA_SR="FULL",MEM_DDR3_CAS_WR_LATENCY=5,MEM_DDR3_AUTO_SR="ENABLED",MEM_DDR2_3_HIGH_TEMP_SR="NORMAL",MEM_DDR3_DYN_WRT_ODT="OFF",MEM_RA_SIZE=13,MEM_BA_SIZE=3,MEM_CA_SIZE=10,MEM_RAS_VAL=32'sb01101,MEM_RCD_VAL=32'sb0101,MEM_REFI_VAL=32'sb0100110000110,MEM_RFC_VAL=32'sb0101000,MEM_RP_VAL=32'sb0101,MEM_WR_VAL=32'sb0101,MEM_RTP_VAL=32'sb011,MEM_WTR_VAL=32'sb011,CAL_BYPASS="NO",CAL_RA=16'b0,CAL_BA=4'b0,CAL_CA=12'b0,CAL_CLK_DIV=1,CAL_DELAY="HALF",ARB_NUM_TIME_SLOTS=12,ARB_TIME_SLOT_0=18'b111111111111111000,ARB_TIME_SLOT_1=18'b111111111111111000,ARB_TIME_SLOT_2=18'b1111111111
@@ -203,25 +214,25 @@ Elaborating module
 Elaborating module <mcb_soft_calibration_top(C_MEM_TZQINIT_MAXCNT=10'b1000000000,C_MC_CALIBRATION_MODE="CALIBRATION",SKIP_IN_TERM_CAL=0,SKIP_DYNAMIC_CAL=0,SKIP_DYN_IN_TERM=1'b1,C_SIMULATION="FALSE",C_MEM_TYPE="DDR2")>.
 
 Elaborating module <mcb_soft_calibration(C_MEM_TZQINIT_MAXCNT=10'b1000000000,C_MC_CALIBRATION_MODE="CALIBRATION",SKIP_IN_TERM_CAL=0,SKIP_DYNAMIC_CAL=0,SKIP_DYN_IN_TERM=1'b1,C_SIMULATION="FALSE",C_MEM_TYPE="DDR2")>.
-WARNING:HDLCompiler:872 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 312: Using initial value of START_BROADCAST since it is never assigned
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 373: Assignment to Half_MV_DU ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 375: Assignment to Half_MV_DD ignored, since the identifier is never used
+WARNING:HDLCompiler:872 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" Line 312: Using initial value of START_BROADCAST since it is never assigned
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" Line 373: Assignment to Half_MV_DU ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" Line 375: Assignment to Half_MV_DD ignored, since the identifier is never used
 
 Elaborating module <iodrp_controller>.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\iodrp_controller.v" Line 186: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\iodrp_controller.v" Line 186: Result of 4-bit expression is truncated to fit in 3-bit target.
 
 Elaborating module <iodrp_mcb_controller>.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\iodrp_mcb_controller.v" Line 301: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\iodrp_mcb_controller.v" Line 312: Result of 9-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 408: Assignment to MCB_READ_DATA ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 654: Assignment to MCB_UODATAVALID_U ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 809: Result of 7-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 813: Result of 8-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 859: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 863: Result of 8-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 864: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 700: Assignment to IODRPCTRLR_USE_BKST ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration_top.v" Line 216: Assignment to Max_Value ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\iodrp_mcb_controller.v" Line 301: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\iodrp_mcb_controller.v" Line 312: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" Line 408: Assignment to MCB_READ_DATA ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" Line 654: Assignment to MCB_UODATAVALID_U ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" Line 809: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" Line 813: Result of 8-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" Line 859: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" Line 863: Result of 8-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" Line 864: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" Line 700: Assignment to IODRPCTRLR_USE_BKST ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration_top.v" Line 216: Assignment to Max_Value ignored, since the identifier is never used
 
 Elaborating module <IOBUF>.
 
@@ -290,34 +301,34 @@ Elaborating module <IOBUFDS>.
 Elaborating module <PULLDOWN>.
 
 Elaborating module <PULLUP>.
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 411: Assignment to uo_data ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 412: Assignment to uo_data_valid ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 414: Assignment to uo_cmd_ready_in ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 415: Assignment to uo_refrsh_flag ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 416: Assignment to uo_cal_start ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 417: Assignment to uo_sdo ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 418: Assignment to status ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 409: Assignment to c3_p0_cmd_empty ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 416: Assignment to c3_p0_wr_empty ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 417: Assignment to c3_p0_wr_count ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 418: Assignment to c3_p0_wr_underrun ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 419: Assignment to c3_p0_wr_error ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 423: Assignment to c3_p0_rd_full ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 425: Assignment to c3_p0_rd_count ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 426: Assignment to c3_p0_rd_overflow ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 427: Assignment to c3_p0_rd_error ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 429: Assignment to selfrefresh_mode ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" Line 411: Assignment to uo_data ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" Line 412: Assignment to uo_data_valid ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" Line 414: Assignment to uo_cmd_ready_in ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" Line 415: Assignment to uo_refrsh_flag ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" Line 416: Assignment to uo_cal_start ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" Line 417: Assignment to uo_sdo ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" Line 418: Assignment to status ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" Line 409: Assignment to c3_p0_cmd_empty ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" Line 416: Assignment to c3_p0_wr_empty ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" Line 417: Assignment to c3_p0_wr_count ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" Line 418: Assignment to c3_p0_wr_underrun ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" Line 419: Assignment to c3_p0_wr_error ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" Line 423: Assignment to c3_p0_rd_full ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" Line 425: Assignment to c3_p0_rd_count ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" Line 426: Assignment to c3_p0_rd_overflow ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" Line 427: Assignment to c3_p0_rd_error ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" Line 429: Assignment to selfrefresh_mode ignored, since the identifier is never used
 
 Elaborating module <ddr2_state_machine>.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\ddr2_state_machine.v" Line 137: Result of 32-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\ddr2_state_machine.v" Line 155: Result of 31-bit expression is truncated to fit in 30-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\ddr2_state_machine.v" Line 175: Result of 31-bit expression is truncated to fit in 30-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\ddr2_state_machine.v" Line 199: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\ddr2_state_machine.v" Line 137: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\ddr2_state_machine.v" Line 155: Result of 31-bit expression is truncated to fit in 30-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\ddr2_state_machine.v" Line 175: Result of 31-bit expression is truncated to fit in 30-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\ddr2_state_machine.v" Line 199: Result of 32-bit expression is truncated to fit in 6-bit target.
 
 Elaborating module <fifo_w16_2048_r64_512>.
 
 Elaborating module <fifo_w64_512_r16_2048>.
-WARNING:HDLCompiler:634 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 234: Net <selfrefresh_enter> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" Line 234: Net <selfrefresh_enter> does not have a driver.
 
 Elaborating module <RAM_bank>.
 
@@ -328,27 +339,27 @@ Elaborating module
 ,INIT_35=256'b0,INIT_36=256'b0,INIT_37=256'b0,INIT_38=256'b0,INIT_39=256'b0,INIT_3A=256'b0,INIT_3B=256'b0,INIT_3C=256'b0,INIT_3D=256'b0,INIT_3E=256'b0,INIT_3F=256'b0,INIT_A=36'b0,INIT_B=36'b0,INIT_FILE="NONE",RSTTYPE="SYNC",RST_PRIORITY_A="CE",RST_PRIORITY_B="CE",SIM_COLLISION_CHECK="ALL",SIM_DEVICE="SPARTAN6",SRVAL_A=36'b0,SRVAL_B=36'b0,WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST")>.
 
 Elaborating module <command_selector>.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" Line 1853: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" Line 1863: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" Line 1873: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" Line 2009: Result of 7-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" Line 2014: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 1887: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 1897: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 1907: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2043: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2048: Result of 7-bit expression is truncated to fit in 6-bit target.
 
 Elaborating module <DAC_output_scalable(ms_wait=99,ms_clk1_a=100,ms_clk11_a=140)>.
-WARNING:HDLCompiler:189 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" Line 2095: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" Line 2114: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" Line 2133: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" Line 2152: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" Line 2171: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" Line 2190: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2129: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2148: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2167: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2186: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2205: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2224: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
 
 Elaborating module <ADC_input(ms_wait=99,ms_clk1_a=100,ms_clk11_a=140)>.
 
 Elaborating module <MISO_phase_selector>.
 
 Elaborating module <MISO_DDR_phase_selector>.
-WARNING:HDLCompiler:1016 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\okLibrary.v" Line 40: Port CLK180 is not connected to this instance
-WARNING:HDLCompiler:1016 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\okLibrary.v" Line 68: Port BUSY is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\jvoigts\Documents\GitHub\rhythm\okLibrary.v" Line 40: Port CLK180 is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\jvoigts\Documents\GitHub\rhythm\okLibrary.v" Line 68: Port BUSY is not connected to this instance
 
 Elaborating module <okHost>.
 
@@ -381,7 +392,7 @@ Elaborating module <okPipeOut>.
 =========================================================================
 
 Synthesizing Unit <main>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v".
         C3_P0_MASK_SIZE = 4
         C3_P0_DATA_PORT_SIZE = 32
         C3_P1_MASK_SIZE = 4
@@ -397,37 +408,37 @@ Synthesizing Unit <main>.
         C3_NUM_DQ_PINS = 16
         C3_MEM_ADDR_WIDTH = 13
         C3_MEM_BANKADDR_WIDTH = 3
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 620: Output port <RAM_data_out_A> of the instance <RAM_bank_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 634: Output port <RAM_data_out_A> of the instance <RAM_bank_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 648: Output port <RAM_data_out_A> of the instance <RAM_bank_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2068: Output port <DAC_SYNC> of the instance <DAC_output_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2068: Output port <DAC_SCLK> of the instance <DAC_output_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2087: Output port <DAC_SYNC> of the instance <DAC_output_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2087: Output port <DAC_SCLK> of the instance <DAC_output_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2106: Output port <DAC_SYNC> of the instance <DAC_output_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2106: Output port <DAC_SCLK> of the instance <DAC_output_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2125: Output port <DAC_SYNC> of the instance <DAC_output_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2125: Output port <DAC_SCLK> of the instance <DAC_output_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2144: Output port <DAC_SYNC> of the instance <DAC_output_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2144: Output port <DAC_SCLK> of the instance <DAC_output_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2163: Output port <DAC_SYNC> of the instance <DAC_output_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2163: Output port <DAC_SCLK> of the instance <DAC_output_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2182: Output port <DAC_SYNC> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2182: Output port <DAC_SCLK> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2219: Output port <ADC_CS> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2219: Output port <ADC_SCLK> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2235: Output port <ADC_CS> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2235: Output port <ADC_SCLK> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2251: Output port <ADC_CS> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2251: Output port <ADC_SCLK> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2267: Output port <ADC_CS> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2267: Output port <ADC_SCLK> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2283: Output port <ADC_CS> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2283: Output port <ADC_SCLK> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2299: Output port <ADC_CS> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2299: Output port <ADC_SCLK> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2315: Output port <ADC_CS> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v" line 2315: Output port <ADC_SCLK> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 654: Output port <RAM_data_out_A> of the instance <RAM_bank_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 668: Output port <RAM_data_out_A> of the instance <RAM_bank_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 682: Output port <RAM_data_out_A> of the instance <RAM_bank_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2102: Output port <DAC_SYNC> of the instance <DAC_output_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2102: Output port <DAC_SCLK> of the instance <DAC_output_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2121: Output port <DAC_SYNC> of the instance <DAC_output_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2121: Output port <DAC_SCLK> of the instance <DAC_output_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2140: Output port <DAC_SYNC> of the instance <DAC_output_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2140: Output port <DAC_SCLK> of the instance <DAC_output_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2159: Output port <DAC_SYNC> of the instance <DAC_output_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2159: Output port <DAC_SCLK> of the instance <DAC_output_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2178: Output port <DAC_SYNC> of the instance <DAC_output_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2178: Output port <DAC_SCLK> of the instance <DAC_output_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2197: Output port <DAC_SYNC> of the instance <DAC_output_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2197: Output port <DAC_SCLK> of the instance <DAC_output_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2216: Output port <DAC_SYNC> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2216: Output port <DAC_SCLK> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2253: Output port <ADC_CS> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2253: Output port <ADC_SCLK> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2269: Output port <ADC_CS> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2269: Output port <ADC_SCLK> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2285: Output port <ADC_CS> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2285: Output port <ADC_SCLK> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2301: Output port <ADC_CS> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2301: Output port <ADC_SCLK> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2317: Output port <ADC_CS> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2317: Output port <ADC_SCLK> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2333: Output port <ADC_CS> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2333: Output port <ADC_SCLK> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2349: Output port <ADC_CS> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" line 2349: Output port <ADC_SCLK> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
     Found 10-bit register for signal <loop_aux_cmd_index_1>.
     Found 10-bit register for signal <loop_aux_cmd_index_2>.
     Found 10-bit register for signal <loop_aux_cmd_index_3>.
@@ -1132,53 +1143,75 @@ INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM601
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 10-bit adder for signal <aux_cmd_index_1[9]_GND_1_o_add_242_OUT> created at line 1853.
-    Found 10-bit adder for signal <aux_cmd_index_2[9]_GND_1_o_add_250_OUT> created at line 1863.
-    Found 10-bit adder for signal <aux_cmd_index_3[9]_GND_1_o_add_258_OUT> created at line 1873.
-    Found 32-bit adder for signal <timestamp[31]_GND_1_o_add_308_OUT> created at line 1999.
-    Found 6-bit adder for signal <channel[5]_GND_1_o_add_311_OUT> created at line 2009.
-    Found 6-bit adder for signal <channel_MISO[5]_GND_1_o_add_314_OUT> created at line 2014.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_1[3]_GND_1_o_wide_mux_284_OUT> created at line 1879.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_2[3]_GND_1_o_wide_mux_287_OUT> created at line 1894.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_3[3]_GND_1_o_wide_mux_290_OUT> created at line 1909.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_4[3]_GND_1_o_wide_mux_293_OUT> created at line 1924.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_5[3]_GND_1_o_wide_mux_296_OUT> created at line 1939.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_6[3]_GND_1_o_wide_mux_299_OUT> created at line 1954.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_7[3]_GND_1_o_wide_mux_302_OUT> created at line 1969.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_8[3]_GND_1_o_wide_mux_305_OUT> created at line 1984.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_1> created at line 2378.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_2> created at line 2399.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_3> created at line 2420.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_4> created at line 2441.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_5> created at line 2462.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_6> created at line 2483.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_7> created at line 2504.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_8> created at line 2525.
-    Found 1-bit tristate buffer for signal <i2c_sda> created at line 194
-    Found 1-bit tristate buffer for signal <i2c_scl> created at line 195
-    Found 10-bit comparator equal for signal <aux_cmd_index_1[9]_max_aux_cmd_index_1[9]_equal_242_o> created at line 1845
-    Found 10-bit comparator equal for signal <aux_cmd_index_2[9]_max_aux_cmd_index_2[9]_equal_250_o> created at line 1855
-    Found 10-bit comparator equal for signal <aux_cmd_index_3[9]_max_aux_cmd_index_3[9]_equal_258_o> created at line 1865
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_284_o> created at line 1878
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_287_o> created at line 1893
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_290_o> created at line 1908
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_293_o> created at line 1923
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_296_o> created at line 1938
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_299_o> created at line 1953
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_302_o> created at line 1968
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_305_o> created at line 1983
-    Found 32-bit comparator equal for signal <timestamp[31]_max_timestep[31]_equal_318_o> created at line 2022
+    Found 10-bit adder for signal <aux_cmd_index_1[9]_GND_1_o_add_252_OUT> created at line 1887.
+    Found 10-bit adder for signal <aux_cmd_index_2[9]_GND_1_o_add_260_OUT> created at line 1897.
+    Found 10-bit adder for signal <aux_cmd_index_3[9]_GND_1_o_add_268_OUT> created at line 1907.
+    Found 32-bit adder for signal <timestamp[31]_GND_1_o_add_318_OUT> created at line 2033.
+    Found 6-bit adder for signal <channel[5]_GND_1_o_add_321_OUT> created at line 2043.
+    Found 6-bit adder for signal <channel_MISO[5]_GND_1_o_add_324_OUT> created at line 2048.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_1[3]_GND_1_o_wide_mux_294_OUT> created at line 1913.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_2[3]_GND_1_o_wide_mux_297_OUT> created at line 1928.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_3[3]_GND_1_o_wide_mux_300_OUT> created at line 1943.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_4[3]_GND_1_o_wide_mux_303_OUT> created at line 1958.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_5[3]_GND_1_o_wide_mux_306_OUT> created at line 1973.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_6[3]_GND_1_o_wide_mux_309_OUT> created at line 1988.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_7[3]_GND_1_o_wide_mux_312_OUT> created at line 2003.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_8[3]_GND_1_o_wide_mux_315_OUT> created at line 2018.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_1> created at line 2412.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_2> created at line 2433.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_3> created at line 2454.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_4> created at line 2475.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_5> created at line 2496.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_6> created at line 2517.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_7> created at line 2538.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_8> created at line 2559.
+    Found 1-bit tristate buffer for signal <i2c_sda> created at line 196
+    Found 1-bit tristate buffer for signal <i2c_scl> created at line 197
+    Found 10-bit comparator equal for signal <aux_cmd_index_1[9]_max_aux_cmd_index_1[9]_equal_252_o> created at line 1879
+    Found 10-bit comparator equal for signal <aux_cmd_index_2[9]_max_aux_cmd_index_2[9]_equal_260_o> created at line 1889
+    Found 10-bit comparator equal for signal <aux_cmd_index_3[9]_max_aux_cmd_index_3[9]_equal_268_o> created at line 1899
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_294_o> created at line 1912
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_297_o> created at line 1927
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_300_o> created at line 1942
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_303_o> created at line 1957
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_306_o> created at line 1972
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_309_o> created at line 1987
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_312_o> created at line 2002
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_315_o> created at line 2017
+    Found 32-bit comparator equal for signal <timestamp[31]_max_timestep[31]_equal_328_o> created at line 2056
     Summary:
 	inferred   6 Adder/Subtractor(s).
 	inferred 1605 D-type flip-flop(s).
 	inferred  12 Comparator(s).
-	inferred 105 Multiplexer(s).
+	inferred 107 Multiplexer(s).
 	inferred   2 Tristate(s).
 	inferred   1 Finite State Machine(s).
 Unit <main> synthesized.
 
+Synthesizing Unit <LED_controller>.
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\LED_controller.v".
+        ms_wait = 99
+        ms_clk1_a = 100
+        ms_clk11_a = 140
+    Found 1-bit register for signal <dat_out>.
+    Found 5-bit register for signal <GRB_state>.
+    Found 1-bit register for signal <led_bit>.
+    Found 16-bit register for signal <LED_state>.
+    Found 24-bit register for signal <GRB_reg>.
+    Found 1-bit register for signal <LED_reset>.
+    Found 16-bit register for signal <bit_state>.
+    Found 16-bit adder for signal <bit_state[15]_GND_6_o_add_10_OUT> created at line 100.
+    Found 5-bit adder for signal <GRB_state[4]_GND_6_o_add_17_OUT> created at line 113.
+    Found 16-bit adder for signal <LED_state[15]_GND_6_o_add_26_OUT> created at line 130.
+    Found 1-bit 24-to-1 multiplexer for signal <GRB_state[4]_X_6_o_Mux_16_o> created at line 111.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+	inferred  10 Multiplexer(s).
+Unit <LED_controller> synthesized.
+
 Synthesizing Unit <variable_freq_clk_generator>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\variable_freq_clk_generator.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\variable_freq_clk_generator.v".
         M_DEFAULT = 42
         D_DEFAULT = 25
     Found 1-bit register for signal <DCM_prog_en>.
@@ -1187,8 +1220,8 @@ Synthesizing Unit <variable_freq_clk_generator>.
     Found finite state machine <FSM_1> for signal <DCM_prog_state>.
     -----------------------------------------------------------------------
     | States             | 33                                             |
-    | Transitions        | 35                                             |
-    | Inputs             | 2                                              |
+    | Transitions        | 68                                             |
+    | Inputs             | 3                                              |
     | Outputs            | 33                                             |
     | Clock              | ti_clk (rising_edge)                           |
     | Reset              | reset (positive)                               |
@@ -1206,7 +1239,7 @@ Synthesizing Unit <variable_freq_clk_generator>.
 Unit <variable_freq_clk_generator> synthesized.
 
 Synthesizing Unit <SDRAM_FIFO>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v".
         C3_P0_MASK_SIZE = 4
         C3_P0_DATA_PORT_SIZE = 32
         C3_P1_MASK_SIZE = 4
@@ -1222,20 +1255,20 @@ Synthesizing Unit <SDRAM_FIFO>.
         C3_NUM_DQ_PINS = 16
         C3_MEM_ADDR_WIDTH = 13
         C3_MEM_BANKADDR_WIDTH = 3
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 376: Output port <p0_wr_count> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 376: Output port <p0_rd_count> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 376: Output port <p0_cmd_empty> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 376: Output port <p0_wr_empty> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 376: Output port <p0_wr_underrun> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 376: Output port <p0_wr_error> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 376: Output port <p0_rd_full> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 376: Output port <p0_rd_overflow> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 376: Output port <p0_rd_error> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 376: Output port <selfrefresh_mode> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 472: Output port <full> of the instance <okPipeIn_fifo> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 488: Output port <full> of the instance <okPipeOut_fifo> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 488: Output port <empty> of the instance <okPipeOut_fifo> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" line 488: Output port <valid> of the instance <okPipeOut_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 376: Output port <p0_wr_count> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 376: Output port <p0_rd_count> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 376: Output port <p0_cmd_empty> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 376: Output port <p0_wr_empty> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 376: Output port <p0_wr_underrun> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 376: Output port <p0_wr_error> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 376: Output port <p0_rd_full> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 376: Output port <p0_rd_overflow> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 376: Output port <p0_rd_error> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 376: Output port <selfrefresh_mode> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 472: Output port <full> of the instance <okPipeIn_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 488: Output port <full> of the instance <okPipeOut_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 488: Output port <empty> of the instance <okPipeOut_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" line 488: Output port <valid> of the instance <okPipeOut_fifo> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <selfrefresh_enter> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 1-bit register for signal <c3_sys_rst_n>.
     Found 26-bit register for signal <buffer_byte_addr_rd_ti<26:1>>.
@@ -1243,11 +1276,11 @@ WARNING:Xst:653 - Signal <selfrefresh_enter> is used but never assigned. This so
     Found 11-bit register for signal <pipe_in_word_count_ti>.
     Found 11-bit register for signal <pipe_out_word_count_ti>.
     Found 4-bit register for signal <rst_cnt>.
-    Found 4-bit adder for signal <rst_cnt[3]_GND_9_o_add_2_OUT> created at line 266.
+    Found 4-bit adder for signal <rst_cnt[3]_GND_10_o_add_2_OUT> created at line 266.
     Found 26-bit subtractor for signal <buffer_word_addr_diff_ti<25:0>> created at line 253.
     Found 27-bit adder for signal <_n0064> created at line 92.
     Found 27-bit adder for signal <num_words_in_FIFO<26:0>> created at line 92.
-    Found 4-bit comparator greater for signal <rst_cnt[3]_PWR_8_o_LessThan_2_o> created at line 265
+    Found 4-bit comparator greater for signal <rst_cnt[3]_PWR_9_o_LessThan_2_o> created at line 265
     Summary:
 	inferred   4 Adder/Subtractor(s).
 	inferred  79 D-type flip-flop(s).
@@ -1255,7 +1288,7 @@ WARNING:Xst:653 - Signal <selfrefresh_enter> is used but never assigned. This so
 Unit <SDRAM_FIFO> synthesized.
 
 Synthesizing Unit <memc3_infrastructure>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_infrastructure.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_infrastructure.v".
         C_MEMCLK_PERIOD = 3200
         C_RST_ACT_LOW = 0
         C_INPUT_CLK_TYPE = "DIFFERENTIAL"
@@ -1270,7 +1303,7 @@ WARNING:Xst:647 - Input <sys_clk> is never used. This port will be preserved and
 Unit <memc3_infrastructure> synthesized.
 
 Synthesizing Unit <memc3_wrapper>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v".
         C_MEMCLK_PERIOD = 3200
         C_P0_MASK_SIZE = 4
         C_P0_DATA_PORT_SIZE = 32
@@ -1347,85 +1380,85 @@ Synthesizing Unit <memc3_wrapper>.
         C_SKIP_IN_TERM_CAL = 0
         C_SKIP_DYNAMIC_CAL = 0
 WARNING:Xst:647 - Input <selfrefresh_enter> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p1_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p1_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p1_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p2_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p2_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p2_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p3_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p3_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p3_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p4_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p4_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p4_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p5_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p5_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p5_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <uo_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <status> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p1_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p1_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p1_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p1_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p1_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p1_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p1_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p1_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p1_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p1_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p2_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p2_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p2_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p2_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p2_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p2_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p2_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p2_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p2_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p2_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p3_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p3_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p3_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p3_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p3_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p3_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p3_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p3_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p3_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p3_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p4_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p4_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p4_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p4_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p4_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p4_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p4_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p4_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p4_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p4_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p5_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p5_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p5_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p5_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p5_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p5_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p5_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p5_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p5_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <p5_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <mcbx_dram_ddr3_rst> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <uo_data_valid> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <uo_cmd_ready_in> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <uo_refrsh_flag> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <uo_cal_start> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\memc3_wrapper.v" line 362: Output port <uo_sdo> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p1_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p1_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p1_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p2_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p2_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p2_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p3_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p3_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p3_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p4_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p4_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p4_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p5_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p5_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p5_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <uo_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <status> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p1_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p1_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p1_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p1_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p1_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p1_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p1_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p1_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p1_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p1_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p2_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p2_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p2_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p2_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p2_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p2_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p2_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p2_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p2_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p2_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p3_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p3_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p3_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p3_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p3_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p3_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p3_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p3_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p3_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p3_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p4_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p4_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p4_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p4_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p4_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p4_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p4_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p4_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p4_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p4_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p5_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p5_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p5_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p5_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p5_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p5_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p5_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p5_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p5_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <p5_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <mcbx_dram_ddr3_rst> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <uo_data_valid> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <uo_cmd_ready_in> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <uo_refrsh_flag> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <uo_cal_start> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\memc3_wrapper.v" line 362: Output port <uo_sdo> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <memc3_wrapper> synthesized.
 
 Synthesizing Unit <mcb_raw_wrapper>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_raw_wrapper.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_raw_wrapper.v".
         C_MEMCLK_PERIOD = 3200
         C_PORT_ENABLE = 6'b000001
         C_MEM_ADDR_ORDER = "ROW_BANK_COLUMN"
@@ -1601,7 +1634,7 @@ WARNING:Xst:653 - Signal <mcbx_dram_ddr3_rst> is used but never assigned. This s
 Unit <mcb_raw_wrapper> synthesized.
 
 Synthesizing Unit <mcb_soft_calibration_top>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration_top.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration_top.v".
         C_MEM_TZQINIT_MAXCNT = 10'b1000000000
         C_MC_CALIBRATION_MODE = "CALIBRATION"
         SKIP_IN_TERM_CAL = 0
@@ -1609,13 +1642,13 @@ Synthesizing Unit <mcb_soft_calibration_top>.
         SKIP_DYN_IN_TERM = 1'b1
         C_SIMULATION = "FALSE"
         C_MEM_TYPE = "DDR2"
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration_top.v" line 169: Output port <Max_Value> of the instance <mcb_soft_calibration_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration_top.v" line 169: Output port <Max_Value> of the instance <mcb_soft_calibration_inst> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <mcb_soft_calibration_top> synthesized.
 
 Synthesizing Unit <mcb_soft_calibration>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v".
         C_MEM_TZQINIT_MAXCNT = 10'b1000000000
         C_MC_CALIBRATION_MODE = "CALIBRATION"
         C_SIMULATION = "FALSE"
@@ -1640,8 +1673,8 @@ WARNING:Xst:647 - Input <MCB_UODATA> is never used. This port will be preserved 
 WARNING:Xst:647 - Input <MCB_UODATAVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <MCB_UOCMDREADY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <MCB_UO_CAL_START> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" line 388: Output port <DRP_BKST> of the instance <iodrp_controller> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" line 405: Output port <read_data> of the instance <iodrp_mcb_controller> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" line 388: Output port <DRP_BKST> of the instance <iodrp_controller> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\jvoigts\Documents\GitHub\rhythm\mcb_soft_calibration.v" line 405: Output port <read_data> of the instance <iodrp_mcb_controller> is unconnected or connected to loadless signal.
 WARNING:Xst:2935 - Signal 'MCB_UIDQLOWERDEC', unconnected in block 'mcb_soft_calibration', is tied to its initial value (0).
 WARNING:Xst:2935 - Signal 'MCB_UIDQLOWERINC', unconnected in block 'mcb_soft_calibration', is tied to its initial value (0).
 WARNING:Xst:2935 - Signal 'MCB_UIDQUPPERDEC', unconnected in block 'mcb_soft_calibration', is tied to its initial value (0).
@@ -1717,12 +1750,12 @@ INFO:Xst:1799 - State 101010 is never reached in FSM <STATE>.
     -----------------------------------------------------------------------
     Found 8-bit subtractor for signal <Max_Value_Delta_Up> created at line 372.
     Found 8-bit subtractor for signal <Max_Value_Delta_Dn> created at line 374.
-    Found 8-bit subtractor for signal <DQS_DELAY[7]_GND_19_o_sub_173_OUT> created at line 1219.
-    Found 16-bit adder for signal <WAIT_200us_COUNTER[15]_GND_19_o_add_12_OUT> created at line 455.
-    Found 10-bit adder for signal <RstCounter[9]_GND_19_o_add_17_OUT> created at line 519.
-    Found 6-bit adder for signal <count[5]_GND_19_o_add_39_OUT> created at line 646.
-    Found 6-bit adder for signal <P_Term[5]_GND_19_o_add_54_OUT> created at line 809.
-    Found 7-bit adder for signal <N_Term[6]_GND_19_o_add_67_OUT> created at line 859.
+    Found 8-bit subtractor for signal <DQS_DELAY[7]_GND_20_o_sub_173_OUT> created at line 1219.
+    Found 16-bit adder for signal <WAIT_200us_COUNTER[15]_GND_20_o_add_12_OUT> created at line 455.
+    Found 10-bit adder for signal <RstCounter[9]_GND_20_o_add_17_OUT> created at line 519.
+    Found 6-bit adder for signal <count[5]_GND_20_o_add_39_OUT> created at line 646.
+    Found 6-bit adder for signal <P_Term[5]_GND_20_o_add_54_OUT> created at line 809.
+    Found 7-bit adder for signal <N_Term[6]_GND_20_o_add_67_OUT> created at line 859.
     Found 8-bit adder for signal <n0586[7:0]> created at line 437.
     Found 9-bit adder for signal <n0589[8:0]> created at line 437.
     Found 10-bit adder for signal <n0592[9:0]> created at line 437.
@@ -1732,21 +1765,21 @@ INFO:Xst:1799 - State 101010 is never reached in FSM <STATE>.
     Found 10-bit adder for signal <n0613[9:0]> created at line 437.
     Found 11-bit adder for signal <n0616[10:0]> created at line 437.
     Found 10-bit adder for signal <n0628> created at line 437.
-    Found 8-bit adder for signal <counter_inc[7]_GND_19_o_add_155_OUT> created at line 1189.
-    Found 8-bit adder for signal <DQS_DELAY[7]_GND_19_o_add_158_OUT> created at line 1194.
-    Found 8-bit adder for signal <counter_dec[7]_GND_19_o_add_169_OUT> created at line 1214.
+    Found 8-bit adder for signal <counter_inc[7]_GND_20_o_add_155_OUT> created at line 1189.
+    Found 8-bit adder for signal <DQS_DELAY[7]_GND_20_o_add_158_OUT> created at line 1194.
+    Found 8-bit adder for signal <counter_dec[7]_GND_20_o_add_169_OUT> created at line 1214.
     Found 12-bit adder for signal <_n0705> created at line 437.
     Found 12-bit adder for signal <n0420> created at line 437.
-    Found 13-bit adder for signal <_n0710> created at line 437.
+    Found 13-bit adder for signal <_n0712> created at line 437.
     Found 13-bit adder for signal <n0414> created at line 437.
     Found 1-bit 3-to-1 multiplexer for signal <IODRP_SDO> created at line 666.
-    Found 10-bit comparator greater for signal <RstCounter[9]_PWR_17_o_LessThan_17_o> created at line 517
-    Found 10-bit comparator greater for signal <RstCounter[9]_GND_19_o_LessThan_26_o> created at line 536
+    Found 10-bit comparator greater for signal <RstCounter[9]_PWR_18_o_LessThan_17_o> created at line 517
+    Found 10-bit comparator greater for signal <RstCounter[9]_GND_20_o_LessThan_26_o> created at line 536
     Found 8-bit comparator greater for signal <Dec_Flag> created at line 634
     Found 8-bit comparator greater for signal <Inc_Flag> created at line 635
     Found 6-bit comparator equal for signal <n0132> created at line 871
     Found 7-bit comparator equal for signal <n0141> created at line 904
-    Found 6-bit comparator greater for signal <count[5]_PWR_17_o_LessThan_133_o> created at line 1131
+    Found 6-bit comparator greater for signal <count[5]_PWR_18_o_LessThan_133_o> created at line 1131
     Found 8-bit comparator greater for signal <Max_Value[7]_Max_Value_Previous[7]_LessThan_139_o> created at line 1163
     Found 8-bit comparator greater for signal <n0204> created at line 1163
     Found 8-bit comparator greater for signal <Max_Value_Previous[7]_Max_Value[7]_LessThan_143_o> created at line 1168
@@ -1761,14 +1794,14 @@ INFO:Xst:1799 - State 101010 is never reached in FSM <STATE>.
     WARNING:Xst:2404 -  FFs/Latches <MCB_UICMDIN<0:0>> (without init value) have a constant value of 0 in block <mcb_soft_calibration>.
     Summary:
 	inferred  23 Adder/Subtractor(s).
-	inferred 172 D-type flip-flop(s).
+	inferred 171 D-type flip-flop(s).
 	inferred  15 Comparator(s).
-	inferred  40 Multiplexer(s).
+	inferred  43 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <mcb_soft_calibration> synthesized.
 
 Synthesizing Unit <iodrp_controller>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\iodrp_controller.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\iodrp_controller.v".
     Set property "FSM_ENCODING = one-hot" for signal <state>.
     Set property "FSM_ENCODING = one-hot" for signal <nextstate>.
     Found 8-bit register for signal <data_reg>.
@@ -1795,7 +1828,7 @@ Synthesizing Unit <iodrp_controller>.
     | Encoding           | one-hot                                        |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit adder for signal <bit_cnt[2]_GND_20_o_add_15_OUT> created at line 186.
+    Found 3-bit adder for signal <bit_cnt[2]_GND_21_o_add_15_OUT> created at line 186.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  40 D-type flip-flop(s).
@@ -1804,7 +1837,7 @@ Synthesizing Unit <iodrp_controller>.
 Unit <iodrp_controller> synthesized.
 
 Synthesizing Unit <iodrp_mcb_controller>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\iodrp_mcb_controller.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\iodrp_mcb_controller.v".
     Set property "FSM_ENCODING = GRAY" for signal <state>.
     Set property "FSM_ENCODING = GRAY" for signal <nextstate>.
 WARNING:Xst:647 - Input <drp_ioi_addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1833,7 +1866,7 @@ WARNING:Xst:647 - Input <drp_ioi_addr> is never used. This port will be preserve
     | Encoding           | GRAY                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit adder for signal <bit_cnt[2]_GND_21_o_add_16_OUT> created at line 301.
+    Found 3-bit adder for signal <bit_cnt[2]_GND_22_o_add_16_OUT> created at line 301.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  41 D-type flip-flop(s).
@@ -1842,7 +1875,7 @@ WARNING:Xst:647 - Input <drp_ioi_addr> is never used. This port will be preserve
 Unit <iodrp_mcb_controller> synthesized.
 
 Synthesizing Unit <ddr2_state_machine>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\ddr2_state_machine.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\ddr2_state_machine.v".
 WARNING:Xst:647 - Input <ib_empty> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <p0_cmd_full> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <p0_wr_full> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1938,11 +1971,11 @@ WARNING:Xst:647 - Input <p0_wr_full> is never used. This port will be preserved 
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 30-bit adder for signal <cmd_byte_addr_wr[29]_GND_58_o_add_17_OUT> created at line 155.
-    Found 30-bit adder for signal <cmd_byte_addr_rd[29]_GND_58_o_add_23_OUT> created at line 175.
-    Found 6-bit subtractor for signal <GND_58_o_GND_58_o_sub_12_OUT<5:0>> created at line 137.
+    Found 30-bit adder for signal <cmd_byte_addr_wr[29]_GND_59_o_add_17_OUT> created at line 155.
+    Found 30-bit adder for signal <cmd_byte_addr_rd[29]_GND_59_o_add_23_OUT> created at line 175.
+    Found 6-bit subtractor for signal <GND_59_o_GND_59_o_sub_12_OUT<5:0>> created at line 137.
     Found 9-bit comparator greater for signal <n0008> created at line 121
-    Found 9-bit comparator greater for signal <ob_count[8]_PWR_55_o_LessThan_21_o> created at line 166
+    Found 9-bit comparator greater for signal <ob_count[8]_PWR_56_o_LessThan_21_o> created at line 166
     Found 30-bit comparator equal for signal <n0024> created at line 166
     Summary:
 	inferred   3 Adder/Subtractor(s).
@@ -1953,7 +1986,7 @@ WARNING:Xst:647 - Input <p0_wr_full> is never used. This port will be preserved 
 Unit <ddr2_state_machine> synthesized.
 
 Synthesizing Unit <RAM_bank>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\RAM_bank.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\RAM_bank.v".
     Found 16-bit 16-to-1 multiplexer for signal <RAM_data_out_A> created at line 41.
     Found 16-bit 16-to-1 multiplexer for signal <RAM_data_out_B> created at line 61.
     Summary:
@@ -1961,19 +1994,19 @@ Synthesizing Unit <RAM_bank>.
 Unit <RAM_bank> synthesized.
 
 Synthesizing Unit <RAM_1024x16bit>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\RAM_block.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\RAM_block.v".
     Summary:
 	no macro.
 Unit <RAM_1024x16bit> synthesized.
 
 Synthesizing Unit <command_selector>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\main.v".
     Summary:
 	inferred   2 Multiplexer(s).
 Unit <command_selector> synthesized.
 
 Synthesizing Unit <DAC_output_scalable>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\DAC_output_scalable.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\DAC_output_scalable.v".
         ms_wait = 99
         ms_clk1_a = 100
         ms_clk11_a = 140
@@ -2012,7 +2045,7 @@ Synthesizing Unit <DAC_output_scalable>.
 Unit <DAC_output_scalable> synthesized.
 
 Synthesizing Unit <ADC_input>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\ADC_input.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\ADC_input.v".
         ms_wait = 99
         ms_clk1_a = 100
         ms_clk11_a = 140
@@ -2040,7 +2073,7 @@ Synthesizing Unit <ADC_input>.
 Unit <ADC_input> synthesized.
 
 Synthesizing Unit <MISO_phase_selector>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\MISO_phase_selector.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\MISO_phase_selector.v".
 WARNING:Xst:647 - Input <MISO4x<73:72>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 16-bit 13-to-1 multiplexer for signal <MISO> created at line 28.
     Summary:
@@ -2048,7 +2081,7 @@ WARNING:Xst:647 - Input <MISO4x<73:72>> is never used. This port will be preserv
 Unit <MISO_phase_selector> synthesized.
 
 Synthesizing Unit <MISO_DDR_phase_selector>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\MISO_phase_selector.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\MISO_phase_selector.v".
 WARNING:Xst:647 - Input <MISO4x<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 16-bit 13-to-1 multiplexer for signal <MISO> created at line 55.
     Summary:
@@ -2056,7 +2089,7 @@ WARNING:Xst:647 - Input <MISO4x<1:0>> is never used. This port will be preserved
 Unit <MISO_DDR_phase_selector> synthesized.
 
 Synthesizing Unit <okHost>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\okLibrary.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\okLibrary.v".
     Set property "IOB = TRUE" for instance <delays[0].fdrein0>.
     Set property "IOB = TRUE" for instance <delays[0].fdreout0>.
     Set property "IOB = TRUE" for instance <delays[0].fdreout1>.
@@ -2110,7 +2143,7 @@ Synthesizing Unit <okHost>.
 Unit <okHost> synthesized.
 
 Synthesizing Unit <okWireOR>.
-    Related source file is "C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\okLibrary.v".
+    Related source file is "C:\Users\jvoigts\Documents\GitHub\rhythm\okLibrary.v".
         N = 33
     Summary:
 	no macro.
@@ -2120,12 +2153,12 @@ Unit <okWireOR> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 56
+# Adders/Subtractors                                   : 59
  10-bit adder                                          : 7
  11-bit adder                                          : 2
  12-bit adder                                          : 3
  13-bit adder                                          : 2
- 16-bit adder                                          : 9
+ 16-bit adder                                          : 11
  16-bit subtractor                                     : 8
  26-bit subtractor                                     : 1
  27-bit adder                                          : 2
@@ -2133,6 +2166,7 @@ Macro Statistics
  30-bit adder                                          : 2
  32-bit adder                                          : 1
  4-bit adder                                           : 1
+ 5-bit adder                                           : 1
  6-bit adder                                           : 4
  6-bit subtractor                                      : 1
  7-bit adder                                           : 1
@@ -2140,19 +2174,20 @@ Macro Statistics
  8-bit addsub                                          : 1
  8-bit subtractor                                      : 4
  9-bit adder                                           : 2
-# Registers                                            : 251
- 1-bit register                                        : 112
+# Registers                                            : 257
+ 1-bit register                                        : 114
  10-bit register                                       : 11
  11-bit register                                       : 2
- 16-bit register                                       : 55
+ 16-bit register                                       : 57
  2-bit register                                        : 1
+ 24-bit register                                       : 1
  25-bit register                                       : 1
  26-bit register                                       : 2
  3-bit register                                        : 3
  30-bit register                                       : 3
  32-bit register                                       : 3
  4-bit register                                        : 23
- 5-bit register                                        : 1
+ 5-bit register                                        : 2
  6-bit register                                        : 6
  64-bit register                                       : 1
  7-bit register                                        : 2
@@ -2175,18 +2210,21 @@ Macro Statistics
  8-bit comparator greater                              : 8
  8-bit comparator lessequal                            : 2
  9-bit comparator greater                              : 2
-# Multiplexers                                         : 1321
- 1-bit 2-to-1 multiplexer                              : 984
+# Multiplexers                                         : 1336
+ 1-bit 2-to-1 multiplexer                              : 988
+ 1-bit 24-to-1 multiplexer                             : 1
  1-bit 3-to-1 multiplexer                              : 1
  1-bit 8-to-1 multiplexer                              : 120
  10-bit 2-to-1 multiplexer                             : 16
  16-bit 12-to-1 multiplexer                            : 8
  16-bit 13-to-1 multiplexer                            : 16
  16-bit 16-to-1 multiplexer                            : 14
- 16-bit 2-to-1 multiplexer                             : 92
+ 16-bit 2-to-1 multiplexer                             : 96
+ 24-bit 2-to-1 multiplexer                             : 4
  32-bit 2-to-1 multiplexer                             : 2
  4-bit 2-to-1 multiplexer                              : 36
- 6-bit 2-to-1 multiplexer                              : 8
+ 5-bit 2-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 9
  7-bit 2-to-1 multiplexer                              : 4
  8-bit 2-to-1 multiplexer                              : 18
  9-bit 2-to-1 multiplexer                              : 2
@@ -2288,7 +2326,6 @@ WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_2> (without init value) has a constan
 WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_1> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_0> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <MCB_UICMD> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <SELFREFRESH_MCB_REQ> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_6> (without init value) has a constant value of 0 in block <iodrp_mcb_controller>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_5> (without init value) has a constant value of 0 in block <iodrp_mcb_controller>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_4> (without init value) has a constant value of 0 in block <iodrp_mcb_controller>. This FF/Latch will be trimmed during the optimization process.
@@ -2303,6 +2340,12 @@ WARNING:Xst:2677 - Node <p0_cmd_byte_addr_0> of sequential type is unconnected i
 WARNING:Xst:2677 - Node <p0_cmd_byte_addr_27> of sequential type is unconnected in block <ddr2_state_machine_inst>.
 WARNING:Xst:2677 - Node <p0_cmd_byte_addr_28> of sequential type is unconnected in block <ddr2_state_machine_inst>.
 WARNING:Xst:2677 - Node <p0_cmd_byte_addr_29> of sequential type is unconnected in block <ddr2_state_machine_inst>.
+
+Synthesizing (advanced) Unit <LED_controller>.
+The following registers are absorbed into counter <bit_state>: 1 register on signal <bit_state>.
+The following registers are absorbed into counter <LED_state>: 1 register on signal <LED_state>.
+The following registers are absorbed into counter <GRB_state>: 1 register on signal <GRB_state>.
+Unit <LED_controller> synthesized (advanced).
 
 Synthesizing (advanced) Unit <SDRAM_FIFO>.
 The following registers are absorbed into counter <rst_cnt>: 1 register on signal <rst_cnt>.
@@ -2352,17 +2395,18 @@ Macro Statistics
 # Adder Trees                                          : 2
  10-bit / 4-inputs adder tree                          : 1
  10-bit / 6-inputs adder tree                          : 1
-# Counters                                             : 8
- 16-bit up counter                                     : 1
+# Counters                                             : 11
+ 16-bit up counter                                     : 3
  3-bit up counter                                      : 2
  4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
  6-bit up counter                                      : 1
  8-bit up counter                                      : 2
  8-bit updown counter                                  : 1
 # Accumulators                                         : 2
  30-bit up accumulator                                 : 2
-# Registers                                            : 2273
- Flip-Flops                                            : 2273
+# Registers                                            : 2299
+ Flip-Flops                                            : 2299
 # Comparators                                          : 87
  1-bit comparator equal                                : 8
  10-bit comparator equal                               : 3
@@ -2380,15 +2424,17 @@ Macro Statistics
  8-bit comparator greater                              : 8
  8-bit comparator lessequal                            : 2
  9-bit comparator greater                              : 2
-# Multiplexers                                         : 1330
- 1-bit 2-to-1 multiplexer                              : 998
+# Multiplexers                                         : 1341
+ 1-bit 2-to-1 multiplexer                              : 1002
+ 1-bit 24-to-1 multiplexer                             : 1
  1-bit 3-to-1 multiplexer                              : 1
  1-bit 8-to-1 multiplexer                              : 120
  10-bit 2-to-1 multiplexer                             : 16
  16-bit 12-to-1 multiplexer                            : 8
  16-bit 13-to-1 multiplexer                            : 16
  16-bit 16-to-1 multiplexer                            : 14
- 16-bit 2-to-1 multiplexer                             : 92
+ 16-bit 2-to-1 multiplexer                             : 94
+ 24-bit 2-to-1 multiplexer                             : 4
  32-bit 2-to-1 multiplexer                             : 2
  4-bit 2-to-1 multiplexer                              : 36
  6-bit 2-to-1 multiplexer                              : 8
@@ -2404,8 +2450,7 @@ Macro Statistics
 =========================================================================
 WARNING:Xst:1710 - FF/Latch <p0_cmd_instr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_instr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <SELFREFRESH_MCB_REQ> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MCB_UICMD> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UICMD> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MCB_UIDQCOUNT_0> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MCB_UIDQCOUNT_1> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MCB_UIDQCOUNT_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
@@ -2653,6 +2698,14 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_byte_addr_rd_1>
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_byte_addr_rd_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_WRITE_DATA_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_DQS_DELAY_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <GRB_reg_0> (without init value) has a constant value of 0 in block <LED_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <GRB_reg_1> (without init value) has a constant value of 0 in block <LED_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <GRB_reg_2> (without init value) has a constant value of 0 in block <LED_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <GRB_reg_3> (without init value) has a constant value of 0 in block <LED_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <GRB_reg_4> (without init value) has a constant value of 0 in block <LED_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <GRB_reg_5> (without init value) has a constant value of 0 in block <LED_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <GRB_reg_6> (without init value) has a constant value of 0 in block <LED_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <GRB_reg_7> (without init value) has a constant value of 0 in block <LED_controller>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <MCB_UIADDR_0> in Unit <mcb_soft_calibration> is equivalent to the following 3 FFs/Latches, which will be removed : <MCB_UIADDR_2> <MCB_UIADDR_3> <MCB_UIADDR_4> 
 
 Optimizing unit <main> ...
@@ -2672,6 +2725,8 @@ Optimizing unit <iodrp_mcb_controller> ...
 Optimizing unit <ADC_input> ...
 
 Optimizing unit <variable_freq_clk_generator> ...
+
+Optimizing unit <LED_controller> ...
 
 Optimizing unit <DAC_output_scalable> ...
 WARNING:Xst:1710 - FF/Latch <SDRAM_FIFO_inst/buffer_byte_addr_wr_ti_2> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
@@ -2803,8 +2858,8 @@ Unit <main> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2465
- Flip-Flops                                            : 2465
+# Registers                                            : 2521
+ Flip-Flops                                            : 2521
 # Shift Registers                                      : 3
  2-bit shift register                                  : 1
  6-bit shift register                                  : 2
@@ -2830,31 +2885,31 @@ Top Level Output File Name         : main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 9471
+# BELS                             : 9605
 #      GND                         : 37
-#      INV                         : 144
-#      LUT1                        : 224
-#      LUT2                        : 910
-#      LUT3                        : 312
-#      LUT4                        : 1073
-#      LUT5                        : 931
-#      LUT6                        : 3957
+#      INV                         : 146
+#      LUT1                        : 254
+#      LUT2                        : 911
+#      LUT3                        : 316
+#      LUT4                        : 1081
+#      LUT5                        : 941
+#      LUT6                        : 3974
 #      LUT6_2                      : 50
 #      MULT_AND                    : 6
-#      MUXCY                       : 549
+#      MUXCY                       : 579
 #      MUXF7                       : 590
 #      MUXF8                       : 176
 #      VCC                         : 4
-#      XORCY                       : 508
-# FlipFlops/Latches                : 5014
+#      XORCY                       : 540
+# FlipFlops/Latches                : 5070
 #      FD                          : 373
 #      FDC                         : 343
 #      FDCE                        : 248
-#      FDE                         : 1776
+#      FDE                         : 1792
 #      FDP                         : 84
 #      FDPE                        : 16
-#      FDR                         : 333
-#      FDRE                        : 1821
+#      FDR                         : 352
+#      FDRE                        : 1842
 #      FDS                         : 18
 #      FDSE                        : 2
 # RAMS                             : 69
@@ -2865,15 +2920,15 @@ Primitive and Black Box Usage:
 #      RAMB16BWER                  : 53
 # Shift Registers                  : 4
 #      SRLC16E                     : 4
-# Clock Buffers                    : 4
-#      BUFG                        : 4
-# IO Buffers                       : 163
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 164
 #      IBUF                        : 31
 #      IBUFDS                      : 8
 #      IBUFG                       : 2
 #      IOBUF                       : 35
 #      IOBUFDS                     : 2
-#      OBUF                        : 47
+#      OBUF                        : 48
 #      OBUFDS                      : 12
 #      OBUFT                       : 25
 #      OBUFTDS                     : 1
@@ -2899,29 +2954,29 @@ Selected Device : 6slx45fgg484-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            4950  out of  54576     9%  
- Number of Slice LUTs:                 7649  out of  27288    28%  
-    Number used as Logic:              7601  out of  27288    27%  
+ Number of Slice Registers:            5006  out of  54576     9%  
+ Number of Slice LUTs:                 7721  out of  27288    28%  
+    Number used as Logic:              7673  out of  27288    28%  
     Number used as Memory:               48  out of   6408     0%  
        Number used as RAM:               44
        Number used as SRL:                4
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  10239
-   Number with an unused Flip Flop:    5289  out of  10239    51%  
-   Number with an unused LUT:          2590  out of  10239    25%  
-   Number of fully used LUT-FF pairs:  2360  out of  10239    23%  
-   Number of unique control sets:       226
+ Number of LUT Flip Flop pairs used:  10313
+   Number with an unused Flip Flop:    5307  out of  10313    51%  
+   Number with an unused LUT:          2592  out of  10313    25%  
+   Number of fully used LUT-FF pairs:  2414  out of  10313    23%  
+   Number of unique control sets:       230
 
 IO Utilization: 
- Number of IOs:                         186
- Number of bonded IOBs:                 186  out of    316    58%  
+ Number of IOs:                         187
+ Number of bonded IOBs:                 187  out of    316    59%  
     IOB Flip Flops/Latches:              64
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               53  out of    116    45%  
     Number using Block RAM only:         53
- Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+ Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
  Number of PLL_ADVs:                      1  out of      4    25%  
 
 ---------------------------
@@ -2949,6 +3004,7 @@ variable_freq_clk_generator_inst/clkout_i| BUFG                                 
 hi_in<0>                                 | DCM_SP:CLK0                                                | 2474  |
 clk1_in                                  | PLL_ADV:CLKOUT3                                            | 237   |
 clk1_in                                  | PLL_ADV:CLKOUT2                                            | 397   |
+clk1_in                                  | IBUFG+BUFG                                                 | 56    |
 host/core0/okCH<1>                       | NONE(host/core0/core0/a0/pm0/ram_1k_generate.s6.kcpsm6_rom)| 1     |
 -----------------------------------------+------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -2972,10 +3028,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'variable_freq_clk_generator_inst/clkout_i'
-  Clock period: 17.005ns (frequency: 58.805MHz)
-  Total number of paths / destination ports: 358654 / 3010
+  Clock period: 16.973ns (frequency: 58.915MHz)
+  Total number of paths / destination ports: 356161 / 3010
 -------------------------------------------------------------------------
-Delay:               17.005ns (Levels of Logic = 12)
+Delay:               16.973ns (Levels of Logic = 12)
   Source:            main_state_FSM_FFd6 (FF)
   Destination:       in4x_A2_12 (FF)
   Source Clock:      variable_freq_clk_generator_inst/clkout_i rising
@@ -2988,25 +3044,25 @@ Delay:               17.005ns (Levels of Logic = 12)
      FDR:C->Q             34   0.525   1.781  main_state_FSM_FFd6 (main_state_FSM_FFd6)
      LUT3:I0->O            1   0.235   0.682  main_state_main_state[0]3_SW0 (N20)
      LUT6:I5->O            2   0.254   0.726  main_state_main_state[0]3 (main_state_main_state[0]3)
-     LUT2:I1->O            1   0.254   0.682  main_state__n441021_SW0 (N22)
-     LUT6:I5->O            2   0.254   0.726  main_state__n441021 (main_state__n441021)
-     LUT6:I5->O            1   0.254   0.682  main_state__n44102_SW0 (N382)
-     LUT6:I5->O           10   0.254   1.116  main_state__n44102 (main_state__n44102)
+     LUT2:I1->O            1   0.254   0.682  main_state__n443321_SW0 (N22)
+     LUT6:I5->O            2   0.254   0.726  main_state__n443321 (main_state__n443321)
+     LUT6:I5->O            1   0.254   0.682  main_state__n44332_SW0 (N382)
+     LUT6:I5->O            9   0.254   1.084  main_state__n44332 (main_state__n44332)
      LUT2:I0->O           14   0.250   1.582  main_state_main_state[3]2 (main_state[3])
-     LUT6:I0->O           18   0.254   1.690  main_state[31]_in4x_A1[73]_select_485_OUT<12>111 (main_state[31]_in4x_A1[73]_select_485_OUT<12>111)
-     LUT6:I0->O           18   0.254   1.690  main_state[31]_in4x_A1[73]_select_485_OUT<24>1111 (main_state[31]_in4x_A1[73]_select_485_OUT<24>1111)
-     LUT6:I0->O            4   0.254   1.080  main_state[31]_in4x_A1[73]_select_485_OUT<56>111 (main_state[31]_in4x_A1[73]_select_485_OUT<56>111)
-     LUT4:I0->O            8   0.254   0.944  main_state[31]_in4x_A1[73]_select_485_OUT<56>11 (main_state[31]_in4x_A1[73]_select_485_OUT<56>1)
-     LUT4:I3->O            1   0.254   0.000  main_state[31]_in4x_A1[73]_select_485_OUT<56>2 (main_state[31]_in4x_A1[73]_select_485_OUT<17>)
+     LUT6:I0->O           18   0.254   1.690  main_state[31]_in4x_A1[73]_select_495_OUT<12>111 (main_state[31]_in4x_A1[73]_select_495_OUT<12>111)
+     LUT6:I0->O           18   0.254   1.690  main_state[31]_in4x_A1[73]_select_495_OUT<24>1111 (main_state[31]_in4x_A1[73]_select_495_OUT<24>1111)
+     LUT6:I0->O            4   0.254   1.080  main_state[31]_in4x_A1[73]_select_495_OUT<56>111 (main_state[31]_in4x_A1[73]_select_495_OUT<56>111)
+     LUT4:I0->O            8   0.254   0.944  main_state[31]_in4x_A1[73]_select_495_OUT<56>11 (main_state[31]_in4x_A1[73]_select_495_OUT<56>1)
+     LUT4:I3->O            1   0.254   0.000  main_state[31]_in4x_A1[73]_select_495_OUT<56>2 (main_state[31]_in4x_A1[73]_select_495_OUT<17>)
      FDE:D                     0.074          in4x_A1_17
     ----------------------------------------
-    Total                     17.005ns (3.624ns logic, 13.381ns route)
-                                       (21.3% logic, 78.7% route)
+    Total                     16.973ns (3.624ns logic, 13.349ns route)
+                                       (21.4% logic, 78.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'hi_in<0>'
   Clock period: 10.972ns (frequency: 91.139MHz)
-  Total number of paths / destination ports: 47992 / 7192
+  Total number of paths / destination ports: 47994 / 7193
 -------------------------------------------------------------------------
 Delay:               10.972ns (Levels of Logic = 10)
   Source:            host/core0/core0/ti_addr_1 (FF)
@@ -3039,7 +3095,7 @@ Delay:               10.972ns (Levels of Logic = 10)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk1_in'
   Clock period: 28.200ns (frequency: 35.461MHz)
-  Total number of paths / destination ports: 16995 / 1517
+  Total number of paths / destination ports: 19630 / 1644
 -------------------------------------------------------------------------
 Delay:               4.512ns (Levels of Logic = 3)
   Source:            SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3_1 (FF)
@@ -3052,7 +3108,7 @@ Delay:               4.512ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              1   0.525   1.112  SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3_1 (SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3_1)
-     LUT5:I0->O            2   0.254   0.834  SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_wr_data[31]_select_46_OUT<0>11_SW0 (N930)
+     LUT5:I0->O            2   0.254   0.834  SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_wr_data[31]_select_46_OUT<0>11_SW0 (N907)
      LUT6:I4->O           17   0.250   1.209  SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_wr_data[31]_select_46_OUT<0>11 (SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_wr_data[31]_select_46_OUT<0>1)
      LUT6:I5->O            1   0.254   0.000  SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_wr_data[31]_select_46_OUT<0> (SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_wr_data[31]_select_46_OUT<0>)
      FDE:D                     0.074          SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_0
@@ -3095,7 +3151,7 @@ Offset:              3.872ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUFDS:I->O          74   1.328   2.235  lvds_receiver_in_1 (MISO_A2)
-     LUT4:I1->O            1   0.235   0.000  main_state[31]_in4x_A2[73]_select_486_OUT<0>1 (main_state[31]_in4x_A2[73]_select_486_OUT<73>)
+     LUT4:I1->O            1   0.235   0.000  main_state[31]_in4x_A2[73]_select_496_OUT<0>1 (main_state[31]_in4x_A2[73]_select_496_OUT<73>)
      FDE:D                     0.074          in4x_A2_73
     ----------------------------------------
     Total                      3.872ns (1.637ns logic, 2.235ns route)
@@ -3129,7 +3185,7 @@ Offset:              7.073ns (Levels of Logic = 6)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk1_in'
   Total number of paths / destination ports: 143 / 129
 -------------------------------------------------------------------------
-Offset:              5.698ns (Levels of Logic = 5)
+Offset:              5.852ns (Levels of Logic = 5)
   Source:            mcb3_rzq (PAD)
   Destination:       SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5 (FF)
   Destination Clock: clk1_in rising 3.1X
@@ -3138,15 +3194,15 @@ Offset:              5.698ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           1   1.328   0.958  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/IOBUF_RZQ (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/RZQ_IN)
-     LUT4:I0->O            1   0.254   0.958  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In5 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In5)
-     LUT5:I1->O            1   0.254   0.682  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In6 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In6)
-     LUT6:I5->O            1   0.254   0.682  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In7 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In7)
+     IOBUF:IO->O           1   1.328   1.112  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/IOBUF_RZQ (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/RZQ_IN)
+     LUT5:I0->O            1   0.254   0.958  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In5 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In6)
+     LUT5:I1->O            1   0.254   0.682  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In6 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In7)
+     LUT6:I5->O            1   0.254   0.682  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In7 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In8)
      LUT4:I3->O            1   0.254   0.000  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In8 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In)
      FDR:D                     0.074          SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5
     ----------------------------------------
-    Total                      5.698ns (2.418ns logic, 3.280ns route)
-                                       (42.4% logic, 57.6% route)
+    Total                      5.852ns (2.418ns logic, 3.434ns route)
+                                       (41.3% logic, 58.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'hi_in<0>'
@@ -3190,7 +3246,7 @@ Offset:              4.277ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk1_in'
-  Total number of paths / destination ports: 185 / 131
+  Total number of paths / destination ports: 186 / 132
 -------------------------------------------------------------------------
 Offset:              5.303ns (Levels of Logic = 2)
   Source:            SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/syn_uiclk_pll_lock (FF)
@@ -3237,9 +3293,9 @@ Clock to Setup on destination clock clk1_in
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-clk1_in                                  |    8.381|         |         |         |
-hi_in<0>                                 |    5.877|         |         |         |
-variable_freq_clk_generator_inst/clkout_i|    1.280|         |         |         |
+clk1_in                                  |    8.989|         |         |         |
+hi_in<0>                                 |    5.879|         |         |         |
+variable_freq_clk_generator_inst/clkout_i|    2.518|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock hi_in<0>
@@ -3249,7 +3305,7 @@ Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fal
 -----------------------------------------+---------+---------+---------+---------+
 clk1_in                                  |    1.402|         |         |         |
 hi_in<0>                                 |   10.972|         |         |         |
-variable_freq_clk_generator_inst/clkout_i|    1.324|         |         |         |
+variable_freq_clk_generator_inst/clkout_i|    1.833|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock host/core0/okCH<1>
@@ -3267,20 +3323,20 @@ Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fal
 -----------------------------------------+---------+---------+---------+---------+
 clk1_in                                  |    1.280|         |         |         |
 hi_in<0>                                 |   16.044|         |         |         |
-variable_freq_clk_generator_inst/clkout_i|   17.005|         |         |         |
+variable_freq_clk_generator_inst/clkout_i|   16.973|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 104.00 secs
-Total CPU time to Xst completion: 104.45 secs
+Total REAL time to Xst completion: 108.00 secs
+Total CPU time to Xst completion: 108.53 secs
  
 --> 
 
-Total memory usage is 486144 kilobytes
+Total memory usage is 489556 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  266 (   0 filtered)
+Number of warnings :  279 (   0 filtered)
 Number of infos    :  167 (   0 filtered)
 

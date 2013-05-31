@@ -1,10 +1,10 @@
-C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.ngc 1359853118
-C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/okWireOut.ngc 1299981034
-C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/okWireIn.ngc 1299981030
-C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/okTriggerIn.ngc 1299981040
-C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/okPipeOut.ngc 1299981056
-C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/okCoreHarness.ngc 1299981018
-C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/TFIFO64x8a_64x8b.ngc 1291746788
-C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/fifo_w16_2048_r64_512.ngc 1298076586
-C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010/fifo_w64_512_r16_2048.ngc 1298076586
+C:\Users\jvoigts\Documents\GitHub\rhythm\main.ngc 1369999285
+C:\Users\jvoigts\Documents\GitHub\rhythm/okWireOut.ngc 1369119622
+C:\Users\jvoigts\Documents\GitHub\rhythm/okWireIn.ngc 1369119622
+C:\Users\jvoigts\Documents\GitHub\rhythm/okTriggerIn.ngc 1369119622
+C:\Users\jvoigts\Documents\GitHub\rhythm/okPipeOut.ngc 1369119622
+C:\Users\jvoigts\Documents\GitHub\rhythm/okCoreHarness.ngc 1369119622
+C:\Users\jvoigts\Documents\GitHub\rhythm/TFIFO64x8a_64x8b.ngc 1369119622
+C:\Users\jvoigts\Documents\GitHub\rhythm/fifo_w16_2048_r64_512.ngc 1369119622
+C:\Users\jvoigts\Documents\GitHub\rhythm/fifo_w64_512_r16_2048.ngc 1369119622
 OK

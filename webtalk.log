@@ -1,10 +1,10 @@
-Release 14.2 - WebTalk (P.28xd)
+Release 14.3 - WebTalk (P.40xd)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 Project Information
 --------------------
 ProjectID=1B5F35F5804E4A8B9C1C5AB2C09C69F9
-ProjectIteration=226
+ProjectIteration=238
 
 WebTalk Summary
 ----------------
@@ -13,4 +13,4 @@ INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
 INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
-INFO:WebTalk:5 - C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/14.2/ISE_DS/ISE/data/reports/webtalk_introduction.html
+INFO:WebTalk:4 - C:/Users/jvoigts/Documents/GitHub/rhythm/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2013-05-31T07:27:48.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/14.3/ISE_DS/ISE/data/reports/webtalk_introduction.html

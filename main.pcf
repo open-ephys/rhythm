@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.28xd on Sat Feb 02 17:01:13 2013
+// Written by: Map P.40xd on Fri May 31 07:24:00 2013
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -162,6 +162,7 @@ COMP "MISO_D1_n" LOCATE = SITE "M18" LEVEL 1;
 COMP "MISO_D1_p" LOCATE = SITE "M17" LEVEL 1;
 COMP "MISO_D2_n" LOCATE = SITE "R19" LEVEL 1;
 COMP "MISO_D2_p" LOCATE = SITE "P18" LEVEL 1;
+COMP "LED_OUT" LOCATE = SITE "C7" LEVEL 1;
 COMP "CS_b_A_n" LOCATE = SITE "A5" LEVEL 1;
 COMP "CS_b_A_p" LOCATE = SITE "C5" LEVEL 1;
 COMP "CS_b_B_n" LOCATE = SITE "C6" LEVEL 1;
@@ -1360,6 +1361,7 @@ TIMEGRP host_dcm_clk0 = BEL "SDRAM_FIFO_inst/rst_cnt_3" BEL
         "host/delays[2].fdrein0" BEL "host/delays[1].fdrein0" BEL
         "host/delays[0].fdrein0" PIN
         "variable_freq_clk_generator_inst/DCM_CLKGEN_1_pins<4>" BEL
+        "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd1" BEL
         "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd8" BEL
         "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd9" BEL
         "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd10" BEL
@@ -1371,18 +1373,17 @@ TIMEGRP host_dcm_clk0 = BEL "SDRAM_FIFO_inst/rst_cnt_3" BEL
         "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd16" BEL
         "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd23" BEL
         "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd24" BEL
-        "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd25" BEL
         "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd26" BEL
         "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd27" BEL
+        "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd25" BEL
         "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd28" BEL
         "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd29" BEL
-        "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd30" BEL
         "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd31" BEL
-        "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd1" BEL
+        "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd32" BEL
+        "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd30" BEL
         "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd33" BEL
         "variable_freq_clk_generator_inst/DCM_prog_data" BEL
         "variable_freq_clk_generator_inst/DCM_prog_en" BEL
-        "variable_freq_clk_generator_inst/DCM_prog_state_FSM_FFd32" BEL
         "host/delays[15].fdreout1" BEL "host/delays[15].fdreout0" BEL
         "host/delays[14].fdreout1" BEL "host/delays[14].fdreout0" BEL
         "host/delays[13].fdreout1" BEL "host/delays[13].fdreout0" BEL
@@ -2445,8 +2446,6 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_mcb_drp_clk_bufg_in = BEL
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/syn_uiclk_pll_lock"
         BEL "SDRAM_FIFO_inst/memc3_infrastructure_inst/U_BUFG_CLK1" BEL
-        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/count_0"
-        BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/WAIT_200us_COUNTER_15"
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/WAIT_200us_COUNTER_14"
@@ -2511,15 +2510,15 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_mcb_drp_clk_bufg_in = BEL
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/counter_inc_0"
         BEL
+        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd1"
+        BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd2"
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd3"
         BEL
-        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd1"
-        BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd4"
         BEL
-        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5"
+        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6"
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_6"
         BEL
@@ -2535,17 +2534,19 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_mcb_drp_clk_bufg_in = BEL
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_0"
         BEL
-        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6"
+        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5"
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/count_5"
+        BEL
+        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/count_4"
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/count_3"
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/count_2"
         BEL
-        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/count_4"
-        BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/count_1"
+        BEL
+        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/count_0"
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/TARGET_DQS_DELAY_6"
         BEL
@@ -2716,6 +2717,10 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_mcb_drp_clk_bufg_in = BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIADDR_0"
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/counter_en"
+        BEL
+        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UILDQSDEC"
+        BEL
+        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UILDQSINC"
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/IODRPCTRLR_R_WB"
         BEL
@@ -2888,10 +2893,6 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_mcb_drp_clk_bufg_in = BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/First_In_Term_Done"
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Rst_condition1"
-        BEL
-        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UILDQSDEC"
-        BEL
-        "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UILDQSINC"
         BEL
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/PERFORM_START_DYN_CAL_AFTER_SELFREFRESH_R1"
         BEL
@@ -3859,7 +3860,38 @@ PIN SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_1_pins<0> = BEL
 PIN SDRAM_FIFO_inst/memc3_infrastructure_inst/u_pll_adv_pins<2> = BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/u_pll_adv" PINNAME CLKIN1;
 TIMEGRP SYS_CLK3 = PIN "variable_freq_clk_generator_inst/DCM_CLKGEN_1_pins<1>"
-        PIN "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_1_pins<0>" PIN
+        BEL "WS2812controller/LED_state_15" BEL
+        "WS2812controller/LED_state_14" BEL "WS2812controller/LED_state_13"
+        BEL "WS2812controller/LED_state_12" BEL
+        "WS2812controller/LED_state_11" BEL "WS2812controller/LED_state_10"
+        BEL "WS2812controller/LED_state_9" BEL "WS2812controller/LED_state_8"
+        BEL "WS2812controller/LED_state_7" BEL "WS2812controller/LED_state_6"
+        BEL "WS2812controller/LED_state_5" BEL "WS2812controller/LED_state_4"
+        BEL "WS2812controller/LED_state_3" BEL "WS2812controller/LED_state_2"
+        BEL "WS2812controller/LED_state_1" BEL "WS2812controller/LED_state_0"
+        BEL "WS2812controller/GRB_state_4" BEL "WS2812controller/GRB_state_3"
+        BEL "WS2812controller/GRB_state_2" BEL "WS2812controller/GRB_state_1"
+        BEL "WS2812controller/GRB_state_0" BEL "WS2812controller/bit_state_15"
+        BEL "WS2812controller/bit_state_14" BEL
+        "WS2812controller/bit_state_13" BEL "WS2812controller/bit_state_12"
+        BEL "WS2812controller/bit_state_11" BEL
+        "WS2812controller/bit_state_10" BEL "WS2812controller/bit_state_9" BEL
+        "WS2812controller/bit_state_8" BEL "WS2812controller/bit_state_7" BEL
+        "WS2812controller/bit_state_6" BEL "WS2812controller/bit_state_5" BEL
+        "WS2812controller/bit_state_4" BEL "WS2812controller/bit_state_3" BEL
+        "WS2812controller/bit_state_2" BEL "WS2812controller/bit_state_1" BEL
+        "WS2812controller/bit_state_0" BEL "WS2812controller/GRB_reg_23" BEL
+        "WS2812controller/GRB_reg_22" BEL "WS2812controller/GRB_reg_21" BEL
+        "WS2812controller/GRB_reg_20" BEL "WS2812controller/GRB_reg_19" BEL
+        "WS2812controller/GRB_reg_18" BEL "WS2812controller/GRB_reg_17" BEL
+        "WS2812controller/GRB_reg_16" BEL "WS2812controller/GRB_reg_15" BEL
+        "WS2812controller/GRB_reg_14" BEL "WS2812controller/GRB_reg_13" BEL
+        "WS2812controller/GRB_reg_12" BEL "WS2812controller/GRB_reg_11" BEL
+        "WS2812controller/GRB_reg_10" BEL "WS2812controller/GRB_reg_9" BEL
+        "WS2812controller/GRB_reg_8" BEL "WS2812controller/dat_out" BEL
+        "WS2812controller/led_bit" BEL "WS2812controller/LED_reset" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/sys_clk_ibufg_BUFG" PIN
+        "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_1_pins<0>" PIN
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/u_pll_adv_pins<2>";
 TIMEGRP okHostINOUT_grp = BEL "hi_inout<15>" BEL "hi_inout<14>" BEL
         "hi_inout<13>" BEL "hi_inout<12>" BEL "hi_inout<11>" BEL

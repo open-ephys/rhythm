@@ -188,7 +188,9 @@ module main #(
 	input wire										  ADC_DOUT_5,	
 	input wire										  ADC_DOUT_6,	
 	input wire										  ADC_DOUT_7,	
-	input wire										  ADC_DOUT_8	
+	input wire										  ADC_DOUT_8,
+	
+	output wire										  LED_OUT
 	);
 
 	assign i2c_sda    = 1'bz;
@@ -351,6 +353,7 @@ module main #(
 	wire [2:0]		DAC_gain;
 	
 	wire [7:0]		led_in;
+	wire [7:0]     led_a1_dat,led_b1_dat,led_c1_dat,led_d1_dat,led_a2_dat,led_b2_dat,led_c2_dat,led_d2_dat; // for re-ordering bits for led display
 
 	// Opal Kelly USB Host Interface
 	
@@ -507,6 +510,18 @@ module main #(
 	
 	assign ep24wireout = 				{ 14'b0, DCM_prog_done, dataclk_locked };
 
+	assign led_a1_dat =  {result_A1[1],result_A1[3],result_A1[5],result_A1[7],result_A1[9],result_A1[11],result_A1[13],result_A1[15]};
+	assign led_a2_dat =  {result_A2[1],result_A2[3],result_A2[5],result_A2[7],result_A2[9],result_A2[11],result_A2[13],result_A2[15]};
+
+	assign led_b1_dat =  {result_B1[1],result_B1[3],result_B1[5],result_B1[7],result_B1[9],result_B1[11],result_B1[13],result_B1[15]};
+	assign led_b2_dat =  {result_B2[1],result_B2[3],result_B2[5],result_B2[7],result_B2[9],result_B2[11],result_B2[13],result_B2[15]};
+	
+	assign led_c1_dat =  {result_C1[1],result_C1[3],result_C1[5],result_C1[7],result_C1[9],result_C1[11],result_C1[13],result_C1[15]};
+	assign led_c2_dat =  {result_C2[1],result_C2[3],result_C2[5],result_C2[7],result_C2[9],result_C2[11],result_C2[13],result_C2[15]};
+	
+	assign led_d1_dat =  {result_D1[1],result_D1[3],result_D1[5],result_D1[7],result_D1[9],result_D1[11],result_D1[13],result_D1[15]};
+	assign led_d2_dat =  {result_D2[1],result_D2[3],result_D2[5],result_D2[7],result_D2[9],result_D2[11],result_D2[13],result_D2[15]};
+
 	// Unused; future expansion
 	assign ep25wireout = 				16'h0000;
 	assign ep26wireout = 				16'h0000;
@@ -538,8 +553,27 @@ module main #(
 	assign ep3fwireout = 				BOARD_VERSION;
 	
 	
-	// 8-LED Display on Opal Kelly board
+	// led controller for 
+	// format is 24 bit green,red,blue, most significant bit first color cor current led
+LED_controller WS2812controller(
+    .dat_out(LED_OUT), // output to led string
+    .reset(reset), 
+    .clk(clk1),  // 100MHz clock
+    .led1({SPI_running ? {led_a1_dat,led_a2_dat} : 16'b00000000 ,8'b00000000}), 
+    .led2({SPI_running ? {led_b1_dat,led_b2_dat} : 16'b00000000 ,8'b00000000}), 
+    .led3(24'b0), 
+    .led4(24'b0), 
+    .led5(24'b0), 
+    .led6(24'b0), 
+    .led7(24'b0), 
+    .led8(24'b0)
+    );
+
+
+
 	
+	// 8-LED Display on Opal elly board
+
 	assign led = ~{ led_in };
 	
 	// Variable frequency data clock generator

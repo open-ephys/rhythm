@@ -1,7 +1,7 @@
-Release 14.2 Drc P.28xd (nt64)
+Release 14.3 Drc P.40xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Sat Feb 02 17:04:03 2013
+Fri May 31 07:27:14 2013
 
 drc -z main.ncd main.pcf
 
@@ -15,10 +15,10 @@ non-EXTERN block <BUFG> in CLKFB path.
 Now executing Pdr_LogDcm_DeskewExtern::DoCheck for block<host/hi_dcm> found NO
 extern 
 WARNING:PhysDesignRules:367 - The signal
-   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAMD_O> is
+   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAMD_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAMD_O> is
+   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAMD_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
    on

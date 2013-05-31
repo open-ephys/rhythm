@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.ncd
-OUTFILE=C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010\main.bit
+INFILE=C:\Users\jvoigts\Documents\GitHub\rhythm\main.ncd
+OUTFILE=C:\Users\jvoigts\Documents\GitHub\rhythm\main.bit
 FAMILY=Spartan6
 PART=xc6slx45-2fgg484
-WORKINGDIR=C:\Users\Reid\Documents\Xilinx\OpalKelly\RHD2000InterfaceXEM6010
+WORKINGDIR=C:\Users\jvoigts\Documents\GitHub\rhythm
 LICENSE=WebPack
-USER_INFO=210661529_0_0_655
+USER_INFO=206146299_0_0_416
