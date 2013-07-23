@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj RHD2000InterfaceXEM6010 -o C:/Users/jvoigts/Documents/GitHub/rhythm/LED_controller.tfi -lib work C:/Users/jvoigts/Documents/GitHub/rhythm//LED_controller.v -module LED_controller -template C:/Xilinx/14.3/ISE_DS/ISE//data/tfi.tft -deleteonerror 

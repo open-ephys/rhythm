@@ -1,7 +1,7 @@
 #Release 14.3 - par P.40xd (nt64)
 #Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-#Fri May 31 07:26:52 2013
+#Fri Jul 19 14:22:47 2013
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -98,7 +98,7 @@ B10,CS_b_C_p,IOBM,IO_L34P_GCLK19_0,OUTPUT,LVDS_33,0,,,,,,LOCATED,NO,NONE,
 B11,,,VCCO_0,,,0,,,,,3.30,,,,
 B12,,IOBM,IO_L37P_GCLK13_0,UNUSED,,0,,,,,,,,,
 B13,,,GND,,,,,,,,,,,,
-B14,,IOBM,IO_L50P_0,UNUSED,,0,,,,,,,,,
+B14,LED_OUT,IOB,IO_L50P_0,OUTPUT,LVCMOS33,0,12,SLOW,,,,LOCATED,NO,NONE,
 B15,,,VCCO_0,,,0,,,,,3.30,,,,
 B16,,IOBM,IO_L63P_SCP7_0,UNUSED,,0,,,,,,,,,
 B17,,,GND,,,,,,,,,,,,
@@ -113,7 +113,7 @@ C3,mcb3_dram_cs_n,IOB,IO_L54P_M3RESET_3,OUTPUT,LVCMOS18,3,12,SLOW,,,,LOCATED,NO,
 C4,,IOBS,IO_L81N_3,UNUSED,,3,,,,,,,,,
 C5,CS_b_A_p,IOBM,IO_L2P_0,OUTPUT,LVDS_33,0,,,,,,LOCATED,NO,NONE,
 C6,CS_b_B_n,IOBS,IO_L3N_0,,LVDS_33,0,,,,,,LOCATED,NO,,
-C7,LED_OUT,IOB,IO_L5P_0,OUTPUT,LVCMOS33,0,12,SLOW,,,,LOCATED,NO,NONE,
+C7,,IOBM,IO_L5P_0,UNUSED,,0,,,,,,,,,
 C8,,IOBS,IO_L7N_0,UNUSED,,0,,,,,,,,,
 C9,,IOBM,IO_L8P_0,UNUSED,,0,,,,,,,,,
 C10,,IOBS,IO_L33N_0,UNUSED,,0,,,,,,,,,

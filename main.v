@@ -554,21 +554,22 @@ module main #(
 	
 	
 	// led controller for 
-	// format is 24 bit green,red,blue, most significant bit first color cor current led
+	// format is 24 bit red,blue,green, least? significant bit first color cor current led
 LED_controller WS2812controller(
     .dat_out(LED_OUT), // output to led string
     .reset(reset), 
-    .clk(clk1),  // 100MHz clock
-    .led1({SPI_running ? {led_a1_dat,led_a2_dat} : 16'b00000000 ,8'b00000000}), 
-    .led2({SPI_running ? {led_b1_dat,led_b2_dat} : 16'b00000000 ,8'b00000000}), 
-    .led3(24'b0), 
-    .led4(24'b0), 
-    .led5(24'b0), 
-    .led6(24'b0), 
-    .led7(24'b0), 
-    .led8(24'b0)
+    .clk(clk1),  // 100MHz clock 
+    .led1({data_stream_7_en_in ? {led_d1_dat,led_d2_dat} : 16'b00000000 ,8'b00000000}), 
+    .led2({data_stream_5_en_in ? {led_c1_dat,led_c2_dat} : 16'b00000000 ,8'b00000000}), 
+    .led3({data_stream_3_en_in ? {led_b1_dat,led_b2_dat} : 16'b00000000 ,8'b00000000}), 
+    .led4({data_stream_1_en_in ? {led_a1_dat,led_a2_dat} : 16'b00000000 ,8'b00000000}), 
+    .led5({TTL_in,TTL_in,TTL_in}), 
+    .led6({TTL_out,TTL_out,TTL_out}), 
+    .led7(24'b000000000000000000000001),  
+    .led8({DAC_register_1,DAC_register_2,8'b01000000})
     );
 
+//SPI_running
 
 
 	

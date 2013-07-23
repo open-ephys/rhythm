@@ -50,7 +50,7 @@ module LED_controller#(
 	reg [4:0] GRB_state;
 	reg led_bit; // hold the current bit being sent
 	reg LED_reset; // sets output to zero, is called from the per-led loop on the last 2 states (twice, after led 8)
-	reg [23:0] GRB_reg; // holds 24 bit green,red,blue, most significant bit first color cor current led
+	reg [23:0] GRB_reg; // holds 24 bit green,red,blue, most significant bit first color for current led
 	
 	
 	always @(posedge clk) begin // per-bit loop
@@ -119,7 +119,7 @@ always @(posedge clk) begin // per-led loop going through 24 bits
 	 end
 end
 
-always @(posedge clk) begin // main loop going throufh 8 leds and 2 wait states
+always @(posedge clk) begin // main loop going through 8 leds and 2 wait states
 		if (reset) begin
 			LED_state   <= 16'b0;
 		end else begin

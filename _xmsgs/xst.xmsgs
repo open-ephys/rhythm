@@ -5,18 +5,6 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 519: Assignment to <arg fmt="%s" index="1">led_c1_dat</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 520: Assignment to <arg fmt="%s" index="1">led_c2_dat</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 522: Assignment to <arg fmt="%s" index="1">led_d1_dat</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 523: Assignment to <arg fmt="%s" index="1">led_d2_dat</arg> ignored, since the identifier is never used
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\LED_controller.v" Line 100: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
@@ -24,6 +12,15 @@
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\LED_controller.v" Line 130: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 566: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led5</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">48</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 567: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led6</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">48</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 569: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led8</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">40</arg>-bit.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\variable_freq_clk_generator.v" Line 94: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
@@ -152,37 +149,37 @@
 <msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v" Line 234: Net &lt;<arg fmt="%s" index="1">selfrefresh_enter</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 1887: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 1888: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 1897: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 1898: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 1907: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 1908: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2043: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2044: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2048: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2049: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2129: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2130: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2148: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2149: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2167: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2168: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2186: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2187: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2205: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2206: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2224: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\main.v" Line 2225: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\okLibrary.v" Line 40: Port <arg fmt="%s" index="1">CLK180</arg> is not connected to this instance
@@ -191,97 +188,97 @@
 <msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\jvoigts\Documents\GitHub\rhythm\okLibrary.v" Line 68: Port <arg fmt="%s" index="1">BUSY</arg> is not connected to this instance
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">654</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">655</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">668</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">669</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">682</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">683</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2102</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2103</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2102</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2103</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2121</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2122</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2121</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2122</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2140</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2141</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2140</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2141</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2159</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_5</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2160</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2159</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_5</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2160</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2178</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_6</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2179</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2178</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_6</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2179</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2197</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2198</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2197</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2198</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2216</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2217</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2216</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2217</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2253</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2254</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2253</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2254</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2269</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2270</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2269</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2270</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2285</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2286</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2285</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2286</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2301</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_5</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2302</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2301</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_5</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2302</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2317</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_6</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2318</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2317</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_6</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2318</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2333</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2334</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2333</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2334</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2349</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2350</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2349</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2350</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Documents\GitHub\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
@@ -1053,30 +1050,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">TARGET_DQS_DELAY_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mcb_soft_calibration</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">GRB_reg_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LED_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">GRB_reg_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LED_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">GRB_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LED_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">GRB_reg_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LED_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">GRB_reg_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LED_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">GRB_reg_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LED_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">GRB_reg_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LED_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">GRB_reg_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LED_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MCB_UIADDR_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcb_soft_calibration</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MCB_UIADDR_2&gt; &lt;MCB_UIADDR_3&gt; &lt;MCB_UIADDR_4&gt; </arg>
