@@ -23,7 +23,7 @@
 //
 // Dependencies: 
 //
-// Revision: 		 1.0 (14 January 2013) (BOARD_VERSION = 1)
+// Revision: 		 1.3 (14 October 2013) (BOARD_VERSION = 1)
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
@@ -166,7 +166,7 @@ module main #(
 	output reg										  sample_clk,
 	
 	input wire [15:0]								  TTL_in,
-	output reg [15:0]								  TTL_out,
+	output wire [15:0]							  TTL_out,
 	
 	output wire										  DAC_SYNC,
 	output wire										  DAC_SCLK,
@@ -184,11 +184,13 @@ module main #(
 	input wire										  ADC_DOUT_1,
 	input wire										  ADC_DOUT_2,
 	input wire										  ADC_DOUT_3,
-	input wire										  ADC_DOUT_4,	
-	input wire										  ADC_DOUT_5,	
-	input wire										  ADC_DOUT_6,	
-	input wire										  ADC_DOUT_7,	
+	input wire										  ADC_DOUT_4,
+	input wire										  ADC_DOUT_5,
+	input wire										  ADC_DOUT_6,
+	input wire										  ADC_DOUT_7,
 	input wire										  ADC_DOUT_8,
+	
+	input wire [3:0]								  board_mode,
 	
 	output wire										  LED_OUT
 	);
@@ -315,6 +317,9 @@ module main #(
 	wire [15:0]		data_stream_ADC_1, data_stream_ADC_2, data_stream_ADC_3, data_stream_ADC_4;
 	wire [15:0]		data_stream_ADC_5, data_stream_ADC_6, data_stream_ADC_7, data_stream_ADC_8;
 	
+	wire				TTL_out_mode;
+	reg [15:0]		TTL_out_user;
+	
 	wire				reset, SPI_start, SPI_run_continuous;
 	reg				SPI_running;
 
@@ -348,12 +353,20 @@ module main #(
 	reg [15:0]		DAC_register_1, DAC_register_2, DAC_register_3, DAC_register_4;
 	reg [15:0]		DAC_register_5, DAC_register_6, DAC_register_7, DAC_register_8;
 
-	reg [15:0]		DAC_manual_1, DAC_manual_2;
+	reg [15:0]		DAC_manual;
 	wire [6:0]     DAC_noise_suppress;
 	wire [2:0]		DAC_gain;
 	
+	reg [15:0]		DAC_thresh_1, DAC_thresh_2, DAC_thresh_3, DAC_thresh_4;
+	reg [15:0]		DAC_thresh_5, DAC_thresh_6, DAC_thresh_7, DAC_thresh_8;
+	reg				DAC_thresh_pol_1, DAC_thresh_pol_2, DAC_thresh_pol_3, DAC_thresh_pol_4;
+	reg				DAC_thresh_pol_5, DAC_thresh_pol_6, DAC_thresh_pol_7, DAC_thresh_pol_8;
+	wire [7:0]		DAC_thresh_out;
+	
+	reg				HPF_en;
+	reg [15:0]		HPF_coefficient;
+	
 	wire [7:0]		led_in;
-	wire [7:0]     led_a1_dat,led_b1_dat,led_c1_dat,led_d1_dat,led_a2_dat,led_b2_dat,led_c2_dat,led_d2_dat; // for re-ordering bits for led display
 
 	// Opal Kelly USB Host Interface
 	
@@ -371,7 +384,7 @@ module main #(
 	wire [15:0] ep30wireout, ep31wireout, ep32wireout, ep33wireout, ep34wireout, ep35wireout, ep36wireout, ep37wireout;
 	wire [15:0] ep38wireout, ep39wireout, ep3awireout, ep3bwireout, ep3cwireout, ep3dwireout, ep3ewireout, ep3fwireout;
 
-	wire [15:0] ep40trigin, ep41trigin, ep42trigin;
+	wire [15:0] ep40trigin, ep41trigin, ep42trigin, ep43trigin, ep44trigin;
 
 
 	// USB WireIn inputs
@@ -379,6 +392,7 @@ module main #(
 	assign reset = 						ep00wirein[0];
 	assign SPI_run_continuous = 		ep00wirein[1];
 	assign DSP_settle =     			ep00wirein[2];
+	assign TTL_out_mode = 				ep00wirein[3];
 	assign DAC_noise_suppress = 		ep00wirein[12:6];
 	assign DAC_gain = 					ep00wirein[15:13];
 
@@ -447,8 +461,10 @@ module main #(
    assign data_stream_8_en_in = 		ep14wirein[7];
 
 	always @(posedge dataclk) begin
-		TTL_out <= 							ep15wirein;
+		TTL_out_user <= 					ep15wirein;
 	end
+		
+	assign TTL_out = TTL_out_mode ? {TTL_out_user[15:8], DAC_thresh_out} : TTL_out_user;
 		
 	assign DAC_channel_sel_1 = 		ep16wirein[4:0];
 	assign DAC_stream_sel_1 = 			ep16wirein[8:5];
@@ -483,8 +499,7 @@ module main #(
 	assign DAC_en_8 = 					ep1dwirein[9];
 	
 	always @(posedge dataclk) begin
-		DAC_manual_1 <= 					ep1ewirein;
-		DAC_manual_2 <= 					ep1fwirein;
+		DAC_manual <= 						ep1ewirein;
 	end
 
 	
@@ -498,6 +513,62 @@ module main #(
 	assign RAM_we_2 = 					ep42trigin[1];
 	assign RAM_we_3 = 					ep42trigin[2];
 
+	always @(posedge ep43trigin[0]) begin
+		DAC_thresh_1 <= 					ep1fwirein;
+	end
+	always @(posedge ep43trigin[1]) begin
+		DAC_thresh_2 <= 					ep1fwirein;
+	end
+	always @(posedge ep43trigin[2]) begin
+		DAC_thresh_3 <= 					ep1fwirein;
+	end
+	always @(posedge ep43trigin[3]) begin
+		DAC_thresh_4 <= 					ep1fwirein;
+	end
+	always @(posedge ep43trigin[4]) begin
+		DAC_thresh_5 <= 					ep1fwirein;
+	end
+	always @(posedge ep43trigin[5]) begin
+		DAC_thresh_6 <= 					ep1fwirein;
+	end
+	always @(posedge ep43trigin[6]) begin
+		DAC_thresh_7 <= 					ep1fwirein;
+	end
+	always @(posedge ep43trigin[7]) begin
+		DAC_thresh_8 <= 					ep1fwirein;
+	end
+	always @(posedge ep43trigin[8]) begin
+		DAC_thresh_pol_1 <= 				ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[9]) begin
+		DAC_thresh_pol_2 <= 				ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[10]) begin
+		DAC_thresh_pol_3 <= 				ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[11]) begin
+		DAC_thresh_pol_4 <= 				ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[12]) begin
+		DAC_thresh_pol_5 <= 				ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[13]) begin
+		DAC_thresh_pol_6 <= 				ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[14]) begin
+		DAC_thresh_pol_7 <= 				ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[15]) begin
+		DAC_thresh_pol_8 <= 				ep1fwirein[0];
+	end
+
+	always @(posedge ep44trigin[0]) begin
+		HPF_en <=							ep1fwirein[0];
+	end
+	always @(posedge ep44trigin[1]) begin
+		HPF_coefficient <=				ep1fwirein;
+	end
+
 
 	// USB WireOut outputs
 
@@ -509,21 +580,11 @@ module main #(
 	assign ep23wireout = 				TTL_in;
 	
 	assign ep24wireout = 				{ 14'b0, DCM_prog_done, dataclk_locked };
-
-	assign led_a1_dat =  {result_A1[1],result_A1[3],result_A1[5],result_A1[7],result_A1[9],result_A1[11],result_A1[13],result_A1[15]};
-	assign led_a2_dat =  {result_A2[1],result_A2[3],result_A2[5],result_A2[7],result_A2[9],result_A2[11],result_A2[13],result_A2[15]};
-
-	assign led_b1_dat =  {result_B1[1],result_B1[3],result_B1[5],result_B1[7],result_B1[9],result_B1[11],result_B1[13],result_B1[15]};
-	assign led_b2_dat =  {result_B2[1],result_B2[3],result_B2[5],result_B2[7],result_B2[9],result_B2[11],result_B2[13],result_B2[15]};
 	
-	assign led_c1_dat =  {result_C1[1],result_C1[3],result_C1[5],result_C1[7],result_C1[9],result_C1[11],result_C1[13],result_C1[15]};
-	assign led_c2_dat =  {result_C2[1],result_C2[3],result_C2[5],result_C2[7],result_C2[9],result_C2[11],result_C2[13],result_C2[15]};
+	assign ep25wireout = 				{ 12'b0, board_mode };
 	
-	assign led_d1_dat =  {result_D1[1],result_D1[3],result_D1[5],result_D1[7],result_D1[9],result_D1[11],result_D1[13],result_D1[15]};
-	assign led_d2_dat =  {result_D2[1],result_D2[3],result_D2[5],result_D2[7],result_D2[9],result_D2[11],result_D2[13],result_D2[15]};
 
 	// Unused; future expansion
-	assign ep25wireout = 				16'h0000;
 	assign ep26wireout = 				16'h0000;
 	assign ep27wireout = 				16'h0000;
 	assign ep28wireout = 				16'h0000;
@@ -553,10 +614,12 @@ module main #(
 	assign ep3fwireout = 				BOARD_VERSION;
 	
 	
+	assign LED_OUT = 				1'b0;
 	// led controller for 
 	// format is 24 bit red,blue,green, least? significant bit first color cor current led
-LED_controller WS2812controller(
-    .dat_out(LED_OUT), // output to led string
+   LED_controller WS2812controller(
+    //.dat_out(LED_OUT), // output to led string
+	 .dat_out( ), // output to led string temp. disconnected
     .reset(reset), 
     .clk(clk1),  // 100MHz clock 
     .led1({data_stream_7_en_in ? {led_d1_dat,led_d2_dat} : 16'b00000000 ,8'b00000000}), 
@@ -568,13 +631,10 @@ LED_controller WS2812controller(
     .led7(24'b000000000000000000000001),  
     .led8({DAC_register_1,DAC_register_2,8'b01000000})
     );
-
-//SPI_running
-
-
+	 
 	
-	// 8-LED Display on Opal elly board
-
+	// 8-LED Display on Opal Kelly board
+	
 	assign led = ~{ led_in };
 	
 	// Variable frequency data clock generator
@@ -1920,8 +1980,7 @@ LED_controller WS2812controller(
 							5: DAC_pre_register_1 <= data_stream_6;
 							6: DAC_pre_register_1 <= data_stream_7;
 							7: DAC_pre_register_1 <= data_stream_8;
-							8: DAC_pre_register_1 <= DAC_manual_1;
-							9: DAC_pre_register_1 <= DAC_manual_2;
+							8: DAC_pre_register_1 <= DAC_manual;
 							default: DAC_pre_register_1 <= 16'b0;
 						endcase
 					end
@@ -1935,8 +1994,7 @@ LED_controller WS2812controller(
 							5: DAC_pre_register_2 <= data_stream_6;
 							6: DAC_pre_register_2 <= data_stream_7;
 							7: DAC_pre_register_2 <= data_stream_8;
-							8: DAC_pre_register_2 <= DAC_manual_1;
-							9: DAC_pre_register_2 <= DAC_manual_2;
+							8: DAC_pre_register_2 <= DAC_manual;
 							default: DAC_pre_register_2 <= 16'b0;
 						endcase
 					end
@@ -1950,8 +2008,7 @@ LED_controller WS2812controller(
 							5: DAC_pre_register_3 <= data_stream_6;
 							6: DAC_pre_register_3 <= data_stream_7;
 							7: DAC_pre_register_3 <= data_stream_8;
-							8: DAC_pre_register_3 <= DAC_manual_1;
-							9: DAC_pre_register_3 <= DAC_manual_2;
+							8: DAC_pre_register_3 <= DAC_manual;
 							default: DAC_pre_register_3 <= 16'b0;
 						endcase
 					end
@@ -1965,8 +2022,7 @@ LED_controller WS2812controller(
 							5: DAC_pre_register_4 <= data_stream_6;
 							6: DAC_pre_register_4 <= data_stream_7;
 							7: DAC_pre_register_4 <= data_stream_8;
-							8: DAC_pre_register_4 <= DAC_manual_1;
-							9: DAC_pre_register_4 <= DAC_manual_2;
+							8: DAC_pre_register_4 <= DAC_manual;
 							default: DAC_pre_register_4 <= 16'b0;
 						endcase
 					end
@@ -1980,8 +2036,7 @@ LED_controller WS2812controller(
 							5: DAC_pre_register_5 <= data_stream_6;
 							6: DAC_pre_register_5 <= data_stream_7;
 							7: DAC_pre_register_5 <= data_stream_8;
-							8: DAC_pre_register_5 <= DAC_manual_1;
-							9: DAC_pre_register_5 <= DAC_manual_2;
+							8: DAC_pre_register_5 <= DAC_manual;
 							default: DAC_pre_register_5 <= 16'b0;
 						endcase
 					end
@@ -1995,8 +2050,7 @@ LED_controller WS2812controller(
 							5: DAC_pre_register_6 <= data_stream_6;
 							6: DAC_pre_register_6 <= data_stream_7;
 							7: DAC_pre_register_6 <= data_stream_8;
-							8: DAC_pre_register_6 <= DAC_manual_1;
-							9: DAC_pre_register_6 <= DAC_manual_2;
+							8: DAC_pre_register_6 <= DAC_manual;
 							default: DAC_pre_register_6 <= 16'b0;
 						endcase
 					end
@@ -2010,8 +2064,7 @@ LED_controller WS2812controller(
 							5: DAC_pre_register_7 <= data_stream_6;
 							6: DAC_pre_register_7 <= data_stream_7;
 							7: DAC_pre_register_7 <= data_stream_8;
-							8: DAC_pre_register_7 <= DAC_manual_1;
-							9: DAC_pre_register_7 <= DAC_manual_2;
+							8: DAC_pre_register_7 <= DAC_manual;
 							default: DAC_pre_register_7 <= 16'b0;
 						endcase
 					end
@@ -2025,8 +2078,7 @@ LED_controller WS2812controller(
 							5: DAC_pre_register_8 <= data_stream_6;
 							6: DAC_pre_register_8 <= data_stream_7;
 							7: DAC_pre_register_8 <= data_stream_8;
-							8: DAC_pre_register_8 <= DAC_manual_1;
-							9: DAC_pre_register_8 <= DAC_manual_2;
+							8: DAC_pre_register_8 <= DAC_manual;
 							default: DAC_pre_register_8 <= 16'b0;
 						endcase
 					end					
@@ -2076,7 +2128,7 @@ LED_controller WS2812controller(
 
 	// Evaluation board 16-bit DAC outputs
 
-	DAC_output_scalable #(
+	DAC_output_scalable_HPF #(
 		.ms_wait		(ms_wait),
 		.ms_clk1_a 	(ms_clk1_a),
 		.ms_clk11_a (ms_clk11_a)
@@ -2092,10 +2144,15 @@ LED_controller WS2812controller(
 		.noise_suppress(DAC_noise_suppress),
 		.DAC_SYNC 		(DAC_SYNC),
 		.DAC_SCLK 		(DAC_SCLK),
-		.DAC_DIN 		(DAC_DIN_1)
+		.DAC_DIN 		(DAC_DIN_1),
+		.DAC_thrsh     (DAC_thresh_1),
+		.DAC_thrsh_pol (DAC_thresh_pol_1),
+		.DAC_thrsh_out (DAC_thresh_out[0]),
+		.HPF_coefficient (HPF_coefficient),
+		.HPF_en			(HPF_en)
    );
 	
-	DAC_output_scalable #(
+	DAC_output_scalable_HPF #(
 		.ms_wait		(ms_wait),
 		.ms_clk1_a 	(ms_clk1_a),
 		.ms_clk11_a	(ms_clk11_a)
@@ -2111,10 +2168,15 @@ LED_controller WS2812controller(
 		.noise_suppress(DAC_noise_suppress),
 		.DAC_SYNC 		(),
 		.DAC_SCLK 		(),
-		.DAC_DIN 		(DAC_DIN_2)
-   );
+		.DAC_DIN 		(DAC_DIN_2),
+		.DAC_thrsh     (DAC_thresh_2),
+		.DAC_thrsh_pol (DAC_thresh_pol_2),
+		.DAC_thrsh_out (DAC_thresh_out[1]),
+		.HPF_coefficient (HPF_coefficient),
+		.HPF_en			(HPF_en)
+	);
 	
-	DAC_output_scalable #(
+	DAC_output_scalable_HPF #(
 		.ms_wait		(ms_wait),
 		.ms_clk1_a 	(ms_clk1_a),
 		.ms_clk11_a (ms_clk11_a)
@@ -2130,10 +2192,15 @@ LED_controller WS2812controller(
 		.noise_suppress(0),
 		.DAC_SYNC 		(),
 		.DAC_SCLK 		(),
-		.DAC_DIN 		(DAC_DIN_3)
-   );
+		.DAC_DIN 		(DAC_DIN_3),
+		.DAC_thrsh     (DAC_thresh_3),
+		.DAC_thrsh_pol (DAC_thresh_pol_3),
+		.DAC_thrsh_out (DAC_thresh_out[2]),
+		.HPF_coefficient (HPF_coefficient),
+		.HPF_en			(HPF_en)
+	);
 	
-	DAC_output_scalable #(
+	DAC_output_scalable_HPF #(
 		.ms_wait		(ms_wait),
 		.ms_clk1_a 	(ms_clk1_a),
 		.ms_clk11_a	(ms_clk11_a)
@@ -2149,10 +2216,15 @@ LED_controller WS2812controller(
 		.noise_suppress(0),
 		.DAC_SYNC 		(),
 		.DAC_SCLK 		(),
-		.DAC_DIN 		(DAC_DIN_4)
-   );
+		.DAC_DIN 		(DAC_DIN_4),
+		.DAC_thrsh     (DAC_thresh_4),
+		.DAC_thrsh_pol (DAC_thresh_pol_4),
+		.DAC_thrsh_out (DAC_thresh_out[3]),
+		.HPF_coefficient (HPF_coefficient),
+		.HPF_en			(HPF_en)
+	);
 
-	DAC_output_scalable #(
+	DAC_output_scalable_HPF #(
 		.ms_wait		(ms_wait),
 		.ms_clk1_a 	(ms_clk1_a),
 		.ms_clk11_a	(ms_clk11_a)
@@ -2168,10 +2240,15 @@ LED_controller WS2812controller(
 		.noise_suppress(0),
 		.DAC_SYNC 		(),
 		.DAC_SCLK 		(),
-		.DAC_DIN 		(DAC_DIN_5)
-   );
+		.DAC_DIN 		(DAC_DIN_5),
+		.DAC_thrsh     (DAC_thresh_5),
+		.DAC_thrsh_pol (DAC_thresh_pol_5),
+		.DAC_thrsh_out (DAC_thresh_out[4]),
+		.HPF_coefficient (HPF_coefficient),
+		.HPF_en			(HPF_en)
+	);
 
-	DAC_output_scalable #(
+	DAC_output_scalable_HPF #(
 		.ms_wait		(ms_wait),
 		.ms_clk1_a 	(ms_clk1_a),
 		.ms_clk11_a	(ms_clk11_a)
@@ -2187,10 +2264,15 @@ LED_controller WS2812controller(
 		.noise_suppress(0),
 		.DAC_SYNC 		(),
 		.DAC_SCLK 		(),
-		.DAC_DIN 		(DAC_DIN_6)
-   );
+		.DAC_DIN 		(DAC_DIN_6),
+		.DAC_thrsh     (DAC_thresh_6),
+		.DAC_thrsh_pol (DAC_thresh_pol_6),
+		.DAC_thrsh_out (DAC_thresh_out[5]),
+		.HPF_coefficient (HPF_coefficient),
+		.HPF_en			(HPF_en)
+	);
 	
-	DAC_output_scalable #(
+	DAC_output_scalable_HPF #(
 		.ms_wait		(ms_wait),
 		.ms_clk1_a 	(ms_clk1_a),
 		.ms_clk11_a	(ms_clk11_a)
@@ -2206,10 +2288,15 @@ LED_controller WS2812controller(
 		.noise_suppress(0),
 		.DAC_SYNC 		(),
 		.DAC_SCLK 		(),
-		.DAC_DIN 		(DAC_DIN_7)
-   );
+		.DAC_DIN 		(DAC_DIN_7),
+		.DAC_thrsh     (DAC_thresh_7),
+		.DAC_thrsh_pol (DAC_thresh_pol_7),
+		.DAC_thrsh_out (DAC_thresh_out[6]),
+		.HPF_coefficient (HPF_coefficient),
+		.HPF_en			(HPF_en)
+	);
 	
-	DAC_output_scalable #(
+	DAC_output_scalable_HPF #(
 		.ms_wait		(ms_wait),
 		.ms_clk1_a 	(ms_clk1_a),
 		.ms_clk11_a	(ms_clk11_a)
@@ -2225,8 +2312,13 @@ LED_controller WS2812controller(
 		.noise_suppress(0),
 		.DAC_SYNC 		(),
 		.DAC_SCLK 		(),
-		.DAC_DIN 		(DAC_DIN_8)
-   );
+		.DAC_DIN 		(DAC_DIN_8),
+		.DAC_thrsh     (DAC_thresh_8),
+		.DAC_thrsh_pol (DAC_thresh_pol_8),
+		.DAC_thrsh_out (DAC_thresh_out[7]),
+		.HPF_coefficient (HPF_coefficient),
+		.HPF_en			(HPF_en)
+	);
 	
 	// Evaluation board 16-bit ADC inputs
 
@@ -2628,6 +2720,8 @@ LED_controller WS2812controller(
 	okTriggerIn  ti40 (.ok1(ok1),                            .ep_addr(8'h40), .ep_clk(ti_clk),  .ep_trigger(ep40trigin));
 	okTriggerIn  ti41 (.ok1(ok1),                            .ep_addr(8'h41), .ep_clk(dataclk), .ep_trigger(ep41trigin));
 	okTriggerIn  ti42 (.ok1(ok1),                            .ep_addr(8'h42), .ep_clk(ti_clk),  .ep_trigger(ep42trigin));
+	okTriggerIn  ti43 (.ok1(ok1),                            .ep_addr(8'h43), .ep_clk(ti_clk),  .ep_trigger(ep43trigin));
+	okTriggerIn  ti44 (.ok1(ok1),                            .ep_addr(8'h44), .ep_clk(ti_clk),  .ep_trigger(ep44trigin));
 	
 	okWireOut    wo20 (.ok1(ok1), .ok2(ok2x[ 0*17 +: 17 ]),  .ep_addr(8'h20), .ep_datain(ep20wireout));
 	okWireOut    wo21 (.ok1(ok1), .ok2(ok2x[ 1*17 +: 17 ]),  .ep_addr(8'h21), .ep_datain(ep21wireout));
@@ -2717,7 +2811,7 @@ module command_selector (
 			default: MOSI_cmd <= 16'b0;
 			endcase
 	end	
-
+	
 endmodule
 
 	

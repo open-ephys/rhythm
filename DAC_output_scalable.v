@@ -12,7 +12,7 @@
 //
 // Dependencies: 
 //
-// Revision: 
+// Revision:       1.3 (14 October 2013)
 // Revision 0.01 - File Created
 // Additional Comments: 
 //
@@ -34,12 +34,20 @@ module DAC_output_scalable #(
 	input wire [6:0]  noise_suppress,
 	output reg			DAC_SYNC,
 	output reg			DAC_SCLK,
-	output reg			DAC_DIN
+	output reg			DAC_DIN,
+	input wire [15:0]	DAC_thrsh,
+	input wire			DAC_thrsh_pol,
+	output wire			DAC_thrsh_out
    );
 
 	wire [15:0] DAC_input_twos_comp, DAC_register, subtract_result, add_result;
 	reg [15:0] DAC_input_suppressed, DAC_input_scaled;
 	wire [10:0] noise_suppress_x_16;
+	
+	// Implement simple threshold comparator function on unscaled DAC input
+	
+	assign DAC_thrsh_out = DAC_en ? (DAC_thrsh_pol ? (DAC_input >= DAC_thrsh) : (DAC_input <= DAC_thrsh)) : 1'b0;
+	
 	
 	// Convert DAC_input from unsigned (offset) representation to signed (two's complement)
 	// represention by inverting the MSB.
@@ -101,7 +109,7 @@ module DAC_output_scalable #(
 		endcase
 	end
 
-	// Finally, covert back from signed (two's complement) representation to unsigned (offset)
+	// Finally, convert back from signed (two's complement) representation to unsigned (offset)
 	// representation for input to the DAC.  If DAC_en == 0, set the DAC to midrange (zero volts).
 	
 	assign DAC_register = DAC_en ? {~DAC_input_scaled[15], DAC_input_scaled[14:0]} : 16'b1000000000000000;

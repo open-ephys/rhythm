@@ -1,7 +1,7 @@
 Release 14.3 Drc P.40xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Fri Jul 19 14:23:09 2013
+Wed Dec 11 19:44:10 2013
 
 drc -z main.ncd main.pcf
 
@@ -14,6 +14,30 @@ Now executing Pdr_LogDcm_DeskewExtern::DoCheck for block<host/hi_dcm> found
 non-EXTERN block <BUFG> in CLKFB path. 
 Now executing Pdr_LogDcm_DeskewExtern::DoCheck for block<host/hi_dcm> found NO
 extern 
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<9> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<11> is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<13> is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<0> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<1> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<3> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<5> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<7> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal
    <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAMD_O> is
    incomplete. The signal does not drive any load pins in the design.
@@ -85,5 +109,5 @@ WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
    block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
    _delay_obuft[4].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
    IO programming the T input pin is not used and will be ignored.
-DRC detected 0 errors and 15 warnings.  Please see the previously displayed
+DRC detected 0 errors and 23 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

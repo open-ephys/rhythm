@@ -1472,94 +1472,77 @@ map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
-map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
-par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
-bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
@@ -1570,46 +1553,177 @@ map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
-xst -intstyle ise -ifn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.xst" -ofn "C:/Users/jvoigts/Documents/GitHub/rhythm/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.xst" -ofn "C:/Users/Reid/Documents/Xilinx/OpalKelly/RHD2000InterfaceXEM6010/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/jvoigts/Downloads/RHD2000InterfaceXEM6010_release_131210/RHD2000InterfaceXEM6010 release 131210/main.xst" -ofn "C:/Users/jvoigts/Downloads/RHD2000InterfaceXEM6010_release_131210/RHD2000InterfaceXEM6010 release 131210/main.syr" 
+xst -intstyle ise -ifn "C:/Users/jvoigts/Downloads/RHD2000InterfaceXEM6010_release_131210/RHD2000InterfaceXEM6010 release 131210/main.xst" -ofn "C:/Users/jvoigts/Downloads/RHD2000InterfaceXEM6010_release_131210/RHD2000InterfaceXEM6010 release 131210/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 "main.ngc" main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/jvoigts/Downloads/RHD2000InterfaceXEM6010_release_131210/RHD2000InterfaceXEM6010 release 131210/main.xst" -ofn "C:/Users/jvoigts/Downloads/RHD2000InterfaceXEM6010_release_131210/RHD2000InterfaceXEM6010 release 131210/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6010.ucf -p xc6slx45-fgg484-2 "main.ngc" main.ngd  
 map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
