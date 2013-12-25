@@ -386,16 +386,18 @@ module main #(
 
 	wire [15:0] ep40trigin, ep41trigin, ep42trigin, ep43trigin, ep44trigin;
 
-
+	reg [3:0] fast_setttle_cmd;
+	wire TTL_fast_settle_mode;
 	// USB WireIn inputs
 
 	assign reset = 						ep00wirein[0];
 	assign SPI_run_continuous = 		ep00wirein[1];
 	assign DSP_settle =     			ep00wirein[2];
 	assign TTL_out_mode = 				ep00wirein[3];
+	assign TTL_fast_settle_mode = 	ep00wirein[4]; // if on, fast settle can be turned on by external TTL event
 	assign DAC_noise_suppress = 		ep00wirein[12:6];
 	assign DAC_gain = 					ep00wirein[15:13];
-
+	
 	assign max_timestep_in[15:0] = 	ep01wirein;
 	assign max_timestep_in[31:16] =	ep02wirein;
 
@@ -424,12 +426,30 @@ module main #(
 	assign aux_cmd_bank_2_B_in = 		ep09wirein[7:4];
 	assign aux_cmd_bank_2_C_in = 		ep09wirein[11:8];
 	assign aux_cmd_bank_2_D_in = 		ep09wirein[15:12];
-
-	assign aux_cmd_bank_3_A_in = 		ep0awirein[3:0];
-	assign aux_cmd_bank_3_B_in = 		ep0awirein[7:4];
-	assign aux_cmd_bank_3_C_in = 		ep0awirein[11:8];
-	assign aux_cmd_bank_3_D_in = 		ep0awirein[15:12];
-		
+	
+	assign TTL_fast_settle_channel  = 		ep16wirein[13:10]; // Selecting the channel to trigger fast settle. 
+																			    // hook up one of the existing lines that is used for DAC
+																				 // since no other input lines are available (?!?!)
+	reg TTL_fast_settle_line;
+	
+	always @(posedge dataclk) begin
+		case (TTL_fast_settle_channel)
+			0: TTL_fast_settle_line = TTL_in[0];
+			1: TTL_fast_settle_line = TTL_in[1];
+			2: TTL_fast_settle_line = TTL_in[2];
+			3: TTL_fast_settle_line = TTL_in[3];
+			4: TTL_fast_settle_line = TTL_in[4];
+			5: TTL_fast_settle_line = TTL_in[5];
+			6: TTL_fast_settle_line = TTL_in[6];
+			7: TTL_fast_settle_line = TTL_in[7];
+			default: TTL_fast_settle_line = 0;
+		endcase
+	end
+	assign aux_cmd_bank_3_A_in = 	(TTL_fast_settle_mode && TTL_fast_settle_line >0) ? fast_setttle_cmd :	ep0awirein[3:0];
+	assign aux_cmd_bank_3_B_in = 	(TTL_fast_settle_mode && TTL_fast_settle_line >0) ? fast_setttle_cmd :	ep0awirein[7:4];
+	assign aux_cmd_bank_3_C_in = 	(TTL_fast_settle_mode && TTL_fast_settle_line >0) ? fast_setttle_cmd :	ep0awirein[11:8];
+	assign aux_cmd_bank_3_D_in = 	(TTL_fast_settle_mode && TTL_fast_settle_line >0) ? fast_setttle_cmd :	ep0awirein[15:12];
+	
 	assign max_aux_cmd_index_1_in = 	ep0bwirein[9:0];
 	assign max_aux_cmd_index_2_in = 	ep0cwirein[9:0];
 	assign max_aux_cmd_index_3_in = 	ep0dwirein[9:0];
@@ -874,6 +894,13 @@ module main #(
 			MOSI_D <= 1'b0;
 			FIFO_data_in <= 16'b0;
 			FIFO_write_to <= 1'b0;	
+			
+			
+		   fast_setttle_cmd[0] <= 0;
+			fast_setttle_cmd[1] <= 1; // select fast settle (?)
+			fast_setttle_cmd[2] <= 0;
+			fast_setttle_cmd[3] <= 0;
+			
 		end else begin
 			CS_b <= 1'b0;
 			SCLK <= 1'b0;
@@ -883,6 +910,7 @@ module main #(
 			case (main_state)
 			
 				ms_wait: begin
+							
 					timestamp <= 0;
 					sample_clk <= 0;
 					channel <= 0;
