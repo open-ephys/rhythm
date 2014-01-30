@@ -265,7 +265,8 @@ module main #(
 	wire [3:0]		RAM_bank_sel_wr;
 	reg [3:0]		RAM_bank_sel_rd;
 	wire [15:0]		RAM_data_in;
-	wire [15:0]		RAM_data_out_1, RAM_data_out_2, RAM_data_out_3;
+	wire [15:0]		RAM_data_out_1_pre, RAM_data_out_2_pre, RAM_data_out_3_pre;
+	reg [15:0]		RAM_data_out_1, RAM_data_out_2, RAM_data_out_3;
 	wire				RAM_we_1, RAM_we_2, RAM_we_3;
 		
 	reg [5:0] 		channel, channel_MISO;  // varies from 0-34 (amplfier channels 0-31, plus 3 auxiliary commands)
@@ -366,6 +367,10 @@ module main #(
 	reg				HPF_en;
 	reg [15:0]		HPF_coefficient;
 	
+	reg				external_fast_settle_enable;
+	reg [3:0]		external_fast_settle_channel;
+	reg				external_fast_settle, external_fast_settle_prev;
+	
 	wire [7:0]		led_in;
 
 	// Opal Kelly USB Host Interface
@@ -384,17 +389,15 @@ module main #(
 	wire [15:0] ep30wireout, ep31wireout, ep32wireout, ep33wireout, ep34wireout, ep35wireout, ep36wireout, ep37wireout;
 	wire [15:0] ep38wireout, ep39wireout, ep3awireout, ep3bwireout, ep3cwireout, ep3dwireout, ep3ewireout, ep3fwireout;
 
-	wire [15:0] ep40trigin, ep41trigin, ep42trigin, ep43trigin, ep44trigin;
+	wire [15:0] ep40trigin, ep41trigin, ep42trigin, ep43trigin, ep44trigin, ep45trigin;
 
-	reg [3:0] fast_setttle_cmd;
-	wire TTL_fast_settle_mode;
+
 	// USB WireIn inputs
 
 	assign reset = 						ep00wirein[0];
 	assign SPI_run_continuous = 		ep00wirein[1];
 	assign DSP_settle =     			ep00wirein[2];
 	assign TTL_out_mode = 				ep00wirein[3];
-	assign TTL_fast_settle_mode = 	ep00wirein[4]; // if on, fast settle can be turned on by external TTL event
 	assign DAC_noise_suppress = 		ep00wirein[12:6];
 	assign DAC_gain = 					ep00wirein[15:13];
 	
@@ -427,29 +430,11 @@ module main #(
 	assign aux_cmd_bank_2_C_in = 		ep09wirein[11:8];
 	assign aux_cmd_bank_2_D_in = 		ep09wirein[15:12];
 	
-	assign TTL_fast_settle_channel  = 		ep16wirein[13:10]; // Selecting the channel to trigger fast settle. 
-																			    // hook up one of the existing lines that is used for DAC
-																				 // since no other input lines are available (?!?!)
-	reg TTL_fast_settle_line;
-	
-	always @(posedge dataclk) begin
-		case (TTL_fast_settle_channel)
-			0: TTL_fast_settle_line = TTL_in[0];
-			1: TTL_fast_settle_line = TTL_in[1];
-			2: TTL_fast_settle_line = TTL_in[2];
-			3: TTL_fast_settle_line = TTL_in[3];
-			4: TTL_fast_settle_line = TTL_in[4];
-			5: TTL_fast_settle_line = TTL_in[5];
-			6: TTL_fast_settle_line = TTL_in[6];
-			7: TTL_fast_settle_line = TTL_in[7];
-			default: TTL_fast_settle_line = 0;
-		endcase
-	end
-	assign aux_cmd_bank_3_A_in = 	(TTL_fast_settle_mode && TTL_fast_settle_line >0) ? fast_setttle_cmd :	ep0awirein[3:0];
-	assign aux_cmd_bank_3_B_in = 	(TTL_fast_settle_mode && TTL_fast_settle_line >0) ? fast_setttle_cmd :	ep0awirein[7:4];
-	assign aux_cmd_bank_3_C_in = 	(TTL_fast_settle_mode && TTL_fast_settle_line >0) ? fast_setttle_cmd :	ep0awirein[11:8];
-	assign aux_cmd_bank_3_D_in = 	(TTL_fast_settle_mode && TTL_fast_settle_line >0) ? fast_setttle_cmd :	ep0awirein[15:12];
-	
+	assign aux_cmd_bank_3_A_in = 		ep0awirein[3:0];
+	assign aux_cmd_bank_3_B_in = 		ep0awirein[7:4];
+	assign aux_cmd_bank_3_C_in = 		ep0awirein[11:8];
+	assign aux_cmd_bank_3_D_in = 		ep0awirein[15:12];
+		
 	assign max_aux_cmd_index_1_in = 	ep0bwirein[9:0];
 	assign max_aux_cmd_index_2_in = 	ep0cwirein[9:0];
 	assign max_aux_cmd_index_3_in = 	ep0dwirein[9:0];
@@ -588,6 +573,13 @@ module main #(
 	always @(posedge ep44trigin[1]) begin
 		HPF_coefficient <=				ep1fwirein;
 	end
+	
+	always @(posedge ep45trigin[0]) begin
+		external_fast_settle_enable <=	ep1fwirein[0];
+	end
+	always @(posedge ep45trigin[1]) begin
+		external_fast_settle_channel <=	ep1fwirein[3:0];
+	end
 
 
 	// USB WireOut outputs
@@ -656,6 +648,15 @@ module main #(
 	// 8-LED Display on Opal Kelly board
 	
 	assign led = ~{ led_in };
+	
+	
+	// External fast settle input
+	
+	always @(posedge dataclk) begin
+		external_fast_settle_prev <= external_fast_settle;	// save previous value so we can detecting rising/falling edges
+		external_fast_settle <= TTL_in[external_fast_settle_channel];
+	end
+	
 	
 	// Variable frequency data clock generator
 	
@@ -741,10 +742,27 @@ module main #(
 		.RAM_addr_B(RAM_addr_rd),
 		.RAM_data_in(RAM_data_in),
 		.RAM_data_out_A(),
-		.RAM_data_out_B(RAM_data_out_1),
+		.RAM_data_out_B(RAM_data_out_1_pre),
 		.RAM_we(RAM_we_1),
 		.reset(reset)
 	);
+
+	// If the user has enabled external fast settling of amplifiers, inject commands to set fast settle
+	// (bit D[5] in RAM Register 0) on a rising edge and reset fast settle on a falling edge of the control
+	// signal.  We only inject commands in the auxcmd1 slot, since this is typically used only for setting
+	// impedance test waveforms.
+	always @(*) begin
+		if (external_fast_settle_enable == 1'b0)
+			RAM_data_out_1 <= RAM_data_out_1_pre; // If external fast settle is disabled, pass command from RAM
+		else if (external_fast_settle_prev == 1'b0 & external_fast_settle == 1'b1)
+			RAM_data_out_1 <= 16'h80fe; // Send WRITE(0, 254) command to set fast settle when rising edge detected.
+		else if (external_fast_settle_prev == 1'b1 & external_fast_settle == 1'b0)
+			RAM_data_out_1 <= 16'h80de; // Send WRITE(0, 222) command to reset fast settle when falling edge detected.
+		else if (RAM_data_out_1_pre[15:8] == 8'h80)
+			// If the user tries to write to Register 0, override it with the external fast settle value.
+			RAM_data_out_1 <= { RAM_data_out_1_pre[15:6], external_fast_settle, RAM_data_out_1_pre[4:0] };
+		else RAM_data_out_1 <= RAM_data_out_1_pre; // Otherwise pass command from RAM.
+	end
 
 	RAM_bank RAM_bank_2(
 		.clk_A(ti_clk),
@@ -755,10 +773,18 @@ module main #(
 		.RAM_addr_B(RAM_addr_rd),
 		.RAM_data_in(RAM_data_in),
 		.RAM_data_out_A(),
-		.RAM_data_out_B(RAM_data_out_2),
+		.RAM_data_out_B(RAM_data_out_2_pre),
 		.RAM_we(RAM_we_2),
 		.reset(reset)
 	);
+	
+	always @(*) begin
+		if (external_fast_settle_enable == 1'b1 & RAM_data_out_2_pre[15:8] == 8'h80)
+			// If the user tries to write to Register 0 when external fast settle is enabled, override it
+			// with the external fast settle value.
+			RAM_data_out_2 <= { RAM_data_out_2_pre[15:6], external_fast_settle, RAM_data_out_2_pre[4:0] };
+		else RAM_data_out_2 <= RAM_data_out_2_pre;
+	end
 	
 	RAM_bank RAM_bank_3(
 		.clk_A(ti_clk),
@@ -769,12 +795,19 @@ module main #(
 		.RAM_addr_B(RAM_addr_rd),
 		.RAM_data_in(RAM_data_in),
 		.RAM_data_out_A(),
-		.RAM_data_out_B(RAM_data_out_3),
+		.RAM_data_out_B(RAM_data_out_3_pre),
 		.RAM_we(RAM_we_3),
 		.reset(reset)
 	);
 	
-
+	always @(*) begin
+		if (external_fast_settle_enable == 1'b1 & RAM_data_out_3_pre[15:8] == 8'h80)
+			// If the user tries to write to Register 0 when external fast settle is enabled, override it
+			// with the external fast settle value.
+			RAM_data_out_3 <= { RAM_data_out_3_pre[15:6], external_fast_settle, RAM_data_out_3_pre[4:0] };
+		else RAM_data_out_3 <= RAM_data_out_3_pre;
+	end
+	
 	
 	command_selector command_selector_A (
 		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_A), .MOSI_cmd(MOSI_cmd_selected_A));
@@ -894,13 +927,6 @@ module main #(
 			MOSI_D <= 1'b0;
 			FIFO_data_in <= 16'b0;
 			FIFO_write_to <= 1'b0;	
-			
-			
-		   fast_setttle_cmd[0] <= 0;
-			fast_setttle_cmd[1] <= 1; // select fast settle (?)
-			fast_setttle_cmd[2] <= 0;
-			fast_setttle_cmd[3] <= 0;
-			
 		end else begin
 			CS_b <= 1'b0;
 			SCLK <= 1'b0;
@@ -910,7 +936,6 @@ module main #(
 			case (main_state)
 			
 				ms_wait: begin
-							
 					timestamp <= 0;
 					sample_clk <= 0;
 					channel <= 0;
@@ -2750,6 +2775,7 @@ module main #(
 	okTriggerIn  ti42 (.ok1(ok1),                            .ep_addr(8'h42), .ep_clk(ti_clk),  .ep_trigger(ep42trigin));
 	okTriggerIn  ti43 (.ok1(ok1),                            .ep_addr(8'h43), .ep_clk(ti_clk),  .ep_trigger(ep43trigin));
 	okTriggerIn  ti44 (.ok1(ok1),                            .ep_addr(8'h44), .ep_clk(ti_clk),  .ep_trigger(ep44trigin));
+	okTriggerIn  ti45 (.ok1(ok1),                            .ep_addr(8'h45), .ep_clk(ti_clk),  .ep_trigger(ep45trigin));
 	
 	okWireOut    wo20 (.ok1(ok1), .ok2(ok2x[ 0*17 +: 17 ]),  .ep_addr(8'h20), .ep_datain(ep20wireout));
 	okWireOut    wo21 (.ok1(ok1), .ok2(ok2x[ 1*17 +: 17 ]),  .ep_addr(8'h21), .ep_datain(ep21wireout));
