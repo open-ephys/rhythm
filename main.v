@@ -650,14 +650,6 @@ module main #(
 	assign led = ~{ led_in };
 	
 	
-	// External fast settle input
-	
-	always @(posedge dataclk) begin
-		external_fast_settle_prev <= external_fast_settle;	// save previous value so we can detecting rising/falling edges
-		external_fast_settle <= TTL_in[external_fast_settle_channel];
-	end
-	
-	
 	// Variable frequency data clock generator
 	
 	variable_freq_clk_generator #(
@@ -754,9 +746,9 @@ module main #(
 	always @(*) begin
 		if (external_fast_settle_enable == 1'b0)
 			RAM_data_out_1 <= RAM_data_out_1_pre; // If external fast settle is disabled, pass command from RAM
-		else if (external_fast_settle_prev == 1'b0 & external_fast_settle == 1'b1)
+		else if (external_fast_settle_prev == 1'b0 && external_fast_settle == 1'b1)
 			RAM_data_out_1 <= 16'h80fe; // Send WRITE(0, 254) command to set fast settle when rising edge detected.
-		else if (external_fast_settle_prev == 1'b1 & external_fast_settle == 1'b0)
+		else if (external_fast_settle_prev == 1'b1 && external_fast_settle == 1'b0)
 			RAM_data_out_1 <= 16'h80de; // Send WRITE(0, 222) command to reset fast settle when falling edge detected.
 		else if (RAM_data_out_1_pre[15:8] == 8'h80)
 			// If the user tries to write to Register 0, override it with the external fast settle value.
@@ -779,7 +771,7 @@ module main #(
 	);
 	
 	always @(*) begin
-		if (external_fast_settle_enable == 1'b1 & RAM_data_out_2_pre[15:8] == 8'h80)
+		if (external_fast_settle_enable == 1'b1 && RAM_data_out_2_pre[15:8] == 8'h80)
 			// If the user tries to write to Register 0 when external fast settle is enabled, override it
 			// with the external fast settle value.
 			RAM_data_out_2 <= { RAM_data_out_2_pre[15:6], external_fast_settle, RAM_data_out_2_pre[4:0] };
@@ -801,7 +793,7 @@ module main #(
 	);
 	
 	always @(*) begin
-		if (external_fast_settle_enable == 1'b1 & RAM_data_out_3_pre[15:8] == 8'h80)
+		if (external_fast_settle_enable == 1'b1 && RAM_data_out_3_pre[15:8] == 8'h80)
 			// If the user tries to write to Register 0 when external fast settle is enabled, override it
 			// with the external fast settle value.
 			RAM_data_out_3 <= { RAM_data_out_3_pre[15:6], external_fast_settle, RAM_data_out_3_pre[4:0] };
@@ -1020,6 +1012,10 @@ module main #(
 					if (channel == 0) begin				// grab TTL inputs, and grab current state of TTL outputs and manual DAC outputs
 						data_stream_TTL_in <= TTL_in;
 						data_stream_TTL_out <= TTL_out;
+						
+						// Route selected TTL input to external fast settle signal
+						external_fast_settle_prev <= external_fast_settle;	// save previous value so we can detecting rising/falling edges
+						external_fast_settle <= TTL_in[external_fast_settle_channel];
 					end
 
 					if (channel == 0) begin				// update all DAC registers simultaneously
