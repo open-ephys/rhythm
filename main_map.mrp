@@ -10,23 +10,23 @@ Target Device  : xc6slx45
 Target Package : fgg484
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Dec 11 19:37:00 2013
+Mapped Date    : Tue Dec 16 02:28:24 2014
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   27
+Number of warnings:   30
 Slice Logic Utilization:
-  Number of Slice Registers:                 4,542 out of  54,576    8%
-    Number used as Flip Flops:               4,542
+  Number of Slice Registers:                 4,670 out of  54,576    8%
+    Number used as Flip Flops:               4,670
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      7,312 out of  27,288   26%
-    Number used as logic:                    7,110 out of  27,288   26%
-      Number using O6 output only:           6,229
-      Number using O5 output only:             137
-      Number using O5 and O6:                  744
+  Number of Slice LUTs:                      7,446 out of  27,288   27%
+    Number used as logic:                    7,253 out of  27,288   26%
+      Number using O6 output only:           6,324
+      Number using O5 output only:             165
+      Number using O5 and O6:                  764
       Number used as ROM:                        0
     Number used as Memory:                      48 out of   6,408    1%
       Number used as Dual Port RAM:             20
@@ -41,21 +41,21 @@ Slice Logic Utilization:
         Number using O6 output only:             4
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:    154
-      Number with same-slice register load:    113
-      Number with same-slice carry load:        41
+    Number used exclusively as route-thrus:    145
+      Number with same-slice register load:    122
+      Number with same-slice carry load:        23
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 2,702 out of   6,822   39%
-  Nummber of MUXCYs used:                    1,400 out of  13,644   10%
-  Number of LUT Flip Flop pairs used:        8,629
-    Number with an unused Flip Flop:         4,324 out of   8,629   50%
-    Number with an unused LUT:               1,317 out of   8,629   15%
-    Number of fully used LUT-FF pairs:       2,988 out of   8,629   34%
-    Number of unique control sets:             180
+  Number of occupied Slices:                 2,647 out of   6,822   38%
+  Nummber of MUXCYs used:                    1,432 out of  13,644   10%
+  Number of LUT Flip Flop pairs used:        8,686
+    Number with an unused Flip Flop:         4,275 out of   8,686   49%
+    Number with an unused LUT:               1,240 out of   8,686   14%
+    Number of fully used LUT-FF pairs:       3,171 out of   8,686   36%
+    Number of unique control sets:             188
     Number of slice register sites lost
-      to control set restrictions:             578 out of  54,576    1%
+      to control set restrictions:             658 out of  54,576    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -79,8 +79,8 @@ Specific Feature Utilization:
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
     Number used as BUFIO2FBs:                    1
     Number used as BUFIO2FB_2CLKs:               0
-  Number of BUFG/BUFGMUXs:                       8 out of      16   50%
-    Number used as BUFGs:                        8
+  Number of BUFG/BUFGMUXs:                       6 out of      16   37%
+    Number used as BUFGs:                        6
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     2 out of       8   25%
     Number used as DCMs:                         1
@@ -111,8 +111,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                4.47
 
 Peak Memory Usage:  619 MB
-Total REAL time to MAP completion:  2 mins 43 secs 
-Total CPU time to MAP completion:   2 mins 42 secs 
+Total REAL time to MAP completion:  2 mins 27 secs 
+Total CPU time to MAP completion:   2 mins 27 secs 
 
 Table of Contents
 -----------------
@@ -150,16 +150,25 @@ WARNING:Pack:1653 - At least one timing constraint is impossible to meet because
 
    For more information about the Timing Analyzer, consult the Xilinx Timing Analyzer Reference manual; for more information on TRCE,
    consult the Xilinx Command Line Tools User Guide "TRACE" chapter.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<9> is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep46trigin<0> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<0> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<11> is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep46trigin<5> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<9> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<13> is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<0> is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep46trigin<3> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<1> is sourced by
@@ -175,10 +184,10 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<7> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal
-   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAMD_O> is
+   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAMD_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAMD_O> is
+   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAMD_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
    on
@@ -249,7 +258,7 @@ WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
 Section 3 - Informational
 -------------------------
 INFO:LIT:243 - Logical network ok1<30> has no load.
-INFO:LIT:395 - The above info message is repeated 293 more times for the
+INFO:LIT:395 - The above info message is repeated 315 more times for the
    following (max. 5 shown):
    ok1<29>,
    SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_1,
@@ -271,9 +280,9 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 749 block(s) removed
+ 881 block(s) removed
 1012 block(s) optimized away
- 775 signal(s) removed
+ 907 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -1277,6 +1286,358 @@ The signal "wi00/ep_datahold<4>" is sourceless and has been removed.
  Sourceless block "wi00/ep_dataout_4" (SFF) removed.
 The signal "wi00/ep_datahold<5>" is sourceless and has been removed.
  Sourceless block "wi00/ep_dataout_5" (SFF) removed.
+The signal "ti46/ep_trigger<15>" is sourceless and has been removed.
+The signal "ti46/ep_trigger<14>" is sourceless and has been removed.
+The signal "ti46/ep_trigger<13>" is sourceless and has been removed.
+The signal "ti46/ep_trigger<12>" is sourceless and has been removed.
+The signal "ti46/ep_trigger<11>" is sourceless and has been removed.
+The signal "ti46/ep_trigger<10>" is sourceless and has been removed.
+The signal "ti46/ep_trigger<9>" is sourceless and has been removed.
+The signal "ti46/ep_trigger<8>" is sourceless and has been removed.
+The signal "ti46/eptrig[15]_ti_datain[15]_xor_11_OUT<8>" is sourceless and has
+been removed.
+ Sourceless block "ti46/eptrig_8" (SFF) removed.
+  The signal "ti46/eptrig<8>" is sourceless and has been removed.
+   Sourceless block "ti46/trigff0_8" (FF) removed.
+    The signal "ti46/trigff0<8>" is sourceless and has been removed.
+     Sourceless block "ti46/trigff1_8" (FF) removed.
+      The signal "ti46/trigff1<8>" is sourceless and has been removed.
+       Sourceless block "ti46/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_8_xo<0>1" (ROM)
+removed.
+        The signal "ti46/trigff0[15]_trigff1[15]_xor_3_OUT<8>" is sourceless and has
+been removed.
+         Sourceless block "ti46/ep_trigger_8" (FF) removed.
+   Sourceless block "ti46/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_8_xo<0>1" (ROM)
+removed.
+The signal "ti46/eptrig[15]_ti_datain[15]_xor_11_OUT<9>" is sourceless and has
+been removed.
+ Sourceless block "ti46/eptrig_9" (SFF) removed.
+  The signal "ti46/eptrig<9>" is sourceless and has been removed.
+   Sourceless block "ti46/trigff0_9" (FF) removed.
+    The signal "ti46/trigff0<9>" is sourceless and has been removed.
+     Sourceless block "ti46/trigff1_9" (FF) removed.
+      The signal "ti46/trigff1<9>" is sourceless and has been removed.
+       Sourceless block "ti46/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_9_xo<0>1" (ROM)
+removed.
+        The signal "ti46/trigff0[15]_trigff1[15]_xor_3_OUT<9>" is sourceless and has
+been removed.
+         Sourceless block "ti46/ep_trigger_9" (FF) removed.
+   Sourceless block "ti46/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_9_xo<0>1" (ROM)
+removed.
+The signal "ti46/eptrig[15]_ti_datain[15]_xor_11_OUT<10>" is sourceless and has
+been removed.
+ Sourceless block "ti46/eptrig_10" (SFF) removed.
+  The signal "ti46/eptrig<10>" is sourceless and has been removed.
+   Sourceless block "ti46/trigff0_10" (FF) removed.
+    The signal "ti46/trigff0<10>" is sourceless and has been removed.
+     Sourceless block "ti46/trigff1_10" (FF) removed.
+      The signal "ti46/trigff1<10>" is sourceless and has been removed.
+       Sourceless block "ti46/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_10_xo<0>1" (ROM)
+removed.
+        The signal "ti46/trigff0[15]_trigff1[15]_xor_3_OUT<10>" is sourceless and has
+been removed.
+         Sourceless block "ti46/ep_trigger_10" (FF) removed.
+   Sourceless block "ti46/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_10_xo<0>1" (ROM)
+removed.
+The signal "ti46/eptrig[15]_ti_datain[15]_xor_11_OUT<11>" is sourceless and has
+been removed.
+ Sourceless block "ti46/eptrig_11" (SFF) removed.
+  The signal "ti46/eptrig<11>" is sourceless and has been removed.
+   Sourceless block "ti46/trigff0_11" (FF) removed.
+    The signal "ti46/trigff0<11>" is sourceless and has been removed.
+     Sourceless block "ti46/trigff1_11" (FF) removed.
+      The signal "ti46/trigff1<11>" is sourceless and has been removed.
+       Sourceless block "ti46/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_11_xo<0>1" (ROM)
+removed.
+        The signal "ti46/trigff0[15]_trigff1[15]_xor_3_OUT<11>" is sourceless and has
+been removed.
+         Sourceless block "ti46/ep_trigger_11" (FF) removed.
+   Sourceless block "ti46/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_11_xo<0>1" (ROM)
+removed.
+The signal "ti46/eptrig[15]_ti_datain[15]_xor_11_OUT<12>" is sourceless and has
+been removed.
+ Sourceless block "ti46/eptrig_12" (SFF) removed.
+  The signal "ti46/eptrig<12>" is sourceless and has been removed.
+   Sourceless block "ti46/trigff0_12" (FF) removed.
+    The signal "ti46/trigff0<12>" is sourceless and has been removed.
+     Sourceless block "ti46/trigff1_12" (FF) removed.
+      The signal "ti46/trigff1<12>" is sourceless and has been removed.
+       Sourceless block "ti46/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_12_xo<0>1" (ROM)
+removed.
+        The signal "ti46/trigff0[15]_trigff1[15]_xor_3_OUT<12>" is sourceless and has
+been removed.
+         Sourceless block "ti46/ep_trigger_12" (FF) removed.
+   Sourceless block "ti46/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_12_xo<0>1" (ROM)
+removed.
+The signal "ti46/eptrig[15]_ti_datain[15]_xor_11_OUT<13>" is sourceless and has
+been removed.
+ Sourceless block "ti46/eptrig_13" (SFF) removed.
+  The signal "ti46/eptrig<13>" is sourceless and has been removed.
+   Sourceless block "ti46/trigff0_13" (FF) removed.
+    The signal "ti46/trigff0<13>" is sourceless and has been removed.
+     Sourceless block "ti46/trigff1_13" (FF) removed.
+      The signal "ti46/trigff1<13>" is sourceless and has been removed.
+       Sourceless block "ti46/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_13_xo<0>1" (ROM)
+removed.
+        The signal "ti46/trigff0[15]_trigff1[15]_xor_3_OUT<13>" is sourceless and has
+been removed.
+         Sourceless block "ti46/ep_trigger_13" (FF) removed.
+   Sourceless block "ti46/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_13_xo<0>1" (ROM)
+removed.
+The signal "ti46/eptrig[15]_ti_datain[15]_xor_11_OUT<14>" is sourceless and has
+been removed.
+ Sourceless block "ti46/eptrig_14" (SFF) removed.
+  The signal "ti46/eptrig<14>" is sourceless and has been removed.
+   Sourceless block "ti46/trigff0_14" (FF) removed.
+    The signal "ti46/trigff0<14>" is sourceless and has been removed.
+     Sourceless block "ti46/trigff1_14" (FF) removed.
+      The signal "ti46/trigff1<14>" is sourceless and has been removed.
+       Sourceless block "ti46/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_14_xo<0>1" (ROM)
+removed.
+        The signal "ti46/trigff0[15]_trigff1[15]_xor_3_OUT<14>" is sourceless and has
+been removed.
+         Sourceless block "ti46/ep_trigger_14" (FF) removed.
+   Sourceless block "ti46/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_14_xo<0>1" (ROM)
+removed.
+The signal "ti46/eptrig[15]_ti_datain[15]_xor_11_OUT<15>" is sourceless and has
+been removed.
+ Sourceless block "ti46/eptrig_15" (SFF) removed.
+  The signal "ti46/eptrig<15>" is sourceless and has been removed.
+   Sourceless block "ti46/trigff0_15" (FF) removed.
+    The signal "ti46/trigff0<15>" is sourceless and has been removed.
+     Sourceless block "ti46/trigff1_15" (FF) removed.
+      The signal "ti46/trigff1<15>" is sourceless and has been removed.
+       Sourceless block "ti46/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_15_xo<0>1" (ROM)
+removed.
+        The signal "ti46/trigff0[15]_trigff1[15]_xor_3_OUT<15>" is sourceless and has
+been removed.
+         Sourceless block "ti46/ep_trigger_15" (FF) removed.
+   Sourceless block "ti46/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_15_xo<0>1" (ROM)
+removed.
+The signal "ti45/ep_trigger<15>" is sourceless and has been removed.
+The signal "ti45/ep_trigger<14>" is sourceless and has been removed.
+The signal "ti45/ep_trigger<13>" is sourceless and has been removed.
+The signal "ti45/ep_trigger<12>" is sourceless and has been removed.
+The signal "ti45/ep_trigger<11>" is sourceless and has been removed.
+The signal "ti45/ep_trigger<10>" is sourceless and has been removed.
+The signal "ti45/ep_trigger<9>" is sourceless and has been removed.
+The signal "ti45/ep_trigger<8>" is sourceless and has been removed.
+The signal "ti45/ep_trigger<7>" is sourceless and has been removed.
+The signal "ti45/ep_trigger<6>" is sourceless and has been removed.
+The signal "ti45/ep_trigger<5>" is sourceless and has been removed.
+The signal "ti45/ep_trigger<4>" is sourceless and has been removed.
+The signal "ti45/ep_trigger<3>" is sourceless and has been removed.
+The signal "ti45/ep_trigger<2>" is sourceless and has been removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<2>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_2" (SFF) removed.
+  The signal "ti45/eptrig<2>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_2" (FF) removed.
+    The signal "ti45/trigff0<2>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_2" (FF) removed.
+      The signal "ti45/trigff1<2>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_2_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<2>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_2" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_2_xo<0>1" (ROM)
+removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<3>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_3" (SFF) removed.
+  The signal "ti45/eptrig<3>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_3" (FF) removed.
+    The signal "ti45/trigff0<3>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_3" (FF) removed.
+      The signal "ti45/trigff1<3>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_3_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<3>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_3" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_3_xo<0>1" (ROM)
+removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<4>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_4" (SFF) removed.
+  The signal "ti45/eptrig<4>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_4" (FF) removed.
+    The signal "ti45/trigff0<4>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_4" (FF) removed.
+      The signal "ti45/trigff1<4>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_4_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<4>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_4" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_4_xo<0>1" (ROM)
+removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<5>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_5" (SFF) removed.
+  The signal "ti45/eptrig<5>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_5" (FF) removed.
+    The signal "ti45/trigff0<5>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_5" (FF) removed.
+      The signal "ti45/trigff1<5>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_5_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<5>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_5" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_5_xo<0>1" (ROM)
+removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<6>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_6" (SFF) removed.
+  The signal "ti45/eptrig<6>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_6" (FF) removed.
+    The signal "ti45/trigff0<6>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_6" (FF) removed.
+      The signal "ti45/trigff1<6>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_6_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<6>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_6" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_6_xo<0>1" (ROM)
+removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<7>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_7" (SFF) removed.
+  The signal "ti45/eptrig<7>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_7" (FF) removed.
+    The signal "ti45/trigff0<7>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_7" (FF) removed.
+      The signal "ti45/trigff1<7>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_7_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<7>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_7" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_7_xo<0>1" (ROM)
+removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<8>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_8" (SFF) removed.
+  The signal "ti45/eptrig<8>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_8" (FF) removed.
+    The signal "ti45/trigff0<8>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_8" (FF) removed.
+      The signal "ti45/trigff1<8>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_8_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<8>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_8" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_8_xo<0>1" (ROM)
+removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<9>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_9" (SFF) removed.
+  The signal "ti45/eptrig<9>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_9" (FF) removed.
+    The signal "ti45/trigff0<9>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_9" (FF) removed.
+      The signal "ti45/trigff1<9>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_9_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<9>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_9" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_9_xo<0>1" (ROM)
+removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<10>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_10" (SFF) removed.
+  The signal "ti45/eptrig<10>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_10" (FF) removed.
+    The signal "ti45/trigff0<10>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_10" (FF) removed.
+      The signal "ti45/trigff1<10>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_10_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<10>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_10" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_10_xo<0>1" (ROM)
+removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<11>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_11" (SFF) removed.
+  The signal "ti45/eptrig<11>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_11" (FF) removed.
+    The signal "ti45/trigff0<11>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_11" (FF) removed.
+      The signal "ti45/trigff1<11>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_11_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<11>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_11" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_11_xo<0>1" (ROM)
+removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<12>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_12" (SFF) removed.
+  The signal "ti45/eptrig<12>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_12" (FF) removed.
+    The signal "ti45/trigff0<12>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_12" (FF) removed.
+      The signal "ti45/trigff1<12>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_12_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<12>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_12" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_12_xo<0>1" (ROM)
+removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<13>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_13" (SFF) removed.
+  The signal "ti45/eptrig<13>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_13" (FF) removed.
+    The signal "ti45/trigff0<13>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_13" (FF) removed.
+      The signal "ti45/trigff1<13>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_13_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<13>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_13" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_13_xo<0>1" (ROM)
+removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<14>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_14" (SFF) removed.
+  The signal "ti45/eptrig<14>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_14" (FF) removed.
+    The signal "ti45/trigff0<14>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_14" (FF) removed.
+      The signal "ti45/trigff1<14>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_14_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<14>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_14" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_14_xo<0>1" (ROM)
+removed.
+The signal "ti45/eptrig[15]_ti_datain[15]_xor_11_OUT<15>" is sourceless and has
+been removed.
+ Sourceless block "ti45/eptrig_15" (SFF) removed.
+  The signal "ti45/eptrig<15>" is sourceless and has been removed.
+   Sourceless block "ti45/trigff0_15" (FF) removed.
+    The signal "ti45/trigff0<15>" is sourceless and has been removed.
+     Sourceless block "ti45/trigff1_15" (FF) removed.
+      The signal "ti45/trigff1<15>" is sourceless and has been removed.
+       Sourceless block "ti45/Mxor_trigff0[15]_trigff1[15]_xor_3_OUT_15_xo<0>1" (ROM)
+removed.
+        The signal "ti45/trigff0[15]_trigff1[15]_xor_3_OUT<15>" is sourceless and has
+been removed.
+         Sourceless block "ti45/ep_trigger_15" (FF) removed.
+   Sourceless block "ti45/Mxor_eptrig[15]_ti_datain[15]_xor_11_OUT_15_xo<0>1" (ROM)
+removed.
 The signal "ti44/ep_trigger<15>" is sourceless and has been removed.
 The signal "ti44/ep_trigger<14>" is sourceless and has been removed.
 The signal "ti44/ep_trigger<13>" is sourceless and has been removed.
@@ -4494,7 +4855,7 @@ WARNING:Timing:3225 - Timing constraint COMP "hi_out<1>" OFFSET = OUT 11.93 ns
 INFO:Timing:3284 - This timing report was generated using estimated delay 
    information.  For accurate numbers, please refer to the post Place and Route 
    timing report.
-Number of Timing Constraints that were not applied: 4
+Number of Timing Constraints that were not applied: 3
 
 Asterisk (*) preceding a constraint indicates it was not met.
    This may be due to a setup or hold violation.
@@ -4502,6 +4863,9 @@ Asterisk (*) preceding a constraint indicates it was not met.
 ----------------------------------------------------------------------------------------------------------
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_SYS_CLK3 = PERIOD TIMEGRP "SYS_CLK3" 1 | SETUP       |    -3.681ns|    87.169ns|      39|       58517
+  0 ns HIGH 50%                             | HOLD        |     0.331ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 * TS_variable_freq_clk_generator_inst_clkou | SETUP       |    -2.082ns|  1316.331ns|       9|       18298
   t_i = PERIOD TIMEGRP "variable_freq_clk_g | HOLD        |     0.132ns|            |       0|           0
@@ -4527,9 +4891,6 @@ Asterisk (*) preceding a constraint indicates it was not met.
   nst_clk_2x_0 = PERIOD TIMEGRP "SDRAM_FIFO |             |            |            |        |            
   _inst_memc3_infrastructure_inst_clk_2x_0" |             |            |            |        |            
    TS_SYS_CLK3 / 6.25 HIGH 50%              |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_SYS_CLK3 = PERIOD TIMEGRP "SYS_CLK3" 1 | MINLOWPULSE |     4.660ns|     5.340ns|       0|           0
-  0 ns HIGH 50%                             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TIMEGRP "okHostINOUT_grp" OFFSET = IN 9.8 | SETUP       |     2.662ns|     7.168ns|       0|           0
   3 ns VALID 9.83 ns BEFORE COMP "hi_in<0>" | HOLD        |     1.193ns|            |       0|           0
@@ -4594,8 +4955,8 @@ Derived Constraints for TS_okHostClk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_okHostClk                   |     20.830ns|     16.000ns|      5.990ns|            0|           56|            3|        42764|
-| TS_host_dcm_clk0              |     20.830ns|      5.990ns|          N/A|           56|            0|        42764|            0|
+|TS_okHostClk                   |     20.830ns|     16.000ns|      5.990ns|            0|           56|            3|        42956|
+| TS_host_dcm_clk0              |     20.830ns|      5.990ns|          N/A|           56|            0|        42956|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for TS_SYS_CLK3
@@ -4604,8 +4965,8 @@ Derived Constraints for TS_SYS_CLK3
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_SYS_CLK3                    |     10.000ns|      5.340ns|   1105.718ns|            0|           18|            0|     10922504|
-| TS_SDRAM_FIFO_inst_memc3_infra|     12.800ns|      3.204ns|          N/A|            0|            0|        13348|            0|
+|TS_SYS_CLK3                    |     10.000ns|     87.169ns|   1105.718ns|           39|           18|        25369|     10923472|
+| TS_SDRAM_FIFO_inst_memc3_infra|     12.800ns|      3.204ns|          N/A|            0|            0|        13623|            0|
 | structure_inst_mcb_drp_clk_buf|             |             |             |             |             |             |             |
 | g_in                          |             |             |             |             |             |             |             |
 | TS_SDRAM_FIFO_inst_memc3_infra|      1.600ns|      1.599ns|          N/A|            0|            0|            0|            0|
@@ -4614,11 +4975,11 @@ Derived Constraints for TS_SYS_CLK3
 | structure_inst_clk_2x_0       |             |             |             |             |             |             |             |
 | TS_SDRAM_FIFO_inst_memc3_infra|      6.400ns|     38.720ns|          N/A|            9|            0|         4315|            0|
 | structure_inst_clk0_bufg_in   |             |             |             |             |             |             |             |
-| TS_variable_freq_clk_generator|     11.905ns|   1316.331ns|          N/A|            9|            0|     10904841|            0|
+| TS_variable_freq_clk_generator|     11.905ns|   1316.331ns|          N/A|            9|            0|     10905534|            0|
 | _inst_clkout_i                |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
-3 constraints not met.
+4 constraints not met.
 INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
    constraint is not analyzed due to the following: No paths covered by this 
    constraint; Other constraints intersect with this constraint; or This 

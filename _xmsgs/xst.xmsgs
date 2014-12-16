@@ -5,367 +5,337 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\LED_controller.v" Line 100: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\LED_controller.v" Line 100: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\LED_controller.v" Line 113: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\LED_controller.v" Line 113: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\LED_controller.v" Line 130: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\LED_controller.v" Line 130: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 629: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led5</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">48</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 683: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led5</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 630: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led6</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">48</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 684: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led6</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 632: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led8</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">40</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 687: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led8</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">40</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\variable_freq_clk_generator.v" Line 94: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\variable_freq_clk_generator.v" Line 94: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\variable_freq_clk_generator.v" Line 95: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\variable_freq_clk_generator.v" Line 95: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v" Line 266: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 266: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_raw_wrapper.v" Line 6346: Port <arg fmt="%s" index="1">BUSY</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_raw_wrapper.v" Line 6346: Port <arg fmt="%s" index="1">BUSY</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_raw_wrapper.v" Line 685: Using initial value of <arg fmt="%s" index="1">allzero</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_raw_wrapper.v" Line 685: Using initial value of <arg fmt="%s" index="1">allzero</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration.v" Line 312: Using initial value of <arg fmt="%s" index="1">START_BROADCAST</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 312: Using initial value of <arg fmt="%s" index="1">START_BROADCAST</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration.v" Line 373: Assignment to <arg fmt="%s" index="1">Half_MV_DU</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 373: Assignment to <arg fmt="%s" index="1">Half_MV_DU</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration.v" Line 375: Assignment to <arg fmt="%s" index="1">Half_MV_DD</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 375: Assignment to <arg fmt="%s" index="1">Half_MV_DD</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\iodrp_controller.v" Line 186: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\iodrp_controller.v" Line 186: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\iodrp_mcb_controller.v" Line 301: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\iodrp_mcb_controller.v" Line 301: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\iodrp_mcb_controller.v" Line 312: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\iodrp_mcb_controller.v" Line 312: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration.v" Line 408: Assignment to <arg fmt="%s" index="1">MCB_READ_DATA</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 408: Assignment to <arg fmt="%s" index="1">MCB_READ_DATA</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration.v" Line 654: Assignment to <arg fmt="%s" index="1">MCB_UODATAVALID_U</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 654: Assignment to <arg fmt="%s" index="1">MCB_UODATAVALID_U</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration.v" Line 809: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 809: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration.v" Line 813: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 813: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration.v" Line 859: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 859: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration.v" Line 863: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 863: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration.v" Line 864: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 864: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration.v" Line 700: Assignment to <arg fmt="%s" index="1">IODRPCTRLR_USE_BKST</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration.v" Line 700: Assignment to <arg fmt="%s" index="1">IODRPCTRLR_USE_BKST</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration_top.v" Line 216: Assignment to <arg fmt="%s" index="1">Max_Value</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration_top.v" Line 216: Assignment to <arg fmt="%s" index="1">Max_Value</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v" Line 411: Assignment to <arg fmt="%s" index="1">uo_data</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 411: Assignment to <arg fmt="%s" index="1">uo_data</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v" Line 412: Assignment to <arg fmt="%s" index="1">uo_data_valid</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 412: Assignment to <arg fmt="%s" index="1">uo_data_valid</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v" Line 414: Assignment to <arg fmt="%s" index="1">uo_cmd_ready_in</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 414: Assignment to <arg fmt="%s" index="1">uo_cmd_ready_in</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v" Line 415: Assignment to <arg fmt="%s" index="1">uo_refrsh_flag</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 415: Assignment to <arg fmt="%s" index="1">uo_refrsh_flag</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v" Line 416: Assignment to <arg fmt="%s" index="1">uo_cal_start</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 416: Assignment to <arg fmt="%s" index="1">uo_cal_start</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v" Line 417: Assignment to <arg fmt="%s" index="1">uo_sdo</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 417: Assignment to <arg fmt="%s" index="1">uo_sdo</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v" Line 418: Assignment to <arg fmt="%s" index="1">status</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v" Line 418: Assignment to <arg fmt="%s" index="1">status</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v" Line 409: Assignment to <arg fmt="%s" index="1">c3_p0_cmd_empty</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 409: Assignment to <arg fmt="%s" index="1">c3_p0_cmd_empty</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v" Line 416: Assignment to <arg fmt="%s" index="1">c3_p0_wr_empty</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 416: Assignment to <arg fmt="%s" index="1">c3_p0_wr_empty</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v" Line 417: Assignment to <arg fmt="%s" index="1">c3_p0_wr_count</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 417: Assignment to <arg fmt="%s" index="1">c3_p0_wr_count</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v" Line 418: Assignment to <arg fmt="%s" index="1">c3_p0_wr_underrun</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 418: Assignment to <arg fmt="%s" index="1">c3_p0_wr_underrun</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v" Line 419: Assignment to <arg fmt="%s" index="1">c3_p0_wr_error</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 419: Assignment to <arg fmt="%s" index="1">c3_p0_wr_error</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v" Line 423: Assignment to <arg fmt="%s" index="1">c3_p0_rd_full</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 423: Assignment to <arg fmt="%s" index="1">c3_p0_rd_full</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v" Line 425: Assignment to <arg fmt="%s" index="1">c3_p0_rd_count</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 425: Assignment to <arg fmt="%s" index="1">c3_p0_rd_count</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v" Line 426: Assignment to <arg fmt="%s" index="1">c3_p0_rd_overflow</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 426: Assignment to <arg fmt="%s" index="1">c3_p0_rd_overflow</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v" Line 427: Assignment to <arg fmt="%s" index="1">c3_p0_rd_error</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 427: Assignment to <arg fmt="%s" index="1">c3_p0_rd_error</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v" Line 429: Assignment to <arg fmt="%s" index="1">selfrefresh_mode</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 429: Assignment to <arg fmt="%s" index="1">selfrefresh_mode</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\ddr2_state_machine.v" Line 137: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\ddr2_state_machine.v" Line 137: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\ddr2_state_machine.v" Line 155: Result of <arg fmt="%d" index="1">31</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\ddr2_state_machine.v" Line 155: Result of <arg fmt="%d" index="1">31</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\ddr2_state_machine.v" Line 175: Result of <arg fmt="%d" index="1">31</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\ddr2_state_machine.v" Line 175: Result of <arg fmt="%d" index="1">31</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\ddr2_state_machine.v" Line 199: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\ddr2_state_machine.v" Line 199: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v" Line 234: Net &lt;<arg fmt="%s" index="1">selfrefresh_enter</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v" Line 234: Net &lt;<arg fmt="%s" index="1">selfrefresh_enter</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 1948: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 1070: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 1958: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 1071: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 1968: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 1072: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 2096: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 1073: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 2101: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 2052: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\DAC_output_scalable_HPF.v" Line 64: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">19</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 2062: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 2192: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 2072: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 2216: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 2200: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 2240: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 2205: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 2264: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\DAC_output_scalable_HPF.v" Line 64: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">19</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 2288: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 2296: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 2312: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 2320: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\okLibrary.v" Line 40: Port <arg fmt="%s" index="1">CLK180</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 2344: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\okLibrary.v" Line 68: Port <arg fmt="%s" index="1">BUSY</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 2368: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 625: Net &lt;<arg fmt="%s" index="1">led_d1_dat</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 2392: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 626: Net &lt;<arg fmt="%s" index="1">led_c1_dat</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v" Line 2416: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 627: Net &lt;<arg fmt="%s" index="1">led_b1_dat</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\okLibrary.v" Line 40: Port <arg fmt="%s" index="1">CLK180</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v" Line 628: Net &lt;<arg fmt="%s" index="1">led_a1_dat</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\okLibrary.v" Line 68: Port <arg fmt="%s" index="1">BUSY</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%d" index="2">620</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">WS2812controller</arg>&gt; of block &lt;<arg fmt="%s" index="4">LED_controller</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">main</arg>&gt;. Underlying logic will be removed.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">773</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">620</arg>: Output port &lt;<arg fmt="%s" index="3">dat_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">WS2812controller</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">808</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">715</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">830</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">729</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2264</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">743</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2264</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2160</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2288</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2160</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2288</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2184</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2312</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2184</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2312</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2208</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2336</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2208</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2336</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2232</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_5</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2360</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2232</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_5</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2360</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2256</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_6</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2384</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2256</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_6</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2384</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2280</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2408</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2280</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2408</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2304</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2450</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2304</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2450</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2346</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2466</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2346</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2466</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2362</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2482</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2362</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2482</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2378</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2498</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2378</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2498</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2394</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_5</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2514</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2394</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_5</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2514</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2410</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_6</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2530</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2410</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_6</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2530</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2426</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2546</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2426</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.v</arg>&quot; line <arg fmt="%s" index="2">2546</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2442</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.v</arg>&quot; line <arg fmt="%s" index="2">2442</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">led_d1_dat</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">led_d2_dat</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">led_c1_dat</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">led_c2_dat</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">led_b1_dat</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">led_b2_dat</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">led_a1_dat</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">led_a2_dat</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">selfrefresh_mode</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">472</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeIn_fifo</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">488</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeOut_fifo</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">488</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeOut_fifo</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">selfrefresh_mode</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">472</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeIn_fifo</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">488</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeOut_fifo</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">488</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeOut_fifo</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">488</arg>: Output port &lt;<arg fmt="%s" index="3">valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeOut_fifo</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">488</arg>: Output port &lt;<arg fmt="%s" index="3">valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeOut_fifo</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">selfrefresh_enter</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -377,223 +347,223 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">selfrefresh_enter</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_rd_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_rd_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_rd_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_rd_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_rd_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_rd_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_rd_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_rd_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_rd_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_rd_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">uo_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">uo_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_cmd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_cmd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_wr_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_wr_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_rd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_rd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p1_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_cmd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_cmd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_wr_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_wr_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_rd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_rd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p2_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_cmd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_cmd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_wr_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_wr_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_rd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_rd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p3_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_cmd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_cmd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_wr_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_wr_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_rd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_rd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p4_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_cmd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_cmd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_wr_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_wr_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_rd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_rd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">p5_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">mcbx_dram_ddr3_rst</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">mcbx_dram_ddr3_rst</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">uo_data_valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">uo_data_valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">uo_cmd_ready_in</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">uo_cmd_ready_in</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">uo_refrsh_flag</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">uo_refrsh_flag</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">uo_cal_start</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">uo_cal_start</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">uo_sdo</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\memc3_wrapper.v</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">uo_sdo</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_mcb_raw_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">p0_cmd_byte_addr&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -848,7 +818,7 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">mcbx_dram_ddr3_rst</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration_top.v</arg>&quot; line <arg fmt="%s" index="2">169</arg>: Output port &lt;<arg fmt="%s" index="3">Max_Value</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mcb_soft_calibration_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration_top.v</arg>&quot; line <arg fmt="%s" index="2">169</arg>: Output port &lt;<arg fmt="%s" index="3">Max_Value</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mcb_soft_calibration_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="0" delta="new" >Value &quot;<arg fmt="%s" index="1">1</arg>&quot; of property &quot;<arg fmt="%s" index="2">syn_preserve</arg>&quot; is not applicable. List of valid values is &quot;<arg fmt="%s" index="3">true, false, yes, no</arg>&quot; 
@@ -887,10 +857,10 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">MCB_UO_CAL_START</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration.v</arg>&quot; line <arg fmt="%s" index="2">388</arg>: Output port &lt;<arg fmt="%s" index="3">DRP_BKST</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">iodrp_controller</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration.v</arg>&quot; line <arg fmt="%s" index="2">388</arg>: Output port &lt;<arg fmt="%s" index="3">DRP_BKST</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">iodrp_controller</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\mcb_soft_calibration.v</arg>&quot; line <arg fmt="%s" index="2">405</arg>: Output port &lt;<arg fmt="%s" index="3">read_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">iodrp_mcb_controller</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\mcb_soft_calibration.v</arg>&quot; line <arg fmt="%s" index="2">405</arg>: Output port &lt;<arg fmt="%s" index="3">read_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">iodrp_mcb_controller</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">MCB_UIDQLOWERDEC</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">mcb_soft_calibration</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0</arg>).
@@ -965,9 +935,6 @@
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">MCB_UICMD</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mcb_soft_calibration_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">SELFREFRESH_MCB_REQ</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mcb_soft_calibration_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">memcell_addr_reg_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">iodrp_mcb_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
@@ -1010,19 +977,13 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">p0_cmd_byte_addr_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ddr2_state_machine_inst</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_channel[5]_GND_66_o_Mux_44_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-</msg>
-
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">p0_cmd_instr_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ddr2_state_machine</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">p0_cmd_instr_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ddr2_state_machine</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">SELFREFRESH_MCB_REQ</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mcb_soft_calibration</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">MCB_UICMD</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mcb_soft_calibration</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">MCB_UICMD</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mcb_soft_calibration</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">MCB_UIDQCOUNT_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mcb_soft_calibration</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1245,6 +1206,9 @@
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">main</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">DAC_output_8/state_clk</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">main</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;DAC_output_7/state_clk&gt; &lt;DAC_output_6/state_clk&gt; &lt;DAC_output_5/state_clk&gt; &lt;DAC_output_4/state_clk&gt; &lt;DAC_output_3/state_clk&gt; &lt;DAC_output_2/state_clk&gt; &lt;DAC_output_1/state_clk&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/syn_uiclk_pll_lock</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">main</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/PLL_LOCK_R1&gt; </arg>

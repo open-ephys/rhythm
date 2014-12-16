@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Open Ephys
+// Engineer:  Jakob Voigts (jvoigts@mit.edu)
 // 
 // Create Date:    22:52:16 05/30/2013 
 // Design Name: 

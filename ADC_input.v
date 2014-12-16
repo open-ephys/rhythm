@@ -1,13 +1,13 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 		 Intan Technologies, LLC
+// Company: 		 Open EPhys, based on code by Intan Technologies, LLC
 // 
-// Design Name: 	 RHD2000 Rhythm Interface
+// Design Name: 	 RHD2000 Rhythm Interface MODIFIED for open ephys acquisition board
 // Module Name:    ADC_input 
-// Project Name:   Opal Kelly FPGA/USB RHD2000 Interface
+// Project Name:   Opal Kelly FPGA/USB RHD2000 Interface MODOFOED for open ephys
 // Target Devices: 
 // Tool versions: 
-// Description:    Generates SPI control signals for Analog Devices AD7680 16-bit ADC
+// Description:    Generates SPI control signals for Texas Instruments DS8325 16-bit ADC
 //
 // Dependencies: 
 //
@@ -33,8 +33,8 @@ module ADC_input #(
 	output reg [15:0]	ADC_register
 	);
 
-	// AD7680 16-bit ADC SPI output logic
-	// (See Analog Devices AD7680 datasheet for more information.)
+	// DS8325 16-bit ADC SPI output logic
+	// (See datasheet for more information.)
 
 	always @(posedge dataclk) begin
 		if (reset) begin

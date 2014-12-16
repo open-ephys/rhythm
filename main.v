@@ -1,8 +1,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 		 Intan Technologies, LLC
-//                 Copyright (c) 2013 Intan Technologies LLC
+//                 Copyright (c) 2013-2014 Intan Technologies LLC
 // 
-// Design Name:    RHD2000 Rhythm Interface
+// Design Name:    RHD2000 Rhythm Interface - MODIFIED for Open EPhys aq. board Nov 2014
+// see here for details on how this fork differs from the Intan code:  https://open-ephys.atlassian.net/wiki/display/OEW/Rhythm+firmware+fork
+//
+//
 // Module Name:    main, command_selector
 // Project Name:   Opal Kelly FPGA/USB RHD2000 Interface
 // Target Devices: 
@@ -23,7 +26,7 @@
 //
 // Dependencies: 
 //
-// Revision: 		 1.3 (14 October 2013) (BOARD_VERSION = 1)
+// Revision: 		 1.4 (26 February 2014) (BOARD_VERSION = 1)
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
@@ -191,7 +194,6 @@ module main #(
 	input wire										  ADC_DOUT_8,
 	
 	input wire [3:0]								  board_mode,
-	
 	output wire										  LED_OUT
 	);
 
@@ -203,8 +205,8 @@ module main #(
 	// LVDS output pins
 	
 // Non-LVDS pin assignment example:
-//	assign MOSI_A_p = MOSI_A;
-//	assign MOSI_A_n = 1'b0;
+// assign MOSI_A_p = MOSI_A;
+// assign MOSI_A_n = 1'b0;
 //	assign CS_b_A_p = CS_b;
 //	assign CS_b_A_n = 1'b0;
 //	assign SCLK_A_p = SCLK;
@@ -370,6 +372,10 @@ module main #(
 	reg				external_fast_settle_enable;
 	reg [3:0]		external_fast_settle_channel;
 	reg				external_fast_settle, external_fast_settle_prev;
+
+	reg				external_digout_enable_A, external_digout_enable_B, external_digout_enable_C, external_digout_enable_D;
+	reg [3:0]		external_digout_channel_A, external_digout_channel_B, external_digout_channel_C, external_digout_channel_D;
+	reg				external_digout_A, external_digout_B, external_digout_C, external_digout_D;
 	
 	wire [7:0]		led_in;
 
@@ -389,7 +395,7 @@ module main #(
 	wire [15:0] ep30wireout, ep31wireout, ep32wireout, ep33wireout, ep34wireout, ep35wireout, ep36wireout, ep37wireout;
 	wire [15:0] ep38wireout, ep39wireout, ep3awireout, ep3bwireout, ep3cwireout, ep3dwireout, ep3ewireout, ep3fwireout;
 
-	wire [15:0] ep40trigin, ep41trigin, ep42trigin, ep43trigin, ep44trigin, ep45trigin;
+	wire [15:0] ep40trigin, ep41trigin, ep42trigin, ep43trigin, ep44trigin, ep45trigin, ep46trigin;
 
 
 	// USB WireIn inputs
@@ -400,7 +406,7 @@ module main #(
 	assign TTL_out_mode = 				ep00wirein[3];
 	assign DAC_noise_suppress = 		ep00wirein[12:6];
 	assign DAC_gain = 					ep00wirein[15:13];
-	
+
 	assign max_timestep_in[15:0] = 	ep01wirein;
 	assign max_timestep_in[31:16] =	ep02wirein;
 
@@ -429,7 +435,7 @@ module main #(
 	assign aux_cmd_bank_2_B_in = 		ep09wirein[7:4];
 	assign aux_cmd_bank_2_C_in = 		ep09wirein[11:8];
 	assign aux_cmd_bank_2_D_in = 		ep09wirein[15:12];
-	
+
 	assign aux_cmd_bank_3_A_in = 		ep0awirein[3:0];
 	assign aux_cmd_bank_3_B_in = 		ep0awirein[7:4];
 	assign aux_cmd_bank_3_C_in = 		ep0awirein[11:8];
@@ -581,6 +587,31 @@ module main #(
 		external_fast_settle_channel <=	ep1fwirein[3:0];
 	end
 
+	always @(posedge ep46trigin[0]) begin
+		external_digout_enable_A <=	ep1fwirein[0];
+	end
+	always @(posedge ep46trigin[1]) begin
+		external_digout_enable_B <=	ep1fwirein[0];
+	end
+	always @(posedge ep46trigin[2]) begin
+		external_digout_enable_C <=	ep1fwirein[0];
+	end
+	always @(posedge ep46trigin[3]) begin
+		external_digout_enable_D <=	ep1fwirein[0];
+	end
+	always @(posedge ep46trigin[4]) begin
+		external_digout_channel_A <=	ep1fwirein[3:0];
+	end
+	always @(posedge ep46trigin[5]) begin
+		external_digout_channel_B <=	ep1fwirein[3:0];
+	end
+	always @(posedge ep46trigin[6]) begin
+		external_digout_channel_C <=	ep1fwirein[3:0];
+	end
+	always @(posedge ep46trigin[7]) begin
+		external_digout_channel_D <=	ep1fwirein[3:0];
+	end
+	
 
 	// USB WireOut outputs
 
@@ -626,24 +657,38 @@ module main #(
 	assign ep3fwireout = 				BOARD_VERSION;
 	
 	
-	assign LED_OUT = 				1'b0;
+	// OPen Ephys board status LEDs
+	//assign LED_OUT = 				1'b0; // use to set to 0
+	
 	// led controller for 
 	// format is 24 bit red,blue,green, least? significant bit first color cor current led
    LED_controller WS2812controller(
-    //.dat_out(LED_OUT), // output to led string
-	 .dat_out( ), // output to led string temp. disconnected
+    .dat_out(LED_OUT), // output to led string
     .reset(reset), 
     .clk(clk1),  // 100MHz clock 
-    .led1({data_stream_7_en_in ? {led_d1_dat,led_d2_dat} : 16'b00000000 ,8'b00000000}), 
-    .led2({data_stream_5_en_in ? {led_c1_dat,led_c2_dat} : 16'b00000000 ,8'b00000000}), 
-    .led3({data_stream_3_en_in ? {led_b1_dat,led_b2_dat} : 16'b00000000 ,8'b00000000}), 
-    .led4({data_stream_1_en_in ? {led_a1_dat,led_a2_dat} : 16'b00000000 ,8'b00000000}), 
-    .led5({TTL_in,TTL_in,TTL_in}), 
-    .led6({TTL_out,TTL_out,TTL_out}), 
-    .led7(24'b000000000000000000000001),  
-    .led8({DAC_register_1,DAC_register_2,8'b01000000})
+   /* .led1(24'b000000000000000000000000), 
+    .led2(24'b000000000000000000000000), 
+    .led3(24'b000000000000000000000000), 
+    .led4(24'b000000000000000000000000), 
+    .led5(24'b000000000000000000000000), 
+    .led6(24'b000000000000000000000000), 
+    .led7(24'b000000000000000000000000),  
+    .led8(24'b101010101010101010101010)
     );
+	  */
+	 .led1({data_stream_7_en_in ?  {8'b00010010,8'b01000000,8'b10000000} : {8'b10000010,8'b10000010,8'b10000010}}), // 4 SPI cable status LEDs
+    .led2({data_stream_5_en_in ?  {8'b00010010,8'b01000000,8'b10000000} : {8'b10000010,8'b10000010,8'b10000010}}), 
+    .led3({data_stream_3_en_in ?  {8'b00010010,8'b01000000,8'b10000000} : {8'b10000010,8'b10000010,8'b10000010}}), 
+    .led4({data_stream_1_en_in ?  {8'b00010010,8'b01000000,8'b10000000} : {8'b10000010,8'b10000010,8'b10000010}}), 
+    .led5({{8'b00010010,8'b01000010},TTL_in}),  // TTL in
+    .led6({{8'b00010010,8'b01000010},TTL_out}),  // TTL out
+    .led7({8'b10000010,8'b10000010,8'b10000010}), // Ain  
+    //.led8({DAC_register_1,DAC_register_2,8'b00000000}) //Aout
+	 .led8({SPI_running ?  {DAC_register_1,DAC_register_2,8'b00000000} : {8'b10000010,8'b10000010,8'b10000010}})
 	 
+	 
+	);
+	
 	
 	// 8-LED Display on Opal Kelly board
 	
@@ -739,6 +784,10 @@ module main #(
 		.reset(reset)
 	);
 
+	wire external_fast_settle_rising_edge, external_fast_settle_falling_edge;
+	assign external_fast_settle_rising_edge = external_fast_settle_prev == 1'b0 && external_fast_settle == 1'b1;
+	assign external_fast_settle_falling_edge = external_fast_settle_prev == 1'b1 && external_fast_settle == 1'b0;
+	
 	// If the user has enabled external fast settling of amplifiers, inject commands to set fast settle
 	// (bit D[5] in RAM Register 0) on a rising edge and reset fast settle on a falling edge of the control
 	// signal.  We only inject commands in the auxcmd1 slot, since this is typically used only for setting
@@ -746,9 +795,9 @@ module main #(
 	always @(*) begin
 		if (external_fast_settle_enable == 1'b0)
 			RAM_data_out_1 <= RAM_data_out_1_pre; // If external fast settle is disabled, pass command from RAM
-		else if (external_fast_settle_prev == 1'b0 && external_fast_settle == 1'b1)
+		else if (external_fast_settle_rising_edge)
 			RAM_data_out_1 <= 16'h80fe; // Send WRITE(0, 254) command to set fast settle when rising edge detected.
-		else if (external_fast_settle_prev == 1'b1 && external_fast_settle == 1'b0)
+		else if (external_fast_settle_falling_edge)
 			RAM_data_out_1 <= 16'h80de; // Send WRITE(0, 222) command to reset fast settle when falling edge detected.
 		else if (RAM_data_out_1_pre[15:8] == 8'h80)
 			// If the user tries to write to Register 0, override it with the external fast settle value.
@@ -802,16 +851,16 @@ module main #(
 	
 	
 	command_selector command_selector_A (
-		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_A), .MOSI_cmd(MOSI_cmd_selected_A));
+		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_A), .digout_override(external_digout_A), .MOSI_cmd(MOSI_cmd_selected_A));
 
 	command_selector command_selector_B (
-		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_B), .MOSI_cmd(MOSI_cmd_selected_B));
+		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_B), .digout_override(external_digout_B), .MOSI_cmd(MOSI_cmd_selected_B));
 
 	command_selector command_selector_C (
-		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_C), .MOSI_cmd(MOSI_cmd_selected_C));
+		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_C), .digout_override(external_digout_C), .MOSI_cmd(MOSI_cmd_selected_C));
 
 	command_selector command_selector_D (
-		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_D), .MOSI_cmd(MOSI_cmd_selected_D));
+		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_D), .digout_override(external_digout_D), .MOSI_cmd(MOSI_cmd_selected_D));
 
 
 	assign header_magic_number = 64'hC691199927021942;  // Fixed 64-bit "magic number" that begins each data frame
@@ -1016,6 +1065,12 @@ module main #(
 						// Route selected TTL input to external fast settle signal
 						external_fast_settle_prev <= external_fast_settle;	// save previous value so we can detecting rising/falling edges
 						external_fast_settle <= TTL_in[external_fast_settle_channel];
+						
+						// Route selected TLL inputs to external digout signal
+						external_digout_A <= external_digout_enable_A ? TTL_in[external_digout_channel_A] : 0;
+						external_digout_B <= external_digout_enable_B ? TTL_in[external_digout_channel_B] : 0;
+						external_digout_C <= external_digout_enable_C ? TTL_in[external_digout_channel_C] : 0;
+						external_digout_D <= external_digout_enable_D ? TTL_in[external_digout_channel_D] : 0;						
 					end
 
 					if (channel == 0) begin				// update all DAC registers simultaneously
@@ -2772,6 +2827,7 @@ module main #(
 	okTriggerIn  ti43 (.ok1(ok1),                            .ep_addr(8'h43), .ep_clk(ti_clk),  .ep_trigger(ep43trigin));
 	okTriggerIn  ti44 (.ok1(ok1),                            .ep_addr(8'h44), .ep_clk(ti_clk),  .ep_trigger(ep44trigin));
 	okTriggerIn  ti45 (.ok1(ok1),                            .ep_addr(8'h45), .ep_clk(ti_clk),  .ep_trigger(ep45trigin));
+	okTriggerIn  ti46 (.ok1(ok1),                            .ep_addr(8'h46), .ep_clk(ti_clk),  .ep_trigger(ep46trigin));
 	
 	okWireOut    wo20 (.ok1(ok1), .ok2(ok2x[ 0*17 +: 17 ]),  .ep_addr(8'h20), .ep_datain(ep20wireout));
 	okWireOut    wo21 (.ok1(ok1), .ok2(ok2x[ 1*17 +: 17 ]),  .ep_addr(8'h21), .ep_datain(ep21wireout));
@@ -2818,6 +2874,7 @@ module command_selector (
 	input wire [5:0] 		channel,
 	input wire				DSP_settle,
 	input wire [15:0] 	aux_cmd,
+	input wire				digout_override,
 	output reg [15:0] 	MOSI_cmd
 	);
 
@@ -2855,9 +2912,9 @@ module command_selector (
 			29:      MOSI_cmd <= { 2'b00, channel, 7'b0000000, DSP_settle };
 			30:      MOSI_cmd <= { 2'b00, channel, 7'b0000000, DSP_settle };
 			31:      MOSI_cmd <= { 2'b00, channel, 7'b0000000, DSP_settle };
-			32:		MOSI_cmd <= aux_cmd;
-			33:		MOSI_cmd <= aux_cmd;
-			34:		MOSI_cmd <= aux_cmd;
+			32:		MOSI_cmd <= (aux_cmd[15:8] == 8'h83) ? {aux_cmd[15:1], digout_override} : aux_cmd; // If we detect a write to Register 3, overridge the digout value.
+			33:		MOSI_cmd <= (aux_cmd[15:8] == 8'h83) ? {aux_cmd[15:1], digout_override} : aux_cmd; // If we detect a write to Register 3, overridge the digout value.
+			34:		MOSI_cmd <= (aux_cmd[15:8] == 8'h83) ? {aux_cmd[15:1], digout_override} : aux_cmd; // If we detect a write to Register 3, overridge the digout value.
 			default: MOSI_cmd <= 16'b0;
 			endcase
 	end	

@@ -8,33 +8,20 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/RAM_bank C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|RAM_bank.v</ClosedNode>
-         <ClosedNode>/main C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v/RAM_bank_1 - RAM_bank</ClosedNode>
          <ClosedNode>/main C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v/RAM_bank_2 - RAM_bank</ClosedNode>
          <ClosedNode>/main C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v/RAM_bank_3 - RAM_bank</ClosedNode>
          <ClosedNode>/main C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v/host - okHost</ClosedNode>
          <ClosedNode>/main C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v/memc3_wrapper_inst - memc3_wrapper</ClosedNode>
-         <ClosedNode>/main C:|Users|jvoigts|Downloads|RHD2000InterfaceXEM6010_release_131210|RHD2000InterfaceXEM6010 release 131210|main.v/DAC_output_1 - DAC_output_scalable_HPF</ClosedNode>
-         <ClosedNode>/main C:|Users|jvoigts|Downloads|RHD2000InterfaceXEM6010_release_131210|RHD2000InterfaceXEM6010 release 131210|main.v/DAC_output_2 - DAC_output_scalable_HPF</ClosedNode>
-         <ClosedNode>/main C:|Users|jvoigts|Downloads|RHD2000InterfaceXEM6010_release_131210|RHD2000InterfaceXEM6010 release 131210|main.v/DAC_output_3 - DAC_output_scalable_HPF</ClosedNode>
-         <ClosedNode>/main C:|Users|jvoigts|Downloads|RHD2000InterfaceXEM6010_release_131210|RHD2000InterfaceXEM6010 release 131210|main.v/DAC_output_4 - DAC_output_scalable_HPF</ClosedNode>
-         <ClosedNode>/main C:|Users|jvoigts|Downloads|RHD2000InterfaceXEM6010_release_131210|RHD2000InterfaceXEM6010 release 131210|main.v/DAC_output_5 - DAC_output_scalable_HPF</ClosedNode>
-         <ClosedNode>/main C:|Users|jvoigts|Downloads|RHD2000InterfaceXEM6010_release_131210|RHD2000InterfaceXEM6010 release 131210|main.v/DAC_output_6 - DAC_output_scalable_HPF</ClosedNode>
-         <ClosedNode>/main C:|Users|jvoigts|Downloads|RHD2000InterfaceXEM6010_release_131210|RHD2000InterfaceXEM6010 release 131210|main.v/DAC_output_7 - DAC_output_scalable_HPF</ClosedNode>
-         <ClosedNode>/main C:|Users|jvoigts|Downloads|RHD2000InterfaceXEM6010_release_131210|RHD2000InterfaceXEM6010 release 131210|main.v/DAC_output_8 - DAC_output_scalable_HPF</ClosedNode>
-         <ClosedNode>/main C:|Users|jvoigts|Downloads|RHD2000InterfaceXEM6010_release_131210|RHD2000InterfaceXEM6010 release 131210|main.v/RAM_bank_1 - RAM_bank</ClosedNode>
-         <ClosedNode>/main C:|Users|jvoigts|Downloads|RHD2000InterfaceXEM6010_release_131210|RHD2000InterfaceXEM6010 release 131210|main.v/RAM_bank_2 - RAM_bank</ClosedNode>
-         <ClosedNode>/main C:|Users|jvoigts|Downloads|RHD2000InterfaceXEM6010_release_131210|RHD2000InterfaceXEM6010 release 131210|main.v/RAM_bank_3 - RAM_bank</ClosedNode>
-         <ClosedNode>/main C:|Users|jvoigts|Downloads|RHD2000InterfaceXEM6010_release_131210|RHD2000InterfaceXEM6010 release 131210|main.v/SDRAM_FIFO_inst - SDRAM_FIFO</ClosedNode>
          <ClosedNode>/ramtest C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>main (C:/Users/jvoigts/Downloads/RHD2000InterfaceXEM6010_release_131210/RHD2000InterfaceXEM6010 release 131210/main.v)</SelectedItem>
+         <SelectedItem>WS2812controller - LED_controller (C:/Users/jvoigts/Documents/GitHub/rhythm/LED_controller.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023b0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000025a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000025a0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>main (C:/Users/jvoigts/Downloads/RHD2000InterfaceXEM6010_release_131210/RHD2000InterfaceXEM6010 release 131210/main.v)</CurrentItem>
+      <CurrentItem>WS2812controller - LED_controller (C:/Users/jvoigts/Documents/GitHub/rhythm/LED_controller.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -78,25 +65,9 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
          <ClosedNode>Design Utilities</ClosedNode>
-         <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
-         <ClosedNode>Synthesize - XST</ClosedNode>
-         <ClosedNode>User Constraints</ClosedNode>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f40000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
-   </ItemView>
-   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
@@ -107,6 +78,19 @@
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>User Constraints</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f40000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>User Constraints</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>

@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.ncd
-OUTFILE=C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210\main.bit
+INFILE=C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.ncd
+OUTFILE=C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010\main.bit
 FAMILY=Spartan6
 PART=xc6slx45-2fgg484
-WORKINGDIR=C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_131210\RHD2000InterfaceXEM6010 release 131210
+WORKINGDIR=C:\Users\jvoigts\Downloads\RHD2000InterfaceXEM6010_release_140226\RHD2000InterfaceXEM6010
 LICENSE=WebPack
 USER_INFO=206146299_0_0_416
