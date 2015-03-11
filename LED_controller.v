@@ -36,6 +36,7 @@ module LED_controller#(
     output reg dat_out,
 	 input wire	reset,
 	 input wire clk,
+	 input wire enable,
     input wire [23:0] led1,
     input wire [23:0] led2,
     input wire [23:0] led3,
@@ -177,6 +178,9 @@ always @(posedge clk) begin // main loop going through 8 leds and 2 wait states
 				
 			if (LED_state == 9) // reset after 8 leds and 2 wait states
 					LED_state <= 0; 
+					
+			if (~enable)
+				GRB_reg <= 24'b0;
 					
 		end
 	end// reset

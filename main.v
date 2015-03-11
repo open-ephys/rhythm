@@ -378,6 +378,9 @@ module main #(
 	reg				external_digout_A, external_digout_B, external_digout_C, external_digout_D;
 	
 	wire [7:0]		led_in;
+	
+	//Open-Ephys specific registers
+	reg				ledsEnabled;
 
 	// Opal Kelly USB Host Interface
 	
@@ -395,7 +398,7 @@ module main #(
 	wire [15:0] ep30wireout, ep31wireout, ep32wireout, ep33wireout, ep34wireout, ep35wireout, ep36wireout, ep37wireout;
 	wire [15:0] ep38wireout, ep39wireout, ep3awireout, ep3bwireout, ep3cwireout, ep3dwireout, ep3ewireout, ep3fwireout;
 
-	wire [15:0] ep40trigin, ep41trigin, ep42trigin, ep43trigin, ep44trigin, ep45trigin, ep46trigin;
+	wire [15:0] ep40trigin, ep41trigin, ep42trigin, ep43trigin, ep44trigin, ep45trigin, ep46trigin, ep5atrigin;
 
 
 	// USB WireIn inputs
@@ -611,7 +614,10 @@ module main #(
 	always @(posedge ep46trigin[7]) begin
 		external_digout_channel_D <=	ep1fwirein[3:0];
 	end
-	
+	//Open-ephys triggers
+	always @(posedge ep5atrigin[0]) begin
+		ledsEnabled <=	ep1fwirein[0];
+	end
 
 	// USB WireOut outputs
 
@@ -676,6 +682,7 @@ module main #(
     .led8(24'b101010101010101010101010)
     );
 	  */
+	 .enable(ledsEnabled),
 	 .led1({data_stream_7_en_in ?  {8'b00010010,8'b01000000,8'b10000000} : {8'b10000010,8'b10000010,8'b10000010}}), // 4 SPI cable status LEDs
     .led2({data_stream_5_en_in ?  {8'b00010010,8'b01000000,8'b10000000} : {8'b10000010,8'b10000010,8'b10000010}}), 
     .led3({data_stream_3_en_in ?  {8'b00010010,8'b01000000,8'b10000000} : {8'b10000010,8'b10000010,8'b10000010}}), 
@@ -2828,6 +2835,7 @@ module main #(
 	okTriggerIn  ti44 (.ok1(ok1),                            .ep_addr(8'h44), .ep_clk(ti_clk),  .ep_trigger(ep44trigin));
 	okTriggerIn  ti45 (.ok1(ok1),                            .ep_addr(8'h45), .ep_clk(ti_clk),  .ep_trigger(ep45trigin));
 	okTriggerIn  ti46 (.ok1(ok1),                            .ep_addr(8'h46), .ep_clk(ti_clk),  .ep_trigger(ep46trigin));
+	okTriggerIn	 ti5a (.ok1(ok1),										.ep_addr(8'h5a), .ep_clk(ti_clk),  .ep_trigger(ep5atrigin));
 	
 	okWireOut    wo20 (.ok1(ok1), .ok2(ok2x[ 0*17 +: 17 ]),  .ep_addr(8'h20), .ep_datain(ep20wireout));
 	okWireOut    wo21 (.ok1(ok1), .ok2(ok2x[ 1*17 +: 17 ]),  .ep_addr(8'h21), .ep_datain(ep21wireout));
