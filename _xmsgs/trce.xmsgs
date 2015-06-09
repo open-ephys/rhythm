@@ -8,13 +8,13 @@
 <msg type="warning" file="Timing" num="3159" delta="old" >The DCM, <arg fmt="%s" index="1">variable_freq_clk_generator_inst/DCM_CLKGEN_1</arg>, has the attribute DFS_OSCILLATOR_MODE not set to PHASE_FREQ_LOCK. No phase relationship exists between the input clock and CLKFX or CLKFX180 outputs of this DCM. Data paths between these clock domains must be constrained using FROM/TO constraints.
 </msg>
 
-<msg type="warning" file="Timing" num="3175" delta="old" ><arg fmt="%s" index="1">hi_in&lt;0&gt;</arg> does not clock data <arg fmt="%s" index="2">to</arg> <arg fmt="%s" index="3">hi_out&lt;1&gt;</arg></msg>
-
-<msg type="warning" file="Timing" num="3225" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;hi_out&lt;1&gt;&quot; OFFSET = OUT 11.93 ns AFTER COMP &quot;hi_in&lt;0&gt;&quot; &quot;RISING&quot;;</arg> ignored during timing analysis</msg>
+<msg type="info" file="Timing" num="3386" delta="old" >Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx Command Line Tools User Guide for information on generating a TSI report.</msg>
 
 <msg type="info" file="Timing" num="3412" delta="old" >To improve timing, see the Timing Closure User Guide (UG612).</msg>
 
 <msg type="info" file="Timing" num="2752" delta="old" >To get complete path coverage, use the unconstrained paths option. All paths that are not constrained will be reported in the unconstrained paths section(s) of the report.</msg>
+
+<msg type="info" file="Timing" num="3284" delta="new" >This timing report was generated using estimated delay information.  For accurate numbers, please refer to the post Place and Route timing report.</msg>
 
 <msg type="info" file="Timing" num="3339" delta="old" >The clock-to-out numbers in this timing report are based on a 50 Ohm transmission line loading model.  For the details of this model, and for more information on accounting for different loading conditions, please see the device datasheet.</msg>
 

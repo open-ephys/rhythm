@@ -1,44 +1,100 @@
+//*****************************************************************************
+// (c) Copyright 2010 Xilinx, Inc. All rights reserved.
+//
+// This file contains confidential and proprietary information
+// of Xilinx, Inc. and is protected under U.S. and
+// international copyright and other intellectual property
+// laws.
+//
+// DISCLAIMER
+// This disclaimer is not a license and does not grant any
+// rights to the materials distributed herewith. Except as
+// otherwise provided in a valid license issued to you by
+// Xilinx, and to the maximum extent permitted by applicable
+// law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+// BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+// INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+// (2) Xilinx shall not be liable (whether in contract or tort,
+// including negligence, or under any other theory of
+// liability) for any loss or damage of any kind or nature
+// related to, arising under or in connection with these
+// materials, including for any direct, or any indirect,
+// special, incidental, or consequential loss or damage
+// (including loss of data, profits, goodwill, or any type of
+// loss or damage suffered as a result of any action brought
+// by a third party) even if such damage or loss was
+// reasonably foreseeable or Xilinx had been advised of the
+// possibility of the same.
+//
+// CRITICAL APPLICATIONS
+// Xilinx products are not designed or intended to be fail-
+// safe, or for use in any application requiring fail-safe
+// performance, such as life-support or safety devices or
+// systems, Class III medical devices, nuclear facilities,
+// applications related to the deployment of airbags, or any
+// other applications that could lead to death, personal
+// injury, or severe property or environmental damage
+// (individually and collectively, "Critical
+// Applications"). Customer assumes the sole risk and
+// liability of any use of Xilinx products in Critical
+// Applications, subject only to applicable laws and
+// regulations governing limitations on product liability.
+//
+// THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+// PART OF THIS FILE AT ALL TIMES.
+//
+//*****************************************************************************
+//   ____  ____
+//  /   /\/   /
+// /___/  \  /    Vendor             : Xilinx
+// \   \   \/     Version            : 3.5
+//  \   \         Application        : MIG
+//  /   /         Filename           : memc3_infrastructure.v
+// /___/   /\     Date Last Modified : $Date: 2014-05-03 14:30:14 -0700 (Sat, 03 May 2014) $
+// \   \  /  \    Date Created       : Mon Mar 2 2009
+//  \___\/\___\
+//
+//Device           : Spartan-6
+//Design Name      : DDR/DDR2/DDR3/LPDDR
+//Purpose          : Clock generation/distribution and reset synchronization
+//Reference        :
+//Revision History :
+//*****************************************************************************
+
+
 `timescale 1ns/1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 		 Intan Technologies, LLC
-// 
-// Design Name: 	 RHD2000 Rhythm Interface
-// Module Name:    memc3_infrastructure 
-// Project Name:   Opal Kelly FPGA/USB RHD2000 Interface
-// Target Devices: 
-// Tool versions: 
-// Description: 	 SDRAM memory controller module
-//                 Adapted from Opal Kelly's RAMTester example
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
 
 module memc3_infrastructure #
   (
    parameter C_MEMCLK_PERIOD    = 2500,
    parameter C_RST_ACT_LOW      = 1,
-   parameter C_INPUT_CLK_TYPE   = "DIFFERENTIAL"
+   parameter C_INPUT_CLK_TYPE   = "DIFFERENTIAL",
+   parameter C_CLKOUT0_DIVIDE   = 1,
+   parameter C_CLKOUT1_DIVIDE   = 1,
+   parameter C_CLKOUT2_DIVIDE   = 16,
+   parameter C_CLKOUT3_DIVIDE   = 8,
+   parameter C_CLKFBOUT_MULT    = 2,
+   parameter C_DIVCLK_DIVIDE    = 1
+   
    )
   (
-   input  wire sys_clk_p,
-   //input  wire sys_clk_n,
-   input  wire sys_clk,
-   input  wire sys_rst_n,
-   output wire clk0,
-   output wire rst0,
-   output wire async_rst,
-   output wire sysclk_2x,
-   output wire sysclk_2x_180,
-   output wire mcb_drp_clk,
-   output wire pll_ce_0,
-   output wire pll_ce_90,
-   output wire pll_lock,
+   input  sys_clk_p,
+   input  sys_clk_n,
+   input  sys_clk,
+   input  sys_rst_n,
+   output clk0,
+   output rst0,
+   output async_rst,
+   output sysclk_2x,
+   output sysclk_2x_180,
+   output mcb_drp_clk,
+   output pll_ce_0,
+   output pll_ce_90,
+   output pll_lock,
 	output wire sys_clk_ibufg_out   // Added by Intan -- buffered clk1 output
+
    );
 
   // # of clock cycles to delay deassertion of reset. Needs to be a fairly
@@ -51,8 +107,8 @@ module memc3_infrastructure #
   // depends on PLL/DCM lock status)
 
   localparam RST_SYNC_NUM = 25;
-  localparam CLK_PERIOD_NS = 10;  //C_MEMCLK_PERIOD / 1000.0;
-  localparam CLK_PERIOD_INT = 10;  //C_MEMCLK_PERIOD/1000;
+  localparam CLK_PERIOD_NS = C_MEMCLK_PERIOD / 1000.0;
+  localparam CLK_PERIOD_INT = C_MEMCLK_PERIOD/1000;
 
   wire                       clk_2x_0;
   wire                       clk_2x_180;
@@ -64,29 +120,48 @@ module memc3_infrastructure #
   reg [RST_SYNC_NUM-1:0]     rst0_sync_r    /* synthesis syn_maxfan = 10 */;
   wire                       rst_tmp;
   reg                        powerup_pll_locked;
+
   wire                       sys_rst;
   wire                       bufpll_mcb_locked;
   (* KEEP = "TRUE" *) wire sys_clk_ibufg;
 
-  assign sys_clk_ibufg_out = sys_clk_ibufg;
-
   assign sys_rst = C_RST_ACT_LOW ? ~sys_rst_n: sys_rst_n;
   assign clk0        = clk0_bufg;
-  assign pll_lock    = locked;
+  assign pll_lock    = bufpll_mcb_locked;
+  
+  assign sys_clk_ibufg_out = sys_clk_ibufg;
 
+  generate
+    if (C_INPUT_CLK_TYPE == "DIFFERENTIAL") begin: diff_input_clk
 
-	/*IBUFGDS # (.DIFF_TERM("TRUE"))
-		u_ibufg_sys_clk(
-			.I  (sys_clk_p),
-			.IB (sys_clk_n),
-			.O  (sys_clk_ibufg)
-		);
-	*/
-		
-	IBUFG u_ibufg_sys_clk(
-			.I  (sys_clk_p),
-			.O  (sys_clk_ibufg)
-		);
+      //***********************************************************************
+      // Differential input clock input buffers
+      //***********************************************************************
+
+      IBUFGDS #
+        (
+         .DIFF_TERM    ("TRUE")
+         )
+        u_ibufg_sys_clk
+          (
+           .I  (sys_clk_p),
+           .IB (sys_clk_n),
+           .O  (sys_clk_ibufg)
+           );
+
+    end else if (C_INPUT_CLK_TYPE == "SINGLE_ENDED") begin: se_input_clk
+
+      //***********************************************************************
+      // SINGLE_ENDED input clock input buffers
+      //***********************************************************************
+
+      IBUFG  u_ibufg_sys_clk
+          (
+           .I  (sys_clk),
+           .O  (sys_clk_ibufg)
+           );
+   end
+  endgenerate
 
   //***************************************************************************
   // Global clock generation and distribution
@@ -97,10 +172,10 @@ module memc3_infrastructure #
          .BANDWIDTH          ("OPTIMIZED"),
          .CLKIN1_PERIOD      (CLK_PERIOD_NS),
          .CLKIN2_PERIOD      (CLK_PERIOD_NS),
-         .CLKOUT0_DIVIDE     (1),              // 625 MHz system clock
-         .CLKOUT1_DIVIDE     (1),              // 625 MHz system clock (180 deg)
-         .CLKOUT2_DIVIDE     (4),              // 156.256 MHz test bench clock
-         .CLKOUT3_DIVIDE     (8),              // 78.125 MHz calibration clock
+         .CLKOUT0_DIVIDE     (C_CLKOUT0_DIVIDE),
+         .CLKOUT1_DIVIDE     (C_CLKOUT1_DIVIDE),
+         .CLKOUT2_DIVIDE     (C_CLKOUT2_DIVIDE),
+         .CLKOUT3_DIVIDE     (C_CLKOUT3_DIVIDE),
          .CLKOUT4_DIVIDE     (1),
          .CLKOUT5_DIVIDE     (1),
          .CLKOUT0_PHASE      (0.000),
@@ -116,8 +191,8 @@ module memc3_infrastructure #
          .CLKOUT4_DUTY_CYCLE (0.500),
          .CLKOUT5_DUTY_CYCLE (0.500),
          .COMPENSATION       ("INTERNAL"),
-         .DIVCLK_DIVIDE      (4),
-         .CLKFBOUT_MULT      (25),             // 25MHz x 25 = 625 MHz system clock
+         .DIVCLK_DIVIDE      (C_DIVCLK_DIVIDE),
+         .CLKFBOUT_MULT      (C_CLKFBOUT_MULT),
          .CLKFBOUT_PHASE     (0.0),
          .REF_JITTER         (0.005000)
          )
@@ -206,17 +281,17 @@ module memc3_infrastructure #
   assign rst0    = rst0_sync_r[RST_SYNC_NUM-1];
 
 
-	BUFPLL_MCB BUFPLL_MCB1 
-	( .IOCLK0         (sysclk_2x),	
-	  .IOCLK1         (sysclk_2x_180), 
-	  .LOCKED         (locked),
-	  .GCLK           (mcb_drp_clk),
-	  .SERDESSTROBE0  (pll_ce_0), 
-	  .SERDESSTROBE1  (pll_ce_90), 
-	  .PLLIN0         (clk_2x_0),  
-	  .PLLIN1         (clk_2x_180),
-	  .LOCK           (bufpll_mcb_locked) 
-	  );
+BUFPLL_MCB BUFPLL_MCB1 
+( .IOCLK0         (sysclk_2x),  
+  .IOCLK1         (sysclk_2x_180), 	 
+  .LOCKED         (locked),
+  .GCLK           (mcb_drp_clk),
+  .SERDESSTROBE0  (pll_ce_0), 
+  .SERDESSTROBE1  (pll_ce_90), 
+  .PLLIN0         (clk_2x_0),  
+  .PLLIN1         (clk_2x_180),
+  .LOCK           (bufpll_mcb_locked) 
+  );
 
 
 endmodule

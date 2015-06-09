@@ -74,9 +74,10 @@ module SDRAM_FIFO  #(
 	(
 	
 	// Clocks
-	input wire										  ti_clk,			// 48 MHz clock from Opal Kelly Host
+	input wire										  ti_clk,			// 100.8 MHz clock from Opal Kelly Host
 	input wire										  data_in_clk, 	// clock domain for FIFO input; variable
-   input wire                               clk1_in,			// this should be a 100MHz clock tied to FPGA
+   input wire                               clk1_in_p,			// this should be a 100MHz clock tied to FPGA
+	input wire										  clk1_in_n,
 	output wire										  clk1_out, 		// buffered 100 MHz clock out, if needed for other uses
 	
 	// FIFO interface
@@ -93,34 +94,34 @@ module SDRAM_FIFO  #(
 	
 
 	// I/O connections from Xilinx FPGA to 128-MiByte SDRAM
-	inout  wire [C3_NUM_DQ_PINS-1:0]         mcb3_dram_dq,
-	output wire [C3_MEM_ADDR_WIDTH-1:0]      mcb3_dram_a,
-	output wire [C3_MEM_BANKADDR_WIDTH-1:0]  mcb3_dram_ba,
-	output wire                              mcb3_dram_ras_n,
-	output wire                              mcb3_dram_cas_n,
-	output wire                              mcb3_dram_we_n,
-	output wire                              mcb3_dram_odt,
-	output wire                              mcb3_dram_cke,
-	output wire                              mcb3_dram_dm,
-	inout  wire                              mcb3_dram_udqs,
-	inout  wire                              mcb3_dram_udqs_n,
-	inout  wire                              mcb3_rzq,
-	inout  wire                              mcb3_zio,
-	output wire                              mcb3_dram_udm,
-	inout  wire                              mcb3_dram_dqs,
-	inout  wire                              mcb3_dram_dqs_n,
-	output wire                              mcb3_dram_ck,
-	output wire                              mcb3_dram_ck_n,
-	output wire                              mcb3_dram_cs_n
+	inout  wire [C3_NUM_DQ_PINS-1:0]         ddr2_dq,
+	output wire [C3_MEM_ADDR_WIDTH-1:0]      ddr2_a,
+	output wire [C3_MEM_BANKADDR_WIDTH-1:0]  ddr2_ba,
+	output wire                              ddr2_ras_n,
+	output wire                              ddr2_cas_n,
+	output wire                              ddr2_we_n,
+	output wire                              ddr2_odt,
+	output wire                              ddr2_cke,
+	output wire                              ddr2_dm,
+	inout  wire                              ddr2_udqs,
+	inout  wire                              ddr2_udqs_n,
+	inout  wire                              ddr2_rzq,
+	inout  wire                              ddr2_zio,
+	output wire                              ddr2_udm,
+	inout  wire                              ddr2_dqs,
+	inout  wire                              ddr2_dqs_n,
+	output wire                              ddr2_ck,
+	output wire                              ddr2_ck_n,
+	output wire                              ddr2_cs_n
    );
 
-
-   localparam C3_CLKOUT0_DIVIDE       = 1;       
-   localparam C3_CLKOUT1_DIVIDE       = 1;       
-   localparam C3_CLKOUT2_DIVIDE       = 16;       
-   localparam C3_CLKOUT3_DIVIDE       = 8;       
-   localparam C3_CLKFBOUT_MULT        = 2;       
-   localparam C3_DIVCLK_DIVIDE        = 1;       
+	localparam C3_INCLK_PERIOD         = 10000; // 10000ps -> 10ns -> 100Mhz
+   localparam C3_CLKOUT0_DIVIDE       = 1;     // 625 MHz system clock      
+	localparam C3_CLKOUT1_DIVIDE       = 1;     // 625 MHz system clock (180 deg)      
+	localparam C3_CLKOUT2_DIVIDE       = 4;     // 156.256 MHz test bench clock      
+	localparam C3_CLKOUT3_DIVIDE       = 8;     // 78.125 MHz calibration clock      
+	localparam C3_CLKFBOUT_MULT        = 25;    // 25MHz x 25 = 625 MHz system clock       
+	localparam C3_DIVCLK_DIVIDE        = 4;     // 100MHz/4 = 25 Mhz             
    localparam C3_ARB_NUM_TIME_SLOTS   = 12;       
    localparam C3_ARB_TIME_SLOT_0      = 3'o0;       
    localparam C3_ARB_TIME_SLOT_1      = 3'o0;       
@@ -254,7 +255,7 @@ module SDRAM_FIFO  #(
 	
 	
 	assign c3_sys_clk     = 1'b0;
-	assign mcb3_dram_cs_n = 1'b0;
+	assign ddr2_cs_n = 1'b0;
 
 
 	//MIG infrastructure reset
@@ -276,13 +277,20 @@ module SDRAM_FIFO  #(
 	
 	memc3_infrastructure #
 		(
-		.C_MEMCLK_PERIOD                  (C3_MEMCLK_PERIOD),
+		.C_MEMCLK_PERIOD                  (C3_INCLK_PERIOD),
 		.C_RST_ACT_LOW                    (C3_RST_ACT_LOW),
-		.C_INPUT_CLK_TYPE                 (C3_INPUT_CLK_TYPE)
+		.C_INPUT_CLK_TYPE                 (C3_INPUT_CLK_TYPE),
+		.C_CLKOUT0_DIVIDE                 (C3_CLKOUT0_DIVIDE),
+		.C_CLKOUT1_DIVIDE                 (C3_CLKOUT1_DIVIDE),
+		.C_CLKOUT2_DIVIDE                 (C3_CLKOUT2_DIVIDE),
+		.C_CLKOUT3_DIVIDE                 (C3_CLKOUT3_DIVIDE),
+		.C_CLKFBOUT_MULT                  (C3_CLKFBOUT_MULT),
+		.C_DIVCLK_DIVIDE                  (C3_DIVCLK_DIVIDE)
 		)
 	memc3_infrastructure_inst
 		(
-		.sys_clk_p                      (clk1_in),
+		.sys_clk_p                      (clk1_in_p),
+		.sys_clk_n							  (clk1_in_n),
 		.sys_clk                        (c3_sys_clk),
 		.sys_rst_n                      (c3_sys_rst_n),
 		.clk0                           (c3_clk0),
@@ -375,20 +383,20 @@ module SDRAM_FIFO  #(
 		)
 	memc3_wrapper_inst
 		(
-		.mcb3_dram_dq                        (mcb3_dram_dq),
-		.mcb3_dram_a                         (mcb3_dram_a),
-		.mcb3_dram_ba                        (mcb3_dram_ba),
-		.mcb3_dram_ras_n                     (mcb3_dram_ras_n),
-		.mcb3_dram_cas_n                     (mcb3_dram_cas_n),
-		.mcb3_dram_we_n                      (mcb3_dram_we_n),
-		.mcb3_dram_odt                       (mcb3_dram_odt),
-		.mcb3_dram_cke                       (mcb3_dram_cke),
-		.mcb3_dram_dm                        (mcb3_dram_dm),
-		.mcb3_dram_udqs                      (mcb3_dram_udqs),
-		.mcb3_dram_udqs_n                    (mcb3_dram_udqs_n),
-		.mcb3_rzq                            (mcb3_rzq),
-		.mcb3_zio                            (mcb3_zio),
-		.mcb3_dram_udm                       (mcb3_dram_udm),
+		.mcb3_dram_dq                        (ddr2_dq),
+		.mcb3_dram_a                         (ddr2_a),
+		.mcb3_dram_ba                        (ddr2_ba),
+		.mcb3_dram_ras_n                     (ddr2_ras_n),
+		.mcb3_dram_cas_n                     (ddr2_cas_n),
+		.mcb3_dram_we_n                      (ddr2_we_n),
+		.mcb3_dram_odt                       (ddr2_odt),
+		.mcb3_dram_cke                       (ddr2_cke),
+		.mcb3_dram_dm                        (ddr2_dm),
+		.mcb3_dram_udqs                      (ddr2_udqs),
+		.mcb3_dram_udqs_n                    (ddr2_udqs_n),
+		.mcb3_rzq                            (ddr2_rzq),
+		.mcb3_zio                            (ddr2_zio),
+		.mcb3_dram_udm                       (ddr2_udm),
 		.calib_done                          (c3_calib_done),
 		.async_rst                           (c3_async_rst),
 		.sysclk_2x                           (c3_sysclk_2x),
@@ -397,10 +405,10 @@ module SDRAM_FIFO  #(
 		.pll_ce_90                           (c3_pll_ce_90),
 		.pll_lock                            (c3_pll_lock),
 		.mcb_drp_clk                         (c3_mcb_drp_clk),
-		.mcb3_dram_dqs                       (mcb3_dram_dqs),
-		.mcb3_dram_dqs_n                     (mcb3_dram_dqs_n),
-		.mcb3_dram_ck                        (mcb3_dram_ck),
-		.mcb3_dram_ck_n                      (mcb3_dram_ck_n),
+		.mcb3_dram_dqs                       (ddr2_dqs),
+		.mcb3_dram_dqs_n                     (ddr2_dqs_n),
+		.mcb3_dram_ck                        (ddr2_ck),
+		.mcb3_dram_ck_n                      (ddr2_ck_n),
 		.p0_cmd_clk                          (c3_clk0),
 		.p0_cmd_en                           (c3_p0_cmd_en),
 		.p0_cmd_instr                        (c3_p0_cmd_instr),

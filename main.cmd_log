@@ -74,3 +74,30 @@ map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt 4 main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -tsi main.tsi -timegroups -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6010.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "E:/CAD/hdl/rhythm/main.xst" -ofn "E:/CAD/hdl/rhythm/main.syr" 
+xst -intstyle ise -ifn "E:/CAD/hdl/rhythm/main.xst" -ofn "E:/CAD/hdl/rhythm/main.syr" 
+xst -intstyle ise -ifn "E:/CAD/hdl/rhythm/main.xst" -ofn "E:/CAD/hdl/rhythm/main.syr" 
+xst -intstyle ise -ifn "E:/CAD/hdl/rhythm/main.xst" -ofn "E:/CAD/hdl/rhythm/main.syr" 
+xst -intstyle ise -ifn "E:/CAD/hdl/rhythm/main.xst" -ofn "E:/CAD/hdl/rhythm/main.syr" 
+xst -intstyle ise -ifn "E:/CAD/hdl/rhythm/main.xst" -ofn "E:/CAD/hdl/rhythm/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6310.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6310.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6310.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6310.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+xst -intstyle ise -ifn "E:/CAD/hdl/rhythm/main.xst" -ofn "E:/CAD/hdl/rhythm/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6310.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+xst -intstyle ise -ifn "E:/CAD/hdl/rhythm/main.xst" -ofn "E:/CAD/hdl/rhythm/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6310.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt 4 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -tsi main.tsi -timegroups -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6310.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "E:/CAD/hdl/rhythm/main.xst" -ofn "E:/CAD/hdl/rhythm/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6310.ucf -p xc6slx45-fgg484-2 main.ngc main.ngd  
+map -intstyle ise -p xc6slx45-fgg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt 4 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -tsi main.tsi -timegroups -s 2 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf xem6310.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+trce -intstyle ise -v 3 -tsi main_preroute.tsi -timegroups -s 2 -n 3 -fastpaths -xml main_preroute.twx main_map.ncd -o main_preroute.twr main.pcf -ucf xem6310.ucf 
