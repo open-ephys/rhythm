@@ -10,23 +10,21 @@ Target Device  : xc6slx45
 Target Package : fgg484
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Jun 09 03:34:08 2015
+Mapped Date    : Thu Jun 11 02:54:00 2015
 
-Design Summary
---------------
-Number of errors:      0
-Number of warnings:   25
+Interim Summary
+---------------
 Slice Logic Utilization:
-  Number of Slice Registers:                 4,871 out of  54,576    8%
-    Number used as Flip Flops:               4,871
+  Number of Slice Registers:                 4,890 out of  54,576    8%
+    Number used as Flip Flops:               4,890
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      7,775 out of  27,288   28%
-    Number used as logic:                    7,583 out of  27,288   27%
-      Number using O6 output only:           6,576
+  Number of Slice LUTs:                      8,252 out of  27,288   30%
+    Number used as logic:                    8,122 out of  27,288   29%
+      Number using O6 output only:           7,126
       Number using O5 output only:             234
-      Number using O5 and O6:                  773
+      Number using O5 and O6:                  762
       Number used as ROM:                        0
     Number used as Memory:                      48 out of   6,408    1%
       Number used as Dual Port RAM:             20
@@ -41,21 +39,20 @@ Slice Logic Utilization:
         Number using O6 output only:             4
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:    144
-      Number with same-slice register load:    122
-      Number with same-slice carry load:        22
+    Number used exclusively as route-thrus:     82
+      Number with same-slice register load:      0
+      Number with same-slice carry load:        82
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 2,729 out of   6,822   40%
   Number of MUXCYs used:                     1,512 out of  13,644   11%
-  Number of LUT Flip Flop pairs used:        9,030
-    Number with an unused Flip Flop:         4,416 out of   9,030   48%
-    Number with an unused LUT:               1,255 out of   9,030   13%
-    Number of fully used LUT-FF pairs:       3,359 out of   9,030   37%
-    Number of unique control sets:             185
+  Number of LUT Flip Flop pairs used:       10,280
+    Number with an unused Flip Flop:         5,512 out of  10,280   53%
+    Number with an unused LUT:               2,028 out of  10,280   19%
+    Number of fully used LUT-FF pairs:       2,740 out of  10,280   26%
+    Number of unique control sets:             181
     Number of slice register sites lost
-      to control set restrictions:             633 out of  54,576    1%
+      to control set restrictions:             630 out of  54,576    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -108,30 +105,22 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.38
 
-Peak Memory Usage:  632 MB
-Total REAL time to MAP completion:  2 mins 44 secs 
-Total CPU time to MAP completion (all processors):   2 mins 48 secs 
-
-Table of Contents
------------------
-Section 1 - Errors
-Section 2 - Warnings
-Section 3 - Informational
-Section 4 - Removed Logic Summary
-Section 5 - Removed Logic
-Section 6 - IOB Properties
-Section 7 - RPMs
-Section 8 - Guide Report
-Section 9 - Area Group and Partition Summary
-Section 10 - Timing Report
-Section 11 - Configuration String Information
-Section 12 - Control Set Information
-Section 13 - Utilization by Hierarchy
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :  25
 
 Section 1 - Errors
 ------------------
+ERROR:PhysDesignRules:2449 - The computed value for the VCO operating frequency
+   of PLL_ADV instance SDRAM_FIFO_inst/memc3_infrastructure_inst/u_pll_adv is
+   calculated to be 200.000000 MHz. This falls below the operating range of the
+   PLL VCO frequency for this device of 400.000000 - 1000.000000 MHz. Please
+   adjust either the input frequency CLKINx_PERIOD, multiplication factor
+   CLKFBOUT_MULT or the division factor DIVCLK_DIVIDE, in order to achieve a VCO
+   frequency within the rated operating range for this device. 
+ERROR:Pack:1642 - Errors in physical DRC.
 
 Section 2 - Warnings
 --------------------
@@ -148,9 +137,6 @@ WARNING:Pack:1653 - At least one timing constraint is impossible to meet because
 
    For more information about the Timing Analyzer, consult the Xilinx Timing Analyzer Reference manual; for more information on TRCE,
    consult the Xilinx Command Line Tools User Guide "TRACE" chapter.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep46trigin<0> is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<0> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
@@ -163,6 +149,9 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<5> is sourced by
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<7> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep46trigin<0> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<11> is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
@@ -173,10 +162,10 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net ep46trigin<5> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal
-   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAMD_O> is
+   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAMD_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAMD_O> is
+   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAMD_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
    on
@@ -250,7 +239,7 @@ INFO:Map:284 - Map is running with the multi-threading option on. Map currently
    supports the use of up to 2 processors. Based on the the user options and
    machine load, Map will use 2 processors during this run.
 INFO:LIT:243 - Logical network okHE<111> has no load.
-INFO:LIT:395 - The above info message is repeated 1035 more times for the
+INFO:LIT:395 - The above info message is repeated 961 more times for the
    following (max. 5 shown):
    okHE<110>,
    okHE<109>,
@@ -271,9 +260,9 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-2925 block(s) removed
-2391 block(s) optimized away
-2951 signal(s) removed
+2847 block(s) removed
+2263 block(s) optimized away
+2875 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -288,460 +277,6 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_1" is
-loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_2"
-(ROM) removed.
-  The signal "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked" is
-loadless and has been removed.
-   Loadless block "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked"
-(FF) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_2" is
-loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_3"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_3" is
-loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_4"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_4" is
-loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_5"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_5" is
-loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_6"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_6" is
-loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_7"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_7" is
-loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_8"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_8" is
-loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_9"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_9" is
-loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_10"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_10"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_11"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_11"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_12"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_12"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_13"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_13"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_14"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_14"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_15"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_15"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_16"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_16"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_17"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_17"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_18"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_18"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_19"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_19"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_20"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_20"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_21"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_21"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_22"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_22"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_23"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_23"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_24"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_24"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_25"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_25"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_26"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_26"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_27"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_27"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_28"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_28"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_29"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_29"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_30"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_30"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_31"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_31"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_32"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_32"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_33"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_33"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_34"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_34"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_35"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_35"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_36"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_36"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_37"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_37"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_38"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_38"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_39"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_39"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_40"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_40"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_41"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_41"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_42"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_42"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_43"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_43"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_44"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_44"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_45"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_45"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_46"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_46"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_47"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_47"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_48"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_48"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_49"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_49"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_50"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_50"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_51"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_51"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_52"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_52"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_53"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_53"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_54"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_54"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_55"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_55"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_56"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_56"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_57"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_57"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_58"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_58"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_59"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_59"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_60"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_60"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_61"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_61"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_62"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_62"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_63"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_63"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_64"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_64"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_65"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_65"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_66"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_66"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_67"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_67"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_68"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_68"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_69"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_69"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_70"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_70"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_71"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_71"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_72"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_72"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_73"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_73"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_74"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_74"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_75"
-(ROM) removed.
-The signal
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_75"
-is loadless and has been removed.
- Loadless block
-"SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_76"
-(ROM) removed.
 Loadless block "host/core0/core0/a0/pc0/interrupt_ack_flop" (FF) removed.
 Loadless block "host/core0/core0/a0/pc0/k_write_strobe_flop" (SFF) removed.
  The signal "host/core0/core0/a0/pc0/k_write_strobe_value" is loadless and has
@@ -6358,13 +5893,6 @@ removed.
  Sourceless block "wo27/ti_addr[7]_ep_addr[7]_equal_5_o83" (ROM) removed.
 The signal "wo27/ti_addr[7]_ep_addr[7]_equal_5_o81" is sourceless and has been
 removed.
-The signal "wo26/ti_addr[7]_ep_addr[7]_equal_5_o" is sourceless and has been
-removed.
-The signal "wo26/ti_addr[7]_ep_addr[7]_equal_5_o8" is sourceless and has been
-removed.
- Sourceless block "wo26/ti_addr[7]_ep_addr[7]_equal_5_o83" (ROM) removed.
-The signal "wo26/ti_addr[7]_ep_addr[7]_equal_5_o81" is sourceless and has been
-removed.
 The signal "host/core0/core0/_n0333<1>" is sourceless and has been removed.
  Sourceless block "host/core0/core0/ti_reg_write_data_31" (FF) removed.
   The signal "okHE<111>" is sourceless and has been removed.
@@ -7142,29 +6670,53 @@ The signal "host/core0/core0/a0/pc0/active_interrupt_value" is sourceless and
 has been removed.
 The signal "SDRAM_FIFO_inst/okPipeIn_fifo/full" is sourceless and has been
 removed.
-The signal "SDRAM_FIFO_inst/okPipeOut_fifo/valid" is sourceless and has been
-removed.
-The signal "SDRAM_FIFO_inst/okPipeOut_fifo/full" is sourceless and has been
-removed.
-The signal "SDRAM_FIFO_inst/okPipeOut_fifo/empty" is sourceless and has been
-removed.
- Sourceless block
-"SDRAM_FIFO_inst/okPipeOut_fifo/BU2/U0/grf.rf/gl0.rd/grhf.rhf/Mmux_ram_valid_int
-_GND_67_o_MUX_14_o11" (ROM) removed.
-  The signal
-"SDRAM_FIFO_inst/okPipeOut_fifo/BU2/U0/grf.rf/gl0.rd/grhf.rhf/ram_valid_int_GND_
-67_o_MUX_14_o" is sourceless and has been removed.
-   Sourceless block
-"SDRAM_FIFO_inst/okPipeOut_fifo/BU2/U0/grf.rf/gl0.rd/grhf.rhf/ram_valid_d1" (FF)
-removed.
-The signal "SDRAM_FIFO_inst/okPipeOut_fifo/wr_data_count<0>" is sourceless and
-has been removed.
 The signal
-"SDRAM_FIFO_inst/okPipeOut_fifo/BU2/U0/grf.rf/gl0.wr/gwas.gwdc0.wdc/GND_79_o_GND
-_79_o_sub_2_OUT<0>" is sourceless and has been removed.
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i<0>" is sourceless and has been
+removed.
+The signal
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.rd/gras.rsts/ram_empty_i" is sourceless and has been removed.
  Sourceless block
-"SDRAM_FIFO_inst/okPipeOut_fifo/BU2/U0/grf.rf/gl0.wr/gwas.gwdc0.wdc/wr_data_coun
-t_i_0" (FF) removed.
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.rd/grhf.rhf/Mmux_ram_valid_int_GND_257_o_MUX_13_o11" (ROM)
+removed.
+  The signal
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.rd/grhf.rhf/ram_valid_int_GND_257_o_MUX_13_o" is sourceless and
+has been removed.
+   Sourceless block
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1" (FF) removed.
+    The signal
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1" is sourceless and has been removed.
+The signal
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.wr/gwas.gwdc0.wdc/GND_269_o_GND_269_o_sub_2_OUT<0>" is
+sourceless and has been removed.
+ Sourceless block
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_0" (FF) removed.
+The signal
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gcx.clkx/rd_pntr_gc<0>" is sourceless and has been removed.
+ Sourceless block
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gcx.clkx/rd_pntr_gc_asreg_0" (FF) removed.
+  The signal
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<0>" is sourceless and has been removed.
+The signal
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gcx.clkx/RD_PNTR[0]_RD_PNTR[1]_XOR_53_o" is sourceless and has been
+removed.
+ Sourceless block
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gcx.clkx/rd_pntr_gc_0" (FF) removed.
 The signal
 "DAC_output_1/multiplier_1/U0/i_mult/gEMBEDDED_MULT.gEMB_MULTS_only.gDSP.iDSP/in
 ferred_dsp.m_reg<35>" is sourceless and has been removed.
@@ -7341,16 +6893,18 @@ removed.
 Unused block "SDRAM_FIFO_inst/okPipeIn_fifo/GND" (ZERO) removed.
 Unused block "SDRAM_FIFO_inst/okPipeIn_fifo/VCC" (ONE) removed.
 Unused block
-"SDRAM_FIFO_inst/okPipeOut_fifo/BU2/U0/grf.rf/gl0.rd/gras.rsts/ram_empty_i" (FF)
-removed.
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gcx.clkx/Mxor_RD_PNTR[0]_RD_PNTR[1]_XOR_53_o_xo<0>1" (ROM) removed.
 Unused block
-"SDRAM_FIFO_inst/okPipeOut_fifo/BU2/U0/grf.rf/gl0.wr/gwas.gwdc0.wdc/Msub_GND_79_
-o_GND_79_o_sub_2_OUT<8:0>_xor<0>" (XOR) removed.
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.rd/gras.rsts/ram_empty_i" (FF) removed.
 Unused block
-"SDRAM_FIFO_inst/okPipeOut_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i" (FF)
-removed.
-Unused block "SDRAM_FIFO_inst/okPipeOut_fifo/GND" (ZERO) removed.
-Unused block "SDRAM_FIFO_inst/okPipeOut_fifo/VCC" (ONE) removed.
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_GND_269_o_GND_269_o_sub_2_OUT<8:0>_xor<0>
+" (XOR) removed.
+Unused block
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
 Unused block "host/core0/core0/a0/cb0/GND" (ZERO) removed.
 Unused block "host/core0/core0/a0/cb0/VCC" (ONE) removed.
 Unused block "host/core0/core0/state_GND_2_o_GND_2_o_MUX_746_o1" (ROM) removed.
@@ -7507,8 +7061,6 @@ Unused block "wi1d/ep_datahold_12" (SFF) removed.
 Unused block "wi1d/ep_datahold_13" (SFF) removed.
 Unused block "wi1d/ep_datahold_14" (SFF) removed.
 Unused block "wi1d/ep_datahold_15" (SFF) removed.
-Unused block "wo26/ti_addr[7]_ep_addr[7]_equal_5_o81" (ROM) removed.
-Unused block "wo26/ti_addr[7]_ep_addr[7]_equal_5_o82" (ROM) removed.
 Unused block "wo27/ti_addr[7]_ep_addr[7]_equal_5_o81" (ROM) removed.
 Unused block "wo27/ti_addr[7]_ep_addr[7]_equal_5_o82" (ROM) removed.
 Unused block "wo28/ti_addr[7]_ep_addr[7]_equal_5_o81" (ROM) removed.
@@ -7576,8 +7128,8 @@ VCC 		DAC_output_8/multiplier_1/blk00000001
 GND 		DAC_output_8/multiplier_1/blk00000002
 GND 		SDRAM_FIFO_inst/okPipeIn_fifo/BU2/XST_GND
 VCC 		SDRAM_FIFO_inst/okPipeIn_fifo/BU2/XST_VCC
-GND 		SDRAM_FIFO_inst/okPipeOut_fifo/BU2/XST_GND
-VCC 		SDRAM_FIFO_inst/okPipeOut_fifo/BU2/XST_VCC
+GND 		SDRAM_FIFO_inst/okPipeOut_fifo/XST_GND
+VCC 		SDRAM_FIFO_inst/okPipeOut_fifo/XST_VCC
 GND 		XST_GND
 VCC 		XST_VCC
 GND 		host/core0/XST_GND
@@ -7589,136 +7141,62 @@ FD 		host/core0/core0/a0/pc0/sync_sleep_flop
    optimized to 0
 FDRE 		host/regctrlout2
    optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>101
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>111
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>131
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>141
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>151
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>161
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>171
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>181
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>191
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>201
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>211
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>221
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>241
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>251
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>81
-   optimized to 0
-LUT2 		poa0/Mmux_okEH<31:0>91
-   optimized to 0
 GND 		poa0/XST_GND
 LUT6 		wireOR/okEH<1000>1
-   optimized to 0
-LUT6 		wireOR/okEH<1000>2
    optimized to 0
 LUT6 		wireOR/okEH<1000>3
    optimized to 0
 LUT6 		wireOR/okEH<1000>4
    optimized to 0
-LUT4 		wireOR/okEH<1000>5
-   optimized to 0
 LUT6 		wireOR/okEH<1000>6
    optimized to 0
-LUT5 		wireOR/okEH<1000>7
-   optimized to 0
 LUT6 		wireOR/okEH<1001>1
-   optimized to 0
-LUT6 		wireOR/okEH<1001>2
    optimized to 0
 LUT6 		wireOR/okEH<1001>3
    optimized to 0
 LUT6 		wireOR/okEH<1001>4
    optimized to 0
-LUT4 		wireOR/okEH<1001>5
-   optimized to 0
 LUT6 		wireOR/okEH<1001>6
    optimized to 0
-LUT5 		wireOR/okEH<1001>7
-   optimized to 0
 LUT6 		wireOR/okEH<1002>1
-   optimized to 0
-LUT6 		wireOR/okEH<1002>2
    optimized to 0
 LUT6 		wireOR/okEH<1002>3
    optimized to 0
 LUT6 		wireOR/okEH<1002>4
    optimized to 0
-LUT4 		wireOR/okEH<1002>5
-   optimized to 0
 LUT6 		wireOR/okEH<1002>6
    optimized to 0
-LUT5 		wireOR/okEH<1002>7
-   optimized to 0
 LUT6 		wireOR/okEH<1003>1
-   optimized to 0
-LUT6 		wireOR/okEH<1003>2
    optimized to 0
 LUT6 		wireOR/okEH<1003>3
    optimized to 0
 LUT6 		wireOR/okEH<1003>4
    optimized to 0
-LUT4 		wireOR/okEH<1003>5
-   optimized to 0
 LUT6 		wireOR/okEH<1003>6
    optimized to 0
-LUT5 		wireOR/okEH<1003>7
-   optimized to 0
 LUT6 		wireOR/okEH<1004>1
-   optimized to 0
-LUT6 		wireOR/okEH<1004>2
    optimized to 0
 LUT6 		wireOR/okEH<1004>3
    optimized to 0
 LUT6 		wireOR/okEH<1004>4
    optimized to 0
-LUT4 		wireOR/okEH<1004>5
-   optimized to 0
 LUT6 		wireOR/okEH<1004>6
    optimized to 0
-LUT5 		wireOR/okEH<1004>7
-   optimized to 0
 LUT6 		wireOR/okEH<1005>1
-   optimized to 0
-LUT6 		wireOR/okEH<1005>2
    optimized to 0
 LUT6 		wireOR/okEH<1005>3
    optimized to 0
 LUT6 		wireOR/okEH<1005>4
    optimized to 0
-LUT4 		wireOR/okEH<1005>5
-   optimized to 0
 LUT6 		wireOR/okEH<1005>6
    optimized to 0
-LUT5 		wireOR/okEH<1005>7
-   optimized to 0
 LUT6 		wireOR/okEH<1006>1
-   optimized to 0
-LUT6 		wireOR/okEH<1006>2
    optimized to 0
 LUT6 		wireOR/okEH<1006>3
    optimized to 0
 LUT6 		wireOR/okEH<1006>4
    optimized to 0
-LUT4 		wireOR/okEH<1006>5
-   optimized to 0
 LUT6 		wireOR/okEH<1006>6
-   optimized to 0
-LUT5 		wireOR/okEH<1006>7
    optimized to 0
 LUT6 		wireOR/okEH<1007>1
    optimized to 0
@@ -8256,129 +7734,75 @@ LUT6 		wireOR/okEH<990>6
    optimized to 0
 LUT6 		wireOR/okEH<991>1
    optimized to 0
-LUT6 		wireOR/okEH<991>2
-   optimized to 0
 LUT6 		wireOR/okEH<991>3
    optimized to 0
 LUT6 		wireOR/okEH<991>4
    optimized to 0
-LUT4 		wireOR/okEH<991>5
-   optimized to 0
 LUT6 		wireOR/okEH<991>6
    optimized to 0
-LUT5 		wireOR/okEH<991>7
-   optimized to 0
 LUT6 		wireOR/okEH<992>1
-   optimized to 0
-LUT6 		wireOR/okEH<992>2
    optimized to 0
 LUT6 		wireOR/okEH<992>3
    optimized to 0
 LUT6 		wireOR/okEH<992>4
    optimized to 0
-LUT4 		wireOR/okEH<992>5
-   optimized to 0
 LUT6 		wireOR/okEH<992>6
    optimized to 0
-LUT5 		wireOR/okEH<992>7
-   optimized to 0
 LUT6 		wireOR/okEH<993>1
-   optimized to 0
-LUT6 		wireOR/okEH<993>2
    optimized to 0
 LUT6 		wireOR/okEH<993>3
    optimized to 0
 LUT6 		wireOR/okEH<993>4
    optimized to 0
-LUT4 		wireOR/okEH<993>5
-   optimized to 0
 LUT6 		wireOR/okEH<993>6
    optimized to 0
-LUT5 		wireOR/okEH<993>7
-   optimized to 0
 LUT6 		wireOR/okEH<994>1
-   optimized to 0
-LUT6 		wireOR/okEH<994>2
    optimized to 0
 LUT6 		wireOR/okEH<994>3
    optimized to 0
 LUT6 		wireOR/okEH<994>4
    optimized to 0
-LUT4 		wireOR/okEH<994>5
-   optimized to 0
 LUT6 		wireOR/okEH<994>6
    optimized to 0
-LUT5 		wireOR/okEH<994>7
-   optimized to 0
 LUT6 		wireOR/okEH<995>1
-   optimized to 0
-LUT6 		wireOR/okEH<995>2
    optimized to 0
 LUT6 		wireOR/okEH<995>3
    optimized to 0
 LUT6 		wireOR/okEH<995>4
    optimized to 0
-LUT4 		wireOR/okEH<995>5
-   optimized to 0
 LUT6 		wireOR/okEH<995>6
    optimized to 0
-LUT5 		wireOR/okEH<995>7
-   optimized to 0
 LUT6 		wireOR/okEH<996>1
-   optimized to 0
-LUT6 		wireOR/okEH<996>2
    optimized to 0
 LUT6 		wireOR/okEH<996>3
    optimized to 0
 LUT6 		wireOR/okEH<996>4
    optimized to 0
-LUT4 		wireOR/okEH<996>5
-   optimized to 0
 LUT6 		wireOR/okEH<996>6
    optimized to 0
-LUT5 		wireOR/okEH<996>7
-   optimized to 0
 LUT6 		wireOR/okEH<997>1
-   optimized to 0
-LUT6 		wireOR/okEH<997>2
    optimized to 0
 LUT6 		wireOR/okEH<997>3
    optimized to 0
 LUT6 		wireOR/okEH<997>4
    optimized to 0
-LUT4 		wireOR/okEH<997>5
-   optimized to 0
 LUT6 		wireOR/okEH<997>6
    optimized to 0
-LUT5 		wireOR/okEH<997>7
-   optimized to 0
 LUT6 		wireOR/okEH<998>1
-   optimized to 0
-LUT6 		wireOR/okEH<998>2
    optimized to 0
 LUT6 		wireOR/okEH<998>3
    optimized to 0
 LUT6 		wireOR/okEH<998>4
    optimized to 0
-LUT4 		wireOR/okEH<998>5
-   optimized to 0
 LUT6 		wireOR/okEH<998>6
    optimized to 0
-LUT5 		wireOR/okEH<998>7
-   optimized to 0
 LUT6 		wireOR/okEH<999>1
-   optimized to 0
-LUT6 		wireOR/okEH<999>2
    optimized to 0
 LUT6 		wireOR/okEH<999>3
    optimized to 0
 LUT6 		wireOR/okEH<999>4
    optimized to 0
-LUT4 		wireOR/okEH<999>5
-   optimized to 0
 LUT6 		wireOR/okEH<999>6
-   optimized to 0
-LUT5 		wireOR/okEH<999>7
    optimized to 0
 LUT2 		wo20/Mmux_okEH<31:0>101
    optimized to 0
@@ -8954,135 +8378,7 @@ FDRE 		wo25/wirehold_8
    optimized to 0
 FDRE 		wo25/wirehold_9
    optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>101
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>11
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>111
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>121
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>131
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>141
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>151
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>161
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>171
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>181
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>191
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>201
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>21
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>211
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>221
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>231
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>241
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>251
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>261
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>271
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>281
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>291
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>301
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>31
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>311
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>321
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>41
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>51
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>61
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>71
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>81
-   optimized to 0
-LUT2 		wo26/Mmux_okEH<31:0>91
-   optimized to 0
 GND 		wo26/XST_GND
-FDRE 		wo26/wirehold_0
-   optimized to 0
-FDRE 		wo26/wirehold_1
-   optimized to 0
-FDRE 		wo26/wirehold_10
-   optimized to 0
-FDRE 		wo26/wirehold_11
-   optimized to 0
-FDRE 		wo26/wirehold_12
-   optimized to 0
-FDRE 		wo26/wirehold_13
-   optimized to 0
-FDRE 		wo26/wirehold_14
-   optimized to 0
-FDRE 		wo26/wirehold_15
-   optimized to 0
-FDRE 		wo26/wirehold_16
-   optimized to 0
-FDRE 		wo26/wirehold_17
-   optimized to 0
-FDRE 		wo26/wirehold_18
-   optimized to 0
-FDRE 		wo26/wirehold_19
-   optimized to 0
-FDRE 		wo26/wirehold_2
-   optimized to 0
-FDRE 		wo26/wirehold_20
-   optimized to 0
-FDRE 		wo26/wirehold_21
-   optimized to 0
-FDRE 		wo26/wirehold_22
-   optimized to 0
-FDRE 		wo26/wirehold_23
-   optimized to 0
-FDRE 		wo26/wirehold_24
-   optimized to 0
-FDRE 		wo26/wirehold_25
-   optimized to 0
-FDRE 		wo26/wirehold_26
-   optimized to 0
-FDRE 		wo26/wirehold_27
-   optimized to 0
-FDRE 		wo26/wirehold_28
-   optimized to 0
-FDRE 		wo26/wirehold_29
-   optimized to 0
-FDRE 		wo26/wirehold_3
-   optimized to 0
-FDRE 		wo26/wirehold_30
-   optimized to 0
-FDRE 		wo26/wirehold_31
-   optimized to 0
-FDRE 		wo26/wirehold_4
-   optimized to 0
-FDRE 		wo26/wirehold_5
-   optimized to 0
-FDRE 		wo26/wirehold_6
-   optimized to 0
-FDRE 		wo26/wirehold_7
-   optimized to 0
-FDRE 		wo26/wirehold_8
-   optimized to 0
-FDRE 		wo26/wirehold_9
-   optimized to 0
 LUT2 		wo27/Mmux_okEH<31:0>101
    optimized to 0
 LUT2 		wo27/Mmux_okEH<31:0>11
@@ -12306,7 +11602,7 @@ Asterisk (*) preceding a constraint indicates it was not met.
 * TS_SYS_CLK3 = PERIOD TIMEGRP "SYS_CLK3" 1 | SETUP       |    -3.681ns|    87.169ns|      39|       58595
   0 ns HIGH 50%                             | HOLD        |     0.216ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-* TS_variable_freq_clk_generator_inst_clkou | SETUP       |    -2.082ns|  1316.331ns|       9|       18298
+* TS_variable_freq_clk_generator_inst_clkou | SETUP       |    -1.697ns|    54.343ns|       9|       14833
   t_i_0 = PERIOD TIMEGRP "variable_freq_clk | HOLD        |     0.132ns|            |       0|           0
   _generator_inst_clkout_i_0" TS_SYS_CLK3 / |             |            |            |        |            
    0.84 HIGH 50%                            |             |            |            |        |            
@@ -12318,45 +11614,39 @@ Asterisk (*) preceding a constraint indicates it was not met.
   s VALID 4 ns BEFORE COMP "okUH<0>" "RISIN | HOLD        |     2.849ns|            |       0|           0
   G"                                        |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-* TS_SDRAM_FIFO_inst_memc3_infrastructure_i | SETUP       |    -0.101ns|    38.720ns|       9|        4840
-  nst_clk0_bufg_in_0 = PERIOD TIMEGRP "SDRA | HOLD        |     0.071ns|            |       0|           0
-  M_FIFO_inst_memc3_infrastructure_inst_clk |             |            |            |        |            
-  0_bufg_in_0" TS_SYS_CLK3 / 1.5625 HIGH 50 |             |            |            |        |            
-  %                                         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
 * TS_host_dcm0_clk0 = PERIOD TIMEGRP "host_ | SETUP       |     6.019ns|     3.901ns|       0|           0
   dcm0_clk0" TS_okHostClk PHASE -0.93 ns HI | HOLD        |    -0.097ns|            |      56|        5312
   GH 50%                                    | MINPERIOD   |     3.930ns|     5.990ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     0.001ns|     1.599ns|       0|           0
+  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | SETUP       |     0.283ns|    32.536ns|       9|        1384
+  nst_clk0_bufg_in_0 = PERIOD TIMEGRP "SDRA | HOLD        |     0.060ns|            |       0|           0
+  M_FIFO_inst_memc3_infrastructure_inst_clk |             |            |            |        |            
+  0_bufg_in_0" TS_SYS_CLK3 / 0.125 HIGH 50% |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     3.401ns|     1.599ns|       0|           0
   nst_clk_2x_180 = PERIOD TIMEGRP "SDRAM_FI |             |            |            |        |            
   FO_inst_memc3_infrastructure_inst_clk_2x_ |             |            |            |        |            
-  180" TS_okSysClk / 6.25 PHASE 0.8 ns HIGH |             |            |            |        |            
-   50%                                      |             |            |            |        |            
+  180" TS_okSysClk / 2 PHASE 2.5 ns HIGH 50 |             |            |            |        |            
+  %                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     0.001ns|     1.599ns|       0|           0
+  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     3.401ns|     1.599ns|       0|           0
   nst_clk_2x_0 = PERIOD TIMEGRP "SDRAM_FIFO |             |            |            |        |            
   _inst_memc3_infrastructure_inst_clk_2x_0" |             |            |            |        |            
-   TS_okSysClk / 6.25 HIGH 50%              |             |            |            |        |            
+   TS_okSysClk / 2 HIGH 50%                 |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     0.001ns|     1.599ns|       0|           0
+  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     3.401ns|     1.599ns|       0|           0
   nst_clk_2x_180_0 = PERIOD TIMEGRP "SDRAM_ |             |            |            |        |            
   FIFO_inst_memc3_infrastructure_inst_clk_2 |             |            |            |        |            
-  x_180_0" TS_SYS_CLK3 / 6.25 PHASE 0.8 ns  |             |            |            |        |            
-  HIGH 50%                                  |             |            |            |        |            
+  x_180_0" TS_SYS_CLK3 / 2 PHASE 2.5 ns HIG |             |            |            |        |            
+  H 50%                                     |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     0.001ns|     1.599ns|       0|           0
+  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     3.401ns|     1.599ns|       0|           0
   nst_clk_2x_0_0 = PERIOD TIMEGRP "SDRAM_FI |             |            |            |        |            
   FO_inst_memc3_infrastructure_inst_clk_2x_ |             |            |            |        |            
-  0_0" TS_SYS_CLK3 / 6.25 HIGH 50%          |             |            |            |        |            
+  0_0" TS_SYS_CLK3 / 2 HIGH 50%             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_okSysClk = PERIOD TIMEGRP "okSysClk" 1 | MINLOWPULSE |     4.660ns|     5.340ns|       0|           0
   0 ns HIGH 50%                             |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     2.830ns|     3.570ns|       0|           0
-  nst_clk0_bufg_in = PERIOD TIMEGRP "SDRAM_ |             |            |            |        |            
-  FIFO_inst_memc3_infrastructure_inst_clk0_ |             |            |            |        |            
-  bufg_in" TS_okSysClk / 1.5625 HIGH 50%    |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TIMEGRP "okHostOUT_grp" OFFSET = OUT 8 ns | MAXDELAY    |     4.008ns|     3.992ns|       0|           0
    AFTER COMP "okUH<0>" "RISING"            |             |            |            |        |            
@@ -12367,22 +11657,27 @@ Asterisk (*) preceding a constraint indicates it was not met.
   TS_okHostClk = PERIOD TIMEGRP "okHostClk" | MINLOWPULSE |     4.580ns|     5.340ns|       0|           0
    9.92 ns HIGH 50%                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | SETUP       |     4.798ns|     3.204ns|       0|           0
-  nst_mcb_drp_clk_bufg_in_0 = PERIOD TIMEGR | HOLD        |     0.060ns|            |       0|           0
-  P "SDRAM_FIFO_inst_memc3_infrastructure_i |             |            |            |        |            
-  nst_mcb_drp_clk_bufg_in_0" TS_SYS_CLK3 /  |             |            |            |        |            
-  0.78125 HIGH 50%                          |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
   TS_variable_freq_clk_generator_inst_clkou | MINPERIOD   |     8.334ns|     3.570ns|       0|           0
   t_i = PERIOD TIMEGRP "variable_freq_clk_g |             |            |            |        |            
   enerator_inst_clkout_i" TS_okSysClk / 0.8 |             |            |            |        |            
   4 HIGH 50%                                |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |    10.134ns|     2.666ns|       0|           0
+  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | SETUP       |    36.960ns|     3.040ns|       0|           0
+  nst_mcb_drp_clk_bufg_in_0 = PERIOD TIMEGR | HOLD        |     0.019ns|            |       0|           0
+  P "SDRAM_FIFO_inst_memc3_infrastructure_i |             |            |            |        |            
+  nst_mcb_drp_clk_bufg_in_0" TS_SYS_CLK3 /  |             |            |            |        |            
+  0.25 HIGH 50%                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |    37.334ns|     2.666ns|       0|           0
   nst_mcb_drp_clk_bufg_in = PERIOD TIMEGRP  |             |            |            |        |            
   "SDRAM_FIFO_inst_memc3_infrastructure_ins |             |            |            |        |            
-  t_mcb_drp_clk_bufg_in" TS_okSysClk / 0.78 |             |            |            |        |            
-  125 HIGH 50%                              |             |            |            |        |            
+  t_mcb_drp_clk_bufg_in" TS_okSysClk / 0.25 |             |            |            |        |            
+   HIGH 50%                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |    76.430ns|     3.570ns|       0|           0
+  nst_clk0_bufg_in = PERIOD TIMEGRP "SDRAM_ |             |            |            |        |            
+  FIFO_inst_memc3_infrastructure_inst_clk0_ |             |            |            |        |            
+  bufg_in" TS_okSysClk / 0.125 HIGH 50%     |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -12396,8 +11691,8 @@ Derived Constraints for TS_okHostClk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_okHostClk                   |      9.920ns|      5.340ns|      5.990ns|            0|           56|            0|        49004|
-| TS_host_dcm0_clk0             |      9.920ns|      5.990ns|          N/A|           56|            0|        49004|            0|
+|TS_okHostClk                   |      9.920ns|      5.340ns|      5.990ns|            0|           56|            0|        49325|
+| TS_host_dcm0_clk0             |      9.920ns|      5.990ns|          N/A|           56|            0|        49325|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for TS_okSysClk
@@ -12406,15 +11701,15 @@ Derived Constraints for TS_okSysClk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_okSysClk                    |     10.000ns|      5.340ns|      9.994ns|            0|            0|            0|            0|
-| TS_SDRAM_FIFO_inst_memc3_infra|     12.800ns|      2.666ns|          N/A|            0|            0|            0|            0|
+|TS_okSysClk                    |     10.000ns|      5.340ns|      3.198ns|            0|            0|            0|            0|
+| TS_SDRAM_FIFO_inst_memc3_infra|     40.000ns|      2.666ns|          N/A|            0|            0|            0|            0|
 | structure_inst_mcb_drp_clk_buf|             |             |             |             |             |             |             |
 | g_in                          |             |             |             |             |             |             |             |
-| TS_SDRAM_FIFO_inst_memc3_infra|      1.600ns|      1.599ns|          N/A|            0|            0|            0|            0|
+| TS_SDRAM_FIFO_inst_memc3_infra|      5.000ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | structure_inst_clk_2x_180     |             |             |             |             |             |             |             |
-| TS_SDRAM_FIFO_inst_memc3_infra|      1.600ns|      1.599ns|          N/A|            0|            0|            0|            0|
+| TS_SDRAM_FIFO_inst_memc3_infra|      5.000ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | structure_inst_clk_2x_0       |             |             |             |             |             |             |             |
-| TS_SDRAM_FIFO_inst_memc3_infra|      6.400ns|      3.570ns|          N/A|            0|            0|            0|            0|
+| TS_SDRAM_FIFO_inst_memc3_infra|     80.000ns|      3.570ns|          N/A|            0|            0|            0|            0|
 | structure_inst_clk0_bufg_in   |             |             |             |             |             |             |             |
 | TS_variable_freq_clk_generator|     11.905ns|      3.570ns|          N/A|            0|            0|            0|            0|
 | _inst_clkout_i                |             |             |             |             |             |             |             |
@@ -12426,17 +11721,17 @@ Derived Constraints for TS_SYS_CLK3
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_SYS_CLK3                    |     10.000ns|     87.169ns|   1105.718ns|           39|           18|        25977|     10923472|
-| TS_SDRAM_FIFO_inst_memc3_infra|     12.800ns|      3.204ns|          N/A|            0|            0|        13623|            0|
+|TS_SYS_CLK3                    |     10.000ns|     87.169ns|     45.648ns|           39|           18|        25977|     11791070|
+| TS_SDRAM_FIFO_inst_memc3_infra|     40.000ns|      3.040ns|          N/A|            0|            0|        14178|            0|
 | structure_inst_mcb_drp_clk_buf|             |             |             |             |             |             |             |
 | g_in_0                        |             |             |             |             |             |             |             |
-| TS_SDRAM_FIFO_inst_memc3_infra|      1.600ns|      1.599ns|          N/A|            0|            0|            0|            0|
+| TS_SDRAM_FIFO_inst_memc3_infra|      5.000ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | structure_inst_clk_2x_180_0   |             |             |             |             |             |             |             |
-| TS_SDRAM_FIFO_inst_memc3_infra|      1.600ns|      1.599ns|          N/A|            0|            0|            0|            0|
+| TS_SDRAM_FIFO_inst_memc3_infra|      5.000ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | structure_inst_clk_2x_0_0     |             |             |             |             |             |             |             |
-| TS_SDRAM_FIFO_inst_memc3_infra|      6.400ns|     38.720ns|          N/A|            9|            0|         4315|            0|
+| TS_SDRAM_FIFO_inst_memc3_infra|     80.000ns|     32.536ns|          N/A|            9|            0|         4126|            0|
 | structure_inst_clk0_bufg_in_0 |             |             |             |             |             |             |             |
-| TS_variable_freq_clk_generator|     11.905ns|   1316.331ns|          N/A|            9|            0|     10905534|            0|
+| TS_variable_freq_clk_generator|     11.905ns|     54.343ns|          N/A|            9|            0|     11772766|            0|
 | _inst_clkout_i_0              |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -12444,310 +11739,10 @@ Derived Constraints for TS_SYS_CLK3
 
 
 
-Section 6 - IOB Properties
---------------------------
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
-|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ADC_CS                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| ADC_DOUT_1                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
-| ADC_DOUT_2                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
-| ADC_DOUT_3                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
-| ADC_DOUT_4                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
-| ADC_DOUT_5                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
-| ADC_DOUT_6                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
-| ADC_DOUT_7                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
-| ADC_DOUT_8                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
-| ADC_SCLK                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| CS_b                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| CS_b_A_n                           | IOBS             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| CS_b_A_p                           | IOBM             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| CS_b_B_n                           | IOBS             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| CS_b_B_p                           | IOBM             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| CS_b_C_n                           | IOBS             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| CS_b_C_p                           | IOBM             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| CS_b_D_n                           | IOBS             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| CS_b_D_p                           | IOBM             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| DAC_DIN_1                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| DAC_DIN_2                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| DAC_DIN_3                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| DAC_DIN_4                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| DAC_DIN_5                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| DAC_DIN_6                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| DAC_DIN_7                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| DAC_DIN_8                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| DAC_SCLK                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| DAC_SYNC                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| LED_OUT                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| MISO_A1_n                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_A1_p                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_A2_n                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_A2_p                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_B1_n                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_B1_p                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_B2_n                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_B2_p                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_C1_n                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_C1_p                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_C2_n                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_C2_p                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_D1_n                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_D1_p                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_D2_n                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MISO_D2_p                          | IOB              | INPUT     | LVDS_33              | TRUE  |          |      |              |          |          |
-| MOSI_A                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| MOSI_A_n                           | IOBS             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| MOSI_A_p                           | IOBM             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| MOSI_B                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| MOSI_B_n                           | IOBS             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| MOSI_B_p                           | IOBM             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| MOSI_C                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| MOSI_C_n                           | IOBS             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| MOSI_C_p                           | IOBM             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| MOSI_D                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| MOSI_D_n                           | IOBS             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| MOSI_D_p                           | IOBM             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| SCLK                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| SCLK_A_n                           | IOBS             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| SCLK_A_p                           | IOBM             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| SCLK_B_n                           | IOBS             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| SCLK_B_p                           | IOBM             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| SCLK_C_n                           | IOBS             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| SCLK_C_p                           | IOBM             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| SCLK_D_n                           | IOBS             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| SCLK_D_p                           | IOBM             | OUTPUT    | LVDS_33              |       |          |      |              |          |          |
-| TTL_in<0>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<1>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<2>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<3>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<4>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<5>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<6>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<7>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<8>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<9>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<10>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<11>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<12>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<13>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<14>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_in<15>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| TTL_out<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| TTL_out<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| TTL_out<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| TTL_out<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| TTL_out<4>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| TTL_out<5>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| TTL_out<6>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| TTL_out<7>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| TTL_out<8>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
-| TTL_out<9>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
-| TTL_out<10>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
-| TTL_out<11>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
-| TTL_out<12>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
-| TTL_out<13>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
-| TTL_out<14>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
-| TTL_out<15>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
-| board_mode<0>                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
-| board_mode<1>                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
-| board_mode<2>                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
-| board_mode<3>                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
-| clk1_in_n                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
-| clk1_in_p                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
-| ddr2_a<0>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_a<1>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_a<2>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_a<3>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_a<4>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_a<5>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_a<6>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_a<7>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_a<8>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_a<9>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_a<10>                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_a<11>                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_a<12>                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_ba<0>                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
-| ddr2_ba<1>                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
-| ddr2_ba<2>                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
-| ddr2_cas_n                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
-| ddr2_ck                            | IOB              | OUTPUT    | DIFF_SSTL18_II       |       |          |      | OSERDES      |          |          |
-| ddr2_ck_n                          | IOB              | OUTPUT    | DIFF_SSTL18_II       |       |          |      | OSERDES      |          |          |
-| ddr2_cke                           | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
-| ddr2_cs_n                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
-| ddr2_dm                            | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<0>                         | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<1>                         | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<2>                         | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<3>                         | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<4>                         | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<5>                         | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<6>                         | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<7>                         | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<8>                         | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<9>                         | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<10>                        | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<11>                        | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<12>                        | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<13>                        | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<14>                        | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dq<15>                        | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_dqs                           | IOB              | BIDIR     | DIFF_SSTL18_II       |       |          |      |              | PULLDOWN |          |
-| ddr2_dqs_n                         | IOB              | BIDIR     | DIFF_SSTL18_II       |       |          |      |              | PULLUP   |          |
-| ddr2_odt                           | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
-| ddr2_ras_n                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
-| ddr2_rzq                           | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          | DEFAULT  |
-| ddr2_udm                           | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
-| ddr2_udqs                          | IOB              | BIDIR     | DIFF_SSTL18_II       |       |          |      |              | PULLDOWN |          |
-| ddr2_udqs_n                        | IOB              | BIDIR     | DIFF_SSTL18_II       |       |          |      |              | PULLUP   |          |
-| ddr2_we_n                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
-| ddr2_zio                           | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          | DEFAULT  |
-| led<0>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
-| led<1>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
-| led<2>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
-| led<3>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
-| led<4>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
-| led<5>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
-| led<6>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
-| led<7>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
-| okAA                               | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
-| okHU<0>                            | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-| okHU<1>                            | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST |              |          |          |
-| okHU<2>                            | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-| okUH<0>                            | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
-| okUH<1>                            | IOB              | INPUT     | LVCMOS18             |       |          |      | IFF          |          |          |
-| okUH<2>                            | IOB              | INPUT     | LVCMOS18             |       |          |      | IFF          |          |          |
-| okUH<3>                            | IOB              | INPUT     | LVCMOS18             |       |          |      | IFF          |          |          |
-| okUH<4>                            | IOB              | INPUT     | LVCMOS18             |       |          |      | IFF          |          |          |
-| okUHU<0>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<1>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<2>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<3>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<4>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<5>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<6>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<7>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<8>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<9>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<10>                          | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<11>                          | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<12>                          | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<13>                          | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<14>                          | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<15>                          | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
-|                                    |                  |           |                      |       |          |      | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<16>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<17>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<18>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<19>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<20>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<21>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<22>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<23>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<24>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<25>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<26>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<27>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<28>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<29>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<30>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<31>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
-|                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| sample_clk                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-Section 7 - RPMs
-----------------
-
-Section 8 - Guide Report
-------------------------
-Guide not run on this design.
-
-Section 9 - Area Group and Partition Summary
---------------------------------------------
-
-Partition Implementation Status
--------------------------------
-
-  No Partitions were found in this design.
-
--------------------------------
-
-Area Group Information
-----------------------
-
-  No area groups were found in this design.
-
-----------------------
-
-Section 10 - Timing Report
---------------------------
-A logic-level (pre-route) timing report can be generated by using Xilinx static
-timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
-mapped NCD and PCF files. Please note that this timing report will be generated
-using estimated delay information. For accurate numbers, please generate a
-timing report with the post Place and Route NCD file.
-
-For more information about the Timing Analyzer, consult the Xilinx Timing
-Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
-Command Line Tools User Guide "TRACE" chapter.
-
-Section 11 - Configuration String Details
+Section 12 - Configuration String Details
 -----------------------------------------
 Use the "-detail" map option to print out Configuration Strings
 
-Section 12 - Control Set Information
+Section 13 - Control Set Information
 ------------------------------------
 Use the "-detail" map option to print out Control Set Information.
-
-Section 13 - Utilization by Hierarchy
--------------------------------------
-Use the "-detail" map option to print out the Utilization by Hierarchy section.

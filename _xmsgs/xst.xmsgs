@@ -14,13 +14,13 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\LED_controller.v" Line 131: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 691: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led5</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 692: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led5</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 692: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led6</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 693: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led6</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 695: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led8</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">40</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 696: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">led8</arg>&gt;. Formal port size is <arg fmt="%d" index="2">24</arg>-bit while actual signal size is <arg fmt="%d" index="1">40</arg>-bit.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\variable_freq_clk_generator.v" Line 94: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
@@ -29,7 +29,7 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\variable_freq_clk_generator.v" Line 95: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 267: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 269: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1016" delta="old" >"E:\CAD\hdl\rhythm\mcb_raw_wrapper.v" Line 6346: Port <arg fmt="%s" index="1">BUSY</arg> is not connected to this instance
@@ -104,34 +104,34 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\memc3_wrapper.v" Line 418: Assignment to <arg fmt="%s" index="1">status</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 417: Assignment to <arg fmt="%s" index="1">c3_p0_cmd_empty</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 419: Assignment to <arg fmt="%s" index="1">c3_p0_cmd_empty</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 424: Assignment to <arg fmt="%s" index="1">c3_p0_wr_empty</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 426: Assignment to <arg fmt="%s" index="1">c3_p0_wr_empty</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 425: Assignment to <arg fmt="%s" index="1">c3_p0_wr_count</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 427: Assignment to <arg fmt="%s" index="1">c3_p0_wr_count</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 426: Assignment to <arg fmt="%s" index="1">c3_p0_wr_underrun</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 428: Assignment to <arg fmt="%s" index="1">c3_p0_wr_underrun</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 427: Assignment to <arg fmt="%s" index="1">c3_p0_wr_error</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 429: Assignment to <arg fmt="%s" index="1">c3_p0_wr_error</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 431: Assignment to <arg fmt="%s" index="1">c3_p0_rd_full</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 433: Assignment to <arg fmt="%s" index="1">c3_p0_rd_full</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 433: Assignment to <arg fmt="%s" index="1">c3_p0_rd_count</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 435: Assignment to <arg fmt="%s" index="1">c3_p0_rd_count</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 434: Assignment to <arg fmt="%s" index="1">c3_p0_rd_overflow</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 436: Assignment to <arg fmt="%s" index="1">c3_p0_rd_overflow</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 435: Assignment to <arg fmt="%s" index="1">c3_p0_rd_error</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 437: Assignment to <arg fmt="%s" index="1">c3_p0_rd_error</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 437: Assignment to <arg fmt="%s" index="1">selfrefresh_mode</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 439: Assignment to <arg fmt="%s" index="1">selfrefresh_mode</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 137: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
@@ -146,10 +146,10 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 199: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 235: Net &lt;<arg fmt="%s" index="1">selfrefresh_enter</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\CAD\hdl\rhythm\fifo_w64_512_r32_1024.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">fifo_w64_512_r32_1024</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 1079: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 235: Net &lt;<arg fmt="%s" index="1">selfrefresh_enter</arg>&gt; does not have a driver.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 1080: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
@@ -161,181 +161,181 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 1082: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2061: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 1083: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2071: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2062: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2081: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2072: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2209: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2082: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2214: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2210: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2215: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\CAD\hdl\rhythm\DAC_output_scalable_HPF.v" Line 64: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">19</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2305: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2306: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2329: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2330: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2353: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2354: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2377: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2378: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2401: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2402: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2425: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2426: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">noise_suppress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1016" delta="old" >"E:\CAD\hdl\rhythm\okLibrary.v" Line 39: Port <arg fmt="%s" index="1">CLK180</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\CAD\hdl\rhythm\main.v" Line 2875: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">ep_datain</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">16</arg>-bit.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">783</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">782</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">818</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">817</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">840</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">839</arg>: Output port &lt;<arg fmt="%s" index="3">RAM_data_out_A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_bank_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2274</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2273</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2274</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2273</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2298</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2297</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2298</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2297</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2322</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2321</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2322</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2321</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2346</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2345</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_5</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2346</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2345</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_5</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2370</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2369</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_6</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2370</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2369</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_6</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2394</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2393</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2394</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2393</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2418</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2417</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SYNC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2418</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2417</arg>: Output port &lt;<arg fmt="%s" index="3">DAC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DAC_output_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2460</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2459</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2460</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2459</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2476</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2475</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2476</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2475</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2492</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2491</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2492</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2491</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2508</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2507</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_5</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2508</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2507</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_5</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2524</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2523</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_6</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2524</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2523</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_6</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2540</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2539</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2540</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2539</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2556</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2555</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2556</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\main.v</arg>&quot; line <arg fmt="%s" index="2">2555</arg>: Output port &lt;<arg fmt="%s" index="3">ADC_SCLK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inout_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">386</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">384</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">386</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">384</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">386</arg>: Output port &lt;<arg fmt="%s" index="3">p0_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">384</arg>: Output port &lt;<arg fmt="%s" index="3">p0_cmd_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">386</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">384</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">386</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">384</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_underrun</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">386</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">384</arg>: Output port &lt;<arg fmt="%s" index="3">p0_wr_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">386</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">384</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">386</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">384</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">386</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">384</arg>: Output port &lt;<arg fmt="%s" index="3">p0_rd_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">386</arg>: Output port &lt;<arg fmt="%s" index="3">selfrefresh_mode</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">384</arg>: Output port &lt;<arg fmt="%s" index="3">selfrefresh_mode</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memc3_wrapper_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">482</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeIn_fifo</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">480</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeIn_fifo</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">498</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeOut_fifo</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">496</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeOut_fifo</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">498</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeOut_fifo</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">496</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeOut_fifo</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">496</arg>: Output port &lt;<arg fmt="%s" index="3">valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeOut_fifo</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CAD\hdl\rhythm\SDRAM_FIFO.v</arg>&quot; line <arg fmt="%s" index="2">498</arg>: Output port &lt;<arg fmt="%s" index="3">valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">okPipeOut_fifo</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">selfrefresh_enter</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -1214,10 +1214,6 @@
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/syn_uiclk_pll_lock</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">main</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/PLL_LOCK_R1&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst</arg>&gt; may hinder timing optimization.
-You may achieve better results by removing this property
-</msg>
-
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">core0/a0/pc0/sync_interrupt_flop</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">host/core0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;core0/a0/pc0/sync_sleep_flop&gt; </arg>
 </msg>
 
@@ -1242,16 +1238,16 @@ You may achieve better results by removing this property
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1&gt; &lt;U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">SDRAM_FIFO_inst/okPipeOut_fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">SDRAM_FIFO_inst/okPipeOut_fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.rd/gras.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">SDRAM_FIFO_inst/okPipeOut_fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1&gt; &lt;U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">SDRAM_FIFO_inst/okPipeOut_fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1&gt; &lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">core0/a0/pc0/sync_interrupt_flop</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">host/core0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;core0/a0/pc0/sync_sleep_flop&gt; </arg>
@@ -1308,28 +1304,16 @@ You may achieve better results by removing this property
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.rd/gras.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1&gt; &lt;U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">SDRAM_FIFO_inst/okPipeOut_fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">SDRAM_FIFO_inst/okPipeOut_fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">SDRAM_FIFO_inst/okPipeOut_fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.rd/gras.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1&gt; &lt;U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.rd/gras.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">SDRAM_FIFO_inst/okPipeOut_fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1&gt; &lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

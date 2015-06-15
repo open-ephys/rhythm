@@ -12,6 +12,7 @@
          <ClosedNode>/main C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v/RAM_bank_3 - RAM_bank</ClosedNode>
          <ClosedNode>/main C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v/host - okHost</ClosedNode>
          <ClosedNode>/main C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v/memc3_wrapper_inst - memc3_wrapper</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_1 - DAC_output_scalable_HPF</ClosedNode>
          <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_2 - DAC_output_scalable_HPF</ClosedNode>
          <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_3 - DAC_output_scalable_HPF</ClosedNode>
          <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_4 - DAC_output_scalable_HPF</ClosedNode>
@@ -22,19 +23,18 @@
          <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/RAM_bank_1 - RAM_bank</ClosedNode>
          <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/RAM_bank_2 - RAM_bank</ClosedNode>
          <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/RAM_bank_3 - RAM_bank</ClosedNode>
-         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/SDRAM_FIFO_inst - SDRAM_FIFO</ClosedNode>
          <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/SDRAM_FIFO_inst - SDRAM_FIFO/memc3_wrapper_inst - memc3_wrapper</ClosedNode>
          <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/host - okHost</ClosedNode>
          <ClosedNode>/ramtest C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>variable_freq_clk_generator_inst - variable_freq_clk_generator (E:/CAD/hdl/rhythm/variable_freq_clk_generator.v)</SelectedItem>
+         <SelectedItem>main (E:/CAD/hdl/rhythm/main.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>variable_freq_clk_generator_inst - variable_freq_clk_generator (E:/CAD/hdl/rhythm/variable_freq_clk_generator.v)</CurrentItem>
+      <CurrentItem>main (E:/CAD/hdl/rhythm/main.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -46,7 +46,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001db000000010000000100000000000000000000000064ffffffff000000810000000000000001000001db0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
@@ -54,12 +54,14 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems/>
+      <SelectedItems>
+         <SelectedItem>xem6310.ucf</SelectedItem>
+      </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a3000000040101000100000000000000000000000064ffffffff000000810000000000000004000000e10000000100000000000000240000000100000000000000660000000100000000000002380000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000001ea000000040101000100000000000000000000000064ffffffff000000810000000000000004000000e100000001000000000000003f0000000100000000000000660000000100000000000000640000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>ddr2_state_machine.v</CurrentItem>
+      <CurrentItem>xem6310.ucf</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -85,13 +87,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001db000000010000000100000000000000000000000064ffffffff000000810000000000000001000001db0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ca000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ca0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>

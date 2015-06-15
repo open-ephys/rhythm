@@ -259,7 +259,7 @@ module main #(
 	
 	reg [15:0]		FIFO_data_in;
 	reg				FIFO_write_to;
-	wire [15:0] 	FIFO_data_out;
+	wire [31:0] 	FIFO_data_out;
 	wire				FIFO_read_from;
 	wire [31:0] 	num_words_in_FIFO;
 
@@ -635,7 +635,8 @@ module main #(
 	
 
 	// Unused; future expansion
-	assign ep26wireout = 				32'h0000;
+	//assign ep26wireout = 				32'h0000;
+	assign ep26wireout = 				max_timestep;
 	assign ep27wireout = 				32'h0000;
 	assign ep28wireout = 				32'h0000;
 	assign ep29wireout = 				32'h0000;
@@ -2872,7 +2873,8 @@ module main #(
 	okWireOut    wo3e (.okHE(okHE), .okEH(okEHx[ 30*65 +: 65 ]), .ep_addr(8'h3e), .ep_datain(ep3ewireout));
 	okWireOut    wo3f (.okHE(okHE), .okEH(okEHx[ 31*65 +: 65 ]), .ep_addr(8'h3f), .ep_datain(ep3fwireout));
 	
-	okPipeOut    poa0 (.okHE(okHE), .okEH(okEHx[ 32*65 +: 65 ]), .ep_addr(8'ha0), .ep_read(FIFO_read_from), .ep_datain(FIFO_data_out));
+	//Flip the 16-bit words in the fifo for compatibility with the usb2.0 read methods
+	okPipeOut    poa0 (.okHE(okHE), .okEH(okEHx[ 32*65 +: 65 ]), .ep_addr(8'ha0), .ep_read(FIFO_read_from), .ep_datain({FIFO_data_out[15:0], FIFO_data_out[31:16]}));
 
 
 endmodule

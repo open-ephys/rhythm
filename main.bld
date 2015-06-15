@@ -13,7 +13,7 @@ Loading design module "E:\CAD\hdl\rhythm/okPipeOut.ngc"...
 Loading design module "E:\CAD\hdl\rhythm/okCoreHarness.ngc"...
 Loading design module "E:\CAD\hdl\rhythm/TFIFO64x8a_64x8b.ngc"...
 Loading design module "E:\CAD\hdl\rhythm/fifo_w16_2048_r64_512.ngc"...
-Loading design module "E:\CAD\hdl\rhythm/fifo_w64_512_r16_2048.ngc"...
+Loading design module "E:\CAD\hdl\rhythm/fifo_w64_512_r32_1024.ngc"...
 Loading design module "E:\CAD\hdl\rhythm/multiplier_18x18.ngc"...
 Gathering constraint information from source properties...
 Done.
@@ -45,23 +45,23 @@ INFO:ConstraintSystem:178 - TNM 'okSysClk', used in period specification
    CLKOUT3: <TIMESPEC
    TS_SDRAM_FIFO_inst_memc3_infrastructure_inst_mcb_drp_clk_bufg_in = PERIOD
    "SDRAM_FIFO_inst_memc3_infrastructure_inst_mcb_drp_clk_bufg_in" TS_okSysClk /
-   0.78125 HIGH 50%>
+   0.25 HIGH 50%>
 
 INFO:ConstraintSystem:178 - TNM 'okSysClk', used in period specification
    'TS_okSysClk', was traced into PLL_ADV instance
    SDRAM_FIFO_inst/memc3_infrastructure_inst/u_pll_adv. The following new TNM
    groups and period specifications were generated at the PLL_ADV output(s): 
    CLKOUT1: <TIMESPEC TS_SDRAM_FIFO_inst_memc3_infrastructure_inst_clk_2x_180 =
-   PERIOD "SDRAM_FIFO_inst_memc3_infrastructure_inst_clk_2x_180" TS_okSysClk /
-   6.25 PHASE 0.8 ns HIGH 50%>
+   PERIOD "SDRAM_FIFO_inst_memc3_infrastructure_inst_clk_2x_180" TS_okSysClk / 2
+   PHASE 2.5 ns HIGH 50%>
 
 INFO:ConstraintSystem:178 - TNM 'okSysClk', used in period specification
    'TS_okSysClk', was traced into PLL_ADV instance
    SDRAM_FIFO_inst/memc3_infrastructure_inst/u_pll_adv. The following new TNM
    groups and period specifications were generated at the PLL_ADV output(s): 
    CLKOUT0: <TIMESPEC TS_SDRAM_FIFO_inst_memc3_infrastructure_inst_clk_2x_0 =
-   PERIOD "SDRAM_FIFO_inst_memc3_infrastructure_inst_clk_2x_0" TS_okSysClk /
-   6.25 HIGH 50%>
+   PERIOD "SDRAM_FIFO_inst_memc3_infrastructure_inst_clk_2x_0" TS_okSysClk / 2
+   HIGH 50%>
 
 INFO:ConstraintSystem:178 - TNM 'okSysClk', used in period specification
    'TS_okSysClk', was traced into PLL_ADV instance
@@ -69,7 +69,7 @@ INFO:ConstraintSystem:178 - TNM 'okSysClk', used in period specification
    groups and period specifications were generated at the PLL_ADV output(s): 
    CLKOUT2: <TIMESPEC TS_SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in
    = PERIOD "SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in" TS_okSysClk
-   / 1.5625 HIGH 50%>
+   / 0.125 HIGH 50%>
 
 INFO:ConstraintSystem:178 - TNM 'okSysClk', used in period specification
    'TS_okSysClk', was traced into DCM_CLKGEN instance
@@ -85,7 +85,7 @@ INFO:ConstraintSystem:178 - TNM 'SYS_CLK3', used in period specification
    CLKOUT3: <TIMESPEC
    TS_SDRAM_FIFO_inst_memc3_infrastructure_inst_mcb_drp_clk_bufg_in_0 = PERIOD
    "SDRAM_FIFO_inst_memc3_infrastructure_inst_mcb_drp_clk_bufg_in_0" TS_SYS_CLK3
-   / 0.78125 HIGH 50%>
+   / 0.25 HIGH 50%>
 
 INFO:ConstraintSystem:178 - TNM 'SYS_CLK3', used in period specification
    'TS_SYS_CLK3', was traced into PLL_ADV instance
@@ -93,15 +93,15 @@ INFO:ConstraintSystem:178 - TNM 'SYS_CLK3', used in period specification
    groups and period specifications were generated at the PLL_ADV output(s): 
    CLKOUT1: <TIMESPEC TS_SDRAM_FIFO_inst_memc3_infrastructure_inst_clk_2x_180_0
    = PERIOD "SDRAM_FIFO_inst_memc3_infrastructure_inst_clk_2x_180_0" TS_SYS_CLK3
-   / 6.25 PHASE 0.8 ns HIGH 50%>
+   / 2 PHASE 2.5 ns HIGH 50%>
 
 INFO:ConstraintSystem:178 - TNM 'SYS_CLK3', used in period specification
    'TS_SYS_CLK3', was traced into PLL_ADV instance
    SDRAM_FIFO_inst/memc3_infrastructure_inst/u_pll_adv. The following new TNM
    groups and period specifications were generated at the PLL_ADV output(s): 
    CLKOUT0: <TIMESPEC TS_SDRAM_FIFO_inst_memc3_infrastructure_inst_clk_2x_0_0 =
-   PERIOD "SDRAM_FIFO_inst_memc3_infrastructure_inst_clk_2x_0_0" TS_SYS_CLK3 /
-   6.25 HIGH 50%>
+   PERIOD "SDRAM_FIFO_inst_memc3_infrastructure_inst_clk_2x_0_0" TS_SYS_CLK3 / 2
+   HIGH 50%>
 
 INFO:ConstraintSystem:178 - TNM 'SYS_CLK3', used in period specification
    'TS_SYS_CLK3', was traced into PLL_ADV instance
@@ -110,7 +110,7 @@ INFO:ConstraintSystem:178 - TNM 'SYS_CLK3', used in period specification
    CLKOUT2: <TIMESPEC
    TS_SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PERIOD
    "SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0" TS_SYS_CLK3 /
-   1.5625 HIGH 50%>
+   0.125 HIGH 50%>
 
 INFO:ConstraintSystem:178 - TNM 'SYS_CLK3', used in period specification
    'TS_SYS_CLK3', was traced into DCM_CLKGEN instance
@@ -121,6 +121,12 @@ INFO:ConstraintSystem:178 - TNM 'SYS_CLK3', used in period specification
 
 Done...
 
+WARNING:NgdBuild:1440 - User specified non-default attribute value (3.2) was
+   detected for the CLKIN1_PERIOD attribute on PLL
+   "SDRAM_FIFO_inst/memc3_infrastructure_inst/u_pll_adv".  This does not match
+   the PERIOD constraint value (10 ns.).  The uncertainty calculation will use
+   the PERIOD constraint value.  This could result in incorrect uncertainty
+   calculated for PLL output clocks.
 INFO:NgdBuild:1222 - Setting CLKIN_PERIOD attribute associated with DCM instance
    variable_freq_clk_generator_inst/DCM_CLKGEN_1 to 10.000000 ns based on the
    period specification (<TIMESPEC "TS_okSysClk" = PERIOD "okSysClk" 10 ns HIGH
@@ -132,8 +138,8 @@ WARNING:NgdBuild:443 - SFF primitive
    'host/core0/core0/a0/pc0/k_write_strobe_flop' has unconnected output pin
 WARNING:NgdBuild:440 - FF primitive 'host/core0/core0/a0/pc0/interrupt_ack_flop'
    has unconnected output pin
-WARNING:NgdBuild:452 - logical net 'N1009' has no driver
-WARNING:NgdBuild:452 - logical net 'N1013' has no driver
+WARNING:NgdBuild:452 - logical net 'N2823' has no driver
+WARNING:NgdBuild:452 - logical net 'N2827' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -144,12 +150,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   7
+  Number of warnings:   8
 
-Total memory usage is 241280 kilobytes
+Total memory usage is 241792 kilobytes
 
 Writing NGD file "main.ngd" ...
-Total REAL time to NGDBUILD completion:  9 sec
-Total CPU time to NGDBUILD completion:   9 sec
+Total REAL time to NGDBUILD completion:  10 sec
+Total CPU time to NGDBUILD completion:   10 sec
 
 Writing NGDBUILD log file "main.bld"...
