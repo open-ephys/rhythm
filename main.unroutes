@@ -1,13 +1,21 @@
 Release 14.5 - par P.58f (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Wed Jun 10 22:54:10 2015
+Tue Jun 16 03:43:03 2015
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 10 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
+   ADC_DOUT_1_IBUF
+   ADC_DOUT_2_IBUF
+   ADC_DOUT_3_IBUF
+   ADC_DOUT_4_IBUF
+   ADC_DOUT_5_IBUF
+   ADC_DOUT_6_IBUF
+   ADC_DOUT_7_IBUF
+   ADC_DOUT_8_IBUF
    host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAMD_O
    host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAMD_O
 

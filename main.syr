@@ -123,10 +123,10 @@ Analyzing Verilog file "E:\CAD\hdl\rhythm\memc3_wrapper.v" into library work
 Parsing module <memc3_wrapper>.
 Analyzing Verilog file "E:\CAD\hdl\rhythm\memc3_infrastructure.v" into library work
 Parsing module <memc3_infrastructure>.
-Analyzing Verilog file "E:\CAD\hdl\rhythm\fifo_w64_512_r32_1024.v" into library work
-Parsing module <fifo_w64_512_r32_1024>.
-Analyzing Verilog file "E:\CAD\hdl\rhythm\fifo_w16_2048_r64_512.v" into library work
-Parsing module <fifo_w16_2048_r64_512>.
+Analyzing Verilog file "E:\CAD\hdl\rhythm\fifo_w32_1024_r32_1024.v" into library work
+Parsing module <fifo_w32_1024_r32_1024>.
+Analyzing Verilog file "E:\CAD\hdl\rhythm\fifo_w16_2048_r32_1024.v" into library work
+Parsing module <fifo_w16_2048_r32_1024>.
 Analyzing Verilog file "E:\CAD\hdl\rhythm\ddr2_state_machine.v" into library work
 Parsing module <ddr2_state_machine>.
 Analyzing Verilog file "E:\CAD\hdl\rhythm\variable_freq_clk_generator.v" into library work
@@ -190,11 +190,11 @@ Elaborating module <BUFG>.
 Elaborating module <SDRAM_FIFO(C3_P0_MASK_SIZE=4,C3_P0_DATA_PORT_SIZE=32,C3_P1_MASK_SIZE=4,C3_P1_DATA_PORT_SIZE=32,DEBUG_EN=0,C3_MEMCLK_PERIOD=3200,C3_CALIB_SOFT_IP="TRUE",C3_SIMULATION="FALSE",C3_HW_TESTING="FALSE",C3_RST_ACT_LOW=0,C3_INPUT_CLK_TYPE="DIFFERENTIAL",C3_MEM_ADDR_ORDER="ROW_BANK_COLUMN",C3_NUM_DQ_PINS=16,C3_MEM_ADDR_WIDTH=13,C3_MEM_BANKADDR_WIDTH=3)>.
 WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 269: Result of 5-bit expression is truncated to fit in 4-bit target.
 
-Elaborating module <memc3_infrastructure(C_MEMCLK_PERIOD=3200,C_RST_ACT_LOW=0,C_INPUT_CLK_TYPE="DIFFERENTIAL",C_CLKOUT0_DIVIDE=1,C_CLKOUT1_DIVIDE=1,C_CLKOUT2_DIVIDE=16,C_CLKOUT3_DIVIDE=8,C_CLKFBOUT_MULT=2,C_DIVCLK_DIVIDE=1)>.
+Elaborating module <memc3_infrastructure(C_MEMCLK_PERIOD=10000,C_RST_ACT_LOW=0,C_INPUT_CLK_TYPE="DIFFERENTIAL",C_CLKOUT0_DIVIDE=1,C_CLKOUT1_DIVIDE=1,C_CLKOUT2_DIVIDE=4,C_CLKOUT3_DIVIDE=8,C_CLKFBOUT_MULT=25,C_DIVCLK_DIVIDE=4)>.
 
 Elaborating module <IBUFGDS(DIFF_TERM="TRUE")>.
 
-Elaborating module <PLL_ADV(BANDWIDTH="OPTIMIZED",CLKIN1_PERIOD=3.2,CLKIN2_PERIOD=3.2,CLKOUT0_DIVIDE=1,CLKOUT1_DIVIDE=1,CLKOUT2_DIVIDE=16,CLKOUT3_DIVIDE=8,CLKOUT4_DIVIDE=1,CLKOUT5_DIVIDE=1,CLKOUT0_PHASE=0.0,CLKOUT1_PHASE=180.0,CLKOUT2_PHASE=0.0,CLKOUT3_PHASE=0.0,CLKOUT4_PHASE=0.0,CLKOUT5_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT1_DUTY_CYCLE=0.5,CLKOUT2_DUTY_CYCLE=0.5,CLKOUT3_DUTY_CYCLE=0.5,CLKOUT4_DUTY_CYCLE=0.5,CLKOUT5_DUTY_CYCLE=0.5,COMPENSATION="INTERNAL",DIVCLK_DIVIDE=1,CLKFBOUT_MULT=2,CLKFBOUT_PHASE=0.0,REF_JITTER=0.005)>.
+Elaborating module <PLL_ADV(BANDWIDTH="OPTIMIZED",CLKIN1_PERIOD=10.0,CLKIN2_PERIOD=10.0,CLKOUT0_DIVIDE=1,CLKOUT1_DIVIDE=1,CLKOUT2_DIVIDE=4,CLKOUT3_DIVIDE=8,CLKOUT4_DIVIDE=1,CLKOUT5_DIVIDE=1,CLKOUT0_PHASE=0.0,CLKOUT1_PHASE=180.0,CLKOUT2_PHASE=0.0,CLKOUT3_PHASE=0.0,CLKOUT4_PHASE=0.0,CLKOUT5_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT1_DUTY_CYCLE=0.5,CLKOUT2_DUTY_CYCLE=0.5,CLKOUT3_DUTY_CYCLE=0.5,CLKOUT4_DUTY_CYCLE=0.5,CLKOUT5_DUTY_CYCLE=0.5,COMPENSATION="INTERNAL",DIVCLK_DIVIDE=4,CLKFBOUT_MULT=25,CLKFBOUT_PHASE=0.0,REF_JITTER=0.005)>.
 
 Elaborating module <BUFPLL_MCB>.
 
@@ -322,15 +322,20 @@ WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 437: Assignment
 WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 439: Assignment to selfrefresh_mode ignored, since the identifier is never used
 
 Elaborating module <ddr2_state_machine>.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 137: Result of 32-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 155: Result of 31-bit expression is truncated to fit in 30-bit target.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 175: Result of 31-bit expression is truncated to fit in 30-bit target.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 199: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 104: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 113: Result of 31-bit expression is truncated to fit in 30-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 123: Result of 31-bit expression is truncated to fit in 30-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 139: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 451: Size mismatch in connection of port <ib_data>. Formal port size is 32-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 457: Size mismatch in connection of port <ob_data>. Formal port size is 32-bit while actual signal size is 64-bit.
 
-Elaborating module <fifo_w16_2048_r64_512>.
+Elaborating module <fifo_w16_2048_r32_1024>.
+WARNING:HDLCompiler:1499 - "E:\CAD\hdl\rhythm\fifo_w16_2048_r32_1024.v" Line 39: Empty module <fifo_w16_2048_r32_1024> remains a black box.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 489: Size mismatch in connection of port <dout>. Formal port size is 32-bit while actual signal size is 64-bit.
 
-Elaborating module <fifo_w64_512_r32_1024>.
-WARNING:HDLCompiler:1499 - "E:\CAD\hdl\rhythm\fifo_w64_512_r32_1024.v" Line 39: Empty module <fifo_w64_512_r32_1024> remains a black box.
+Elaborating module <fifo_w32_1024_r32_1024>.
+WARNING:HDLCompiler:1499 - "E:\CAD\hdl\rhythm\fifo_w32_1024_r32_1024.v" Line 39: Empty module <fifo_w32_1024_r32_1024> remains a black box.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 502: Size mismatch in connection of port <din>. Formal port size is 32-bit while actual signal size is 64-bit.
 WARNING:HDLCompiler:634 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 235: Net <selfrefresh_enter> does not have a driver.
 
 Elaborating module <RAM_bank>.
@@ -351,6 +356,7 @@ WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 2072: Result of 11-bit
 WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 2082: Result of 11-bit expression is truncated to fit in 10-bit target.
 WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 2210: Result of 7-bit expression is truncated to fit in 6-bit target.
 WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 2215: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\main.v" Line 967: Assignment to FIFO_data_in ignored, since the identifier is never used
 
 Elaborating module <DAC_output_scalable_HPF(ms_wait=99,ms_clk1_a=100,ms_clk11_a=140)>.
 WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\DAC_output_scalable_HPF.v" Line 64: Result of 32-bit expression is truncated to fit in 19-bit target.
@@ -389,6 +395,13 @@ Elaborating module <okTriggerIn>.
 Elaborating module <okWireOut>.
 
 Elaborating module <okPipeOut>.
+WARNING:Xst:2972 - "E:\CAD\hdl\rhythm\main.v" line 2460. All outputs of instance <ADC_inout_2> of block <ADC_input> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "E:\CAD\hdl\rhythm\main.v" line 2476. All outputs of instance <ADC_inout_3> of block <ADC_input> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "E:\CAD\hdl\rhythm\main.v" line 2492. All outputs of instance <ADC_inout_4> of block <ADC_input> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "E:\CAD\hdl\rhythm\main.v" line 2508. All outputs of instance <ADC_inout_5> of block <ADC_input> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "E:\CAD\hdl\rhythm\main.v" line 2524. All outputs of instance <ADC_inout_6> of block <ADC_input> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "E:\CAD\hdl\rhythm\main.v" line 2540. All outputs of instance <ADC_inout_7> of block <ADC_input> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "E:\CAD\hdl\rhythm\main.v" line 2556. All outputs of instance <ADC_inout_8> of block <ADC_input> are unconnected in block <main>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -428,18 +441,26 @@ INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2394: Output port <DAC_SYNC> of 
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2394: Output port <DAC_SCLK> of the instance <DAC_output_7> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2418: Output port <DAC_SYNC> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2418: Output port <DAC_SCLK> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2444: Output port <ADC_register> of the instance <ADC_inout_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2460: Output port <ADC_register> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2460: Output port <ADC_CS> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2460: Output port <ADC_SCLK> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2476: Output port <ADC_register> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2476: Output port <ADC_CS> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2476: Output port <ADC_SCLK> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2492: Output port <ADC_register> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2492: Output port <ADC_CS> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2492: Output port <ADC_SCLK> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2508: Output port <ADC_register> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2508: Output port <ADC_CS> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2508: Output port <ADC_SCLK> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2524: Output port <ADC_register> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2524: Output port <ADC_CS> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2524: Output port <ADC_SCLK> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2540: Output port <ADC_register> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2540: Output port <ADC_CS> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2540: Output port <ADC_SCLK> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2556: Output port <ADC_register> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2556: Output port <ADC_CS> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2556: Output port <ADC_SCLK> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
     Found 10-bit register for signal <loop_aux_cmd_index_1>.
@@ -486,7 +507,6 @@ INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2556: Output port <ADC_SCLK> of 
     Found 1-bit register for signal <MOSI_B>.
     Found 1-bit register for signal <MOSI_C>.
     Found 1-bit register for signal <MOSI_D>.
-    Found 16-bit register for signal <FIFO_data_in>.
     Found 1-bit register for signal <FIFO_write_to>.
     Found 6-bit register for signal <channel_MISO>.
     Found 10-bit register for signal <aux_cmd_index_1>.
@@ -536,8 +556,6 @@ INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2556: Output port <ADC_SCLK> of 
     Found 16-bit register for signal <MOSI_cmd_B>.
     Found 16-bit register for signal <MOSI_cmd_C>.
     Found 16-bit register for signal <MOSI_cmd_D>.
-    Found 16-bit register for signal <data_stream_TTL_in>.
-    Found 16-bit register for signal <data_stream_TTL_out>.
     Found 1-bit register for signal <external_fast_settle_prev>.
     Found 1-bit register for signal <external_fast_settle>.
     Found 1-bit register for signal <external_digout_A>.
@@ -1221,9 +1239,9 @@ INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2556: Output port <ADC_SCLK> of 
     Found 32-bit comparator equal for signal <timestamp[31]_max_timestep[31]_equal_387_o> created at line 2223
     Summary:
 	inferred   6 Adder/Subtractor(s).
-	inferred 1774 D-type flip-flop(s).
+	inferred 1726 D-type flip-flop(s).
 	inferred  12 Comparator(s).
-	inferred 125 Multiplexer(s).
+	inferred 105 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <main> synthesized.
 
@@ -1328,15 +1346,15 @@ Unit <SDRAM_FIFO> synthesized.
 
 Synthesizing Unit <memc3_infrastructure>.
     Related source file is "E:\CAD\hdl\rhythm\memc3_infrastructure.v".
-        C_MEMCLK_PERIOD = 3200
+        C_MEMCLK_PERIOD = 10000
         C_RST_ACT_LOW = 0
         C_INPUT_CLK_TYPE = "DIFFERENTIAL"
         C_CLKOUT0_DIVIDE = 1
         C_CLKOUT1_DIVIDE = 1
-        C_CLKOUT2_DIVIDE = 16
+        C_CLKOUT2_DIVIDE = 4
         C_CLKOUT3_DIVIDE = 8
-        C_CLKFBOUT_MULT = 2
-        C_DIVCLK_DIVIDE = 1
+        C_CLKFBOUT_MULT = 25
+        C_DIVCLK_DIVIDE = 4
     Set property "syn_maxfan = 10" for signal <rst0_sync_r>.
     Set property "MAX_FANOUT = 10" for signal <rst0_sync_r>.
     Set property "KEEP = TRUE" for signal <sys_clk_ibufg>.
@@ -1813,7 +1831,7 @@ INFO:Xst:1799 - State 101010 is never reached in FSM <STATE>.
     Found 8-bit adder for signal <counter_inc[7]_GND_18_o_add_155_OUT> created at line 1189.
     Found 8-bit adder for signal <DQS_DELAY[7]_GND_18_o_add_158_OUT> created at line 1194.
     Found 8-bit adder for signal <counter_dec[7]_GND_18_o_add_169_OUT> created at line 1214.
-    Found 12-bit adder for signal <_n0713> created at line 437.
+    Found 12-bit adder for signal <_n0711> created at line 437.
     Found 12-bit adder for signal <n0420> created at line 437.
     Found 13-bit adder for signal <_n0715> created at line 437.
     Found 13-bit adder for signal <n0414> created at line 437.
@@ -1938,77 +1956,14 @@ WARNING:Xst:647 - Input <p0_wr_full> is never used. This port will be preserved 
     Found 1-bit register for signal <p0_rd_en_o>.
     Found 1-bit register for signal <ob_we>.
     Found 32-bit register for signal <p0_wr_data>.
-    Found 1-bit register for signal <ob_data<63>>.
-    Found 1-bit register for signal <ob_data<62>>.
-    Found 1-bit register for signal <ob_data<61>>.
-    Found 1-bit register for signal <ob_data<60>>.
-    Found 1-bit register for signal <ob_data<59>>.
-    Found 1-bit register for signal <ob_data<58>>.
-    Found 1-bit register for signal <ob_data<57>>.
-    Found 1-bit register for signal <ob_data<56>>.
-    Found 1-bit register for signal <ob_data<55>>.
-    Found 1-bit register for signal <ob_data<54>>.
-    Found 1-bit register for signal <ob_data<53>>.
-    Found 1-bit register for signal <ob_data<52>>.
-    Found 1-bit register for signal <ob_data<51>>.
-    Found 1-bit register for signal <ob_data<50>>.
-    Found 1-bit register for signal <ob_data<49>>.
-    Found 1-bit register for signal <ob_data<48>>.
-    Found 1-bit register for signal <ob_data<47>>.
-    Found 1-bit register for signal <ob_data<46>>.
-    Found 1-bit register for signal <ob_data<45>>.
-    Found 1-bit register for signal <ob_data<44>>.
-    Found 1-bit register for signal <ob_data<43>>.
-    Found 1-bit register for signal <ob_data<42>>.
-    Found 1-bit register for signal <ob_data<41>>.
-    Found 1-bit register for signal <ob_data<40>>.
-    Found 1-bit register for signal <ob_data<39>>.
-    Found 1-bit register for signal <ob_data<38>>.
-    Found 1-bit register for signal <ob_data<37>>.
-    Found 1-bit register for signal <ob_data<36>>.
-    Found 1-bit register for signal <ob_data<35>>.
-    Found 1-bit register for signal <ob_data<34>>.
-    Found 1-bit register for signal <ob_data<33>>.
-    Found 1-bit register for signal <ob_data<32>>.
-    Found 1-bit register for signal <ob_data<31>>.
-    Found 1-bit register for signal <ob_data<30>>.
-    Found 1-bit register for signal <ob_data<29>>.
-    Found 1-bit register for signal <ob_data<28>>.
-    Found 1-bit register for signal <ob_data<27>>.
-    Found 1-bit register for signal <ob_data<26>>.
-    Found 1-bit register for signal <ob_data<25>>.
-    Found 1-bit register for signal <ob_data<24>>.
-    Found 1-bit register for signal <ob_data<23>>.
-    Found 1-bit register for signal <ob_data<22>>.
-    Found 1-bit register for signal <ob_data<21>>.
-    Found 1-bit register for signal <ob_data<20>>.
-    Found 1-bit register for signal <ob_data<19>>.
-    Found 1-bit register for signal <ob_data<18>>.
-    Found 1-bit register for signal <ob_data<17>>.
-    Found 1-bit register for signal <ob_data<16>>.
-    Found 1-bit register for signal <ob_data<15>>.
-    Found 1-bit register for signal <ob_data<14>>.
-    Found 1-bit register for signal <ob_data<13>>.
-    Found 1-bit register for signal <ob_data<12>>.
-    Found 1-bit register for signal <ob_data<11>>.
-    Found 1-bit register for signal <ob_data<10>>.
-    Found 1-bit register for signal <ob_data<9>>.
-    Found 1-bit register for signal <ob_data<8>>.
-    Found 1-bit register for signal <ob_data<7>>.
-    Found 1-bit register for signal <ob_data<6>>.
-    Found 1-bit register for signal <ob_data<5>>.
-    Found 1-bit register for signal <ob_data<4>>.
-    Found 1-bit register for signal <ob_data<3>>.
-    Found 1-bit register for signal <ob_data<2>>.
-    Found 1-bit register for signal <ob_data<1>>.
-    Found 1-bit register for signal <ob_data<0>>.
+    Found 32-bit register for signal <ob_data>.
     Found 1-bit register for signal <write_mode>.
     Found finite state machine <FSM_5> for signal <state>.
     -----------------------------------------------------------------------
-    | States             | 11                                             |
-    | Transitions        | 23                                             |
+    | States             | 8                                              |
+    | Transitions        | 21                                             |
     | Inputs             | 10                                             |
-    | Outputs            | 11                                             |
+    | Outputs            | 8                                              |
     | Clock              | clk (rising_edge)                              |
     | Reset              | reset_d (positive)                             |
     | Reset type         | synchronous                                    |
@@ -2016,17 +1971,17 @@ WARNING:Xst:647 - Input <p0_wr_full> is never used. This port will be preserved 
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 30-bit adder for signal <cmd_byte_addr_wr[29]_GND_57_o_add_17_OUT> created at line 155.
-    Found 30-bit adder for signal <cmd_byte_addr_rd[29]_GND_57_o_add_23_OUT> created at line 175.
-    Found 6-bit subtractor for signal <GND_57_o_GND_57_o_sub_12_OUT<5:0>> created at line 137.
-    Found 9-bit comparator greater for signal <n0008> created at line 121
-    Found 9-bit comparator greater for signal <ob_count[8]_PWR_56_o_LessThan_21_o> created at line 166
-    Found 30-bit comparator equal for signal <n0024> created at line 166
+    Found 30-bit adder for signal <cmd_byte_addr_wr[29]_GND_57_o_add_21_OUT> created at line 113.
+    Found 30-bit adder for signal <cmd_byte_addr_rd[29]_GND_57_o_add_26_OUT> created at line 123.
+    Found 6-bit subtractor for signal <GND_57_o_GND_57_o_sub_17_OUT<5:0>> created at line 104.
+    Found 10-bit comparator greater for signal <n0007> created at line 88
+    Found 10-bit comparator greater for signal <ob_count[9]_PWR_56_o_LessThan_12_o> created at line 90
+    Found 30-bit comparator equal for signal <n0015> created at line 90
     Summary:
 	inferred   3 Adder/Subtractor(s).
-	inferred 203 D-type flip-flop(s).
+	inferred 171 D-type flip-flop(s).
 	inferred   3 Comparator(s).
-	inferred   2 Multiplexer(s).
+	inferred   3 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <ddr2_state_machine> synthesized.
 
@@ -2281,29 +2236,28 @@ Macro Statistics
  8-bit addsub                                          : 1
  8-bit subtractor                                      : 4
  9-bit adder                                           : 2
-# Registers                                            : 307
- 1-bit register                                        : 143
+# Registers                                            : 283
+ 1-bit register                                        : 129
  10-bit register                                       : 12
  11-bit register                                       : 1
- 16-bit register                                       : 65
+ 16-bit register                                       : 55
  2-bit register                                        : 1
  24-bit register                                       : 1
  25-bit register                                       : 1
  26-bit register                                       : 2
  3-bit register                                        : 3
  30-bit register                                       : 3
- 32-bit register                                       : 11
+ 32-bit register                                       : 12
  4-bit register                                        : 28
  5-bit register                                        : 2
  6-bit register                                        : 6
- 64-bit register                                       : 1
  7-bit register                                        : 2
  74-bit register                                       : 8
  8-bit register                                        : 17
 # Comparators                                          : 103
  1-bit comparator equal                                : 8
  10-bit comparator equal                               : 3
- 10-bit comparator greater                             : 2
+ 10-bit comparator greater                             : 4
  16-bit comparator lessequal                           : 16
  2-bit comparator equal                                : 8
  3-bit comparator equal                                : 8
@@ -2317,8 +2271,7 @@ Macro Statistics
  7-bit comparator equal                                : 9
  8-bit comparator greater                              : 8
  8-bit comparator lessequal                            : 2
- 9-bit comparator greater                              : 2
-# Multiplexers                                         : 1407
+# Multiplexers                                         : 1381
  1-bit 16-to-1 multiplexer                             : 5
  1-bit 2-to-1 multiplexer                              : 1026
  1-bit 24-to-1 multiplexer                             : 1
@@ -2328,10 +2281,12 @@ Macro Statistics
  16-bit 12-to-1 multiplexer                            : 8
  16-bit 13-to-1 multiplexer                            : 16
  16-bit 16-to-1 multiplexer                            : 14
- 16-bit 2-to-1 multiplexer                             : 104
+ 16-bit 2-to-1 multiplexer                             : 77
  18-bit 2-to-1 multiplexer                             : 16
  24-bit 2-to-1 multiplexer                             : 8
- 32-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 1
+ 30-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 36
  40-bit 2-to-1 multiplexer                             : 1
  6-bit 2-to-1 multiplexer                              : 9
@@ -2352,8 +2307,8 @@ Reading core <okWireOut.ngc>.
 Reading core <okPipeOut.ngc>.
 Reading core <okCoreHarness.ngc>.
 Reading core <TFIFO64x8a_64x8b.ngc>.
-Reading core <fifo_w16_2048_r64_512.ngc>.
-Reading core <fifo_w64_512_r32_1024.ngc>.
+Reading core <fifo_w32_1024_r32_1024.ngc>.
+Reading core <fifo_w16_2048_r32_1024.ngc>.
 Reading core <multiplier_18x18.ngc>.
 Loading core <okWireIn> for timing and area information for instance <wi00>.
 Loading core <okWireIn> for timing and area information for instance <wi01>.
@@ -2430,31 +2385,25 @@ Loading core <okWireOut> for timing and area information for instance <wo3f>.
 Loading core <okPipeOut> for timing and area information for instance <poa0>.
 Loading core <TFIFO64x8a_64x8b> for timing and area information for instance <core0/a0/cb0>.
 Loading core <okCoreHarness> for timing and area information for instance <core0>.
-Loading core <fifo_w16_2048_r64_512> for timing and area information for instance <okPipeIn_fifo>.
-Loading core <fifo_w64_512_r32_1024> for timing and area information for instance <okPipeOut_fifo>.
+Loading core <fifo_w32_1024_r32_1024> for timing and area information for instance <okPipeOut_fifo>.
+Loading core <fifo_w16_2048_r32_1024> for timing and area information for instance <okPipeIn_fifo>.
 Loading core <multiplier_18x18> for timing and area information for instance <multiplier_1>.
 INFO:Xst:2261 - The FF/Latch <IODRPCTRLR_MEMCELL_ADDR_2> in Unit <mcb_soft_calibration_inst> is equivalent to the following 3 FFs/Latches, which will be removed : <IODRPCTRLR_MEMCELL_ADDR_4> <IODRPCTRLR_MEMCELL_ADDR_5> <IODRPCTRLR_MEMCELL_ADDR_6> 
-WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <DQS_DELAY_INITIAL_7> has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_3> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_1> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_0> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <MCB_UICMD> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_6> (without init value) has a constant value of 0 in block <iodrp_mcb_controller>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_5> (without init value) has a constant value of 0 in block <iodrp_mcb_controller>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_4> (without init value) has a constant value of 0 in block <iodrp_mcb_controller>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_2> (without init value) has a constant value of 0 in block <iodrp_mcb_controller>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_6> (without init value) has a constant value of 0 in block <iodrp_controller>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_5> (without init value) has a constant value of 0 in block <iodrp_controller>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_4> (without init value) has a constant value of 0 in block <iodrp_controller>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_2> (without init value) has a constant value of 0 in block <iodrp_controller>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <p0_cmd_instr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <p0_cmd_instr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <p0_cmd_byte_addr_0> of sequential type is unconnected in block <ddr2_state_machine_inst>.
-WARNING:Xst:2677 - Node <p0_cmd_byte_addr_27> of sequential type is unconnected in block <ddr2_state_machine_inst>.
-WARNING:Xst:2677 - Node <p0_cmd_byte_addr_28> of sequential type is unconnected in block <ddr2_state_machine_inst>.
-WARNING:Xst:2677 - Node <p0_cmd_byte_addr_29> of sequential type is unconnected in block <ddr2_state_machine_inst>.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_4> (without init value) has a constant value of 0 in block <iodrp_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_5> (without init value) has a constant value of 0 in block <iodrp_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_6> (without init value) has a constant value of 0 in block <iodrp_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_2> (without init value) has a constant value of 0 in block <iodrp_mcb_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_4> (without init value) has a constant value of 0 in block <iodrp_mcb_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_5> (without init value) has a constant value of 0 in block <iodrp_mcb_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_6> (without init value) has a constant value of 0 in block <iodrp_mcb_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UICMD> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_0> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_1> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_3> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <DQS_DELAY_INITIAL_7> has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <DAC_output_scalable_HPF>.
 The following registers are absorbed into accumulator <HPF_state>: 1 register on signal <HPF_state>.
@@ -2490,7 +2439,7 @@ The following registers are absorbed into counter <DQS_DELAY>: 1 register on sig
 The following registers are absorbed into counter <counter_inc>: 1 register on signal <counter_inc>.
 The following registers are absorbed into counter <counter_dec>: 1 register on signal <counter_dec>.
 	The following adders/subtractors are grouped into adder tree <Madd_n0420_Madd1> :
- 	<Madd_n0610[8:0]> in block <mcb_soft_calibration>, 	<Madd_n0613[9:0]> in block <mcb_soft_calibration>, 	<Madd_n0616[10:0]_Madd> in block <mcb_soft_calibration>, 	<Madd__n0713_Madd> in block <mcb_soft_calibration>.
+ 	<Madd_n0610[8:0]> in block <mcb_soft_calibration>, 	<Madd_n0613[9:0]> in block <mcb_soft_calibration>, 	<Madd_n0616[10:0]_Madd> in block <mcb_soft_calibration>, 	<Madd__n0711_Madd> in block <mcb_soft_calibration>.
 	The following adders/subtractors are grouped into adder tree <Madd_n0592[9:0]1> :
  	<Madd_n0586[7:0]> in block <mcb_soft_calibration>, 	<Madd_n0589[8:0]> in block <mcb_soft_calibration>, 	<Madd_n0592[9:0]> in block <mcb_soft_calibration>.
 Unit <mcb_soft_calibration> synthesized (advanced).
@@ -2526,12 +2475,12 @@ Macro Statistics
 # Accumulators                                         : 10
  30-bit up accumulator                                 : 2
  32-bit up accumulator                                 : 8
-# Registers                                            : 2526
- Flip-Flops                                            : 2526
+# Registers                                            : 2320
+ Flip-Flops                                            : 2320
 # Comparators                                          : 103
  1-bit comparator equal                                : 8
  10-bit comparator equal                               : 3
- 10-bit comparator greater                             : 2
+ 10-bit comparator greater                             : 4
  16-bit comparator lessequal                           : 16
  2-bit comparator equal                                : 8
  3-bit comparator equal                                : 8
@@ -2545,8 +2494,7 @@ Macro Statistics
  7-bit comparator equal                                : 9
  8-bit comparator greater                              : 8
  8-bit comparator lessequal                            : 2
- 9-bit comparator greater                              : 2
-# Multiplexers                                         : 1413
+# Multiplexers                                         : 1387
  1-bit 16-to-1 multiplexer                             : 5
  1-bit 2-to-1 multiplexer                              : 1039
  1-bit 24-to-1 multiplexer                             : 1
@@ -2556,10 +2504,12 @@ Macro Statistics
  16-bit 12-to-1 multiplexer                            : 8
  16-bit 13-to-1 multiplexer                            : 16
  16-bit 16-to-1 multiplexer                            : 14
- 16-bit 2-to-1 multiplexer                             : 103
+ 16-bit 2-to-1 multiplexer                             : 76
  18-bit 2-to-1 multiplexer                             : 16
  24-bit 2-to-1 multiplexer                             : 8
- 32-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 1
+ 30-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 36
  40-bit 2-to-1 multiplexer                             : 1
  6-bit 2-to-1 multiplexer                              : 8
@@ -2573,8 +2523,6 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <p0_cmd_instr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_instr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <MCB_UICMD> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MCB_UIDQCOUNT_0> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MCB_UIDQCOUNT_1> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
@@ -2679,22 +2627,19 @@ Optimizing FSM <FSM_0> on signal <main_state[1:81]> with one-hot encoding.
  00000000000000000000000010110010 | 100000000000000000000000000000000000000000000000000000000000000000000000000000000
 -----------------------------------------------------------------------------------------------------------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <SDRAM_FIFO_inst/ddr2_state_machine_inst/FSM_5> on signal <state[1:11]> with one-hot encoding.
--------------------------------------------------
+Optimizing FSM <SDRAM_FIFO_inst/ddr2_state_machine_inst/FSM_5> on signal <state[1:3]> with sequential encoding.
+----------------------------------------------
  State                            | Encoding
--------------------------------------------------
- 00000000000000000000000000000000 | 00000000001
- 00000000000000000000000000001010 | 00000000010
- 00000000000000000000000000001011 | 00000000100
- 00000000000000000000000000001100 | 00000001000
- 00000000000000000000000000001101 | 00000010000
- 00000000000000000000000000000001 | 00000100000
- 00000000000000000000000000010100 | 00001000000
- 00000000000000000000000000010101 | 00010000000
- 00000000000000000000000000010110 | 00100000000
- 00000000000000000000000000010111 | 01000000000
- 00000000000000000000000000011000 | 10000000000
--------------------------------------------------
+----------------------------------------------
+ 00000000000000000000000000000000 | 000
+ 00000000000000000000000000001010 | 001
+ 00000000000000000000000000001011 | 010
+ 00000000000000000000000000001100 | 011
+ 00000000000000000000000000010100 | 100
+ 00000000000000000000000000010101 | 101
+ 00000000000000000000000000010110 | 110
+ 00000000000000000000000000010111 | 111
+----------------------------------------------
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/FSM_2> on signal <STATE[1:6]> with gray encoding.
 --------------------
@@ -2811,11 +2756,7 @@ Optimizing FSM <variable_freq_clk_generator_inst/FSM_1> on signal <DCM_prog_stat
  00000000000000000000000000101001 | 010000000000000000000000000000000
  00000000000000000000000000101010 | 100000000000000000000000000000000
 -----------------------------------------------------------------------
-WARNING:Xst:1710 - FF/Latch <burst_cnt_0> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_0> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_byte_addr_wr_0> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cmd_byte_addr_wr_0> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_byte_addr_wr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_byte_addr_wr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_byte_addr_rd_0> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
@@ -2832,6 +2773,16 @@ Optimizing unit <okHost> ...
 Optimizing unit <memc3_infrastructure> ...
 
 Optimizing unit <ddr2_state_machine> ...
+WARNING:Xst:1710 - FF/Latch <p0_cmd_instr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_instr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_0> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <p0_cmd_instr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_instr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_0> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <mcb_soft_calibration> ...
 
@@ -2863,20 +2814,22 @@ WARNING:Xst:2677 - Node <SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrappe
 WARNING:Xst:2677 - Node <SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller/read_data_2> of sequential type is unconnected in block <main>.
 WARNING:Xst:2677 - Node <SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller/read_data_1> of sequential type is unconnected in block <main>.
 WARNING:Xst:2677 - Node <SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller/read_data_0> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_8/ADC_CS> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_8/ADC_SCLK> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_7/ADC_CS> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_7/ADC_SCLK> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_6/ADC_CS> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_6/ADC_SCLK> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_5/ADC_CS> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_5/ADC_SCLK> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_4/ADC_CS> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_4/ADC_SCLK> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_3/ADC_CS> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_3/ADC_SCLK> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_2/ADC_CS> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <ADC_inout_2/ADC_SCLK> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_15> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_14> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_13> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_12> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_11> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_10> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_9> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_8> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_7> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_6> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_5> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_4> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_3> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_2> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_1> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <ADC_inout_1/ADC_register_0> of sequential type is unconnected in block <main>.
 WARNING:Xst:2677 - Node <DAC_output_8/DAC_SYNC> of sequential type is unconnected in block <main>.
 WARNING:Xst:2677 - Node <DAC_output_8/DAC_SCLK> of sequential type is unconnected in block <main>.
 WARNING:Xst:2677 - Node <DAC_output_7/DAC_SYNC> of sequential type is unconnected in block <main>.
@@ -2897,19 +2850,21 @@ INFO:Xst:2261 - The FF/Latch <SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_w
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 49.
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 47.
+WARNING:Xst:387 - The KEEP property attached to the net <SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst> may hinder timing optimization.
+   You may achieve better results by removing this property
 INFO:Xst:2260 - The FF/Latch <core0/a0/pc0/sync_interrupt_flop> in Unit <host/core0> is equivalent to the following FF/Latch : <core0/a0/pc0/sync_sleep_flop> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <BU2> is equivalent to the following 2 FFs/Latches : <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <SDRAM_FIFO_inst/okPipeOut_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <SDRAM_FIFO_inst/okPipeOut_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <SDRAM_FIFO_inst/okPipeOut_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <SDRAM_FIFO_inst/okPipeOut_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <SDRAM_FIFO_inst/okPipeOut_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <SDRAM_FIFO_inst/okPipeIn_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <SDRAM_FIFO_inst/okPipeIn_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <SDRAM_FIFO_inst/okPipeIn_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <SDRAM_FIFO_inst/okPipeIn_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <core0/a0/pc0/sync_interrupt_flop> in Unit <host/core0> is equivalent to the following FF/Latch : <core0/a0/pc0/sync_sleep_flop> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
@@ -2920,26 +2875,19 @@ INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> in Unit <B
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <BU2> is equivalent to the following 2 FFs/Latches : <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <BU2> is equivalent to the following 2 FFs/Latches : <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <SDRAM_FIFO_inst/okPipeOut_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <SDRAM_FIFO_inst/okPipeOut_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <SDRAM_FIFO_inst/okPipeOut_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <SDRAM_FIFO_inst/okPipeOut_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
-FlipFlop DAC_register_1_15 has been replicated 1 time(s)
-FlipFlop DAC_register_2_15 has been replicated 1 time(s)
-FlipFlop DAC_register_3_15 has been replicated 1 time(s)
-FlipFlop DAC_register_4_15 has been replicated 1 time(s)
-FlipFlop DAC_register_5_15 has been replicated 1 time(s)
-FlipFlop DAC_register_6_15 has been replicated 1 time(s)
-FlipFlop DAC_register_7_15 has been replicated 1 time(s)
-FlipFlop DAC_register_8_15 has been replicated 1 time(s)
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <SDRAM_FIFO_inst/okPipeOut_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <SDRAM_FIFO_inst/okPipeIn_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <SDRAM_FIFO_inst/okPipeIn_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <SDRAM_FIFO_inst/okPipeIn_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <SDRAM_FIFO_inst/okPipeIn_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+FlipFlop SDRAM_FIFO_inst/ddr2_state_machine_inst/reset_d has been replicated 1 time(s)
+FlipFlop SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1 has been replicated 2 time(s)
+FlipFlop SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2 has been replicated 3 time(s)
+FlipFlop SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3 has been replicated 3 time(s)
+FlipFlop SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked has been replicated 2 time(s)
 FlipFlop SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Pre_SYSRST has been replicated 2 time(s)
 FlipFlop TTL_out_user_15 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop TTL_out_user_14 has been replicated 1 time(s) to handle iob=true attribute.
@@ -2962,8 +2910,8 @@ Unit <main> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2991
- Flip-Flops                                            : 2991
+# Registers                                            : 2779
+ Flip-Flops                                            : 2779
 # Shift Registers                                      : 3
  2-bit shift register                                  : 1
  6-bit shift register                                  : 2
@@ -2989,32 +2937,32 @@ Top Level Output File Name         : main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 13619
+# BELS                             : 12909
 #      GND                         : 46
-#      INV                         : 88
+#      INV                         : 90
 #      LUT1                        : 244
-#      LUT2                        : 2267
-#      LUT3                        : 305
-#      LUT4                        : 1603
-#      LUT5                        : 1128
-#      LUT6                        : 5116
+#      LUT2                        : 2260
+#      LUT3                        : 333
+#      LUT4                        : 1574
+#      LUT5                        : 1192
+#      LUT6                        : 4335
 #      LUT6_2                      : 50
 #      MULT_AND                    : 6
-#      MUXCY                       : 1081
-#      MUXF7                       : 474
+#      MUXCY                       : 1086
+#      MUXF7                       : 479
 #      MUXF8                       : 181
 #      VCC                         : 12
-#      XORCY                       : 1018
-# FlipFlops/Latches                : 8184
-#      FD                          : 518
-#      FDC                         : 1054
-#      FDCE                        : 273
-#      FDE                         : 1981
-#      FDP                         : 87
-#      FDPE                        : 13
-#      FDR                         : 578
+#      XORCY                       : 1021
+# FlipFlops/Latches                : 7991
+#      FD                          : 521
+#      FDC                         : 1072
+#      FDCE                        : 277
+#      FDE                         : 1780
+#      FDP                         : 88
+#      FDPE                        : 11
+#      FDR                         : 563
 #      FDRE                        : 3665
-#      FDS                         : 13
+#      FDS                         : 12
 #      FDSE                        : 2
 # RAMS                             : 70
 #      RAM128X1S                   : 8
@@ -3026,8 +2974,8 @@ Primitive and Black Box Usage:
 #      SRLC16E                     : 4
 # Clock Buffers                    : 6
 #      BUFG                        : 6
-# IO Buffers                       : 179
-#      IBUF                        : 32
+# IO Buffers                       : 171
+#      IBUF                        : 24
 #      IBUFDS                      : 8
 #      IBUFG                       : 1
 #      IBUFGDS                     : 1
@@ -3061,23 +3009,23 @@ Selected Device : 6slx45fgg484-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            8073  out of  54576    14%  
- Number of Slice LUTs:                10849  out of  27288    39%  
-    Number used as Logic:             10801  out of  27288    39%  
+ Number of Slice Registers:            7880  out of  54576    14%  
+ Number of Slice LUTs:                10126  out of  27288    37%  
+    Number used as Logic:             10078  out of  27288    36%  
     Number used as Memory:               48  out of   6408     0%  
        Number used as RAM:               44
        Number used as SRL:                4
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  15451
-   Number with an unused Flip Flop:    7378  out of  15451    47%  
-   Number with an unused LUT:          4602  out of  15451    29%  
-   Number of fully used LUT-FF pairs:  3471  out of  15451    22%  
-   Number of unique control sets:       264
+ Number of LUT Flip Flop pairs used:  14740
+   Number with an unused Flip Flop:    6860  out of  14740    46%  
+   Number with an unused LUT:          4614  out of  14740    31%  
+   Number of fully used LUT-FF pairs:  3266  out of  14740    22%  
+   Number of unique control sets:       267
 
 IO Utilization: 
  Number of IOs:                         203
- Number of bonded IOBs:                 203  out of    316    64%  
+ Number of bonded IOBs:                 195  out of    316    61%  
     IOB Flip Flops/Latches:             111
 
 Specific Feature Utilization:
@@ -3108,7 +3056,7 @@ Clock Information:
 -----------------------------------------+------------------------------------------------------------+-------+
 Clock Signal                             | Clock buffer(FF name)                                      | Load  |
 -----------------------------------------+------------------------------------------------------------+-------+
-variable_freq_clk_generator_inst/clkout_i| BUFG                                                       | 2078  |
+variable_freq_clk_generator_inst/clkout_i| BUFG                                                       | 1896  |
 ti43/ep_trigger<0>                       | NONE(DAC_thresh_1_0)                                       | 16    |
 ti43/ep_trigger<1>                       | NONE(DAC_thresh_2_0)                                       | 16    |
 ti43/ep_trigger<4>                       | NONE(DAC_thresh_5_0)                                       | 16    |
@@ -3120,27 +3068,27 @@ ti43/ep_trigger<6>                       | NONE(DAC_thresh_7_0)                 
 ti43/ep_trigger<9>                       | NONE(DAC_thresh_pol_2)                                     | 1     |
 ti44/ep_trigger<1>                       | NONE(HPF_coefficient_0)                                    | 16    |
 ti43/ep_trigger<8>                       | NONE(DAC_thresh_pol_1)                                     | 1     |
+ti43/ep_trigger<12>                      | NONE(DAC_thresh_pol_5)                                     | 1     |
 ti43/ep_trigger<10>                      | NONE(DAC_thresh_pol_3)                                     | 1     |
 ti43/ep_trigger<11>                      | NONE(DAC_thresh_pol_4)                                     | 1     |
-ti43/ep_trigger<12>                      | NONE(DAC_thresh_pol_5)                                     | 1     |
-ti43/ep_trigger<13>                      | NONE(DAC_thresh_pol_6)                                     | 1     |
-ti44/ep_trigger<0>                       | NONE(HPF_en)                                               | 1     |
-ti43/ep_trigger<14>                      | NONE(DAC_thresh_pol_7)                                     | 1     |
 ti43/ep_trigger<15>                      | NONE(DAC_thresh_pol_8)                                     | 1     |
-ti46/ep_trigger<1>                       | NONE(external_digout_enable_B)                             | 1     |
-ti45/ep_trigger<0>                       | NONE(external_fast_settle_enable)                          | 1     |
+ti43/ep_trigger<13>                      | NONE(DAC_thresh_pol_6)                                     | 1     |
+ti43/ep_trigger<14>                      | NONE(DAC_thresh_pol_7)                                     | 1     |
 ti46/ep_trigger<0>                       | NONE(external_digout_enable_A)                             | 1     |
-ti5a/ep_trigger<0>                       | NONE(ledsEnabled)                                          | 1     |
-ti46/ep_trigger<2>                       | NONE(external_digout_enable_C)                             | 1     |
+ti44/ep_trigger<0>                       | NONE(HPF_en)                                               | 1     |
+ti45/ep_trigger<0>                       | NONE(external_fast_settle_enable)                          | 1     |
 ti46/ep_trigger<3>                       | NONE(external_digout_enable_D)                             | 1     |
-ti45/ep_trigger<1>                       | NONE(external_fast_settle_channel_0)                       | 4     |
+ti46/ep_trigger<1>                       | NONE(external_digout_enable_B)                             | 1     |
+ti46/ep_trigger<2>                       | NONE(external_digout_enable_C)                             | 1     |
 ti46/ep_trigger<4>                       | NONE(external_digout_channel_A_0)                          | 4     |
+ti5a/ep_trigger<0>                       | NONE(ledsEnabled)                                          | 1     |
+ti45/ep_trigger<1>                       | NONE(external_fast_settle_channel_0)                       | 4     |
+ti46/ep_trigger<7>                       | NONE(external_digout_channel_D_0)                          | 4     |
 ti46/ep_trigger<5>                       | NONE(external_digout_channel_B_0)                          | 4     |
 ti46/ep_trigger<6>                       | NONE(external_digout_channel_C_0)                          | 4     |
-ti46/ep_trigger<7>                       | NONE(external_digout_channel_D_0)                          | 4     |
-okUH<0>                                  | DCM_SP:CLK0                                                | 5123  |
+okUH<0>                                  | DCM_SP:CLK0                                                | 5126  |
 clk1_in_p                                | PLL_ADV:CLKOUT3                                            | 237   |
-clk1_in_p                                | PLL_ADV:CLKOUT2                                            | 381   |
+clk1_in_p                                | PLL_ADV:CLKOUT2                                            | 367   |
 clk1_in_p                                | IBUFGDS+BUFG                                               | 64    |
 DAC_output_8/state_clk                   | BUFG                                                       | 256   |
 host/core0/okHE<41>                      | NONE(host/core0/core0/a0/pm0/ram_1k_generate.s6.kcpsm6_rom)| 1     |
@@ -3155,9 +3103,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 15.402ns (Maximum Frequency: 64.925MHz)
+   Minimum period: 28.987ns (Maximum Frequency: 34.498MHz)
    Minimum input arrival time before clock: 6.602ns
-   Maximum output required time after clock: 13.357ns
+   Maximum output required time after clock: 13.033ns
    Maximum combinational path delay: 3.593ns
 
 Timing Details:
@@ -3166,67 +3114,57 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'variable_freq_clk_generator_inst/clkout_i'
-  Clock period: 15.402ns (frequency: 64.925MHz)
-  Total number of paths / destination ports: 11772894 / 3210
+  Clock period: 21.908ns (frequency: 45.646MHz)
+  Total number of paths / destination ports: 10805800 / 2985
 -------------------------------------------------------------------------
-Delay:               15.402ns (Levels of Logic = 38)
-  Source:            DAC_register_7_0 (FF)
-  Destination:       DAC_output_7/DAC_DIN (FF)
+Delay:               21.908ns (Levels of Logic = 28)
+  Source:            DAC_register_1_15 (FF)
+  Destination:       DAC_output_1/DAC_DIN (FF)
   Source Clock:      variable_freq_clk_generator_inst/clkout_i rising
   Destination Clock: variable_freq_clk_generator_inst/clkout_i rising
 
-  Data Path: DAC_register_7_0 to DAC_output_7/DAC_DIN
+  Data Path: DAC_register_1_15 to DAC_output_1/DAC_DIN
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.525   0.726  DAC_register_7_0 (DAC_register_7_0)
-     LUT2:I1->O            1   0.254   0.000  DAC_output_7/Madd_n0206_Madd_Madd_lut<2> (DAC_output_7/Madd_n0206_Madd_Madd_lut<2>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<2> (DAC_output_7/Madd_n0206_Madd_Madd_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<3> (DAC_output_7/Madd_n0206_Madd_Madd_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<4> (DAC_output_7/Madd_n0206_Madd_Madd_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<5> (DAC_output_7/Madd_n0206_Madd_Madd_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<6> (DAC_output_7/Madd_n0206_Madd_Madd_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<7> (DAC_output_7/Madd_n0206_Madd_Madd_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<8> (DAC_output_7/Madd_n0206_Madd_Madd_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<9> (DAC_output_7/Madd_n0206_Madd_Madd_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<10> (DAC_output_7/Madd_n0206_Madd_Madd_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<11> (DAC_output_7/Madd_n0206_Madd_Madd_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<12> (DAC_output_7/Madd_n0206_Madd_Madd_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<13> (DAC_output_7/Madd_n0206_Madd_Madd_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<14> (DAC_output_7/Madd_n0206_Madd_Madd_cy<14>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<15> (DAC_output_7/Madd_n0206_Madd_Madd_cy<15>)
-     MUXCY:CI->O           0   0.023   0.000  DAC_output_7/Madd_n0206_Madd_Madd_cy<16> (DAC_output_7/Madd_n0206_Madd_Madd_cy<16>)
-     XORCY:CI->O          64   0.206   1.930  DAC_output_7/Madd_n0206_Madd_Madd_xor<17> (DAC_output_7/n0206<17>)
-     LUT6:I5->O            4   0.254   0.803  DAC_output_7/Mmux_HPF_output111 (DAC_output_7/HPF_output<4>)
-     MUXCY:DI->O           1   0.181   0.000  DAC_output_7/Msub_subtract_result_cy<4> (DAC_output_7/Msub_subtract_result_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Msub_subtract_result_cy<5> (DAC_output_7/Msub_subtract_result_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Msub_subtract_result_cy<6> (DAC_output_7/Msub_subtract_result_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Msub_subtract_result_cy<7> (DAC_output_7/Msub_subtract_result_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Msub_subtract_result_cy<8> (DAC_output_7/Msub_subtract_result_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Msub_subtract_result_cy<9> (DAC_output_7/Msub_subtract_result_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Msub_subtract_result_cy<10> (DAC_output_7/Msub_subtract_result_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Msub_subtract_result_cy<11> (DAC_output_7/Msub_subtract_result_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Msub_subtract_result_cy<12> (DAC_output_7/Msub_subtract_result_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Msub_subtract_result_cy<13> (DAC_output_7/Msub_subtract_result_cy<13>)
-     MUXCY:CI->O           0   0.023   0.000  DAC_output_7/Msub_subtract_result_cy<14> (DAC_output_7/Msub_subtract_result_cy<14>)
-     XORCY:CI->O          72   0.206   1.992  DAC_output_7/Msub_subtract_result_xor<15> (DAC_output_7/subtract_result<15>)
-     LUT6:I5->O            1   0.254   0.958  DAC_output_7/Mmux_DAC_input_suppressed[15]_GND_64_o_MUX_676_o11 (DAC_output_7/DAC_input_suppressed[15]_GND_64_o_MUX_676_o)
-     LUT6:I2->O            3   0.254   0.766  DAC_output_7/Mmux_DAC_input_scaled<0>_4 (DAC_output_7/Mmux_DAC_input_scaled<0>_4)
-     LUT5:I4->O            1   0.254   0.910  DAC_output_7/Mmux_DAC_input_scaled<10>_2_f7_SW0_SW0 (N1585)
-     LUT6:I3->O            1   0.235   0.682  DAC_output_7/Mmux_DAC_input_scaled<10>_2_f7_SW0 (N1453)
-     LUT6:I5->O            1   0.254   0.790  DAC_output_7/main_state[31]_GND_64_o_Select_51_o18 (DAC_output_7/main_state[31]_GND_64_o_Select_51_o18)
-     LUT6:I4->O            1   0.250   0.682  DAC_output_7/main_state[31]_GND_64_o_Select_51_o20_SW0 (N1631)
-     LUT6:I5->O            1   0.254   0.682  DAC_output_7/main_state[31]_GND_64_o_Select_51_o20 (DAC_output_7/main_state[31]_GND_64_o_Select_51_o20)
-     LUT6:I5->O            1   0.254   0.000  DAC_output_7/main_state[31]_GND_64_o_Select_51_o21 (DAC_output_7/main_state[31]_GND_64_o_Select_51_o)
-     FDR:D                     0.074          DAC_output_7/DAC_DIN
+     FDE:C->Q             61   0.525   1.906  DAC_register_1_15 (DAC_register_1_15)
+     LUT2:I1->O            0   0.254   0.000  DAC_output_1/Madd_n0206_Madd_Madd_lut<17> (DAC_output_1/Madd_n0206_Madd_Madd_lut<17>)
+     XORCY:LI->O          46   0.149   1.754  DAC_output_1/Madd_n0206_Madd_Madd_xor<17> (DAC_output_1/n0206<17>)
+     LUT4:I3->O            3   0.254   0.766  DAC_output_1/Mmux_multiplier_in151 (DAC_output_1/multiplier_in<6>)
+     LUT4:I3->O            1   0.254   0.000  DAC_output_1/Madd_add_result_lut<4> (DAC_output_1/Madd_add_result_lut<4>)
+     MUXCY:S->O            1   0.215   0.000  DAC_output_1/Madd_add_result_cy<4> (DAC_output_1/Madd_add_result_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_add_result_cy<5> (DAC_output_1/Madd_add_result_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_add_result_cy<6> (DAC_output_1/Madd_add_result_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_add_result_cy<7> (DAC_output_1/Madd_add_result_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_add_result_cy<8> (DAC_output_1/Madd_add_result_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_add_result_cy<9> (DAC_output_1/Madd_add_result_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_add_result_cy<10> (DAC_output_1/Madd_add_result_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_add_result_cy<11> (DAC_output_1/Madd_add_result_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_add_result_cy<12> (DAC_output_1/Madd_add_result_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_add_result_cy<13> (DAC_output_1/Madd_add_result_cy<13>)
+     MUXCY:CI->O           0   0.023   0.000  DAC_output_1/Madd_add_result_cy<14> (DAC_output_1/Madd_add_result_cy<14>)
+     XORCY:CI->O          96   0.206   2.178  DAC_output_1/Madd_add_result_xor<15> (DAC_output_1/add_result<15>)
+     LUT5:I4->O           17   0.254   1.209  DAC_output_1/Mmux_DAC_input_suppressed61 (DAC_output_1/DAC_input_suppressed<14>)
+     LUT5:I4->O           22   0.254   1.334  DAC_output_1/DAC_input_suppressed[14]_DAC_input_suppressed[15]_equal_24_o7111 (DAC_output_1/DAC_input_suppressed[14]_DAC_input_suppressed[15]_equal_24_o711)
+     LUT6:I5->O           25   0.254   1.403  DAC_output_1/DAC_input_suppressed[14]_DAC_input_suppressed[15]_equal_24_o712 (DAC_output_1/DAC_input_suppressed[14]_DAC_input_suppressed[15]_equal_24_o71)
+     LUT6:I5->O           10   0.254   1.463  DAC_output_1/DAC_input_suppressed[14]_DAC_input_suppressed[15]_equal_24_o73 (DAC_output_1/DAC_input_suppressed[14]_DAC_input_suppressed[15]_equal_24_o)
+     LUT6:I0->O            1   0.254   0.910  DAC_output_1/Mmux_DAC_input_suppressed[15]_DAC_input_suppressed[0]_MUX_688_o161 (DAC_output_1/DAC_input_suppressed[15]_DAC_input_suppressed[6]_MUX_682_o)
+     LUT6:I3->O            1   0.235   0.000  DAC_output_1/Mmux_DAC_input_scaled<13>_3 (DAC_output_1/Mmux_DAC_input_scaled<13>_3)
+     MUXF7:I1->O           1   0.175   0.910  DAC_output_1/Mmux_DAC_input_scaled<13>_2_f7 (DAC_output_1/DAC_input_scaled<13>)
+     LUT6:I3->O            1   0.235   0.682  DAC_output_1/SF1312 (DAC_output_1/SF1312)
+     LUT2:I1->O            2   0.254   0.834  DAC_output_1/SF1313 (DAC_output_1/SF131)
+     LUT6:I4->O            1   0.250   0.790  DAC_output_1/main_state[31]_GND_128_o_Select_51_o12 (DAC_output_1/main_state[31]_GND_128_o_Select_51_o12)
+     LUT6:I4->O            1   0.250   0.682  DAC_output_1/main_state[31]_GND_128_o_Select_51_o13 (DAC_output_1/main_state[31]_GND_128_o_Select_51_o13)
+     LUT6:I5->O            1   0.254   0.000  DAC_output_1/main_state[31]_GND_128_o_Select_51_o14 (DAC_output_1/main_state[31]_GND_128_o_Select_51_o)
+     FDR:D                     0.074          DAC_output_1/DAC_DIN
     ----------------------------------------
-    Total                     15.402ns (4.482ns logic, 10.920ns route)
-                                       (29.1% logic, 70.9% route)
+    Total                     21.908ns (5.086ns logic, 16.821ns route)
+                                       (23.2% logic, 76.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'okUH<0>'
   Clock period: 12.113ns (frequency: 82.555MHz)
-  Total number of paths / destination ports: 68281 / 9432
+  Total number of paths / destination ports: 68317 / 9437
 -------------------------------------------------------------------------
 Delay:               12.113ns (Levels of Logic = 10)
   Source:            host/core0/core0/ti_addr_1 (FF)
@@ -3258,52 +3196,50 @@ Delay:               12.113ns (Levels of Logic = 10)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk1_in_p'
-  Clock period: 8.625ns (frequency: 115.942MHz)
-  Total number of paths / destination ports: 21487 / 1667
+  Clock period: 28.987ns (frequency: 34.498MHz)
+  Total number of paths / destination ports: 20701 / 1606
 -------------------------------------------------------------------------
-Delay:               8.625ns (Levels of Logic = 5)
-  Source:            WS2812controller/bit_state_12 (FF)
-  Destination:       WS2812controller/GRB_reg_23 (FF)
-  Source Clock:      clk1_in_p rising
-  Destination Clock: clk1_in_p rising
+Delay:               4.638ns (Levels of Logic = 3)
+  Source:            SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_4 (FF)
+  Destination:       SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_26 (FF)
+  Source Clock:      clk1_in_p rising 6.3X
+  Destination Clock: clk1_in_p rising 6.3X
 
-  Data Path: WS2812controller/bit_state_12 to WS2812controller/GRB_reg_23
+  Data Path: SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_4 to SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_26
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.525   1.196  WS2812controller/bit_state_12 (WS2812controller/bit_state_12)
-     LUT5:I0->O            1   0.254   0.682  WS2812controller/GND_4_o_GND_4_o_equal_10_o_01_SW0 (N370)
-     LUT6:I5->O            2   0.254   0.726  WS2812controller/GND_4_o_GND_4_o_equal_10_o_01 (WS2812controller/GND_4_o_GND_4_o_equal_10_o_01)
-     LUT6:I5->O            4   0.254   0.804  WS2812controller/GND_4_o_GND_4_o_AND_4_o11 (WS2812controller/GND_4_o_GND_4_o_AND_4_o1)
-     LUT5:I4->O           20   0.254   1.741  WS2812controller/GND_4_o_GND_4_o_AND_4_o2 (WS2812controller/GND_4_o_GND_4_o_AND_4_o)
-     LUT6:I0->O           24   0.254   1.379  WS2812controller/_n0194_inv1 (WS2812controller/_n0194_inv)
-     FDRE:CE                   0.302          WS2812controller/GRB_reg_0
+     FDR:C->Q              5   0.525   1.271  SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_4 (SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_4)
+     LUT6:I1->O            4   0.254   0.804  SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt[5]_GND_57_o_equal_21_o<5>1_1 (SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt[5]_GND_57_o_equal_21_o<5>1)
+     LUT4:I3->O           13   0.254   1.206  SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_cmd_byte_addr[29]_select_48_OUT<10>11 (SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_cmd_byte_addr[29]_select_48_OUT<10>1)
+     LUT6:I4->O            1   0.250   0.000  SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_cmd_byte_addr[29]_select_48_OUT<9>1 (SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_cmd_byte_addr[29]_select_48_OUT<9>)
+     FDR:D                     0.074          SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_9
     ----------------------------------------
-    Total                      8.625ns (2.097ns logic, 6.528ns route)
-                                       (24.3% logic, 75.7% route)
+    Total                      4.638ns (1.357ns logic, 3.281ns route)
+                                       (29.3% logic, 70.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DAC_output_8/state_clk'
-  Clock period: 3.074ns (frequency: 325.262MHz)
+  Clock period: 3.020ns (frequency: 331.113MHz)
   Total number of paths / destination ports: 8192 / 256
 -------------------------------------------------------------------------
-Delay:               3.074ns (Levels of Logic = 2)
-  Source:            DAC_output_2/HPF_state_31 (FF)
-  Destination:       DAC_output_2/HPF_state_31 (FF)
+Delay:               3.020ns (Levels of Logic = 2)
+  Source:            DAC_output_8/HPF_state_31 (FF)
+  Destination:       DAC_output_8/HPF_state_31 (FF)
   Source Clock:      DAC_output_8/state_clk rising
   Destination Clock: DAC_output_8/state_clk rising
 
-  Data Path: DAC_output_2/HPF_state_31 to DAC_output_2/HPF_state_31
+  Data Path: DAC_output_8/HPF_state_31 to DAC_output_8/HPF_state_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             69   0.525   2.076  DAC_output_2/HPF_state_31 (DAC_output_2/HPF_state_31)
-     LUT2:I0->O            0   0.250   0.000  DAC_output_2/Maccum_HPF_state_lut<31> (DAC_output_2/Maccum_HPF_state_lut<31>)
-     XORCY:LI->O           1   0.149   0.000  DAC_output_2/Maccum_HPF_state_xor<31> (DAC_output_2/Result<31>)
-     FDR:D                     0.074          DAC_output_2/HPF_state_31
+     FDR:C->Q             62   0.525   2.022  DAC_output_8/HPF_state_31 (DAC_output_8/HPF_state_31)
+     LUT2:I0->O            0   0.250   0.000  DAC_output_8/Maccum_HPF_state_lut<31> (DAC_output_8/Maccum_HPF_state_lut<31>)
+     XORCY:LI->O           1   0.149   0.000  DAC_output_8/Maccum_HPF_state_xor<31> (DAC_output_8/Result<31>)
+     FDR:D                     0.074          DAC_output_8/HPF_state_31
     ----------------------------------------
-    Total                      3.074ns (0.998ns logic, 2.076ns route)
-                                       (32.5% logic, 67.5% route)
+    Total                      3.020ns (0.998ns logic, 2.022ns route)
+                                       (33.0% logic, 67.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'host/core0/okHE<41>'
@@ -3328,9 +3264,9 @@ Delay:               3.081ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'variable_freq_clk_generator_inst/clkout_i'
-  Total number of paths / destination ports: 1408 / 741
+  Total number of paths / destination ports: 1264 / 597
 -------------------------------------------------------------------------
-Offset:              4.243ns (Levels of Logic = 5)
+Offset:              4.209ns (Levels of Logic = 5)
   Source:            TTL_in<14> (PAD)
   Destination:       external_digout_A (FF)
   Destination Clock: variable_freq_clk_generator_inst/clkout_i rising
@@ -3339,38 +3275,38 @@ Offset:              4.243ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             8   1.328   1.220  TTL_in_14_IBUF (TTL_in_14_IBUF)
-     LUT6:I2->O            1   0.254   0.000  Mmux_external_digout_channel_B[3]_TTL_in[15]_Mux_166_o_4 (Mmux_external_digout_channel_B[3]_TTL_in[15]_Mux_166_o_4)
-     MUXF7:I1->O           1   0.175   0.000  Mmux_external_digout_channel_B[3]_TTL_in[15]_Mux_166_o_3_f7 (Mmux_external_digout_channel_B[3]_TTL_in[15]_Mux_166_o_3_f7)
-     MUXF8:I1->O           1   0.152   0.790  Mmux_external_digout_channel_B[3]_TTL_in[15]_Mux_166_o_2_f8 (external_digout_channel_B[3]_TTL_in[15]_Mux_166_o)
-     LUT6:I4->O            1   0.250   0.000  external_digout_B_rstpot1 (external_digout_B_rstpot1)
-     FD:D                      0.074          external_digout_B
+     IBUF:I->O             7   1.328   1.186  TTL_in_14_IBUF (TTL_in_14_IBUF)
+     LUT6:I2->O            1   0.254   0.000  Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_164_o_4 (Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_164_o_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_164_o_3_f7 (Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_164_o_3_f7)
+     MUXF8:I1->O           1   0.152   0.790  Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_164_o_2_f8 (external_digout_channel_A[3]_TTL_in[15]_Mux_164_o)
+     LUT6:I4->O            1   0.250   0.000  external_digout_A_rstpot1 (external_digout_A_rstpot1)
+     FD:D                      0.074          external_digout_A
     ----------------------------------------
-    Total                      4.243ns (2.233ns logic, 2.010ns route)
-                                       (52.6% logic, 47.4% route)
+    Total                      4.209ns (2.233ns logic, 1.976ns route)
+                                       (53.1% logic, 46.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk1_in_p'
-  Total number of paths / destination ports: 152 / 138
+  Total number of paths / destination ports: 127 / 113
 -------------------------------------------------------------------------
-Offset:              5.174ns (Levels of Logic = 4)
-  Source:            SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:UOREFRSHFLAG (PAD)
-  Destination:       SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6 (FF)
-  Destination Clock: clk1_in_p rising 0.3X
+Offset:              5.852ns (Levels of Logic = 5)
+  Source:            ddr2_rzq (PAD)
+  Destination:       SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5 (FF)
+  Destination Clock: clk1_in_p rising 3.1X
 
-  Data Path: SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:UOREFRSHFLAG to SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6
+  Data Path: ddr2_rzq to SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    MCB:UOREFRSHFLAG      13   0.000   1.553  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/uo_refrsh_flag)
-     LUT6:I0->O            1   0.254   0.910  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6-In2_SW0 (N2634)
-     LUT6:I3->O            1   0.235   0.682  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6-In2 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6-In5)
-     LUT6:I5->O            1   0.254   0.958  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6-In3 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6-In6)
-     LUT5:I1->O            1   0.254   0.000  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6-In14 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6-In)
-     FDR:D                     0.074          SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6
+     IOBUF:IO->O           1   1.328   1.112  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/IOBUF_RZQ (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/RZQ_IN)
+     LUT5:I0->O            1   0.254   0.958  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In5 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In6)
+     LUT5:I1->O            1   0.254   0.682  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In6 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In7)
+     LUT6:I5->O            1   0.254   0.682  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In7 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In8)
+     LUT4:I3->O            1   0.254   0.000  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In8 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5-In)
+     FDR:D                     0.074          SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5
     ----------------------------------------
-    Total                      5.174ns (1.071ns logic, 4.103ns route)
-                                       (20.7% logic, 79.3% route)
+    Total                      5.852ns (2.418ns logic, 3.434ns route)
+                                       (41.3% logic, 58.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'okUH<0>'
@@ -3400,7 +3336,7 @@ Offset:              6.602ns (Levels of Logic = 6)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'okUH<0>'
   Total number of paths / destination ports: 145 / 104
 -------------------------------------------------------------------------
-Offset:              6.095ns (Levels of Logic = 3)
+Offset:              5.885ns (Levels of Logic = 3)
   Source:            wi1d/ep_dataout_9 (FF)
   Destination:       TTL_out<7> (PAD)
   Source Clock:      okUH<0> rising +-24
@@ -3409,65 +3345,51 @@ Offset:              6.095ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            17   0.525   1.639  ep_dataout_9 (ep_dataout<9>)
+     FDRE:C->Q            11   0.525   1.469  ep_dataout_9 (ep_dataout<9>)
      end scope: 'wi1d:ep_dataout<9>'
-     LUT6:I1->O            3   0.254   0.765  Mmux_TTL_out<7>11 (TTL_out_7_OBUF)
+     LUT6:I1->O            2   0.254   0.725  Mmux_TTL_out<7>11 (TTL_out_7_OBUF)
      OBUF:I->O                 2.912          TTL_out_7_OBUF (TTL_out<7>)
     ----------------------------------------
-    Total                      6.095ns (3.691ns logic, 2.404ns route)
-                                       (60.6% logic, 39.4% route)
+    Total                      5.885ns (3.691ns logic, 2.194ns route)
+                                       (62.7% logic, 37.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'variable_freq_clk_generator_inst/clkout_i'
   Total number of paths / destination ports: 22619 / 59
 -------------------------------------------------------------------------
-Offset:              12.648ns (Levels of Logic = 28)
-  Source:            DAC_register_2_0 (FF)
-  Destination:       TTL_out<1> (PAD)
+Offset:              13.030ns (Levels of Logic = 14)
+  Source:            DAC_register_8_15 (FF)
+  Destination:       TTL_out<7> (PAD)
   Source Clock:      variable_freq_clk_generator_inst/clkout_i rising
 
-  Data Path: DAC_register_2_0 to TTL_out<1>
+  Data Path: DAC_register_8_15 to TTL_out<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              3   0.525   0.766  DAC_register_2_0 (DAC_register_2_0)
-     LUT2:I1->O            1   0.254   0.000  DAC_output_2/Madd_n0206_Madd_Madd_lut<2> (DAC_output_2/Madd_n0206_Madd_Madd_lut<2>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<2> (DAC_output_2/Madd_n0206_Madd_Madd_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<3> (DAC_output_2/Madd_n0206_Madd_Madd_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<4> (DAC_output_2/Madd_n0206_Madd_Madd_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<5> (DAC_output_2/Madd_n0206_Madd_Madd_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<6> (DAC_output_2/Madd_n0206_Madd_Madd_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<7> (DAC_output_2/Madd_n0206_Madd_Madd_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<8> (DAC_output_2/Madd_n0206_Madd_Madd_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<9> (DAC_output_2/Madd_n0206_Madd_Madd_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<10> (DAC_output_2/Madd_n0206_Madd_Madd_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<11> (DAC_output_2/Madd_n0206_Madd_Madd_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<12> (DAC_output_2/Madd_n0206_Madd_Madd_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<13> (DAC_output_2/Madd_n0206_Madd_Madd_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<14> (DAC_output_2/Madd_n0206_Madd_Madd_cy<14>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<15> (DAC_output_2/Madd_n0206_Madd_Madd_cy<15>)
-     MUXCY:CI->O           0   0.023   0.000  DAC_output_2/Madd_n0206_Madd_Madd_cy<16> (DAC_output_2/Madd_n0206_Madd_Madd_cy<16>)
-     XORCY:CI->O          67   0.206   2.061  DAC_output_2/Madd_n0206_Madd_Madd_xor<17> (DAC_output_2/n0206<17>)
-     LUT6:I4->O           11   0.250   1.315  DAC_output_2/Mmux_HPF_output101 (DAC_output_2/HPF_output<3>)
-     LUT4:I0->O            0   0.254   0.000  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_lutdi1 (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<1> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<2> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<3> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<4> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.910  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6>)
-     LUT5:I2->O            1   0.235   0.910  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<7> (DAC_output_2/DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o)
-     LUT6:I3->O            3   0.235   0.765  Mmux_TTL_out<1>11 (TTL_out_1_OBUF)
-     OBUF:I->O                 2.912          TTL_out_1_OBUF (TTL_out<1>)
+     FDE:C->Q             75   0.525   2.015  DAC_register_8_15 (DAC_register_8_15)
+     LUT2:I1->O            0   0.254   0.000  DAC_output_8/Madd_n0206_Madd_Madd_lut<17> (DAC_output_8/Madd_n0206_Madd_Madd_lut<17>)
+     XORCY:LI->O          60   0.149   2.007  DAC_output_8/Madd_n0206_Madd_Madd_xor<17> (DAC_output_8/n0206<17>)
+     LUT6:I4->O            5   0.250   1.117  DAC_output_8/Mmux_HPF_output81 (DAC_output_8/HPF_output<1>)
+     LUT4:I0->O            0   0.254   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_lutdi (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<0> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<1> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<2> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<3> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<4> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.910  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6>)
+     LUT5:I2->O            1   0.235   0.910  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<7> (DAC_output_8/DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out<7>11 (TTL_out_7_OBUF)
+     OBUF:I->O                 2.912          TTL_out_7_OBUF (TTL_out<7>)
     ----------------------------------------
-    Total                     12.648ns (5.921ns logic, 6.727ns route)
-                                       (46.8% logic, 53.2% route)
+    Total                     13.030ns (5.346ns logic, 7.684ns route)
+                                       (41.0% logic, 59.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<15>'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              5.414ns (Levels of Logic = 2)
+Offset:              5.374ns (Levels of Logic = 2)
   Source:            DAC_thresh_pol_8 (FF)
   Destination:       TTL_out<7> (PAD)
   Source Clock:      ti43/ep_trigger<15> rising
@@ -3477,17 +3399,17 @@ Offset:              5.414ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               1   0.525   0.958  DAC_thresh_pol_8 (DAC_thresh_pol_8)
-     LUT6:I2->O            3   0.254   0.765  Mmux_TTL_out<7>11 (TTL_out_7_OBUF)
+     LUT6:I2->O            2   0.254   0.725  Mmux_TTL_out<7>11 (TTL_out_7_OBUF)
      OBUF:I->O                 2.912          TTL_out_7_OBUF (TTL_out<7>)
     ----------------------------------------
-    Total                      5.414ns (3.691ns logic, 1.723ns route)
-                                       (68.2% logic, 31.8% route)
+    Total                      5.374ns (3.691ns logic, 1.683ns route)
+                                       (68.7% logic, 31.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<7>'
   Total number of paths / destination ports: 60 / 1
 -------------------------------------------------------------------------
-Offset:              8.392ns (Levels of Logic = 11)
+Offset:              8.352ns (Levels of Logic = 11)
   Source:            DAC_thresh_8_0 (FF)
   Destination:       TTL_out<7> (PAD)
   Source Clock:      ti43/ep_trigger<7> rising
@@ -3506,17 +3428,49 @@ Offset:              8.392ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5>)
      MUXCY:CI->O           1   0.235   0.910  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6>)
      LUT5:I2->O            1   0.235   0.910  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<7> (DAC_output_8/DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o)
-     LUT6:I3->O            3   0.235   0.765  Mmux_TTL_out<7>11 (TTL_out_7_OBUF)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out<7>11 (TTL_out_7_OBUF)
      OBUF:I->O                 2.912          TTL_out_7_OBUF (TTL_out<7>)
     ----------------------------------------
-    Total                      8.392ns (4.727ns logic, 3.665ns route)
-                                       (56.3% logic, 43.7% route)
+    Total                      8.352ns (4.727ns logic, 3.625ns route)
+                                       (56.6% logic, 43.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DAC_output_8/state_clk'
+  Total number of paths / destination ports: 13648 / 8
+-------------------------------------------------------------------------
+Offset:              13.033ns (Levels of Logic = 14)
+  Source:            DAC_output_8/HPF_state_31 (FF)
+  Destination:       TTL_out<7> (PAD)
+  Source Clock:      DAC_output_8/state_clk rising
+
+  Data Path: DAC_output_8/HPF_state_31 to TTL_out<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             62   0.525   2.022  DAC_output_8/HPF_state_31 (DAC_output_8/HPF_state_31)
+     LUT2:I0->O            0   0.250   0.000  DAC_output_8/Madd_n0206_Madd_Madd_lut<17> (DAC_output_8/Madd_n0206_Madd_Madd_lut<17>)
+     XORCY:LI->O          60   0.149   2.007  DAC_output_8/Madd_n0206_Madd_Madd_xor<17> (DAC_output_8/n0206<17>)
+     LUT6:I4->O            5   0.250   1.117  DAC_output_8/Mmux_HPF_output81 (DAC_output_8/HPF_output<1>)
+     LUT4:I0->O            0   0.254   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_lutdi (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<0> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<1> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<2> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<3> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<4> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.910  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6>)
+     LUT5:I2->O            1   0.235   0.910  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<7> (DAC_output_8/DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out<7>11 (TTL_out_7_OBUF)
+     OBUF:I->O                 2.912          TTL_out_7_OBUF (TTL_out<7>)
+    ----------------------------------------
+    Total                     13.033ns (5.342ns logic, 7.691ns route)
+                                       (41.0% logic, 59.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti44/ep_trigger<0>'
   Total number of paths / destination ports: 480 / 8
 -------------------------------------------------------------------------
-Offset:              11.815ns (Levels of Logic = 11)
+Offset:              11.517ns (Levels of Logic = 12)
   Source:            HPF_en (FF)
   Destination:       TTL_out<7> (PAD)
   Source Clock:      ti44/ep_trigger<0> rising
@@ -3525,58 +3479,28 @@ Offset:              11.815ns (Levels of Logic = 11)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q             374   0.525   2.874  HPF_en (HPF_en)
-     LUT6:I1->O           15   0.254   1.431  DAC_output_8/Mmux_HPF_output101 (DAC_output_8/HPF_output<3>)
-     LUT4:I0->O            0   0.254   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_lutdi1 (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<1> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<1>)
+     FD:C->Q             448   0.525   2.908  HPF_en (HPF_en)
+     LUT6:I0->O            5   0.254   1.117  DAC_output_8/Mmux_HPF_output81 (DAC_output_8/HPF_output<1>)
+     LUT4:I0->O            0   0.254   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_lutdi (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<0> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<1> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<2> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<3> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<3>)
      MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<4> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<4>)
      MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5>)
      MUXCY:CI->O           1   0.235   0.910  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6> (DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6>)
      LUT5:I2->O            1   0.235   0.910  DAC_output_8/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<7> (DAC_output_8/DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o)
-     LUT6:I3->O            3   0.235   0.765  Mmux_TTL_out<7>11 (TTL_out_7_OBUF)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out<7>11 (TTL_out_7_OBUF)
      OBUF:I->O                 2.912          TTL_out_7_OBUF (TTL_out<7>)
     ----------------------------------------
-    Total                     11.815ns (4.924ns logic, 6.890ns route)
-                                       (41.7% logic, 58.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'DAC_output_8/state_clk'
-  Total number of paths / destination ports: 13648 / 8
--------------------------------------------------------------------------
-Offset:              13.357ns (Levels of Logic = 13)
-  Source:            DAC_output_2/HPF_state_31 (FF)
-  Destination:       TTL_out<1> (PAD)
-  Source Clock:      DAC_output_8/state_clk rising
-
-  Data Path: DAC_output_2/HPF_state_31 to TTL_out<1>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q             69   0.525   2.076  DAC_output_2/HPF_state_31 (DAC_output_2/HPF_state_31)
-     LUT2:I0->O            0   0.250   0.000  DAC_output_2/Madd_n0206_Madd_Madd_lut<17> (DAC_output_2/Madd_n0206_Madd_Madd_lut<17>)
-     XORCY:LI->O          67   0.149   2.061  DAC_output_2/Madd_n0206_Madd_Madd_xor<17> (DAC_output_2/n0206<17>)
-     LUT6:I4->O           11   0.250   1.315  DAC_output_2/Mmux_HPF_output101 (DAC_output_2/HPF_output<3>)
-     LUT4:I0->O            0   0.254   0.000  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_lutdi1 (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<1> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<2> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<3> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<4> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.910  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6>)
-     LUT5:I2->O            1   0.235   0.910  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<7> (DAC_output_2/DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o)
-     LUT6:I3->O            3   0.235   0.765  Mmux_TTL_out<1>11 (TTL_out_1_OBUF)
-     OBUF:I->O                 2.912          TTL_out_1_OBUF (TTL_out<1>)
-    ----------------------------------------
-    Total                     13.357ns (5.319ns logic, 8.037ns route)
-                                       (39.8% logic, 60.2% route)
+    Total                     11.517ns (4.948ns logic, 6.570ns route)
+                                       (43.0% logic, 57.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<14>'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              5.414ns (Levels of Logic = 2)
+Offset:              5.374ns (Levels of Logic = 2)
   Source:            DAC_thresh_pol_7 (FF)
   Destination:       TTL_out<6> (PAD)
   Source Clock:      ti43/ep_trigger<14> rising
@@ -3586,17 +3510,17 @@ Offset:              5.414ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               1   0.525   0.958  DAC_thresh_pol_7 (DAC_thresh_pol_7)
-     LUT6:I2->O            3   0.254   0.765  Mmux_TTL_out<6>11 (TTL_out_6_OBUF)
+     LUT6:I2->O            2   0.254   0.725  Mmux_TTL_out<6>11 (TTL_out_6_OBUF)
      OBUF:I->O                 2.912          TTL_out_6_OBUF (TTL_out<6>)
     ----------------------------------------
-    Total                      5.414ns (3.691ns logic, 1.723ns route)
-                                       (68.2% logic, 31.8% route)
+    Total                      5.374ns (3.691ns logic, 1.683ns route)
+                                       (68.7% logic, 31.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<6>'
   Total number of paths / destination ports: 60 / 1
 -------------------------------------------------------------------------
-Offset:              8.392ns (Levels of Logic = 11)
+Offset:              8.352ns (Levels of Logic = 11)
   Source:            DAC_thresh_7_0 (FF)
   Destination:       TTL_out<6> (PAD)
   Source Clock:      ti43/ep_trigger<6> rising
@@ -3615,17 +3539,17 @@ Offset:              8.392ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5> (DAC_output_7/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5>)
      MUXCY:CI->O           1   0.235   0.910  DAC_output_7/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6> (DAC_output_7/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6>)
      LUT5:I2->O            1   0.235   0.910  DAC_output_7/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<7> (DAC_output_7/DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o)
-     LUT6:I3->O            3   0.235   0.765  Mmux_TTL_out<6>11 (TTL_out_6_OBUF)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out<6>11 (TTL_out_6_OBUF)
      OBUF:I->O                 2.912          TTL_out_6_OBUF (TTL_out<6>)
     ----------------------------------------
-    Total                      8.392ns (4.727ns logic, 3.665ns route)
-                                       (56.3% logic, 43.7% route)
+    Total                      8.352ns (4.727ns logic, 3.625ns route)
+                                       (56.6% logic, 43.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<13>'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              5.414ns (Levels of Logic = 2)
+Offset:              5.374ns (Levels of Logic = 2)
   Source:            DAC_thresh_pol_6 (FF)
   Destination:       TTL_out<5> (PAD)
   Source Clock:      ti43/ep_trigger<13> rising
@@ -3635,17 +3559,17 @@ Offset:              5.414ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               1   0.525   0.958  DAC_thresh_pol_6 (DAC_thresh_pol_6)
-     LUT6:I2->O            3   0.254   0.765  Mmux_TTL_out<5>11 (TTL_out_5_OBUF)
+     LUT6:I2->O            2   0.254   0.725  Mmux_TTL_out<5>11 (TTL_out_5_OBUF)
      OBUF:I->O                 2.912          TTL_out_5_OBUF (TTL_out<5>)
     ----------------------------------------
-    Total                      5.414ns (3.691ns logic, 1.723ns route)
-                                       (68.2% logic, 31.8% route)
+    Total                      5.374ns (3.691ns logic, 1.683ns route)
+                                       (68.7% logic, 31.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<5>'
   Total number of paths / destination ports: 60 / 1
 -------------------------------------------------------------------------
-Offset:              8.392ns (Levels of Logic = 11)
+Offset:              8.352ns (Levels of Logic = 11)
   Source:            DAC_thresh_6_0 (FF)
   Destination:       TTL_out<5> (PAD)
   Source Clock:      ti43/ep_trigger<5> rising
@@ -3664,17 +3588,17 @@ Offset:              8.392ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.023   0.000  DAC_output_6/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5> (DAC_output_6/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5>)
      MUXCY:CI->O           1   0.235   0.910  DAC_output_6/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6> (DAC_output_6/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6>)
      LUT5:I2->O            1   0.235   0.910  DAC_output_6/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<7> (DAC_output_6/DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o)
-     LUT6:I3->O            3   0.235   0.765  Mmux_TTL_out<5>11 (TTL_out_5_OBUF)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out<5>11 (TTL_out_5_OBUF)
      OBUF:I->O                 2.912          TTL_out_5_OBUF (TTL_out<5>)
     ----------------------------------------
-    Total                      8.392ns (4.727ns logic, 3.665ns route)
-                                       (56.3% logic, 43.7% route)
+    Total                      8.352ns (4.727ns logic, 3.625ns route)
+                                       (56.6% logic, 43.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<12>'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              5.414ns (Levels of Logic = 2)
+Offset:              5.374ns (Levels of Logic = 2)
   Source:            DAC_thresh_pol_5 (FF)
   Destination:       TTL_out<4> (PAD)
   Source Clock:      ti43/ep_trigger<12> rising
@@ -3684,17 +3608,17 @@ Offset:              5.414ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               1   0.525   0.958  DAC_thresh_pol_5 (DAC_thresh_pol_5)
-     LUT6:I2->O            3   0.254   0.765  Mmux_TTL_out<4>11 (TTL_out_4_OBUF)
+     LUT6:I2->O            2   0.254   0.725  Mmux_TTL_out<4>11 (TTL_out_4_OBUF)
      OBUF:I->O                 2.912          TTL_out_4_OBUF (TTL_out<4>)
     ----------------------------------------
-    Total                      5.414ns (3.691ns logic, 1.723ns route)
-                                       (68.2% logic, 31.8% route)
+    Total                      5.374ns (3.691ns logic, 1.683ns route)
+                                       (68.7% logic, 31.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<4>'
   Total number of paths / destination ports: 60 / 1
 -------------------------------------------------------------------------
-Offset:              8.392ns (Levels of Logic = 11)
+Offset:              8.352ns (Levels of Logic = 11)
   Source:            DAC_thresh_5_0 (FF)
   Destination:       TTL_out<4> (PAD)
   Source Clock:      ti43/ep_trigger<4> rising
@@ -3713,17 +3637,17 @@ Offset:              8.392ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5> (DAC_output_5/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5>)
      MUXCY:CI->O           1   0.235   0.910  DAC_output_5/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6> (DAC_output_5/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6>)
      LUT5:I2->O            1   0.235   0.910  DAC_output_5/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<7> (DAC_output_5/DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o)
-     LUT6:I3->O            3   0.235   0.765  Mmux_TTL_out<4>11 (TTL_out_4_OBUF)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out<4>11 (TTL_out_4_OBUF)
      OBUF:I->O                 2.912          TTL_out_4_OBUF (TTL_out<4>)
     ----------------------------------------
-    Total                      8.392ns (4.727ns logic, 3.665ns route)
-                                       (56.3% logic, 43.7% route)
+    Total                      8.352ns (4.727ns logic, 3.625ns route)
+                                       (56.6% logic, 43.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<11>'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              5.414ns (Levels of Logic = 2)
+Offset:              5.374ns (Levels of Logic = 2)
   Source:            DAC_thresh_pol_4 (FF)
   Destination:       TTL_out<3> (PAD)
   Source Clock:      ti43/ep_trigger<11> rising
@@ -3733,17 +3657,17 @@ Offset:              5.414ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               1   0.525   0.958  DAC_thresh_pol_4 (DAC_thresh_pol_4)
-     LUT6:I2->O            3   0.254   0.765  Mmux_TTL_out<3>11 (TTL_out_3_OBUF)
+     LUT6:I2->O            2   0.254   0.725  Mmux_TTL_out<3>11 (TTL_out_3_OBUF)
      OBUF:I->O                 2.912          TTL_out_3_OBUF (TTL_out<3>)
     ----------------------------------------
-    Total                      5.414ns (3.691ns logic, 1.723ns route)
-                                       (68.2% logic, 31.8% route)
+    Total                      5.374ns (3.691ns logic, 1.683ns route)
+                                       (68.7% logic, 31.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<3>'
   Total number of paths / destination ports: 60 / 1
 -------------------------------------------------------------------------
-Offset:              8.392ns (Levels of Logic = 11)
+Offset:              8.352ns (Levels of Logic = 11)
   Source:            DAC_thresh_4_0 (FF)
   Destination:       TTL_out<3> (PAD)
   Source Clock:      ti43/ep_trigger<3> rising
@@ -3762,17 +3686,17 @@ Offset:              8.392ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.023   0.000  DAC_output_4/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5> (DAC_output_4/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5>)
      MUXCY:CI->O           1   0.235   0.910  DAC_output_4/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6> (DAC_output_4/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6>)
      LUT5:I2->O            1   0.235   0.910  DAC_output_4/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<7> (DAC_output_4/DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o)
-     LUT6:I3->O            3   0.235   0.765  Mmux_TTL_out<3>11 (TTL_out_3_OBUF)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out<3>11 (TTL_out_3_OBUF)
      OBUF:I->O                 2.912          TTL_out_3_OBUF (TTL_out<3>)
     ----------------------------------------
-    Total                      8.392ns (4.727ns logic, 3.665ns route)
-                                       (56.3% logic, 43.7% route)
+    Total                      8.352ns (4.727ns logic, 3.625ns route)
+                                       (56.6% logic, 43.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<10>'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              5.414ns (Levels of Logic = 2)
+Offset:              5.374ns (Levels of Logic = 2)
   Source:            DAC_thresh_pol_3 (FF)
   Destination:       TTL_out<2> (PAD)
   Source Clock:      ti43/ep_trigger<10> rising
@@ -3782,17 +3706,17 @@ Offset:              5.414ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               1   0.525   0.958  DAC_thresh_pol_3 (DAC_thresh_pol_3)
-     LUT6:I2->O            3   0.254   0.765  Mmux_TTL_out<2>11 (TTL_out_2_OBUF)
+     LUT6:I2->O            2   0.254   0.725  Mmux_TTL_out<2>11 (TTL_out_2_OBUF)
      OBUF:I->O                 2.912          TTL_out_2_OBUF (TTL_out<2>)
     ----------------------------------------
-    Total                      5.414ns (3.691ns logic, 1.723ns route)
-                                       (68.2% logic, 31.8% route)
+    Total                      5.374ns (3.691ns logic, 1.683ns route)
+                                       (68.7% logic, 31.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<2>'
   Total number of paths / destination ports: 60 / 1
 -------------------------------------------------------------------------
-Offset:              8.392ns (Levels of Logic = 11)
+Offset:              8.352ns (Levels of Logic = 11)
   Source:            DAC_thresh_3_0 (FF)
   Destination:       TTL_out<2> (PAD)
   Source Clock:      ti43/ep_trigger<2> rising
@@ -3811,17 +3735,17 @@ Offset:              8.392ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.023   0.000  DAC_output_3/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5> (DAC_output_3/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5>)
      MUXCY:CI->O           1   0.235   0.910  DAC_output_3/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6> (DAC_output_3/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6>)
      LUT5:I2->O            1   0.235   0.910  DAC_output_3/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<7> (DAC_output_3/DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o)
-     LUT6:I3->O            3   0.235   0.765  Mmux_TTL_out<2>11 (TTL_out_2_OBUF)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out<2>11 (TTL_out_2_OBUF)
      OBUF:I->O                 2.912          TTL_out_2_OBUF (TTL_out<2>)
     ----------------------------------------
-    Total                      8.392ns (4.727ns logic, 3.665ns route)
-                                       (56.3% logic, 43.7% route)
+    Total                      8.352ns (4.727ns logic, 3.625ns route)
+                                       (56.6% logic, 43.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<9>'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              5.414ns (Levels of Logic = 2)
+Offset:              5.374ns (Levels of Logic = 2)
   Source:            DAC_thresh_pol_2 (FF)
   Destination:       TTL_out<1> (PAD)
   Source Clock:      ti43/ep_trigger<9> rising
@@ -3831,17 +3755,17 @@ Offset:              5.414ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               1   0.525   0.958  DAC_thresh_pol_2 (DAC_thresh_pol_2)
-     LUT6:I2->O            3   0.254   0.765  Mmux_TTL_out<1>11 (TTL_out_1_OBUF)
+     LUT6:I2->O            2   0.254   0.725  Mmux_TTL_out<1>11 (TTL_out_1_OBUF)
      OBUF:I->O                 2.912          TTL_out_1_OBUF (TTL_out<1>)
     ----------------------------------------
-    Total                      5.414ns (3.691ns logic, 1.723ns route)
-                                       (68.2% logic, 31.8% route)
+    Total                      5.374ns (3.691ns logic, 1.683ns route)
+                                       (68.7% logic, 31.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<1>'
   Total number of paths / destination ports: 60 / 1
 -------------------------------------------------------------------------
-Offset:              8.392ns (Levels of Logic = 11)
+Offset:              8.352ns (Levels of Logic = 11)
   Source:            DAC_thresh_2_0 (FF)
   Destination:       TTL_out<1> (PAD)
   Source Clock:      ti43/ep_trigger<1> rising
@@ -3860,17 +3784,17 @@ Offset:              8.392ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5>)
      MUXCY:CI->O           1   0.235   0.910  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6> (DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6>)
      LUT5:I2->O            1   0.235   0.910  DAC_output_2/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<7> (DAC_output_2/DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o)
-     LUT6:I3->O            3   0.235   0.765  Mmux_TTL_out<1>11 (TTL_out_1_OBUF)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out<1>11 (TTL_out_1_OBUF)
      OBUF:I->O                 2.912          TTL_out_1_OBUF (TTL_out<1>)
     ----------------------------------------
-    Total                      8.392ns (4.727ns logic, 3.665ns route)
-                                       (56.3% logic, 43.7% route)
+    Total                      8.352ns (4.727ns logic, 3.625ns route)
+                                       (56.6% logic, 43.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<8>'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              5.414ns (Levels of Logic = 2)
+Offset:              5.374ns (Levels of Logic = 2)
   Source:            DAC_thresh_pol_1 (FF)
   Destination:       TTL_out<0> (PAD)
   Source Clock:      ti43/ep_trigger<8> rising
@@ -3880,17 +3804,17 @@ Offset:              5.414ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               1   0.525   0.958  DAC_thresh_pol_1 (DAC_thresh_pol_1)
-     LUT6:I2->O            3   0.254   0.765  Mmux_TTL_out<0>11 (TTL_out_0_OBUF)
+     LUT6:I2->O            2   0.254   0.725  Mmux_TTL_out<0>11 (TTL_out_0_OBUF)
      OBUF:I->O                 2.912          TTL_out_0_OBUF (TTL_out<0>)
     ----------------------------------------
-    Total                      5.414ns (3.691ns logic, 1.723ns route)
-                                       (68.2% logic, 31.8% route)
+    Total                      5.374ns (3.691ns logic, 1.683ns route)
+                                       (68.7% logic, 31.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<0>'
   Total number of paths / destination ports: 60 / 1
 -------------------------------------------------------------------------
-Offset:              8.392ns (Levels of Logic = 11)
+Offset:              8.352ns (Levels of Logic = 11)
   Source:            DAC_thresh_1_0 (FF)
   Destination:       TTL_out<0> (PAD)
   Source Clock:      ti43/ep_trigger<0> rising
@@ -3909,30 +3833,32 @@ Offset:              8.392ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5> (DAC_output_1/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<5>)
      MUXCY:CI->O           1   0.235   0.910  DAC_output_1/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6> (DAC_output_1/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<6>)
      LUT5:I2->O            1   0.235   0.910  DAC_output_1/Mcompar_DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o_cy<7> (DAC_output_1/DAC_thrsh[15]_DAC_input_offset[15]_LessThan_12_o)
-     LUT6:I3->O            3   0.235   0.765  Mmux_TTL_out<0>11 (TTL_out_0_OBUF)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out<0>11 (TTL_out_0_OBUF)
      OBUF:I->O                 2.912          TTL_out_0_OBUF (TTL_out<0>)
     ----------------------------------------
-    Total                      8.392ns (4.727ns logic, 3.665ns route)
-                                       (56.3% logic, 43.7% route)
+    Total                      8.352ns (4.727ns logic, 3.625ns route)
+                                       (56.6% logic, 43.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk1_in_p'
   Total number of paths / destination ports: 186 / 132
 -------------------------------------------------------------------------
-Offset:              4.162ns (Levels of Logic = 1)
-  Source:            WS2812controller/dat_out (FF)
-  Destination:       LED_OUT (PAD)
-  Source Clock:      clk1_in_p rising
+Offset:              5.303ns (Levels of Logic = 2)
+  Source:            SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/syn_uiclk_pll_lock (FF)
+  Destination:       SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/IODRP2_RZQ:T (PAD)
+  Source Clock:      clk1_in_p rising 3.1X
 
-  Data Path: WS2812controller/dat_out to LED_OUT
+  Data Path: SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/syn_uiclk_pll_lock to SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/IODRP2_RZQ:T
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   0.725  WS2812controller/dat_out (WS2812controller/dat_out)
-     OBUF:I->O                 2.912          LED_OUT_OBUF (LED_OUT)
+     FD:C->Q              78   0.525   2.266  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/syn_uiclk_pll_lock (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/syn_uiclk_pll_lock)
+     LUT3:I0->O           76   0.235   2.022  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst)
+     INV:I->O              0   0.255   0.000  SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/RZQ_ZIO_ODATAIN1_INV_0 (SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/RZQ_ZIO_ODATAIN)
+    IODRP2:ODATAIN             0.000          SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/gen_zio.IODRP2_ZIO
     ----------------------------------------
-    Total                      4.162ns (3.437ns logic, 0.725ns route)
-                                       (82.6% logic, 17.4% route)
+    Total                      5.303ns (1.015ns logic, 4.288ns route)
+                                       (19.1% logic, 80.9% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -3962,8 +3888,8 @@ Clock to Setup on destination clock DAC_output_8/state_clk
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-DAC_output_8/state_clk                   |    3.074|         |         |         |
-okUH<0>                                  |    3.460|         |         |         |
+DAC_output_8/state_clk                   |    3.020|         |         |         |
+okUH<0>                                  |    3.456|         |         |         |
 variable_freq_clk_generator_inst/clkout_i|    3.406|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
@@ -3972,28 +3898,28 @@ Clock to Setup on destination clock clk1_in_p
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-DAC_output_8/state_clk                   |   11.918|         |         |         |
-clk1_in_p                                |   10.676|         |         |         |
-okUH<0>                                  |    5.917|         |         |         |
-ti43/ep_trigger<0>                       |    5.914|         |         |         |
-ti43/ep_trigger<10>                      |    2.935|         |         |         |
-ti43/ep_trigger<11>                      |    2.935|         |         |         |
-ti43/ep_trigger<12>                      |    2.935|         |         |         |
-ti43/ep_trigger<13>                      |    2.935|         |         |         |
-ti43/ep_trigger<14>                      |    2.935|         |         |         |
-ti43/ep_trigger<15>                      |    3.975|         |         |         |
-ti43/ep_trigger<1>                       |    6.954|         |         |         |
-ti43/ep_trigger<2>                       |    5.914|         |         |         |
-ti43/ep_trigger<3>                       |    5.914|         |         |         |
-ti43/ep_trigger<4>                       |    5.914|         |         |         |
-ti43/ep_trigger<5>                       |    5.914|         |         |         |
-ti43/ep_trigger<6>                       |    5.914|         |         |         |
-ti43/ep_trigger<7>                       |    6.954|         |         |         |
-ti43/ep_trigger<8>                       |    2.935|         |         |         |
-ti43/ep_trigger<9>                       |    3.975|         |         |         |
-ti44/ep_trigger<0>                       |   10.376|         |         |         |
+DAC_output_8/state_clk                   |   11.594|         |         |         |
+clk1_in_p                                |    9.055|         |         |         |
+okUH<0>                                  |    5.877|         |         |         |
+ti43/ep_trigger<0>                       |    5.874|         |         |         |
+ti43/ep_trigger<10>                      |    2.895|         |         |         |
+ti43/ep_trigger<11>                      |    2.895|         |         |         |
+ti43/ep_trigger<12>                      |    2.895|         |         |         |
+ti43/ep_trigger<13>                      |    2.895|         |         |         |
+ti43/ep_trigger<14>                      |    2.895|         |         |         |
+ti43/ep_trigger<15>                      |    3.935|         |         |         |
+ti43/ep_trigger<1>                       |    6.914|         |         |         |
+ti43/ep_trigger<2>                       |    5.874|         |         |         |
+ti43/ep_trigger<3>                       |    5.874|         |         |         |
+ti43/ep_trigger<4>                       |    5.874|         |         |         |
+ti43/ep_trigger<5>                       |    5.874|         |         |         |
+ti43/ep_trigger<6>                       |    5.874|         |         |         |
+ti43/ep_trigger<7>                       |    6.914|         |         |         |
+ti43/ep_trigger<8>                       |    2.895|         |         |         |
+ti43/ep_trigger<9>                       |    3.935|         |         |         |
+ti44/ep_trigger<0>                       |   10.078|         |         |         |
 ti5a/ep_trigger<0>                       |    3.403|         |         |         |
-variable_freq_clk_generator_inst/clkout_i|   11.209|         |         |         |
+variable_freq_clk_generator_inst/clkout_i|   11.591|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock host/core0/okHE<41>
@@ -4009,7 +3935,7 @@ Clock to Setup on destination clock okUH<0>
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-clk1_in_p                                |    1.402|         |         |         |
+clk1_in_p                                |    1.439|         |         |         |
 okUH<0>                                  |   12.113|         |         |         |
 variable_freq_clk_generator_inst/clkout_i|    1.884|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -4251,26 +4177,10 @@ Clock to Setup on destination clock variable_freq_clk_generator_inst/clkout_i
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-DAC_output_8/state_clk                   |   16.128|         |         |         |
+DAC_output_8/state_clk                   |   21.893|         |         |         |
 clk1_in_p                                |    1.280|         |         |         |
-okUH<0>                                  |   13.434|         |         |         |
-ti43/ep_trigger<0>                       |    4.790|         |         |         |
-ti43/ep_trigger<10>                      |    1.811|         |         |         |
-ti43/ep_trigger<11>                      |    1.811|         |         |         |
-ti43/ep_trigger<12>                      |    1.811|         |         |         |
-ti43/ep_trigger<13>                      |    1.811|         |         |         |
-ti43/ep_trigger<14>                      |    1.811|         |         |         |
-ti43/ep_trigger<15>                      |    1.811|         |         |         |
-ti43/ep_trigger<1>                       |    4.790|         |         |         |
-ti43/ep_trigger<2>                       |    4.790|         |         |         |
-ti43/ep_trigger<3>                       |    4.790|         |         |         |
-ti43/ep_trigger<4>                       |    4.790|         |         |         |
-ti43/ep_trigger<5>                       |    4.790|         |         |         |
-ti43/ep_trigger<6>                       |    4.790|         |         |         |
-ti43/ep_trigger<7>                       |    4.790|         |         |         |
-ti43/ep_trigger<8>                       |    1.811|         |         |         |
-ti43/ep_trigger<9>                       |    1.811|         |         |         |
-ti44/ep_trigger<0>                       |   15.180|         |         |         |
+okUH<0>                                  |   17.904|         |         |         |
+ti44/ep_trigger<0>                       |   20.136|         |         |         |
 ti44/ep_trigger<1>                       |    4.973|         |         |         |
 ti45/ep_trigger<0>                       |    4.213|         |         |         |
 ti45/ep_trigger<1>                       |    2.439|         |         |         |
@@ -4282,20 +4192,20 @@ ti46/ep_trigger<4>                       |    3.479|         |         |        
 ti46/ep_trigger<5>                       |    3.479|         |         |         |
 ti46/ep_trigger<6>                       |    3.479|         |         |         |
 ti46/ep_trigger<7>                       |    3.479|         |         |         |
-variable_freq_clk_generator_inst/clkout_i|   15.402|         |         |         |
+variable_freq_clk_generator_inst/clkout_i|   21.908|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 128.00 secs
-Total CPU time to Xst completion: 127.72 secs
+Total REAL time to Xst completion: 111.00 secs
+Total CPU time to Xst completion: 111.16 secs
  
 --> 
 
-Total memory usage is 498480 kilobytes
+Total memory usage is 502512 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  274 (   0 filtered)
-Number of infos    :  164 (   0 filtered)
+Number of warnings :  288 (   0 filtered)
+Number of infos    :  168 (   0 filtered)
 

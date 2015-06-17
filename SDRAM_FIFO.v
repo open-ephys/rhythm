@@ -116,13 +116,13 @@ module SDRAM_FIFO  #(
    );
 
 	localparam C3_INCLK_PERIOD         = 10000; // 10000ps -> 10ns -> 100Mhz
-   localparam C3_CLKOUT0_DIVIDE       = 1;     // 625 MHz system clock      
+	localparam C3_CLKOUT0_DIVIDE       = 1;     // 625 MHz system clock      
 	localparam C3_CLKOUT1_DIVIDE       = 1;     // 625 MHz system clock (180 deg)      
-	localparam C3_CLKOUT2_DIVIDE       = 16;     // 156.256 MHz test bench clock      
+	localparam C3_CLKOUT2_DIVIDE       = 4;     // 156.256 MHz test bench clock      
 	localparam C3_CLKOUT3_DIVIDE       = 8;     // 78.125 MHz calibration clock      
-	localparam C3_CLKFBOUT_MULT        = 2;    // 25MHz x 25 = 625 MHz system clock       
-	localparam C3_DIVCLK_DIVIDE        = 1;     // 100MHz/4 = 25 Mhz             
-   localparam C3_ARB_NUM_TIME_SLOTS   = 12;       
+	localparam C3_CLKFBOUT_MULT        = 25;    // 25MHz x 25 = 625 MHz system clock       
+	localparam C3_DIVCLK_DIVIDE        = 4;     // 100MHz/4 = 25 Mhz       
+	localparam C3_ARB_NUM_TIME_SLOTS   = 12;         
    localparam C3_ARB_TIME_SLOT_0      = 3'o0;       
    localparam C3_ARB_TIME_SLOT_1      = 3'o0;       
    localparam C3_ARB_TIME_SLOT_2      = 3'o0;       
@@ -237,13 +237,13 @@ module SDRAM_FIFO  #(
 
 	wire        	pipe_in_read;
 	wire [63:0] 	pipe_in_data;
-	wire [8:0]  	pipe_in_count;
+	wire [9:0]  	pipe_in_count;
 	wire        	pipe_in_valid;
 	wire        	pipe_in_empty;
 	
 	wire        	pipe_out_write;
 	wire [63:0] 	pipe_out_data;
-	wire [8:0]  	pipe_out_count;
+	wire [9:0]  	pipe_out_count;
 	
 	wire [10:0]		pipe_in_word_count;
 	reg [10:0]		pipe_in_word_count_ti;
@@ -279,7 +279,7 @@ module SDRAM_FIFO  #(
 	
 	memc3_infrastructure #
 		(
-		.C_MEMCLK_PERIOD                  (C3_MEMCLK_PERIOD),
+		.C_MEMCLK_PERIOD                  (C3_INCLK_PERIOD),
 		.C_RST_ACT_LOW                    (C3_RST_ACT_LOW),
 		.C_INPUT_CLK_TYPE                 (C3_INPUT_CLK_TYPE),
 		.C_CLKOUT0_DIVIDE                 (C3_CLKOUT0_DIVIDE),
@@ -477,29 +477,29 @@ module SDRAM_FIFO  #(
 		);
 
 
-	// Input mini-FIFO (2048 x 16 bits in from Intan chips; 512 x 64 bits out to SDRAM)
+	// Input mini-FIFO (2048 x 16 bits in from Intan chips; 1024 x 32 bits out to SDRAM)
 
-	fifo_w16_2048_r64_512 okPipeIn_fifo (
+	fifo_w16_2048_r32_1024 okPipeIn_fifo (
 		.rst(reset),
 		.wr_clk(data_in_clk),  // was ti_clk in ramtest.v
 		.rd_clk(c3_clk0),
 		.din(FIFO_data_in), // Bus [15 : 0]   // was pipe_dataout
 		.wr_en(FIFO_write_to),   // was pipe_write
 		.rd_en(pipe_in_read),
-		.dout(pipe_in_data), // Bus [63 : 0] 
+		.dout(pipe_in_data), // Bus [31 : 0] 
 		.full(),
 		.empty(pipe_in_empty),
 		.valid(pipe_in_valid),
-		.rd_data_count(pipe_in_count), // Bus [8 : 0] 
+		.rd_data_count(pipe_in_count), // Bus [9 : 0] 
 		.wr_data_count(pipe_in_word_count)); // Bus [10 : 0] 
 
-	// Output mini-FIFO (512 x 54 bits in from SDRAM; 1024 x 32 bits out to Opal Kelly interface)
+	// Output mini-FIFO (1024 x 32 bits in from SDRAM; 1024 x 32 bits out to Opal Kelly interface)
 
-	fifo_w64_512_r32_1024 okPipeOut_fifo (
+	fifo_w32_1024_r32_1024 okPipeOut_fifo (
 		.rst(reset),
 		.wr_clk(c3_clk0),
 		.rd_clk(ti_clk),
-		.din(pipe_out_data), // Bus [63 : 0] 
+		.din(pipe_out_data), // Bus [31 : 0] 
 		.wr_en(pipe_out_write),
 		.rd_en(FIFO_read_from),                       // was po0_ep_read
 		.dout(FIFO_data_out), // Bus [31 : 0]       // was po0_ep_datain
@@ -507,7 +507,7 @@ module SDRAM_FIFO  #(
 		.empty(),
 		.valid(),
 		.rd_data_count(pipe_out_word_count), // Bus [9 : 0] 
-		.wr_data_count(pipe_out_count)); // Bus [8 : 0] 
+		.wr_data_count(pipe_out_count)); // Bus [9 : 0] 
 	
 	
 	// FIFO capacity calculation: how many 16-bit words are in the entire FIFO?
