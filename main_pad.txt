@@ -1,7 +1,7 @@
 Release 14.5 - par P.58f (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Sat Jun 20 05:34:08 2015
+Tue Jun 23 00:17:27 2015
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -51,13 +51,13 @@ Pinout by Pin Number:
 |AA7       |             |         |VCCO_2                       |             |              |2             |          |         |           |         |1.80   |          |           |                |
 |AA8       |okHU<0>      |IOB      |IO_L45P_2                    |OUTPUT       |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
 |AA9       |             |         |GND                          |             |              |              |          |         |           |         |       |          |           |                |
-|AA10      |okUHU<17>    |IOB      |IO_L41P_2                    |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
+|AA10      |okUHU<17>    |IOB      |IO_L41P_2                    |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |AA11      |             |         |VCCO_2                       |             |              |2             |          |         |           |         |1.80   |          |           |                |
 |AA12      |okUHU<1>     |IOB      |IO_L31P_GCLK31_D14_2         |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |AA13      |             |         |GND                          |             |              |              |          |         |           |         |       |          |           |                |
-|AA14      |okUHU<22>    |IOB      |IO_L16P_2                    |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
+|AA14      |okUHU<22>    |IOB      |IO_L16P_2                    |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |AA15      |             |         |VCCO_2                       |             |              |2             |          |         |           |         |1.80   |          |           |                |
-|AA16      |okUHU<26>    |IOB      |IO_L19P_2                    |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
+|AA16      |okUHU<26>    |IOB      |IO_L19P_2                    |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |AA17      |             |         |GND                          |             |              |              |          |         |           |         |       |          |           |                |
 |AA18      |okUHU<4>     |IOB      |IO_L14P_D11_2                |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |AA19      |             |         |VCCO_2                       |             |              |2             |          |         |           |         |1.80   |          |           |                |
@@ -78,7 +78,7 @@ Pinout by Pin Number:
 |AB12      |okUHU<0>     |IOB      |IO_L31N_GCLK30_D15_2         |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |AB13      |             |IOBS     |IO_L30N_GCLK0_USERCCLK_2     |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
 |AB14      |led<3>       |IOB      |IO_L16N_VREF_2               |OUTPUT       |LVCMOS18      |2             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
-|AB15      |okUHU<29>    |IOB      |IO_L21N_2                    |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
+|AB15      |okUHU<29>    |IOB      |IO_L21N_2                    |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |AB16      |led<6>       |IOB      |IO_L19N_2                    |OUTPUT       |LVCMOS18      |2             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
 |AB17      |led<5>       |IOB      |IO_L15N_2                    |OUTPUT       |LVCMOS18      |2             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
 |AB18      |okUHU<3>     |IOB      |IO_L14N_D12_2                |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
@@ -386,8 +386,8 @@ Pinout by Pin Number:
 |R12       |             |         |VCCAUX                       |             |              |              |          |         |           |         |3.3    |          |           |                |
 |R13       |             |IOBS     |IO_L23N_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
 |R14       |             |         |VCCINT                       |             |              |              |          |         |           |         |1.2    |          |           |                |
-|R15       |okUHU<20>    |IOB      |IO_L10N_2                    |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
-|R16       |okUHU<27>    |IOB      |IO_L10P_2                    |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
+|R15       |okUHU<20>    |IOB      |IO_L10N_2                    |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
+|R16       |okUHU<27>    |IOB      |IO_L10P_2                    |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |R17       |             |         |NC                           |             |              |              |          |         |           |         |       |          |           |                |
 |R18       |             |         |GND                          |             |              |              |          |         |           |         |       |          |           |                |
 |R19       |MISO_D2_n    |IOB      |IO_L73N_1                    |             |LVDS_33       |1             |          |         |           |         |       |LOCATED   |NO         |DIFF_TERM       |
@@ -403,12 +403,12 @@ Pinout by Pin Number:
 |T7        |             |IOBM     |IO_L60P_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
 |T8        |             |IOBM     |IO_L51P_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
 |T9        |             |         |VCCO_2                       |             |              |2             |          |         |           |         |1.80   |          |           |                |
-|T10       |okUHU<24>    |IOB      |IO_L52P_2                    |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
+|T10       |okUHU<24>    |IOB      |IO_L52P_2                    |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |T11       |             |IOBS     |IO_L40N_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
 |T12       |             |IOBM     |IO_L22P_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
 |T13       |             |         |VCCO_2                       |             |              |2             |          |         |           |         |1.80   |          |           |                |
 |T14       |             |IOBM     |IO_L23P_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
-|T15       |okUHU<23>    |IOB      |IO_L7N_2                     |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
+|T15       |okUHU<23>    |IOB      |IO_L7N_2                     |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |T16       |okUHU<16>    |IOB      |IO_L7P_2                     |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |T17       |             |IOBS     |IO_L4N_VREF_2                |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
 |T18       |             |IOBM     |IO_L4P_2                     |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
@@ -423,7 +423,7 @@ Pinout by Pin Number:
 |U5        |             |         |VCCO_3                       |             |              |3             |          |         |           |         |1.80   |          |           |                |
 |U6        |             |IOBM     |IO_L63P_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
 |U7        |             |         |GND                          |             |              |              |          |         |           |         |       |          |           |                |
-|U8        |okUHU<31>    |IOB      |IO_L51N_2                    |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
+|U8        |okUHU<31>    |IOB      |IO_L51N_2                    |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |U9        |             |IOBM     |IO_L50P_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
 |U10       |okHU<1>      |IOB      |IO_L52N_2                    |OUTPUT       |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |NO         |NONE            |
 |U11       |             |         |VCCAUX                       |             |              |              |          |         |           |         |3.3    |          |           |                |
@@ -431,8 +431,8 @@ Pinout by Pin Number:
 |U13       |okUHU<13>    |IOB      |IO_L12N_D2_MISO3_2           |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |U14       |okUHU<14>    |IOB      |IO_L12P_D1_MISO2_2           |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |U15       |             |IOBM     |IO_L13P_M1_2                 |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
-|U16       |okUHU<18>    |IOB      |IO_L8N_2                     |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
-|U17       |okUHU<21>    |IOB      |IO_L8P_2                     |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
+|U16       |okUHU<18>    |IOB      |IO_L8N_2                     |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
+|U17       |okUHU<21>    |IOB      |IO_L8P_2                     |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |U18       |             |         |VCCO_1                       |             |              |1             |          |         |           |         |3.30   |          |           |                |
 |U19       |MISO_A2_p    |IOB      |IO_L70P_1                    |INPUT        |LVDS_33       |1             |          |         |           |NONE     |       |LOCATED   |NO         |DIFF_TERM       |
 |U20       |sample_clk   |IOB      |IO_L51P_M1DQ12_1             |OUTPUT       |LVCMOS33      |1             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
@@ -446,7 +446,7 @@ Pinout by Pin Number:
 |V6        |             |         |VCCAUX                       |             |              |              |          |         |           |         |3.3    |          |           |                |
 |V7        |             |IOBS     |IO_L46N_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
 |V8        |             |         |VCCO_2                       |             |              |2             |          |         |           |         |1.80   |          |           |                |
-|V9        |okUHU<28>    |IOB      |IO_L50N_2                    |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
+|V9        |okUHU<28>    |IOB      |IO_L50N_2                    |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |V10       |             |         |GND                          |             |              |              |          |         |           |         |       |          |           |                |
 |V11       |             |IOBM     |IO_L42P_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
 |V12       |             |         |VCCO_2                       |             |              |2             |          |         |           |         |1.80   |          |           |                |
@@ -486,7 +486,7 @@ Pinout by Pin Number:
 |Y2        |ddr2_zio     |IOB      |IO_L1P_3                     |BIDIR        |SSTL18_II     |3             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |Y3        |             |IOBM     |IO_L58P_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
 |Y4        |okUHU<9>     |IOB      |IO_L62N_D6_2                 |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
-|Y5        |okUHU<30>    |IOB      |IO_L54P_2                    |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
+|Y5        |okUHU<30>    |IOB      |IO_L54P_2                    |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |Y6        |okUH<3>      |IOB      |IO_L53N_2                    |INPUT        |LVCMOS18      |2             |          |         |           |NONE     |       |LOCATED   |YES        |NONE            |
 |Y7        |okUHU<8>     |IOB      |IO_L48P_D7_2                 |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |Y8        |             |IOBS     |IO_L47N_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
@@ -496,9 +496,9 @@ Pinout by Pin Number:
 |Y12       |okUH<0>      |IOB      |IO_L29N_GCLK2_2              |INPUT        |LVCMOS18      |2             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |Y13       |okUHU<2>     |IOB      |IO_L30P_GCLK1_D13_2          |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |Y14       |             |IOBS     |IO_L20N_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
-|Y15       |okUHU<19>    |IOB      |IO_L21P_2                    |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
+|Y15       |okUHU<19>    |IOB      |IO_L21P_2                    |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |Y16       |             |IOBM     |IO_L17P_2                    |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
-|Y17       |okUHU<25>    |IOB      |IO_L15P_2                    |TRISTATE     |LVCMOS18      |2             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
+|Y17       |okUHU<25>    |IOB      |IO_L15P_2                    |BIDIR        |LVCMOS18      |2             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |Y18       |             |IOBS     |IO_L6N_2                     |UNUSED       |              |2             |          |         |           |         |       |          |           |                |
 |Y19       |led<2>       |IOB      |IO_L5P_2                     |OUTPUT       |LVCMOS18      |2             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
 |Y20       |             |         |CMPCS_B_2                    |             |              |              |          |         |           |         |       |          |           |                |

@@ -247,7 +247,7 @@ module main #(
 	
 	// Board ID number and verison
 	
-	localparam BOARD_ID = 16'd500;
+	localparam BOARD_ID = 16'd600;
 	localparam BOARD_VERSION = 16'd1;
 	
 	
@@ -308,14 +308,24 @@ module main #(
 	
 	reg [15:0]		data_stream_1, data_stream_2, data_stream_3, data_stream_4;
 	reg [15:0]		data_stream_5, data_stream_6, data_stream_7, data_stream_8;
+	reg [15:0]		data_stream_9, data_stream_10, data_stream_11, data_stream_12;
+	reg [15:0]		data_stream_13, data_stream_14, data_stream_15, data_stream_16;
 	reg [3:0]		data_stream_1_sel, data_stream_2_sel, data_stream_3_sel, data_stream_4_sel;
 	reg [3:0]		data_stream_5_sel, data_stream_6_sel, data_stream_7_sel, data_stream_8_sel;
+	reg [3:0]		data_stream_9_sel, data_stream_10_sel, data_stream_11_sel, data_stream_12_sel;
+	reg [3:0]		data_stream_13_sel, data_stream_14_sel, data_stream_15_sel, data_stream_16_sel;
 	wire [3:0]		data_stream_1_sel_in, data_stream_2_sel_in, data_stream_3_sel_in, data_stream_4_sel_in;
 	wire [3:0]		data_stream_5_sel_in, data_stream_6_sel_in, data_stream_7_sel_in, data_stream_8_sel_in;
+	wire [3:0]		data_stream_9_sel_in, data_stream_10_sel_in, data_stream_11_sel_in, data_stream_12_sel_in;
+	wire [3:0]		data_stream_13_sel_in, data_stream_14_sel_in, data_stream_15_sel_in, data_stream_16_sel_in;
 	reg				data_stream_1_en, data_stream_2_en, data_stream_3_en, data_stream_4_en;
 	reg				data_stream_5_en, data_stream_6_en, data_stream_7_en, data_stream_8_en;
+	reg				data_stream_9_en, data_stream_10_en, data_stream_11_en, data_stream_12_en;
+	reg				data_stream_13_en, data_stream_14_en, data_stream_15_en, data_stream_16_en;
 	wire				data_stream_1_en_in, data_stream_2_en_in, data_stream_3_en_in, data_stream_4_en_in;
 	wire				data_stream_5_en_in, data_stream_6_en_in, data_stream_7_en_in, data_stream_8_en_in;
+	wire				data_stream_9_en_in, data_stream_10_en_in, data_stream_11_en_in, data_stream_12_en_in;
+	wire				data_stream_13_en_in, data_stream_14_en_in, data_stream_15_en_in, data_stream_16_en_in;
 	
 	reg [15:0]		data_stream_TTL_in, data_stream_TTL_out;
 	wire [15:0]		data_stream_ADC_1, data_stream_ADC_2, data_stream_ADC_3, data_stream_ADC_4;
@@ -348,8 +358,8 @@ module main #(
 
 	wire [4:0] 		DAC_channel_sel_1, DAC_channel_sel_2, DAC_channel_sel_3, DAC_channel_sel_4;
 	wire [4:0] 		DAC_channel_sel_5, DAC_channel_sel_6, DAC_channel_sel_7, DAC_channel_sel_8;
-	wire [3:0] 		DAC_stream_sel_1, DAC_stream_sel_2, DAC_stream_sel_3, DAC_stream_sel_4;
-	wire [3:0] 		DAC_stream_sel_5, DAC_stream_sel_6, DAC_stream_sel_7, DAC_stream_sel_8;
+	wire [4:0] 		DAC_stream_sel_1, DAC_stream_sel_2, DAC_stream_sel_3, DAC_stream_sel_4;
+	wire [4:0] 		DAC_stream_sel_5, DAC_stream_sel_6, DAC_stream_sel_7, DAC_stream_sel_8;
 	wire 				DAC_en_1, DAC_en_2, DAC_en_3, DAC_en_4;
 	wire 				DAC_en_5, DAC_en_6, DAC_en_7, DAC_en_8;
 	reg [15:0]		DAC_pre_register_1, DAC_pre_register_2, DAC_pre_register_3, DAC_pre_register_4;
@@ -469,6 +479,15 @@ module main #(
 	assign data_stream_6_sel_in = 	ep13wirein[7:4];
 	assign data_stream_7_sel_in = 	ep13wirein[11:8];
 	assign data_stream_8_sel_in = 	ep13wirein[15:12];
+	
+	assign data_stream_9_sel_in = 	ep12wirein[19:16];
+	assign data_stream_10_sel_in = 	ep12wirein[23:20];
+	assign data_stream_11_sel_in = 	ep12wirein[27:24];
+	assign data_stream_12_sel_in = 	ep12wirein[31:28];
+	assign data_stream_13_sel_in = 	ep13wirein[19:16];
+	assign data_stream_14_sel_in = 	ep13wirein[23:20];
+	assign data_stream_15_sel_in = 	ep13wirein[27:24];
+	assign data_stream_16_sel_in = 	ep13wirein[31:28];
 
    assign data_stream_1_en_in = 		ep14wirein[0];
    assign data_stream_2_en_in = 		ep14wirein[1];
@@ -478,6 +497,15 @@ module main #(
    assign data_stream_6_en_in = 		ep14wirein[5];
    assign data_stream_7_en_in = 		ep14wirein[6];
    assign data_stream_8_en_in = 		ep14wirein[7];
+	
+	assign data_stream_9_en_in = 		ep14wirein[8];
+   assign data_stream_10_en_in = 		ep14wirein[9];
+   assign data_stream_11_en_in = 		ep14wirein[10];
+   assign data_stream_12_en_in = 		ep14wirein[11];
+   assign data_stream_13_en_in = 		ep14wirein[12];
+   assign data_stream_14_en_in = 		ep14wirein[13];
+   assign data_stream_15_en_in = 		ep14wirein[14];
+   assign data_stream_16_en_in = 		ep14wirein[15];
 
 	always @(posedge dataclk) begin
 		TTL_out_user <= 					ep15wirein[15:0];
@@ -486,36 +514,36 @@ module main #(
 	assign TTL_out = TTL_out_mode ? {TTL_out_user[15:8], DAC_thresh_out} : TTL_out_user;
 		
 	assign DAC_channel_sel_1 = 		ep16wirein[4:0];
-	assign DAC_stream_sel_1 = 			ep16wirein[8:5];
-	assign DAC_en_1 = 					ep16wirein[9];
+	assign DAC_stream_sel_1 = 			ep16wirein[9:5];
+	assign DAC_en_1 = 					ep16wirein[10];
 	
 	assign DAC_channel_sel_2 = 		ep17wirein[4:0];
-	assign DAC_stream_sel_2 = 			ep17wirein[8:5];
-	assign DAC_en_2 = 					ep17wirein[9];
+	assign DAC_stream_sel_2 = 			ep17wirein[9:5];
+	assign DAC_en_2 = 					ep17wirein[10];
 	
 	assign DAC_channel_sel_3 = 		ep18wirein[4:0];
-	assign DAC_stream_sel_3 = 			ep18wirein[8:5];
-	assign DAC_en_3 = 					ep18wirein[9];
+	assign DAC_stream_sel_3 = 			ep18wirein[9:5];
+	assign DAC_en_3 = 					ep18wirein[10];
 	
 	assign DAC_channel_sel_4 = 		ep19wirein[4:0];
-	assign DAC_stream_sel_4 = 			ep19wirein[8:5];
-	assign DAC_en_4 = 					ep19wirein[9];
+	assign DAC_stream_sel_4 = 			ep19wirein[9:5];
+	assign DAC_en_4 = 					ep19wirein[10];
 	
 	assign DAC_channel_sel_5 = 		ep1awirein[4:0];
-	assign DAC_stream_sel_5 = 			ep1awirein[8:5];
-	assign DAC_en_5 = 					ep1awirein[9];
+	assign DAC_stream_sel_5 = 			ep1awirein[9:5];
+	assign DAC_en_5 = 					ep1awirein[10];
 	
 	assign DAC_channel_sel_6 = 		ep1bwirein[4:0];
-	assign DAC_stream_sel_6 = 			ep1bwirein[8:5];
-	assign DAC_en_6 = 					ep1bwirein[9];
+	assign DAC_stream_sel_6 = 			ep1bwirein[9:5];
+	assign DAC_en_6 = 					ep1bwirein[10];
 	
 	assign DAC_channel_sel_7 = 		ep1cwirein[4:0];
-	assign DAC_stream_sel_7 = 			ep1cwirein[8:5];
-	assign DAC_en_7 = 					ep1cwirein[9];
+	assign DAC_stream_sel_7 = 			ep1cwirein[9:5];
+	assign DAC_en_7 = 					ep1cwirein[10];
 	
 	assign DAC_channel_sel_8 = 		ep1dwirein[4:0];
-	assign DAC_stream_sel_8 = 			ep1dwirein[8:5];
-	assign DAC_en_8 = 					ep1dwirein[9];
+	assign DAC_stream_sel_8 = 			ep1dwirein[9:5];
+	assign DAC_en_8 = 					ep1dwirein[10];
 	
 	always @(posedge dataclk) begin
 		DAC_manual <= 						ep1ewirein[15:0];
@@ -639,8 +667,7 @@ module main #(
 	
 
 	// Unused; future expansion
-	//assign ep26wireout = 				32'h0000;
-	assign ep26wireout = 				max_timestep;
+	assign ep26wireout = 				32'h0000;
 	assign ep27wireout = 				32'h0000;
 	assign ep28wireout = 				32'h0000;
 	assign ep29wireout = 				32'h0000;
@@ -1031,6 +1058,16 @@ module main #(
 					data_stream_6_en <= data_stream_6_en_in;
 					data_stream_7_en <= data_stream_7_en_in;
 					data_stream_8_en <= data_stream_8_en_in;
+					
+					data_stream_9_en <= data_stream_9_en_in;		
+					data_stream_10_en <= data_stream_10_en_in;
+					data_stream_11_en <= data_stream_11_en_in;
+					data_stream_12_en <= data_stream_12_en_in;
+					data_stream_13_en <= data_stream_13_en_in;
+					data_stream_14_en <= data_stream_14_en_in;
+					data_stream_15_en <= data_stream_15_en_in;
+					data_stream_16_en <= data_stream_16_en_in;
+					
 					data_stream_1_sel <= data_stream_1_sel_in;
 					data_stream_2_sel <= data_stream_2_sel_in;
 					data_stream_3_sel <= data_stream_3_sel_in;
@@ -1039,6 +1076,15 @@ module main #(
 					data_stream_6_sel <= data_stream_6_sel_in;
 					data_stream_7_sel <= data_stream_7_sel_in;
 					data_stream_8_sel <= data_stream_8_sel_in;
+					
+					data_stream_9_sel <= data_stream_9_sel_in;
+					data_stream_10_sel <= data_stream_10_sel_in;
+					data_stream_11_sel <= data_stream_11_sel_in;
+					data_stream_12_sel <= data_stream_12_sel_in;
+					data_stream_13_sel <= data_stream_13_sel_in;
+					data_stream_14_sel <= data_stream_14_sel_in;
+					data_stream_15_sel <= data_stream_15_sel_in;
+					data_stream_16_sel <= data_stream_16_sel_in;
 					
 					DAC_pre_register_1 <= 16'h8000;		// set DACs to midrange, initially, to avoid loud 'pop' in audio at start
 					DAC_pre_register_2 <= 16'h8000;
@@ -1377,6 +1423,11 @@ module main #(
 				end
 				
 				ms_clk4_d: begin
+					if (data_stream_9_en == 1'b1) begin
+						FIFO_data_in <= data_stream_9;
+						FIFO_write_to <= 1'b1;
+					end
+					
 					SCLK <= 1'b1;
 					in4x_A1[13] <= MISO_A1; in4x_A2[13] <= MISO_A2;
 					in4x_B1[13] <= MISO_B1; in4x_B2[13] <= MISO_B2;
@@ -1386,6 +1437,11 @@ module main #(
 				end
 				
 				ms_clk5_a: begin
+					if (data_stream_10_en == 1'b1) begin
+						FIFO_data_in <= data_stream_10;
+						FIFO_write_to <= 1'b1;
+					end
+					
 					MOSI_A <= MOSI_cmd_A[11];
 					MOSI_B <= MOSI_cmd_B[11];
 					MOSI_C <= MOSI_cmd_C[11];
@@ -1398,6 +1454,11 @@ module main #(
 				end
 
 				ms_clk5_b: begin
+					if (data_stream_11_en == 1'b1) begin
+						FIFO_data_in <= data_stream_11;
+						FIFO_write_to <= 1'b1;
+					end
+					
 					in4x_A1[15] <= MISO_A1; in4x_A2[15] <= MISO_A2;
 					in4x_B1[15] <= MISO_B1; in4x_B2[15] <= MISO_B2;
 					in4x_C1[15] <= MISO_C1; in4x_C2[15] <= MISO_C2;
@@ -1406,6 +1467,11 @@ module main #(
 				end
 
 				ms_clk5_c: begin
+					if (data_stream_12_en == 1'b1) begin
+						FIFO_data_in <= data_stream_12;
+						FIFO_write_to <= 1'b1;
+					end
+					
 					SCLK <= 1'b1;
 					in4x_A1[16] <= MISO_A1; in4x_A2[16] <= MISO_A2;
 					in4x_B1[16] <= MISO_B1; in4x_B2[16] <= MISO_B2;
@@ -1415,6 +1481,11 @@ module main #(
 				end
 				
 				ms_clk5_d: begin
+					if (data_stream_13_en == 1'b1) begin
+						FIFO_data_in <= data_stream_13;
+						FIFO_write_to <= 1'b1;
+					end
+					
 					SCLK <= 1'b1;
 					in4x_A1[17] <= MISO_A1; in4x_A2[17] <= MISO_A2;
 					in4x_B1[17] <= MISO_B1; in4x_B2[17] <= MISO_B2;
@@ -1424,6 +1495,11 @@ module main #(
 				end
 				
 				ms_clk6_a: begin
+					if (data_stream_14_en == 1'b1) begin
+						FIFO_data_in <= data_stream_14;
+						FIFO_write_to <= 1'b1;
+					end
+					
 					MOSI_A <= MOSI_cmd_A[10];
 					MOSI_B <= MOSI_cmd_B[10];
 					MOSI_C <= MOSI_cmd_C[10];
@@ -1436,6 +1512,11 @@ module main #(
 				end
 
 				ms_clk6_b: begin
+					if (data_stream_15_en == 1'b1) begin
+						FIFO_data_in <= data_stream_15;
+						FIFO_write_to <= 1'b1;
+					end
+					
 					in4x_A1[19] <= MISO_A1; in4x_A2[19] <= MISO_A2;
 					in4x_B1[19] <= MISO_B1; in4x_B2[19] <= MISO_B2;
 					in4x_C1[19] <= MISO_C1; in4x_C2[19] <= MISO_C2;
@@ -1444,6 +1525,11 @@ module main #(
 				end
 
 				ms_clk6_c: begin
+					if (data_stream_16_en == 1'b1) begin
+						FIFO_data_in <= data_stream_16;
+						FIFO_write_to <= 1'b1;
+					end
+					
 					SCLK <= 1'b1;
 					in4x_A1[20] <= MISO_A1; in4x_A2[20] <= MISO_A2;
 					in4x_B1[20] <= MISO_B1; in4x_B2[20] <= MISO_B2;
@@ -1719,6 +1805,11 @@ module main #(
 				end
 				
 				ms_clk13_d: begin
+					if (data_stream_1_en == 1'b1 && channel == 34) begin
+						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
+						FIFO_write_to <= 1'b1;
+					end
+
 					SCLK <= 1'b1;
 					in4x_A1[49] <= MISO_A1; in4x_A2[49] <= MISO_A2;
 					in4x_B1[49] <= MISO_B1; in4x_B2[49] <= MISO_B2;
@@ -1728,6 +1819,11 @@ module main #(
 				end
 
 				ms_clk14_a: begin
+					if (data_stream_2_en == 1'b1 && channel == 34) begin
+						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
+						FIFO_write_to <= 1'b1;
+					end
+
 					MOSI_A <= MOSI_cmd_A[2];
 					MOSI_B <= MOSI_cmd_B[2];
 					MOSI_C <= MOSI_cmd_C[2];
@@ -1740,6 +1836,11 @@ module main #(
 				end
 
 				ms_clk14_b: begin
+					if (data_stream_3_en == 1'b1 && channel == 34) begin
+						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
+						FIFO_write_to <= 1'b1;
+					end
+
 					in4x_A1[51] <= MISO_A1; in4x_A2[51] <= MISO_A2;
 					in4x_B1[51] <= MISO_B1; in4x_B2[51] <= MISO_B2;
 					in4x_C1[51] <= MISO_C1; in4x_C2[51] <= MISO_C2;
@@ -1748,6 +1849,11 @@ module main #(
 				end
 
 				ms_clk14_c: begin
+					if (data_stream_4_en == 1'b1 && channel == 34) begin
+						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
+						FIFO_write_to <= 1'b1;
+					end
+
 					SCLK <= 1'b1;
 					in4x_A1[52] <= MISO_A1; in4x_A2[52] <= MISO_A2;
 					in4x_B1[52] <= MISO_B1; in4x_B2[52] <= MISO_B2;
@@ -1757,6 +1863,11 @@ module main #(
 				end
 				
 				ms_clk14_d: begin
+					if (data_stream_5_en == 1'b1 && channel == 34) begin
+						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
+						FIFO_write_to <= 1'b1;
+					end
+
 					SCLK <= 1'b1;
 					in4x_A1[53] <= MISO_A1; in4x_A2[53] <= MISO_A2;
 					in4x_B1[53] <= MISO_B1; in4x_B2[53] <= MISO_B2;
@@ -1766,6 +1877,11 @@ module main #(
 				end
 
 				ms_clk15_a: begin
+					if (data_stream_6_en == 1'b1 && channel == 34) begin
+						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
+						FIFO_write_to <= 1'b1;
+					end
+
 					MOSI_A <= MOSI_cmd_A[1];
 					MOSI_B <= MOSI_cmd_B[1];
 					MOSI_C <= MOSI_cmd_C[1];
@@ -1778,6 +1894,11 @@ module main #(
 				end
 
 				ms_clk15_b: begin
+					if (data_stream_7_en == 1'b1 && channel == 34) begin
+						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
+						FIFO_write_to <= 1'b1;
+					end
+
 					in4x_A1[55] <= MISO_A1; in4x_A2[55] <= MISO_A2;
 					in4x_B1[55] <= MISO_B1; in4x_B2[55] <= MISO_B2;
 					in4x_C1[55] <= MISO_C1; in4x_C2[55] <= MISO_C2;
@@ -1786,6 +1907,11 @@ module main #(
 				end
 
 				ms_clk15_c: begin
+					if (data_stream_8_en == 1'b1 && channel == 34) begin
+						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
+						FIFO_write_to <= 1'b1;
+					end
+
 					SCLK <= 1'b1;
 					in4x_A1[56] <= MISO_A1; in4x_A2[56] <= MISO_A2;
 					in4x_B1[56] <= MISO_B1; in4x_B2[56] <= MISO_B2;
@@ -1795,7 +1921,7 @@ module main #(
 				end
 				
 				ms_clk15_d: begin
-					if (data_stream_1_en == 1'b1 && channel == 34) begin
+					if (data_stream_9_en == 1'b1 && channel == 34) begin
 						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
 						FIFO_write_to <= 1'b1;
 					end
@@ -1809,7 +1935,7 @@ module main #(
 				end
 
 				ms_clk16_a: begin
-					if (data_stream_2_en == 1'b1 && channel == 34) begin
+					if (data_stream_10_en == 1'b1 && channel == 34) begin
 						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
 						FIFO_write_to <= 1'b1;
 					end
@@ -1826,7 +1952,7 @@ module main #(
 				end
 
 				ms_clk16_b: begin
-					if (data_stream_3_en == 1'b1 && channel == 34) begin
+					if (data_stream_11_en == 1'b1 && channel == 34) begin
 						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
 						FIFO_write_to <= 1'b1;
 					end
@@ -1839,7 +1965,7 @@ module main #(
 				end
 
 				ms_clk16_c: begin
-					if (data_stream_4_en == 1'b1 && channel == 34) begin
+					if (data_stream_12_en == 1'b1 && channel == 34) begin
 						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
 						FIFO_write_to <= 1'b1;
 					end
@@ -1853,7 +1979,7 @@ module main #(
 				end
 				
 				ms_clk16_d: begin
-					if (data_stream_5_en == 1'b1 && channel == 34) begin
+					if (data_stream_13_en == 1'b1 && channel == 34) begin
 						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
 						FIFO_write_to <= 1'b1;
 					end
@@ -1867,7 +1993,7 @@ module main #(
 				end
 
 				ms_clk17_a: begin
-					if (data_stream_6_en == 1'b1 && channel == 34) begin
+					if (data_stream_14_en == 1'b1 && channel == 34) begin
 						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
 						FIFO_write_to <= 1'b1;
 					end
@@ -1884,7 +2010,7 @@ module main #(
 				end
 
 				ms_clk17_b: begin
-					if (data_stream_7_en == 1'b1 && channel == 34) begin
+					if (data_stream_15_en == 1'b1 && channel == 34) begin
 						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
 						FIFO_write_to <= 1'b1;
 					end
@@ -1897,7 +2023,7 @@ module main #(
 				end
 
 				ms_cs_a: begin
-					if (data_stream_8_en == 1'b1 && channel == 34) begin
+					if (data_stream_16_en == 1'b1 && channel == 34) begin
 						FIFO_data_in <= data_stream_filler;	// Send a 36th 'filler' sample to keep number of samples divisible by four
 						FIFO_write_to <= 1'b1;
 					end
@@ -2099,7 +2225,15 @@ module main #(
 							5: DAC_pre_register_1 <= data_stream_6;
 							6: DAC_pre_register_1 <= data_stream_7;
 							7: DAC_pre_register_1 <= data_stream_8;
-							8: DAC_pre_register_1 <= DAC_manual;
+							8: DAC_pre_register_1 <= data_stream_9;
+							9: DAC_pre_register_1 <= data_stream_10;
+							10: DAC_pre_register_1 <= data_stream_11;
+							11: DAC_pre_register_1 <= data_stream_12;
+							12: DAC_pre_register_1 <= data_stream_13;
+							13: DAC_pre_register_1 <= data_stream_14;
+							14: DAC_pre_register_1 <= data_stream_15;
+							15: DAC_pre_register_1 <= data_stream_16;
+							16: DAC_pre_register_1 <= DAC_manual;
 							default: DAC_pre_register_1 <= 16'b0;
 						endcase
 					end
@@ -2113,7 +2247,15 @@ module main #(
 							5: DAC_pre_register_2 <= data_stream_6;
 							6: DAC_pre_register_2 <= data_stream_7;
 							7: DAC_pre_register_2 <= data_stream_8;
-							8: DAC_pre_register_2 <= DAC_manual;
+							8: DAC_pre_register_2 <= data_stream_9;
+							9: DAC_pre_register_2 <= data_stream_10;
+							10: DAC_pre_register_2 <= data_stream_11;
+							11: DAC_pre_register_2 <= data_stream_12;
+							12: DAC_pre_register_2 <= data_stream_13;
+							13: DAC_pre_register_2 <= data_stream_14;
+							14: DAC_pre_register_2 <= data_stream_15;
+							15: DAC_pre_register_2 <= data_stream_16;
+							16: DAC_pre_register_2 <= DAC_manual;
 							default: DAC_pre_register_2 <= 16'b0;
 						endcase
 					end
@@ -2127,7 +2269,15 @@ module main #(
 							5: DAC_pre_register_3 <= data_stream_6;
 							6: DAC_pre_register_3 <= data_stream_7;
 							7: DAC_pre_register_3 <= data_stream_8;
-							8: DAC_pre_register_3 <= DAC_manual;
+							8: DAC_pre_register_3 <= data_stream_9;
+							9: DAC_pre_register_3 <= data_stream_10;
+							10: DAC_pre_register_3 <= data_stream_11;
+							11: DAC_pre_register_3 <= data_stream_12;
+							12: DAC_pre_register_3 <= data_stream_13;
+							13: DAC_pre_register_3 <= data_stream_14;
+							14: DAC_pre_register_3 <= data_stream_15;
+							15: DAC_pre_register_3 <= data_stream_16;
+							16: DAC_pre_register_3 <= DAC_manual;
 							default: DAC_pre_register_3 <= 16'b0;
 						endcase
 					end
@@ -2141,7 +2291,15 @@ module main #(
 							5: DAC_pre_register_4 <= data_stream_6;
 							6: DAC_pre_register_4 <= data_stream_7;
 							7: DAC_pre_register_4 <= data_stream_8;
-							8: DAC_pre_register_4 <= DAC_manual;
+							8: DAC_pre_register_4 <= data_stream_9;
+							9: DAC_pre_register_4 <= data_stream_10;
+							10: DAC_pre_register_4 <= data_stream_11;
+							11: DAC_pre_register_4 <= data_stream_12;
+							12: DAC_pre_register_4 <= data_stream_13;
+							13: DAC_pre_register_4 <= data_stream_14;
+							14: DAC_pre_register_4 <= data_stream_15;
+							15: DAC_pre_register_4 <= data_stream_16;
+							16: DAC_pre_register_4 <= DAC_manual;
 							default: DAC_pre_register_4 <= 16'b0;
 						endcase
 					end
@@ -2155,7 +2313,15 @@ module main #(
 							5: DAC_pre_register_5 <= data_stream_6;
 							6: DAC_pre_register_5 <= data_stream_7;
 							7: DAC_pre_register_5 <= data_stream_8;
-							8: DAC_pre_register_5 <= DAC_manual;
+							8: DAC_pre_register_5 <= data_stream_9;
+							9: DAC_pre_register_5 <= data_stream_10;
+							10: DAC_pre_register_5 <= data_stream_11;
+							11: DAC_pre_register_5 <= data_stream_12;
+							12: DAC_pre_register_5 <= data_stream_13;
+							13: DAC_pre_register_5 <= data_stream_14;
+							14: DAC_pre_register_5 <= data_stream_15;
+							15: DAC_pre_register_5 <= data_stream_16;
+							16: DAC_pre_register_5 <= DAC_manual;
 							default: DAC_pre_register_5 <= 16'b0;
 						endcase
 					end
@@ -2169,7 +2335,15 @@ module main #(
 							5: DAC_pre_register_6 <= data_stream_6;
 							6: DAC_pre_register_6 <= data_stream_7;
 							7: DAC_pre_register_6 <= data_stream_8;
-							8: DAC_pre_register_6 <= DAC_manual;
+							8: DAC_pre_register_6 <= data_stream_9;
+							9: DAC_pre_register_6 <= data_stream_10;
+							10: DAC_pre_register_6 <= data_stream_11;
+							11: DAC_pre_register_6 <= data_stream_12;
+							12: DAC_pre_register_6 <= data_stream_13;
+							13: DAC_pre_register_6 <= data_stream_14;
+							14: DAC_pre_register_6 <= data_stream_15;
+							15: DAC_pre_register_6 <= data_stream_16;
+							16: DAC_pre_register_6 <= DAC_manual;
 							default: DAC_pre_register_6 <= 16'b0;
 						endcase
 					end
@@ -2183,7 +2357,15 @@ module main #(
 							5: DAC_pre_register_7 <= data_stream_6;
 							6: DAC_pre_register_7 <= data_stream_7;
 							7: DAC_pre_register_7 <= data_stream_8;
-							8: DAC_pre_register_7 <= DAC_manual;
+							8: DAC_pre_register_7 <= data_stream_9;
+							9: DAC_pre_register_7 <= data_stream_10;
+							10: DAC_pre_register_7 <= data_stream_11;
+							11: DAC_pre_register_7 <= data_stream_12;
+							12: DAC_pre_register_7 <= data_stream_13;
+							13: DAC_pre_register_7 <= data_stream_14;
+							14: DAC_pre_register_7 <= data_stream_15;
+							15: DAC_pre_register_7 <= data_stream_16;
+							16: DAC_pre_register_7 <= DAC_manual;
 							default: DAC_pre_register_7 <= 16'b0;
 						endcase
 					end
@@ -2197,7 +2379,15 @@ module main #(
 							5: DAC_pre_register_8 <= data_stream_6;
 							6: DAC_pre_register_8 <= data_stream_7;
 							7: DAC_pre_register_8 <= data_stream_8;
-							8: DAC_pre_register_8 <= DAC_manual;
+							8: DAC_pre_register_8 <= data_stream_9;
+							9: DAC_pre_register_8 <= data_stream_10;
+							10: DAC_pre_register_8 <= data_stream_11;
+							11: DAC_pre_register_8 <= data_stream_12;
+							12: DAC_pre_register_8 <= data_stream_13;
+							13: DAC_pre_register_8 <= data_stream_14;
+							14: DAC_pre_register_8 <= data_stream_15;
+							15: DAC_pre_register_8 <= data_stream_16;
+							16: DAC_pre_register_8 <= DAC_manual;
 							default: DAC_pre_register_8 <= 16'b0;
 						endcase
 					end					
@@ -2785,6 +2975,174 @@ module main #(
 			13:	data_stream_8 <= result_DDR_C2;
 			14:	data_stream_8 <= result_DDR_D1;
 			15:	data_stream_8 <= result_DDR_D2;
+		endcase
+	end
+	
+	always @(*) begin
+		case (data_stream_9_sel)
+			0:		data_stream_9 <= result_A1;
+			1:		data_stream_9 <= result_A2;
+			2:		data_stream_9 <= result_B1;
+			3:		data_stream_9 <= result_B2;
+			4:		data_stream_9 <= result_C1;
+			5:		data_stream_9 <= result_C2;
+			6:		data_stream_9 <= result_D1;
+			7:		data_stream_9 <= result_D2;
+			8:		data_stream_9 <= result_DDR_A1;
+			9: 	data_stream_9 <= result_DDR_A2;
+			10:	data_stream_9 <= result_DDR_B1;
+			11:	data_stream_9 <= result_DDR_B2;
+			12:	data_stream_9 <= result_DDR_C1;
+			13:	data_stream_9 <= result_DDR_C2;
+			14:	data_stream_9 <= result_DDR_D1;
+			15:	data_stream_9 <= result_DDR_D2;
+		endcase
+	end
+	
+	always @(*) begin
+		case (data_stream_10_sel)
+			0:		data_stream_10 <= result_A1;
+			1:		data_stream_10 <= result_A2;
+			2:		data_stream_10 <= result_B1;
+			3:		data_stream_10 <= result_B2;
+			4:		data_stream_10 <= result_C1;
+			5:		data_stream_10 <= result_C2;
+			6:		data_stream_10 <= result_D1;
+			7:		data_stream_10 <= result_D2;
+			8:		data_stream_10 <= result_DDR_A1;
+			9: 	data_stream_10 <= result_DDR_A2;
+			10:	data_stream_10 <= result_DDR_B1;
+			11:	data_stream_10 <= result_DDR_B2;
+			12:	data_stream_10 <= result_DDR_C1;
+			13:	data_stream_10 <= result_DDR_C2;
+			14:	data_stream_10 <= result_DDR_D1;
+			15:	data_stream_10 <= result_DDR_D2;
+		endcase
+	end
+	
+	always @(*) begin
+		case (data_stream_11_sel)
+			0:		data_stream_11 <= result_A1;
+			1:		data_stream_11 <= result_A2;
+			2:		data_stream_11 <= result_B1;
+			3:		data_stream_11 <= result_B2;
+			4:		data_stream_11 <= result_C1;
+			5:		data_stream_11 <= result_C2;
+			6:		data_stream_11 <= result_D1;
+			7:		data_stream_11 <= result_D2;
+			8:		data_stream_11 <= result_DDR_A1;
+			9: 	data_stream_11 <= result_DDR_A2;
+			10:	data_stream_11 <= result_DDR_B1;
+			11:	data_stream_11 <= result_DDR_B2;
+			12:	data_stream_11 <= result_DDR_C1;
+			13:	data_stream_11 <= result_DDR_C2;
+			14:	data_stream_11 <= result_DDR_D1;
+			15:	data_stream_11 <= result_DDR_D2;
+		endcase
+	end
+	
+	always @(*) begin
+		case (data_stream_12_sel)
+			0:		data_stream_12 <= result_A1;
+			1:		data_stream_12 <= result_A2;
+			2:		data_stream_12 <= result_B1;
+			3:		data_stream_12 <= result_B2;
+			4:		data_stream_12 <= result_C1;
+			5:		data_stream_12 <= result_C2;
+			6:		data_stream_12 <= result_D1;
+			7:		data_stream_12 <= result_D2;
+			8:		data_stream_12 <= result_DDR_A1;
+			9: 	data_stream_12 <= result_DDR_A2;
+			10:	data_stream_12 <= result_DDR_B1;
+			11:	data_stream_12 <= result_DDR_B2;
+			12:	data_stream_12 <= result_DDR_C1;
+			13:	data_stream_12 <= result_DDR_C2;
+			14:	data_stream_12 <= result_DDR_D1;
+			15:	data_stream_12 <= result_DDR_D2;
+		endcase
+	end
+	
+	always @(*) begin
+		case (data_stream_13_sel)
+			0:		data_stream_13 <= result_A1;
+			1:		data_stream_13 <= result_A2;
+			2:		data_stream_13 <= result_B1;
+			3:		data_stream_13 <= result_B2;
+			4:		data_stream_13 <= result_C1;
+			5:		data_stream_13 <= result_C2;
+			6:		data_stream_13 <= result_D1;
+			7:		data_stream_13 <= result_D2;
+			8:		data_stream_13 <= result_DDR_A1;
+			9: 	data_stream_13 <= result_DDR_A2;
+			10:	data_stream_13 <= result_DDR_B1;
+			11:	data_stream_13 <= result_DDR_B2;
+			12:	data_stream_13 <= result_DDR_C1;
+			13:	data_stream_13 <= result_DDR_C2;
+			14:	data_stream_13 <= result_DDR_D1;
+			15:	data_stream_13 <= result_DDR_D2;
+		endcase
+	end
+	
+	always @(*) begin
+		case (data_stream_14_sel)
+			0:		data_stream_14 <= result_A1;
+			1:		data_stream_14 <= result_A2;
+			2:		data_stream_14 <= result_B1;
+			3:		data_stream_14 <= result_B2;
+			4:		data_stream_14 <= result_C1;
+			5:		data_stream_14 <= result_C2;
+			6:		data_stream_14 <= result_D1;
+			7:		data_stream_14 <= result_D2;
+			8:		data_stream_14 <= result_DDR_A1;
+			9: 	data_stream_14 <= result_DDR_A2;
+			10:	data_stream_14 <= result_DDR_B1;
+			11:	data_stream_14 <= result_DDR_B2;
+			12:	data_stream_14 <= result_DDR_C1;
+			13:	data_stream_14 <= result_DDR_C2;
+			14:	data_stream_14 <= result_DDR_D1;
+			15:	data_stream_14 <= result_DDR_D2;
+		endcase
+	end
+	
+	always @(*) begin
+		case (data_stream_15_sel)
+			0:		data_stream_15 <= result_A1;
+			1:		data_stream_15 <= result_A2;
+			2:		data_stream_15 <= result_B1;
+			3:		data_stream_15 <= result_B2;
+			4:		data_stream_15 <= result_C1;
+			5:		data_stream_15 <= result_C2;
+			6:		data_stream_15 <= result_D1;
+			7:		data_stream_15 <= result_D2;
+			8:		data_stream_15 <= result_DDR_A1;
+			9: 	data_stream_15 <= result_DDR_A2;
+			10:	data_stream_15 <= result_DDR_B1;
+			11:	data_stream_15 <= result_DDR_B2;
+			12:	data_stream_15 <= result_DDR_C1;
+			13:	data_stream_15 <= result_DDR_C2;
+			14:	data_stream_15 <= result_DDR_D1;
+			15:	data_stream_15 <= result_DDR_D2;
+		endcase
+	end
+	
+	always @(*) begin
+		case (data_stream_16_sel)
+			0:		data_stream_16 <= result_A1;
+			1:		data_stream_16 <= result_A2;
+			2:		data_stream_16 <= result_B1;
+			3:		data_stream_16 <= result_B2;
+			4:		data_stream_16 <= result_C1;
+			5:		data_stream_16 <= result_C2;
+			6:		data_stream_16 <= result_D1;
+			7:		data_stream_16 <= result_D2;
+			8:		data_stream_16 <= result_DDR_A1;
+			9: 	data_stream_16 <= result_DDR_A2;
+			10:	data_stream_16 <= result_DDR_B1;
+			11:	data_stream_16 <= result_DDR_B2;
+			12:	data_stream_16 <= result_DDR_C1;
+			13:	data_stream_16 <= result_DDR_C2;
+			14:	data_stream_16 <= result_DDR_D1;
+			15:	data_stream_16 <= result_DDR_D2;
 		endcase
 	end
 	
