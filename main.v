@@ -382,6 +382,9 @@ module main #(
 	
 	//Open-Ephys specific registers
 	reg				ledsEnabled;
+	wire				pipeout_override_en;
+	wire 				FIFO_out_rdy;
+	wire				pipeout_rdy;
 
 	// Opal Kelly USB Host Interface
 	
@@ -410,6 +413,7 @@ module main #(
 	assign TTL_out_mode = 				ep00wirein[3];
 	assign DAC_noise_suppress = 		ep00wirein[12:6];
 	assign DAC_gain = 					ep00wirein[15:13];
+	assign pipeout_override_en =		ep00wirein[16]; //Open-ephys USB 3 support
 
 	assign max_timestep_in[15:0] = 	ep01wirein[15:0];
 	assign max_timestep_in[31:16] =	ep02wirein[15:0];
@@ -755,6 +759,7 @@ module main #(
 		.FIFO_data_in					(FIFO_data_in),
 		.FIFO_read_from				(FIFO_read_from),
 		.FIFO_data_out					(FIFO_data_out),
+		.FIFO_out_rdy					(FIFO_out_rdy),
 		.num_words_in_FIFO			(num_words_in_FIFO),
 		.ddr2_dq							(ddr2_dq),
 		.ddr2_a							(ddr2_a),
@@ -2873,8 +2878,11 @@ module main #(
 	okWireOut    wo3e (.okHE(okHE), .okEH(okEHx[ 30*65 +: 65 ]), .ep_addr(8'h3e), .ep_datain(ep3ewireout));
 	okWireOut    wo3f (.okHE(okHE), .okEH(okEHx[ 31*65 +: 65 ]), .ep_addr(8'h3f), .ep_datain(ep3fwireout));
 	
+	assign pipeout_rdy = ( FIFO_out_rdy | pipeout_override_en);
+	
 	//Flip the 16-bit words in the fifo for compatibility with the usb2.0 read methods
-	okPipeOut    poa0 (.okHE(okHE), .okEH(okEHx[ 32*65 +: 65 ]), .ep_addr(8'ha0), .ep_read(FIFO_read_from), .ep_datain({FIFO_data_out[15:0], FIFO_data_out[31:16]}));
+	okBTPipeOut    poa0 (.okHE(okHE), .okEH(okEHx[ 32*65 +: 65 ]), .ep_addr(8'ha0), .ep_read(FIFO_read_from), 
+		.ep_blockstrobe(), .ep_datain({FIFO_data_out[15:0], FIFO_data_out[31:16]}), .ep_ready(pipeout_rdy));
 
 
 endmodule

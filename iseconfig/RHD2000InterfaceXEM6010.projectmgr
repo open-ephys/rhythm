@@ -12,7 +12,6 @@
          <ClosedNode>/main C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v/RAM_bank_3 - RAM_bank</ClosedNode>
          <ClosedNode>/main C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v/host - okHost</ClosedNode>
          <ClosedNode>/main C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v/memc3_wrapper_inst - memc3_wrapper</ClosedNode>
-         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_1 - DAC_output_scalable_HPF</ClosedNode>
          <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_2 - DAC_output_scalable_HPF</ClosedNode>
          <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_3 - DAC_output_scalable_HPF</ClosedNode>
          <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_4 - DAC_output_scalable_HPF</ClosedNode>
@@ -28,13 +27,13 @@
          <ClosedNode>/ramtest C:|Users|Reid|Documents|Xilinx|OpalKelly|RHD2000InterfaceXEM6010|main.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>main (E:/CAD/hdl/rhythm/main.v)</SelectedItem>
+         <SelectedItem>MISO_phase_selector_1 - MISO_phase_selector (E:/CAD/hdl/rhythm/MISO_phase_selector.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >21</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>main (E:/CAD/hdl/rhythm/main.v)</CurrentItem>
+      <CurrentItem>MISO_phase_selector_1 - MISO_phase_selector (E:/CAD/hdl/rhythm/MISO_phase_selector.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -55,13 +54,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>iodrp_mcb_controller.v</SelectedItem>
+         <SelectedItem>xem6310.ucf</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a3000000040101000100000000000000000000000064ffffffff000000810000000000000004000000e100000001000000000000003f00000001000000000000006600000001000000000000021d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>DAC_output.v</CurrentItem>
+      <CurrentItem>xem6310.ucf</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -91,7 +90,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ca000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ca0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001db000000010000000100000000000000000000000064ffffffff000000810000000000000001000001db0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -110,4 +109,47 @@
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/fifo_w32_1024_r32_1024 E:|CAD|hdl|rhythm|fifo_w32_1024_r32_1024.v</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_1 - DAC_output_scalable_HPF</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_2 - DAC_output_scalable_HPF</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_3 - DAC_output_scalable_HPF</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_4 - DAC_output_scalable_HPF</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_5 - DAC_output_scalable_HPF</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_6 - DAC_output_scalable_HPF</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_7 - DAC_output_scalable_HPF</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/DAC_output_8 - DAC_output_scalable_HPF</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/RAM_bank_1 - RAM_bank</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/RAM_bank_2 - RAM_bank</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/RAM_bank_3 - RAM_bank</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/SDRAM_FIFO_inst - SDRAM_FIFO/memc3_wrapper_inst - memc3_wrapper</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/SDRAM_FIFO_inst - SDRAM_FIFO/okPipeIn_fifo - fifo_w16_2048_r32_1024</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/SDRAM_FIFO_inst - SDRAM_FIFO/okPipeOut_fifo - fifo_w32_x_r32_x</ClosedNode>
+         <ClosedNode>/main E:|CAD|hdl|rhythm|main.v/host - okHost</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023b0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001db000000010000000100000000000000000000000064ffffffff000000810000000000000001000001db0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
 </Project>

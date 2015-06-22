@@ -10,23 +10,23 @@ Target Device  : xc6slx45
 Target Package : fgg484
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Jun 16 03:39:51 2015
+Mapped Date    : Sat Jun 20 05:30:41 2015
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:   25
 Slice Logic Utilization:
-  Number of Slice Registers:                 4,697 out of  54,576    8%
-    Number used as Flip Flops:               4,697
+  Number of Slice Registers:                 4,866 out of  54,576    8%
+    Number used as Flip Flops:               4,866
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      7,515 out of  27,288   27%
-    Number used as logic:                    7,337 out of  27,288   26%
-      Number using O6 output only:           6,363
-      Number using O5 output only:             234
-      Number using O5 and O6:                  740
+  Number of Slice LUTs:                      7,809 out of  27,288   28%
+    Number used as logic:                    7,652 out of  27,288   28%
+      Number using O6 output only:           6,631
+      Number using O5 output only:             233
+      Number using O5 and O6:                  788
       Number used as ROM:                        0
     Number used as Memory:                      48 out of   6,408    1%
       Number used as Dual Port RAM:             20
@@ -41,21 +41,21 @@ Slice Logic Utilization:
         Number using O6 output only:             4
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:    130
-      Number with same-slice register load:    102
-      Number with same-slice carry load:        28
+    Number used exclusively as route-thrus:    109
+      Number with same-slice register load:     97
+      Number with same-slice carry load:        12
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 2,625 out of   6,822   38%
+  Number of occupied Slices:                 2,780 out of   6,822   40%
   Number of MUXCYs used:                     1,512 out of  13,644   11%
-  Number of LUT Flip Flop pairs used:        8,738
-    Number with an unused Flip Flop:         4,284 out of   8,738   49%
-    Number with an unused LUT:               1,223 out of   8,738   13%
-    Number of fully used LUT-FF pairs:       3,231 out of   8,738   36%
+  Number of LUT Flip Flop pairs used:        9,102
+    Number with an unused Flip Flop:         4,467 out of   9,102   49%
+    Number with an unused LUT:               1,293 out of   9,102   14%
+    Number of fully used LUT-FF pairs:       3,342 out of   9,102   36%
     Number of unique control sets:             185
     Number of slice register sites lost
-      to control set restrictions:             639 out of  54,576    1%
+      to control set restrictions:             638 out of  54,576    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -66,7 +66,7 @@ Slice Logic Distribution:
 IO Utilization:
   Number of bonded IOBs:                       203 out of     316   64%
     Number of LOCed IOBs:                      203 out of     203  100%
-    IOB Flip Flops:                             94
+    IOB Flip Flops:                             95
     IOB Master Pads:                            12
     IOB Slave Pads:                             12
 
@@ -85,8 +85,8 @@ Specific Feature Utilization:
   Number of DCM/DCM_CLKGENs:                     2 out of       8   25%
     Number used as DCMs:                         1
     Number used as DCM_CLKGENs:                  1
-  Number of ILOGIC2/ISERDES2s:                  20 out of     376    5%
-    Number used as ILOGIC2s:                    20
+  Number of ILOGIC2/ISERDES2s:                  21 out of     376    5%
+    Number used as ILOGIC2s:                    21
     Number used as ISERDES2s:                    0
   Number of IODELAY2/IODRP2/IODRP2_MCBs:        37 out of     376    9%
     Number used as IODELAY2s:                   13
@@ -108,11 +108,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.33
+Average Fanout of Non-Clock Nets:                4.38
 
-Peak Memory Usage:  638 MB
-Total REAL time to MAP completion:  2 mins 22 secs 
-Total CPU time to MAP completion (all processors):   2 mins 26 secs 
+Peak Memory Usage:  634 MB
+Total REAL time to MAP completion:  2 mins 28 secs 
+Total CPU time to MAP completion (all processors):   2 mins 32 secs 
 
 Table of Contents
 -----------------
@@ -148,10 +148,7 @@ WARNING:Pack:1653 - At least one timing constraint is impossible to meet because
 
    For more information about the Timing Analyzer, consult the Xilinx Timing Analyzer Reference manual; for more information on TRCE,
    consult the Xilinx Command Line Tools User Guide "TRACE" chapter.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<5> is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<7> is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep46trigin<0> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<0> is sourced by
@@ -160,7 +157,10 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<0> is sourced by
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<1> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep46trigin<0> is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<5> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<7> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<11> is sourced
@@ -250,7 +250,7 @@ INFO:Map:284 - Map is running with the multi-threading option on. Map currently
    supports the use of up to 2 processors. Based on the the user options and
    machine load, Map will use 2 processors during this run.
 INFO:LIT:243 - Logical network okHE<111> has no load.
-INFO:LIT:395 - The above info message is repeated 1044 more times for the
+INFO:LIT:395 - The above info message is repeated 1036 more times for the
    following (max. 5 shown):
    okHE<110>,
    okHE<109>,
@@ -271,9 +271,9 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-2920 block(s) removed
+2918 block(s) removed
 2263 block(s) optimized away
-2950 signal(s) removed
+2948 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -294,6 +294,10 @@ loadless and has been removed.
  Loadless block
 "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1_2"
 (ROM) removed.
+  The signal "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked" is
+loadless and has been removed.
+   Loadless block "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked"
+(FF) removed.
 The signal
 "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst_2" is
 loadless and has been removed.
@@ -2602,15 +2606,12 @@ The signal "wi00/ep_dataout<20>" is sourceless and has been removed.
 The signal "wi00/ep_dataout<19>" is sourceless and has been removed.
 The signal "wi00/ep_dataout<18>" is sourceless and has been removed.
 The signal "wi00/ep_dataout<17>" is sourceless and has been removed.
-The signal "wi00/ep_dataout<16>" is sourceless and has been removed.
 The signal "wi00/ep_dataout<5>" is sourceless and has been removed.
 The signal "wi00/ep_dataout<4>" is sourceless and has been removed.
 The signal "wi00/ep_datahold<4>" is sourceless and has been removed.
  Sourceless block "wi00/ep_dataout_4" (SFF) removed.
 The signal "wi00/ep_datahold<5>" is sourceless and has been removed.
  Sourceless block "wi00/ep_dataout_5" (SFF) removed.
-The signal "wi00/ep_datahold<16>" is sourceless and has been removed.
- Sourceless block "wi00/ep_dataout_16" (SFF) removed.
 The signal "wi00/ep_datahold<17>" is sourceless and has been removed.
  Sourceless block "wi00/ep_dataout_17" (SFF) removed.
 The signal "wi00/ep_datahold<18>" is sourceless and has been removed.
@@ -6354,6 +6355,7 @@ removed.
  Sourceless block "wo27/ti_addr[7]_ep_addr[7]_equal_5_o83" (ROM) removed.
 The signal "wo27/ti_addr[7]_ep_addr[7]_equal_5_o81" is sourceless and has been
 removed.
+The signal "poa0/ep_blockstrobe" is sourceless and has been removed.
 The signal "host/core0/core0/_n0333<1>" is sourceless and has been removed.
  Sourceless block "host/core0/core0/ti_reg_write_data_31" (FF) removed.
   The signal "okHE<111>" is sourceless and has been removed.
@@ -7024,44 +7026,6 @@ sourceless and has been removed.
    Sourceless block "wi00/ep_datahold_17" (SFF) removed.
    Sourceless block "host/core0/core0/state[5]_ti_dataout[31]_select_161_OUT<17>1"
 (ROM) removed.
-The signal "host/core0/core0/state[5]_ti_dataout[31]_select_161_OUT<16>" is
-sourceless and has been removed.
- Sourceless block "host/core0/core0/ti_dataout_16" (FF) removed.
-  The signal "okHE<16>" is sourceless and has been removed.
-   Sourceless block "wi1f/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi1e/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi1d/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi1c/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi1b/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi1a/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi19/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi18/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi17/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi16/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi15/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi14/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi13/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi12/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi11/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi10/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi0f/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi0e/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi0d/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi0c/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi0b/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi0a/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi09/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi08/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi07/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi06/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi05/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi04/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi03/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi02/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi01/ep_datahold_16" (SFF) removed.
-   Sourceless block "wi00/ep_datahold_16" (SFF) removed.
-   Sourceless block "host/core0/core0/state[5]_ti_dataout[31]_select_161_OUT<16>1"
-(ROM) removed.
 The signal "host/core0/core0/_n0334" is sourceless and has been removed.
  Sourceless block "host/core0/core0/ti_reg_addr_31" (FF) removed.
   The signal "okHE<78>" is sourceless and has been removed.
@@ -7130,31 +7094,21 @@ The signal "host/core0/core0/_n0334" is sourceless and has been removed.
 The signal "host/core0/core0/a0/pc0/active_interrupt_value" is sourceless and
 has been removed.
 The signal
-"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
-r_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
-The signal
-"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
-r_sync_fifo.gl0.rd/gras.rsts/ram_empty_i" is sourceless and has been removed.
- Sourceless block
-"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
-r_sync_fifo.gl0.rd/grhf.rhf/Mmux_ram_valid_int_GND_225_o_MUX_13_o11" (ROM)
-removed.
-  The signal
-"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
-r_sync_fifo.gl0.rd/grhf.rhf/ram_valid_int_GND_225_o_MUX_13_o" is sourceless and
-has been removed.
-   Sourceless block
-"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
-r_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1" (FF) removed.
-    The signal
-"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
-r_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1" is sourceless and has been removed.
+"SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i<1>" is sourceless and has been removed.
 The signal
 "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
 _sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i<0>" is sourceless and has been removed.
 The signal
 "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
 _sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gl0.rd/gras.grdc1.rdc/GND_208_o_GND_208_o_sub_2_OUT<1>" is sourceless
+and has been removed.
+ Sourceless block
+"SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_1" (FF) removed.
 The signal
 "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
 _sync_fifo.gl0.rd/gras.grdc1.rdc/GND_208_o_GND_208_o_sub_2_OUT<0>" is sourceless
@@ -7178,6 +7132,26 @@ removed.
  Sourceless block
 "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
 _sync_fifo.gcx.clkx/wr_pntr_gc_0" (FF) removed.
+The signal
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.rd/gras.rsts/ram_empty_i" is sourceless and has been removed.
+ Sourceless block
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.rd/grhf.rhf/Mmux_ram_valid_int_GND_225_o_MUX_13_o11" (ROM)
+removed.
+  The signal
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.rd/grhf.rhf/ram_valid_int_GND_225_o_MUX_13_o" is sourceless and
+has been removed.
+   Sourceless block
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1" (FF) removed.
+    The signal
+"SDRAM_FIFO_inst/okPipeOut_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_o
+r_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1" is sourceless and has been removed.
 The signal
 "DAC_output_1/multiplier_1/U0/i_mult/gEMBEDDED_MULT.gEMB_MULTS_only.gDSP.iDSP/in
 ferred_dsp.m_reg<35>" is sourceless and has been removed.
@@ -7344,16 +7318,16 @@ The signal "host/okHC<22>" is unused and has been removed.
  Unused block "host/iob_regs[17].regin0" (SFF) removed.
   The signal "host/iobf0_o<17>" is unused and has been removed.
    Unused block "host/iob_regs[17].iobf0/IBUF" (BUF) removed.
-The signal "host/okHC<21>" is unused and has been removed.
- Unused block "host/iob_regs[16].regin0" (SFF) removed.
-  The signal "host/iobf0_o<16>" is unused and has been removed.
-   Unused block "host/iob_regs[16].iobf0/IBUF" (BUF) removed.
 Unused block
 "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
 _sync_fifo.gcx.clkx/Mxor_WR_PNTR[0]_WR_PNTR[1]_XOR_10_o_xo<0>1" (ROM) removed.
 Unused block
 "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
 _sync_fifo.gl0.rd/gras.grdc1.rdc/Msub_GND_208_o_GND_208_o_sub_2_OUT<9:0>_xor<0>"
+(XOR) removed.
+Unused block
+"SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gl0.rd/gras.grdc1.rdc/Msub_GND_208_o_GND_208_o_sub_2_OUT<9:0>_xor<1>"
 (XOR) removed.
 Unused block
 "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
@@ -7400,126 +7374,158 @@ Unused block "host/core0/core0/state__n0333<7>1" (ROM) removed.
 Unused block "host/core0/core0/state__n0333<8>1" (ROM) removed.
 Unused block "host/core0/core0/state__n0333<9>1" (ROM) removed.
 Unused block "host/core0/core0/state__n03341" (ROM) removed.
+Unused block "poa0/ep_blockstrobe1" (ROM) removed.
 Unused block "wi00/ep_datahold_4" (SFF) removed.
 Unused block "wi00/ep_datahold_5" (SFF) removed.
+Unused block "wi01/ep_datahold_16" (SFF) removed.
+Unused block "wi02/ep_datahold_16" (SFF) removed.
+Unused block "wi03/ep_datahold_16" (SFF) removed.
+Unused block "wi04/ep_datahold_16" (SFF) removed.
 Unused block "wi05/ep_datahold_10" (SFF) removed.
 Unused block "wi05/ep_datahold_11" (SFF) removed.
 Unused block "wi05/ep_datahold_12" (SFF) removed.
 Unused block "wi05/ep_datahold_13" (SFF) removed.
 Unused block "wi05/ep_datahold_14" (SFF) removed.
 Unused block "wi05/ep_datahold_15" (SFF) removed.
+Unused block "wi05/ep_datahold_16" (SFF) removed.
 Unused block "wi06/ep_datahold_10" (SFF) removed.
 Unused block "wi06/ep_datahold_11" (SFF) removed.
 Unused block "wi06/ep_datahold_12" (SFF) removed.
 Unused block "wi06/ep_datahold_13" (SFF) removed.
 Unused block "wi06/ep_datahold_14" (SFF) removed.
 Unused block "wi06/ep_datahold_15" (SFF) removed.
+Unused block "wi06/ep_datahold_16" (SFF) removed.
 Unused block "wi06/ep_datahold_4" (SFF) removed.
 Unused block "wi06/ep_datahold_5" (SFF) removed.
 Unused block "wi06/ep_datahold_6" (SFF) removed.
 Unused block "wi06/ep_datahold_7" (SFF) removed.
 Unused block "wi06/ep_datahold_8" (SFF) removed.
 Unused block "wi06/ep_datahold_9" (SFF) removed.
+Unused block "wi07/ep_datahold_16" (SFF) removed.
+Unused block "wi08/ep_datahold_16" (SFF) removed.
+Unused block "wi09/ep_datahold_16" (SFF) removed.
+Unused block "wi0a/ep_datahold_16" (SFF) removed.
 Unused block "wi0b/ep_datahold_10" (SFF) removed.
 Unused block "wi0b/ep_datahold_11" (SFF) removed.
 Unused block "wi0b/ep_datahold_12" (SFF) removed.
 Unused block "wi0b/ep_datahold_13" (SFF) removed.
 Unused block "wi0b/ep_datahold_14" (SFF) removed.
 Unused block "wi0b/ep_datahold_15" (SFF) removed.
+Unused block "wi0b/ep_datahold_16" (SFF) removed.
 Unused block "wi0c/ep_datahold_10" (SFF) removed.
 Unused block "wi0c/ep_datahold_11" (SFF) removed.
 Unused block "wi0c/ep_datahold_12" (SFF) removed.
 Unused block "wi0c/ep_datahold_13" (SFF) removed.
 Unused block "wi0c/ep_datahold_14" (SFF) removed.
 Unused block "wi0c/ep_datahold_15" (SFF) removed.
+Unused block "wi0c/ep_datahold_16" (SFF) removed.
 Unused block "wi0d/ep_datahold_10" (SFF) removed.
 Unused block "wi0d/ep_datahold_11" (SFF) removed.
 Unused block "wi0d/ep_datahold_12" (SFF) removed.
 Unused block "wi0d/ep_datahold_13" (SFF) removed.
 Unused block "wi0d/ep_datahold_14" (SFF) removed.
 Unused block "wi0d/ep_datahold_15" (SFF) removed.
+Unused block "wi0d/ep_datahold_16" (SFF) removed.
 Unused block "wi0e/ep_datahold_10" (SFF) removed.
 Unused block "wi0e/ep_datahold_11" (SFF) removed.
 Unused block "wi0e/ep_datahold_12" (SFF) removed.
 Unused block "wi0e/ep_datahold_13" (SFF) removed.
 Unused block "wi0e/ep_datahold_14" (SFF) removed.
 Unused block "wi0e/ep_datahold_15" (SFF) removed.
+Unused block "wi0e/ep_datahold_16" (SFF) removed.
 Unused block "wi0f/ep_datahold_10" (SFF) removed.
 Unused block "wi0f/ep_datahold_11" (SFF) removed.
 Unused block "wi0f/ep_datahold_12" (SFF) removed.
 Unused block "wi0f/ep_datahold_13" (SFF) removed.
 Unused block "wi0f/ep_datahold_14" (SFF) removed.
 Unused block "wi0f/ep_datahold_15" (SFF) removed.
+Unused block "wi0f/ep_datahold_16" (SFF) removed.
 Unused block "wi10/ep_datahold_10" (SFF) removed.
 Unused block "wi10/ep_datahold_11" (SFF) removed.
 Unused block "wi10/ep_datahold_12" (SFF) removed.
 Unused block "wi10/ep_datahold_13" (SFF) removed.
 Unused block "wi10/ep_datahold_14" (SFF) removed.
 Unused block "wi10/ep_datahold_15" (SFF) removed.
+Unused block "wi10/ep_datahold_16" (SFF) removed.
 Unused block "wi11/ep_datahold_10" (SFF) removed.
 Unused block "wi11/ep_datahold_11" (SFF) removed.
 Unused block "wi11/ep_datahold_12" (SFF) removed.
 Unused block "wi11/ep_datahold_13" (SFF) removed.
 Unused block "wi11/ep_datahold_14" (SFF) removed.
 Unused block "wi11/ep_datahold_15" (SFF) removed.
+Unused block "wi11/ep_datahold_16" (SFF) removed.
 Unused block "wi11/ep_datahold_8" (SFF) removed.
 Unused block "wi11/ep_datahold_9" (SFF) removed.
+Unused block "wi12/ep_datahold_16" (SFF) removed.
+Unused block "wi13/ep_datahold_16" (SFF) removed.
 Unused block "wi14/ep_datahold_10" (SFF) removed.
 Unused block "wi14/ep_datahold_11" (SFF) removed.
 Unused block "wi14/ep_datahold_12" (SFF) removed.
 Unused block "wi14/ep_datahold_13" (SFF) removed.
 Unused block "wi14/ep_datahold_14" (SFF) removed.
 Unused block "wi14/ep_datahold_15" (SFF) removed.
+Unused block "wi14/ep_datahold_16" (SFF) removed.
 Unused block "wi14/ep_datahold_8" (SFF) removed.
 Unused block "wi14/ep_datahold_9" (SFF) removed.
+Unused block "wi15/ep_datahold_16" (SFF) removed.
 Unused block "wi16/ep_datahold_10" (SFF) removed.
 Unused block "wi16/ep_datahold_11" (SFF) removed.
 Unused block "wi16/ep_datahold_12" (SFF) removed.
 Unused block "wi16/ep_datahold_13" (SFF) removed.
 Unused block "wi16/ep_datahold_14" (SFF) removed.
 Unused block "wi16/ep_datahold_15" (SFF) removed.
+Unused block "wi16/ep_datahold_16" (SFF) removed.
 Unused block "wi17/ep_datahold_10" (SFF) removed.
 Unused block "wi17/ep_datahold_11" (SFF) removed.
 Unused block "wi17/ep_datahold_12" (SFF) removed.
 Unused block "wi17/ep_datahold_13" (SFF) removed.
 Unused block "wi17/ep_datahold_14" (SFF) removed.
 Unused block "wi17/ep_datahold_15" (SFF) removed.
+Unused block "wi17/ep_datahold_16" (SFF) removed.
 Unused block "wi18/ep_datahold_10" (SFF) removed.
 Unused block "wi18/ep_datahold_11" (SFF) removed.
 Unused block "wi18/ep_datahold_12" (SFF) removed.
 Unused block "wi18/ep_datahold_13" (SFF) removed.
 Unused block "wi18/ep_datahold_14" (SFF) removed.
 Unused block "wi18/ep_datahold_15" (SFF) removed.
+Unused block "wi18/ep_datahold_16" (SFF) removed.
 Unused block "wi19/ep_datahold_10" (SFF) removed.
 Unused block "wi19/ep_datahold_11" (SFF) removed.
 Unused block "wi19/ep_datahold_12" (SFF) removed.
 Unused block "wi19/ep_datahold_13" (SFF) removed.
 Unused block "wi19/ep_datahold_14" (SFF) removed.
 Unused block "wi19/ep_datahold_15" (SFF) removed.
+Unused block "wi19/ep_datahold_16" (SFF) removed.
 Unused block "wi1a/ep_datahold_10" (SFF) removed.
 Unused block "wi1a/ep_datahold_11" (SFF) removed.
 Unused block "wi1a/ep_datahold_12" (SFF) removed.
 Unused block "wi1a/ep_datahold_13" (SFF) removed.
 Unused block "wi1a/ep_datahold_14" (SFF) removed.
 Unused block "wi1a/ep_datahold_15" (SFF) removed.
+Unused block "wi1a/ep_datahold_16" (SFF) removed.
 Unused block "wi1b/ep_datahold_10" (SFF) removed.
 Unused block "wi1b/ep_datahold_11" (SFF) removed.
 Unused block "wi1b/ep_datahold_12" (SFF) removed.
 Unused block "wi1b/ep_datahold_13" (SFF) removed.
 Unused block "wi1b/ep_datahold_14" (SFF) removed.
 Unused block "wi1b/ep_datahold_15" (SFF) removed.
+Unused block "wi1b/ep_datahold_16" (SFF) removed.
 Unused block "wi1c/ep_datahold_10" (SFF) removed.
 Unused block "wi1c/ep_datahold_11" (SFF) removed.
 Unused block "wi1c/ep_datahold_12" (SFF) removed.
 Unused block "wi1c/ep_datahold_13" (SFF) removed.
 Unused block "wi1c/ep_datahold_14" (SFF) removed.
 Unused block "wi1c/ep_datahold_15" (SFF) removed.
+Unused block "wi1c/ep_datahold_16" (SFF) removed.
 Unused block "wi1d/ep_datahold_10" (SFF) removed.
 Unused block "wi1d/ep_datahold_11" (SFF) removed.
 Unused block "wi1d/ep_datahold_12" (SFF) removed.
 Unused block "wi1d/ep_datahold_13" (SFF) removed.
 Unused block "wi1d/ep_datahold_14" (SFF) removed.
 Unused block "wi1d/ep_datahold_15" (SFF) removed.
+Unused block "wi1d/ep_datahold_16" (SFF) removed.
+Unused block "wi1e/ep_datahold_16" (SFF) removed.
+Unused block "wi1f/ep_datahold_16" (SFF) removed.
 Unused block "wo27/ti_addr[7]_ep_addr[7]_equal_5_o81" (ROM) removed.
 Unused block "wo27/ti_addr[7]_ep_addr[7]_equal_5_o82" (ROM) removed.
 Unused block "wo28/ti_addr[7]_ep_addr[7]_equal_5_o81" (ROM) removed.
@@ -12069,7 +12075,7 @@ Asterisk (*) preceding a constraint indicates it was not met.
 * TIMEGRP "okHostIN_grp" OFFSET = IN 2 ns V | SETUP       |    -1.143ns|     3.143ns|       4|        4572
   ALID 2 ns BEFORE COMP "okUH<0>" "RISING"  | HOLD        |     0.849ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-* TIMEGRP "okHostINOUT_grp" OFFSET = IN 2 n | SETUP       |    -1.143ns|     3.143ns|      16|       18288
+* TIMEGRP "okHostINOUT_grp" OFFSET = IN 2 n | SETUP       |    -1.143ns|     3.143ns|      17|       19431
   s VALID 4 ns BEFORE COMP "okUH<0>" "RISIN | HOLD        |     2.849ns|            |       0|           0
   G"                                        |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
@@ -12151,8 +12157,8 @@ Derived Constraints for TS_okHostClk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_okHostClk                   |      9.920ns|      5.340ns|      5.990ns|            0|           56|            0|        49362|
-| TS_host_dcm0_clk0             |      9.920ns|      5.990ns|          N/A|           56|            0|        49362|            0|
+|TS_okHostClk                   |      9.920ns|      5.340ns|      5.990ns|            0|           56|            0|        47456|
+| TS_host_dcm0_clk0             |      9.920ns|      5.990ns|          N/A|           56|            0|        47456|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for TS_okSysClk
@@ -12181,17 +12187,17 @@ Derived Constraints for TS_SYS_CLK3
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_SYS_CLK3                    |     10.000ns|     87.169ns|   1105.718ns|           39|           20|        25977|     10823155|
-| TS_SDRAM_FIFO_inst_memc3_infra|     12.800ns|      3.204ns|          N/A|            0|            0|        13575|            0|
+|TS_SYS_CLK3                    |     10.000ns|     87.169ns|   1105.718ns|           39|           20|        25977|     11160837|
+| TS_SDRAM_FIFO_inst_memc3_infra|     12.800ns|      3.204ns|          N/A|            0|            0|        13686|            0|
 | structure_inst_mcb_drp_clk_buf|             |             |             |             |             |             |             |
 | g_in_0                        |             |             |             |             |             |             |             |
 | TS_SDRAM_FIFO_inst_memc3_infra|      1.600ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | structure_inst_clk_2x_180_0   |             |             |             |             |             |             |             |
 | TS_SDRAM_FIFO_inst_memc3_infra|      1.600ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | structure_inst_clk_2x_0_0     |             |             |             |             |             |             |             |
-| TS_SDRAM_FIFO_inst_memc3_infra|      6.400ns|     38.720ns|          N/A|           10|            0|         3913|            0|
+| TS_SDRAM_FIFO_inst_memc3_infra|      6.400ns|     38.720ns|          N/A|           10|            0|         3393|            0|
 | structure_inst_clk0_bufg_in_0 |             |             |             |             |             |             |             |
-| TS_variable_freq_clk_generator|     11.905ns|   1316.331ns|          N/A|           10|            0|     10805667|            0|
+| TS_variable_freq_clk_generator|     11.905ns|   1316.331ns|          N/A|           10|            0|     11143758|            0|
 | _inst_clkout_i_0              |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -12424,7 +12430,8 @@ Section 6 - IOB Properties
 | okUHU<15>                          | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
 |                                    |                  |           |                      |       |          |      | OFF          |          |          |
 |                                    |                  |           |                      |       |          |      | TFF          |          |          |
-| okUHU<16>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
+| okUHU<16>                          | IOB              | BIDIR     | LVCMOS18             |       | 12       | FAST | IFF          |          |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
 |                                    |                  |           |                      |       |          |      | TFF          |          |          |
 | okUHU<17>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | FAST | OFF          |          |          |
 |                                    |                  |           |                      |       |          |      | TFF          |          |          |

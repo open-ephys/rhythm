@@ -37,7 +37,7 @@ module ddr2_state_machine
 	);
 
 localparam FIFO_SIZE      = 1024;
-localparam BURST_LEN      = 2;  // Number of 32bit user words per DRAM command (Must be Multiple of 2)
+localparam BURST_LEN      = 4;  // Number of 32bit user words per DRAM command (Must be Multiple of 2)
 
 wire        rd_fifo_afull;
 reg  [5:0]  burst_cnt;

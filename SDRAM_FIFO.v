@@ -87,6 +87,7 @@ module SDRAM_FIFO  #(
 	input wire [15:0] 							  FIFO_data_in,
 	input wire										  FIFO_read_from,
 	output wire [31:0]							  FIFO_data_out,
+	output reg										  FIFO_out_rdy,
 
 
 	// FIFO capacity monitor
@@ -114,6 +115,8 @@ module SDRAM_FIFO  #(
 	output wire                              ddr2_ck_n,
 	output wire                              ddr2_cs_n
    );
+	
+	localparam BLOCK_SIZE				  =	128; //512bytes
 
 	localparam C3_INCLK_PERIOD         = 10000; // 10000ps -> 10ns -> 100Mhz
 	localparam C3_CLKOUT0_DIVIDE       = 1;     // 625 MHz system clock      
@@ -518,6 +521,12 @@ module SDRAM_FIFO  #(
 		buffer_byte_addr_wr_ti <= buffer_byte_addr_wr;
 		pipe_in_word_count_ti <= pipe_in_word_count;
 		pipe_out_word_count_ti <= pipe_out_word_count;
+		
+		if (pipe_out_word_count >= BLOCK_SIZE ) begin
+			FIFO_out_rdy <= 1'b1;
+		end else begin
+			FIFO_out_rdy <= 1'b0;
+		end
 	end	
 
 	// Note: only 27 bits of the 30-bit address are used by the 128 MiByte SDRAM	
