@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.58f on Tue Jun 23 00:14:26 2015
+// Written by: Map P.58f on Tue Jun 23 00:50:31 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -2278,6 +2278,7 @@ TIMEGRP host_dcm0_clk0 = BEL "SDRAM_FIFO_inst/rst_cnt_3" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_wr_ti_6" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_wr_ti_5" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_wr_ti_4" BEL
+        "SDRAM_FIFO_inst/buffer_byte_addr_wr_ti_3" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_26" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_25" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_24" BEL
@@ -2301,6 +2302,7 @@ TIMEGRP host_dcm0_clk0 = BEL "SDRAM_FIFO_inst/rst_cnt_3" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_6" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_5" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_4" BEL
+        "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_3" BEL
         "SDRAM_FIFO_inst/pipe_out_word_count_ti_9" BEL
         "SDRAM_FIFO_inst/pipe_out_word_count_ti_8" BEL
         "SDRAM_FIFO_inst/pipe_out_word_count_ti_7" BEL
@@ -5132,6 +5134,7 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in = PIN
         PIN
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0_pins<168>"
         BEL "SDRAM_FIFO_inst/memc3_infrastructure_inst/U_BUFG_CLK0" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_24" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_23" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_22" BEL
@@ -5183,6 +5186,7 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_6" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_4" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_3" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_29" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_28" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_27" BEL
@@ -5209,6 +5213,7 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_6" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_4" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_3" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1" BEL
@@ -5237,6 +5242,7 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_6" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_4" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_3" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_en" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_4" BEL
@@ -5316,10 +5322,12 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/reset_d_1" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked_1" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked_2" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1_1" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2_1" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3_1" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked_3" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1_1" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3_2" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2_2" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1_2" BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i"
         BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i"
@@ -5341,6 +5349,8 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in = PIN
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_3"
         BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_2"
+        BEL
+        "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_1"
         BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg"
         BEL
@@ -5672,6 +5682,7 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PIN
         PIN
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0_pins<168>"
         BEL "SDRAM_FIFO_inst/memc3_infrastructure_inst/U_BUFG_CLK0" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_24" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_23" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_22" BEL
@@ -5723,6 +5734,7 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_6" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_4" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_3" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_29" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_28" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_27" BEL
@@ -5749,6 +5761,7 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_6" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_4" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_3" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1" BEL
@@ -5777,6 +5790,7 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_6" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_4" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_3" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_en" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_4" BEL
@@ -5856,10 +5870,12 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/reset_d_1" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked_1" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked_2" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1_1" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2_1" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3_1" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked_3" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1_1" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3_2" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2_2" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1_2" BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i"
         BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i"
@@ -5881,6 +5897,8 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PIN
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_3"
         BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_2"
+        BEL
+        "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_1"
         BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg"
         BEL

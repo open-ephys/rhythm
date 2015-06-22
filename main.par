@@ -1,7 +1,7 @@
 Release 14.5 par P.58f (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-MAGI::  Tue Jun 23 00:14:32 2015
+MAGI::  Tue Jun 23 00:50:36 2015
 
 par -w -intstyle ise -ol high -mt 4 main_map.ncd main.ncd main.pcf 
 
@@ -21,16 +21,16 @@ Device speed data version:  "PRODUCTION 1.23 2013-03-26".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 4,983 out of  54,576    9%
-    Number used as Flip Flops:               4,983
+  Number of Slice Registers:                 4,992 out of  54,576    9%
+    Number used as Flip Flops:               4,992
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      9,443 out of  27,288   34%
-    Number used as logic:                    9,291 out of  27,288   34%
-      Number using O6 output only:           8,146
-      Number using O5 output only:             232
-      Number using O5 and O6:                  913
+  Number of Slice LUTs:                      9,477 out of  27,288   34%
+    Number used as logic:                    9,298 out of  27,288   34%
+      Number using O6 output only:           8,175
+      Number using O5 output only:             234
+      Number using O5 and O6:                  889
       Number used as ROM:                        0
     Number used as Memory:                      48 out of   6,408    1%
       Number used as Dual Port RAM:             20
@@ -45,18 +45,18 @@ Slice Logic Utilization:
         Number using O6 output only:             4
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:    104
-      Number with same-slice register load:     91
-      Number with same-slice carry load:        13
+    Number used exclusively as route-thrus:    131
+      Number with same-slice register load:    106
+      Number with same-slice carry load:        25
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 3,314 out of   6,822   48%
+  Number of occupied Slices:                 3,290 out of   6,822   48%
   Number of MUXCYs used:                     1,512 out of  13,644   11%
-  Number of LUT Flip Flop pairs used:       10,742
-    Number with an unused Flip Flop:         5,994 out of  10,742   55%
-    Number with an unused LUT:               1,299 out of  10,742   12%
-    Number of fully used LUT-FF pairs:       3,449 out of  10,742   32%
+  Number of LUT Flip Flop pairs used:       10,772
+    Number with an unused Flip Flop:         6,031 out of  10,772   55%
+    Number with an unused LUT:               1,295 out of  10,772   12%
+    Number of fully used LUT-FF pairs:       3,446 out of  10,772   31%
     Number of slice register sites lost
       to control set restrictions:               0 out of  54,576    0%
 
@@ -121,58 +121,58 @@ WARNING:Timing:3159 - The DCM, variable_freq_clk_generator_inst/DCM_CLKGEN_1, ha
    clock domains must be constrained using FROM/TO constraints.
 INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
    Command Line Tools User Guide for information on generating a TSI report.
-WARNING:Par:288 - The signal host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAMD_O has no load.  PAR will not attempt to route
-   this signal.
 WARNING:Par:288 - The signal host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAMD_O has no load.  PAR will not attempt to route
+   this signal.
+WARNING:Par:288 - The signal host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAMD_O has no load.  PAR will not attempt to route
    this signal.
 Starting Multi-threaded Router
 
 
-Phase  1  : 64495 unrouted;      REAL time: 12 secs 
+Phase  1  : 64438 unrouted;      REAL time: 10 secs 
 
-Phase  2  : 56001 unrouted;      REAL time: 14 secs 
+Phase  2  : 55991 unrouted;      REAL time: 13 secs 
 
-Phase  3  : 34080 unrouted;      REAL time: 25 secs 
+Phase  3  : 33177 unrouted;      REAL time: 21 secs 
 
-Phase  4  : 34322 unrouted; (Setup:923576, Hold:27246, Component Switching Limit:0)     REAL time: 30 secs 
+Phase  4  : 33336 unrouted; (Setup:721238, Hold:23151, Component Switching Limit:0)     REAL time: 26 secs 
 
 Updating file: main.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:1106968, Hold:31366, Component Switching Limit:0)     REAL time: 56 secs 
+Phase  5  : 0 unrouted; (Setup:913100, Hold:29558, Component Switching Limit:0)     REAL time: 47 secs 
 
-Phase  6  : 0 unrouted; (Setup:1099889, Hold:31366, Component Switching Limit:0)     REAL time: 1 mins 2 secs 
+Phase  6  : 0 unrouted; (Setup:913956, Hold:29558, Component Switching Limit:0)     REAL time: 54 secs 
 
-Phase  7  : 0 unrouted; (Setup:1099889, Hold:31366, Component Switching Limit:0)     REAL time: 1 mins 3 secs 
+Phase  7  : 0 unrouted; (Setup:913956, Hold:29558, Component Switching Limit:0)     REAL time: 55 secs 
 
-Phase  8  : 0 unrouted; (Setup:1099889, Hold:31366, Component Switching Limit:0)     REAL time: 1 mins 3 secs 
+Phase  8  : 0 unrouted; (Setup:913956, Hold:29558, Component Switching Limit:0)     REAL time: 55 secs 
 WARNING:Route:522 - Unusually high hold time violation detected among 10 connections.The router will continue and try to fix it 
-	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<9>:BQ ->
-SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<9>:BX -3384
-	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>:BQ ->
-SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<3>:DX -3347
-	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>:DQ ->
-SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<7>:CX -3342
 	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>:AQ ->
-SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<3>:BX -3326
-	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>:CMUX ->
-SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<7>:AX -3270
+SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<3>:BX -3329
 	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>:AMUX ->
-SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<3>:AX -3252
-	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<9>:AQ ->
-SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<9>:AX -3235
-	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>:CQ ->
-SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<7>:BX -3152
-	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<9>:AMUX ->
-SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<7>:DX -2668
+SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<3>:AX -3081
 	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>:BMUX ->
-SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<3>:CX -2390
+SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<3>:CX -3057
+	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>:BQ ->
+SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<3>:DX -3047
+	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>:DQ ->
+SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<7>:C3 -3013
+	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>:CMUX ->
+SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<7>:A3 -3003
+	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>:CQ ->
+SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<7>:B3 -2974
+	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<9>:AQ ->
+SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<9>:C3 -2808
+	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<9>:BQ ->
+SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<9>:D3 -2774
+	SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<9>:AMUX ->
+SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_asreg<7>:D3 -2472
 
 
-Phase  9  : 0 unrouted; (Setup:1099889, Hold:6612, Component Switching Limit:0)     REAL time: 2 mins 50 secs 
+Phase  9  : 0 unrouted; (Setup:913956, Hold:8795, Component Switching Limit:0)     REAL time: 2 mins 51 secs 
 
-Phase 10  : 0 unrouted; (Setup:992558, Hold:6612, Component Switching Limit:0)     REAL time: 2 mins 51 secs 
-Total REAL time to Router completion: 2 mins 52 secs 
-Total CPU time to Router completion (all processors): 3 mins 33 secs 
+Phase 10  : 0 unrouted; (Setup:859965, Hold:8795, Component Switching Limit:0)     REAL time: 2 mins 53 secs 
+Total REAL time to Router completion: 2 mins 53 secs 
+Total CPU time to Router completion (all processors): 3 mins 27 secs 
 
 Generating "PAR" statistics.
 
@@ -183,84 +183,84 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|            okHE<40> |  BUFGMUX_X2Y3| No   |  692 |  0.707     |  2.415      |
-+---------------------+--------------+------+------+------------+-------------+
-|             dataclk |  BUFGMUX_X2Y4| No   |  762 |  0.667     |  2.375      |
+|             dataclk |  BUFGMUX_X2Y4| No   |  770 |  0.666     |  2.375      |
 +---------------------+--------------+------+------+------------+-------------+
 |SDRAM_FIFO_inst/c3_m |              |      |      |            |             |
-|          cb_drp_clk | BUFGMUX_X3Y13| No   |  104 |  0.079     |  1.809      |
+|          cb_drp_clk | BUFGMUX_X3Y13| No   |  103 |  0.090     |  1.809      |
++---------------------+--------------+------+------+------------+-------------+
+|            okHE<40> |  BUFGMUX_X2Y3| No   |  689 |  0.705     |  2.415      |
 +---------------------+--------------+------+------+------------+-------------+
 |SDRAM_FIFO_inst/c3_c |              |      |      |            |             |
-|                 lk0 |  BUFGMUX_X2Y2| No   |  118 |  0.054     |  1.771      |
+|                 lk0 |  BUFGMUX_X2Y2| No   |  115 |  0.038     |  1.772      |
 +---------------------+--------------+------+------+------------+-------------+
 |SDRAM_FIFO_inst/memc |              |      |      |            |             |
 |3_infrastructure_ins |              |      |      |            |             |
 |t/sys_clk_ibufg_BUFG |              |      |      |            |             |
-|                     | BUFGMUX_X3Y15| No   |   26 |  0.038     |  1.746      |
+|                     | BUFGMUX_X3Y15| No   |   26 |  0.057     |  1.770      |
 +---------------------+--------------+------+------+------------+-------------+
 |DAC_output_8/state_c |              |      |      |            |             |
-|             lk_BUFG |  BUFGMUX_X2Y1| No   |   64 |  0.058     |  1.769      |
+|             lk_BUFG |  BUFGMUX_X2Y1| No   |   64 |  0.037     |  1.748      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep44trigin<0> |         Local|      |    1 |  0.000     |  0.580      |
+|       ep44trigin<0> |         Local|      |    1 |  0.000     |  0.354      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep44trigin<1> |         Local|      |    4 |  0.476     |  1.840      |
+|       ep44trigin<1> |         Local|      |    2 |  0.184     |  1.115      |
 +---------------------+--------------+------+------+------------+-------------+
 |host/core0/core0/a0/ |              |      |      |            |             |
-|           d0/div<4> |         Local|      |    3 |  0.000     |  2.108      |
+|           d0/div<4> |         Local|      |    3 |  0.000     |  2.226      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep43trigin<2> |         Local|      |    4 |  0.450     |  1.675      |
+|       ep43trigin<2> |         Local|      |    3 |  0.821     |  2.518      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep43trigin<3> |         Local|      |    4 |  0.303     |  1.331      |
+|       ep43trigin<3> |         Local|      |    4 |  0.781     |  2.825      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep43trigin<9> |         Local|      |    1 |  0.000     |  0.537      |
+|       ep43trigin<9> |         Local|      |    1 |  0.000     |  0.775      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep5atrigin<0> |         Local|      |    1 |  0.000     |  3.427      |
+|       ep5atrigin<0> |         Local|      |    1 |  0.000     |  1.554      |
 +---------------------+--------------+------+------+------------+-------------+
-|      ep43trigin<15> |         Local|      |    1 |  0.000     |  1.112      |
+|      ep43trigin<15> |         Local|      |    1 |  0.000     |  1.086      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep46trigin<1> |         Local|      |    1 |  0.000     |  0.618      |
+|       ep46trigin<1> |         Local|      |    1 |  0.000     |  0.880      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep46trigin<2> |         Local|      |    1 |  0.000     |  0.803      |
+|       ep46trigin<2> |         Local|      |    1 |  0.000     |  0.580      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep46trigin<3> |         Local|      |    1 |  0.000     |  0.828      |
+|       ep46trigin<3> |         Local|      |    1 |  0.000     |  0.568      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep46trigin<7> |         Local|      |    1 |  0.000     |  1.028      |
+|       ep46trigin<7> |         Local|      |    1 |  0.000     |  0.823      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep46trigin<0> |         Local|      |    1 |  0.000     |  0.601      |
+|       ep46trigin<0> |         Local|      |    1 |  0.000     |  0.832      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep46trigin<4> |         Local|      |    1 |  0.000     |  1.596      |
+|       ep46trigin<4> |         Local|      |    1 |  0.000     |  1.099      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep43trigin<0> |         Local|      |    4 |  0.910     |  2.527      |
+|       ep43trigin<0> |         Local|      |    4 |  0.217     |  2.219      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep43trigin<4> |         Local|      |    4 |  0.412     |  4.295      |
+|       ep43trigin<4> |         Local|      |    4 |  0.560     |  2.813      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep43trigin<1> |         Local|      |    4 |  1.076     |  1.784      |
+|       ep43trigin<1> |         Local|      |    3 |  0.463     |  1.572      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep43trigin<5> |         Local|      |    4 |  0.353     |  4.354      |
+|       ep43trigin<5> |         Local|      |    4 |  0.765     |  4.021      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep43trigin<6> |         Local|      |    4 |  0.025     |  2.924      |
+|       ep43trigin<6> |         Local|      |    4 |  1.102     |  1.896      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep43trigin<7> |         Local|      |    3 |  0.738     |  4.755      |
+|       ep43trigin<7> |         Local|      |    4 |  0.703     |  3.160      |
 +---------------------+--------------+------+------+------------+-------------+
-|      ep43trigin<11> |         Local|      |    1 |  0.000     |  1.536      |
+|      ep43trigin<11> |         Local|      |    1 |  0.000     |  1.190      |
 +---------------------+--------------+------+------+------------+-------------+
-|      ep43trigin<12> |         Local|      |    1 |  0.000     |  2.768      |
+|      ep43trigin<12> |         Local|      |    1 |  0.000     |  2.621      |
 +---------------------+--------------+------+------+------------+-------------+
-|      ep43trigin<13> |         Local|      |    1 |  0.000     |  1.343      |
+|      ep43trigin<13> |         Local|      |    1 |  0.000     |  1.546      |
 +---------------------+--------------+------+------+------------+-------------+
-|      ep43trigin<14> |         Local|      |    1 |  0.000     |  2.044      |
+|      ep43trigin<14> |         Local|      |    1 |  0.000     |  1.036      |
 +---------------------+--------------+------+------+------------+-------------+
-|      ep43trigin<10> |         Local|      |    1 |  0.000     |  1.504      |
+|      ep43trigin<10> |         Local|      |    1 |  0.000     |  1.509      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep46trigin<5> |         Local|      |    1 |  0.000     |  1.063      |
+|       ep46trigin<5> |         Local|      |    1 |  0.000     |  1.346      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep46trigin<6> |         Local|      |    1 |  0.000     |  1.301      |
+|       ep46trigin<6> |         Local|      |    1 |  0.000     |  1.096      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep43trigin<8> |         Local|      |    1 |  0.000     |  0.580      |
+|       ep43trigin<8> |         Local|      |    1 |  0.000     |  0.517      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep45trigin<0> |         Local|      |    1 |  0.000     |  1.250      |
+|       ep45trigin<0> |         Local|      |    1 |  0.000     |  1.023      |
 +---------------------+--------------+------+------+------------+-------------+
-|       ep45trigin<1> |         Local|      |    1 |  0.000     |  1.196      |
+|       ep45trigin<1> |         Local|      |    1 |  0.000     |  1.412      |
 +---------------------+--------------+------+------+------------+-------------+
 |SDRAM_FIFO_inst/c3_s |              |      |      |            |             |
 |            ysclk_2x |         Local|      |   34 |  0.704     |  1.551      |
@@ -302,7 +302,7 @@ the minimum and maximum path delays which includes logic delays.
 * The fanout is the number of component pins not the individual BEL loads,
 for example SLICE loads not FF loads.
 
-Timing Score: 999170 (Setup: 992558, Hold: 6612, Component Switching Limit: 0)
+Timing Score: 868760 (Setup: 859965, Hold: 8795, Component Switching Limit: 0)
 
 WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
 
@@ -332,17 +332,17 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-* TS_SYS_CLK3 = PERIOD TIMEGRP "SYS_CLK3" 1 | SETUP       |   -22.180ns|   474.989ns|      45|      608828
-  0 ns HIGH 50%                             | HOLD        |     0.440ns|            |       0|           0
+* TS_SYS_CLK3 = PERIOD TIMEGRP "SYS_CLK3" 1 | SETUP       |   -21.030ns|   450.880ns|      39|      590493
+  0 ns HIGH 50%                             | HOLD        |     0.417ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-* TS_SDRAM_FIFO_inst_memc3_infrastructure_i | SETUP       |   -11.928ns|  3823.360ns|      13|      117439
-  nst_clk0_bufg_in_0 = PERIOD TIMEGRP       | HOLD        |     0.382ns|            |       0|           0
+* TS_SDRAM_FIFO_inst_memc3_infrastructure_i | SETUP       |   -12.015ns|  3851.200ns|      11|      117663
+  nst_clk0_bufg_in_0 = PERIOD TIMEGRP       | HOLD        |     0.349ns|            |       0|           0
      "SDRAM_FIFO_inst_memc3_infrastructure_ |             |            |            |        |            
   inst_clk0_bufg_in_0" TS_SYS_CLK3          |             |            |            |        |            
   / 1.5625 HIGH 50%                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-* TS_variable_freq_clk_generator_inst_clkou | SETUP       |    -6.117ns|    18.021ns|     280|      266291
-  t_i_0 = PERIOD TIMEGRP         "variable_ | HOLD        |    -3.342ns|            |       2|        6612
+* TS_variable_freq_clk_generator_inst_clkou | SETUP       |    -4.665ns|    16.569ns|     140|      151809
+  t_i_0 = PERIOD TIMEGRP         "variable_ | HOLD        |    -3.013ns|            |       3|        8795
   freq_clk_generator_inst_clkout_i_0" TS_SY |             |            |            |        |            
   S_CLK3 / 0.84 HIGH         50%            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
@@ -359,43 +359,43 @@ Asterisk (*) preceding a constraint indicates it was not met.
   50%                                       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     0.001ns|     1.599ns|       0|           0
-  nst_clk_2x_0_0 = PERIOD TIMEGRP         " |             |            |            |        |            
-  SDRAM_FIFO_inst_memc3_infrastructure_inst |             |            |            |        |            
-  _clk_2x_0_0" TS_SYS_CLK3 /         6.25 H |             |            |            |        |            
-  IGH 50%                                   |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     0.001ns|     1.599ns|       0|           0
   nst_clk_2x_180_0 = PERIOD TIMEGRP         |             |            |            |        |            
    "SDRAM_FIFO_inst_memc3_infrastructure_in |             |            |            |        |            
   st_clk_2x_180_0" TS_SYS_CLK3 /         6. |             |            |            |        |            
   25 PHASE 0.8 ns HIGH 50%                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
+  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     0.001ns|     1.599ns|       0|           0
+  nst_clk_2x_0_0 = PERIOD TIMEGRP         " |             |            |            |        |            
+  SDRAM_FIFO_inst_memc3_infrastructure_inst |             |            |            |        |            
+  _clk_2x_0_0" TS_SYS_CLK3 /         6.25 H |             |            |            |        |            
+  IGH 50%                                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
   TIMEGRP "okHostINOUT_grp" OFFSET = IN 2 n | SETUP       |     0.162ns|     1.838ns|       0|           0
-  s VALID 4 ns BEFORE COMP "okUH<0>"        | HOLD        |     2.123ns|            |       0|           0
+  s VALID 4 ns BEFORE COMP "okUH<0>"        | HOLD        |     2.122ns|            |       0|           0
     "RISING"                                |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TIMEGRP "okHostIN_grp" OFFSET = IN 2 ns V | SETUP       |     0.183ns|     1.817ns|       0|           0
+  TIMEGRP "okHostIN_grp" OFFSET = IN 2 ns V | SETUP       |     0.184ns|     1.816ns|       0|           0
   ALID 2 ns BEFORE COMP "okUH<0>"         " | HOLD        |     0.123ns|            |       0|           0
   RISING"                                   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_host_dcm0_clk0 = PERIOD TIMEGRP "host_ | SETUP       |     0.314ns|     9.606ns|       0|           0
-  dcm0_clk0" TS_okHostClk PHASE -0.93       | HOLD        |     0.320ns|            |       0|           0
+  TS_host_dcm0_clk0 = PERIOD TIMEGRP "host_ | SETUP       |     0.331ns|     9.589ns|       0|           0
+  dcm0_clk0" TS_okHostClk PHASE -0.93       | HOLD        |     0.306ns|            |       0|           0
      ns HIGH 50%                            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_okSysClk = PERIOD TIMEGRP "okSysClk" 1 | MINLOWPULSE |     4.660ns|     5.340ns|       0|           0
   0 ns HIGH 50%                             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | SETUP       |     0.863ns|    11.074ns|       0|           0
-  nst_mcb_drp_clk_bufg_in_0 = PERIOD        | HOLD        |     0.430ns|            |       0|           0
-    TIMEGRP         "SDRAM_FIFO_inst_memc3_ |             |            |            |        |            
-  infrastructure_inst_mcb_drp_clk_bufg_in_0 |             |            |            |        |            
-  "         TS_SYS_CLK3 / 0.78125 HIGH 50%  |             |            |            |        |            
+  TIMEGRP "okHostOUT_grp" OFFSET = OUT 8 ns | MAXDELAY    |     1.855ns|     6.145ns|       0|           0
+   AFTER COMP "okUH<0>" "RISING"            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TIMEGRP "okHostINOUT_grp" OFFSET = OUT 8  | MAXDELAY    |     1.856ns|     6.144ns|       0|           0
   ns AFTER COMP "okUH<0>" "RISING"          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TIMEGRP "okHostOUT_grp" OFFSET = OUT 8 ns | MAXDELAY    |     1.857ns|     6.143ns|       0|           0
-   AFTER COMP "okUH<0>" "RISING"            |             |            |            |        |            
+  TS_SDRAM_FIFO_inst_memc3_infrastructure_i | SETUP       |     2.012ns|     9.438ns|       0|           0
+  nst_mcb_drp_clk_bufg_in_0 = PERIOD        | HOLD        |     0.416ns|            |       0|           0
+    TIMEGRP         "SDRAM_FIFO_inst_memc3_ |             |            |            |        |            
+  infrastructure_inst_mcb_drp_clk_bufg_in_0 |             |            |            |        |            
+  "         TS_SYS_CLK3 / 0.78125 HIGH 50%  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_SDRAM_FIFO_inst_memc3_infrastructure_i | MINPERIOD   |     2.830ns|     3.570ns|       0|           0
   nst_clk0_bufg_in = PERIOD TIMEGRP         |             |            |            |        |            
@@ -429,8 +429,8 @@ Derived Constraints for TS_okHostClk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_okHostClk                   |      9.920ns|      5.340ns|      9.606ns|            0|            0|            0|        48142|
-| TS_host_dcm0_clk0             |      9.920ns|      9.606ns|          N/A|            0|            0|        48142|            0|
+|TS_okHostClk                   |      9.920ns|      5.340ns|      9.589ns|            0|            0|            0|        50095|
+| TS_host_dcm0_clk0             |      9.920ns|      9.589ns|          N/A|            0|            0|        50095|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for TS_okSysClk
@@ -459,17 +459,17 @@ Derived Constraints for TS_SYS_CLK3
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_SYS_CLK3                    |     10.000ns|    474.989ns|   5974.000ns|           45|          295|        25977|     11226390|
-| TS_SDRAM_FIFO_inst_memc3_infra|     12.800ns|     11.074ns|          N/A|            0|            0|        13686|            0|
+|TS_SYS_CLK3                    |     10.000ns|    450.880ns|   6017.500ns|           39|          154|        25977|     10992319|
+| TS_SDRAM_FIFO_inst_memc3_infra|     12.800ns|      9.438ns|          N/A|            0|            0|        13911|            0|
 | structure_inst_mcb_drp_clk_buf|             |             |             |             |             |             |             |
 | g_in_0                        |             |             |             |             |             |             |             |
 | TS_SDRAM_FIFO_inst_memc3_infra|      1.600ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | structure_inst_clk_2x_180_0   |             |             |             |             |             |             |             |
 | TS_SDRAM_FIFO_inst_memc3_infra|      1.600ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | structure_inst_clk_2x_0_0     |             |             |             |             |             |             |             |
-| TS_SDRAM_FIFO_inst_memc3_infra|      6.400ns|   3823.360ns|          N/A|           13|            0|         3393|            0|
+| TS_SDRAM_FIFO_inst_memc3_infra|      6.400ns|   3851.200ns|          N/A|           11|            0|         3882|            0|
 | structure_inst_clk0_bufg_in_0 |             |             |             |             |             |             |             |
-| TS_variable_freq_clk_generator|     11.905ns|     18.021ns|          N/A|          282|            0|     11209311|            0|
+| TS_variable_freq_clk_generator|     11.905ns|     16.569ns|          N/A|          143|            0|     10974526|            0|
 | _inst_clkout_i_0              |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -482,14 +482,14 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 2 mins 54 secs 
-Total CPU time to PAR completion (all processors): 3 mins 35 secs 
+Total REAL time to PAR completion: 2 mins 55 secs 
+Total CPU time to PAR completion (all processors): 3 mins 29 secs 
 
-Peak Memory Usage:  628 MB
+Peak Memory Usage:  622 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
-Timing: Completed - 340 errors found.
+Timing: Completed - 193 errors found.
 
 Number of error messages: 0
 Number of warning messages: 7
