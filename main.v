@@ -661,7 +661,7 @@ module main #(
 		if (reset) begin
 			usb3_blocksize <= 32'd128;
 		end else begin
-			if (SPI_running) begin
+			if (~SPI_running) begin
 				usb3_blocksize <= ep1fwirein[31:0];
 			end
 		end
@@ -682,7 +682,7 @@ module main #(
 	
 
 	// Unused; future expansion
-	assign ep26wireout = 				32'h0000;
+	assign ep26wireout = 				usb3_blocksize;
 	assign ep27wireout = 				32'h0000;
 	assign ep28wireout = 				32'h0000;
 	assign ep29wireout = 				32'h0000;

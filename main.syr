@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Reading design: main.prj
 
@@ -1846,7 +1846,7 @@ INFO:Xst:1799 - State 101010 is never reached in FSM <STATE>.
     Found 8-bit adder for signal <counter_inc[7]_GND_18_o_add_155_OUT> created at line 1189.
     Found 8-bit adder for signal <DQS_DELAY[7]_GND_18_o_add_158_OUT> created at line 1194.
     Found 8-bit adder for signal <counter_dec[7]_GND_18_o_add_169_OUT> created at line 1214.
-    Found 12-bit adder for signal <_n0712> created at line 437.
+    Found 12-bit adder for signal <_n0713> created at line 437.
     Found 12-bit adder for signal <n0420> created at line 437.
     Found 13-bit adder for signal <_n0715> created at line 437.
     Found 13-bit adder for signal <n0414> created at line 437.
@@ -2458,7 +2458,7 @@ The following registers are absorbed into counter <DQS_DELAY>: 1 register on sig
 The following registers are absorbed into counter <counter_inc>: 1 register on signal <counter_inc>.
 The following registers are absorbed into counter <counter_dec>: 1 register on signal <counter_dec>.
 	The following adders/subtractors are grouped into adder tree <Madd_n0420_Madd1> :
- 	<Madd_n0610[8:0]> in block <mcb_soft_calibration>, 	<Madd_n0613[9:0]> in block <mcb_soft_calibration>, 	<Madd_n0616[10:0]_Madd> in block <mcb_soft_calibration>, 	<Madd__n0712_Madd> in block <mcb_soft_calibration>.
+ 	<Madd_n0610[8:0]> in block <mcb_soft_calibration>, 	<Madd_n0613[9:0]> in block <mcb_soft_calibration>, 	<Madd_n0616[10:0]_Madd> in block <mcb_soft_calibration>, 	<Madd__n0713_Madd> in block <mcb_soft_calibration>.
 	The following adders/subtractors are grouped into adder tree <Madd_n0592[9:0]1> :
  	<Madd_n0586[7:0]> in block <mcb_soft_calibration>, 	<Madd_n0589[8:0]> in block <mcb_soft_calibration>, 	<Madd_n0592[9:0]> in block <mcb_soft_calibration>.
 Unit <mcb_soft_calibration> synthesized (advanced).
@@ -2957,9 +2957,9 @@ Top Level Output File Name         : main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 15540
+# BELS                             : 15541
 #      GND                         : 46
-#      INV                         : 90
+#      INV                         : 91
 #      LUT1                        : 255
 #      LUT2                        : 2346
 #      LUT3                        : 467
@@ -3030,17 +3030,17 @@ Selected Device : 6slx45fgg484-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:            8158  out of  54576    14%  
- Number of Slice LUTs:                12301  out of  27288    45%  
-    Number used as Logic:             12253  out of  27288    44%  
+ Number of Slice LUTs:                12302  out of  27288    45%  
+    Number used as Logic:             12254  out of  27288    44%  
     Number used as Memory:               48  out of   6408     0%  
        Number used as RAM:               44
        Number used as SRL:                4
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  17194
-   Number with an unused Flip Flop:    9036  out of  17194    52%  
-   Number with an unused LUT:          4893  out of  17194    28%  
-   Number of fully used LUT-FF pairs:  3265  out of  17194    18%  
+ Number of LUT Flip Flop pairs used:  17195
+   Number with an unused Flip Flop:    9037  out of  17195    52%  
+   Number with an unused LUT:          4893  out of  17195    28%  
+   Number of fully used LUT-FF pairs:  3265  out of  17195    18%  
    Number of unique control sets:       269
 
 IO Utilization: 
@@ -3958,8 +3958,8 @@ Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fal
 -----------------------------------------+---------+---------+---------+---------+
 clk1_in_p                                |    1.439|         |         |         |
 okUH<0>                                  |   12.113|         |         |         |
-ti5a/ep_trigger<16>                      |    2.556|         |         |         |
-variable_freq_clk_generator_inst/clkout_i|    2.435|         |         |         |
+ti5a/ep_trigger<16>                      |    2.596|         |         |         |
+variable_freq_clk_generator_inst/clkout_i|    1.908|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<0>
@@ -4200,7 +4200,7 @@ Clock to Setup on destination clock ti5a/ep_trigger<16>
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
 okUH<0>                                  |    3.469|         |         |         |
-variable_freq_clk_generator_inst/clkout_i|    2.663|         |         |         |
+variable_freq_clk_generator_inst/clkout_i|    3.910|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock variable_freq_clk_generator_inst/clkout_i
@@ -4245,12 +4245,12 @@ variable_freq_clk_generator_inst/clkout_i|   21.908|         |         |        
 =========================================================================
 
 
-Total REAL time to Xst completion: 202.00 secs
-Total CPU time to Xst completion: 201.90 secs
+Total REAL time to Xst completion: 166.00 secs
+Total CPU time to Xst completion: 165.33 secs
  
 --> 
 
-Total memory usage is 608880 kilobytes
+Total memory usage is 607280 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  278 (   0 filtered)

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.58f on Wed Jun 24 00:52:45 2015
+// Written by: Map P.58f on Wed Jun 24 02:38:02 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -2936,24 +2936,35 @@ TIMEGRP host_dcm0_clk0 = BEL "SDRAM_FIFO_inst/rst_cnt_3" BEL
         "ti42/ep_trigger_2" BEL "ti41/eptrig_0" BEL "ti40/eptrig_0" BEL
         "ti40/trigff0_0" BEL "ti40/trigff1_0" BEL "ti40/ep_trigger_0" BEL
         "wo3f/wirehold_0" BEL "wo3e/wirehold_3" BEL "wo3e/wirehold_4" BEL
-        "wo3e/wirehold_6" BEL "wo3e/wirehold_9" BEL "wo25/wirehold_0" BEL
-        "wo25/wirehold_1" BEL "wo25/wirehold_2" BEL "wo25/wirehold_3" BEL
-        "wo24/wirehold_0" BEL "wo24/wirehold_1" BEL "wo23/wirehold_0" BEL
-        "wo23/wirehold_1" BEL "wo23/wirehold_2" BEL "wo23/wirehold_3" BEL
-        "wo23/wirehold_4" BEL "wo23/wirehold_5" BEL "wo23/wirehold_6" BEL
-        "wo23/wirehold_7" BEL "wo23/wirehold_8" BEL "wo23/wirehold_9" BEL
-        "wo23/wirehold_10" BEL "wo23/wirehold_11" BEL "wo23/wirehold_12" BEL
-        "wo23/wirehold_13" BEL "wo23/wirehold_14" BEL "wo23/wirehold_15" BEL
-        "wo22/wirehold_0" BEL "wo21/wirehold_0" BEL "wo21/wirehold_1" BEL
-        "wo21/wirehold_2" BEL "wo21/wirehold_3" BEL "wo21/wirehold_4" BEL
-        "wo21/wirehold_5" BEL "wo21/wirehold_6" BEL "wo21/wirehold_7" BEL
-        "wo21/wirehold_8" BEL "wo21/wirehold_9" BEL "wo21/wirehold_10" BEL
-        "wo20/wirehold_0" BEL "wo20/wirehold_1" BEL "wo20/wirehold_2" BEL
-        "wo20/wirehold_3" BEL "wo20/wirehold_4" BEL "wo20/wirehold_5" BEL
-        "wo20/wirehold_6" BEL "wo20/wirehold_7" BEL "wo20/wirehold_8" BEL
-        "wo20/wirehold_9" BEL "wo20/wirehold_10" BEL "wo20/wirehold_11" BEL
-        "wo20/wirehold_12" BEL "wo20/wirehold_13" BEL "wo20/wirehold_14" BEL
-        "wo20/wirehold_15" BEL "host/core0/core0/state_FSM_FFd6" BEL
+        "wo3e/wirehold_6" BEL "wo3e/wirehold_9" BEL "wo26/wirehold_0" BEL
+        "wo26/wirehold_1" BEL "wo26/wirehold_2" BEL "wo26/wirehold_3" BEL
+        "wo26/wirehold_4" BEL "wo26/wirehold_5" BEL "wo26/wirehold_6" BEL
+        "wo26/wirehold_7" BEL "wo26/wirehold_8" BEL "wo26/wirehold_9" BEL
+        "wo26/wirehold_10" BEL "wo26/wirehold_11" BEL "wo26/wirehold_12" BEL
+        "wo26/wirehold_13" BEL "wo26/wirehold_14" BEL "wo26/wirehold_15" BEL
+        "wo26/wirehold_16" BEL "wo26/wirehold_17" BEL "wo26/wirehold_18" BEL
+        "wo26/wirehold_19" BEL "wo26/wirehold_20" BEL "wo26/wirehold_21" BEL
+        "wo26/wirehold_22" BEL "wo26/wirehold_23" BEL "wo26/wirehold_24" BEL
+        "wo26/wirehold_25" BEL "wo26/wirehold_26" BEL "wo26/wirehold_27" BEL
+        "wo26/wirehold_28" BEL "wo26/wirehold_29" BEL "wo26/wirehold_30" BEL
+        "wo26/wirehold_31" BEL "wo25/wirehold_0" BEL "wo25/wirehold_1" BEL
+        "wo25/wirehold_2" BEL "wo25/wirehold_3" BEL "wo24/wirehold_0" BEL
+        "wo24/wirehold_1" BEL "wo23/wirehold_0" BEL "wo23/wirehold_1" BEL
+        "wo23/wirehold_2" BEL "wo23/wirehold_3" BEL "wo23/wirehold_4" BEL
+        "wo23/wirehold_5" BEL "wo23/wirehold_6" BEL "wo23/wirehold_7" BEL
+        "wo23/wirehold_8" BEL "wo23/wirehold_9" BEL "wo23/wirehold_10" BEL
+        "wo23/wirehold_11" BEL "wo23/wirehold_12" BEL "wo23/wirehold_13" BEL
+        "wo23/wirehold_14" BEL "wo23/wirehold_15" BEL "wo22/wirehold_0" BEL
+        "wo21/wirehold_0" BEL "wo21/wirehold_1" BEL "wo21/wirehold_2" BEL
+        "wo21/wirehold_3" BEL "wo21/wirehold_4" BEL "wo21/wirehold_5" BEL
+        "wo21/wirehold_6" BEL "wo21/wirehold_7" BEL "wo21/wirehold_8" BEL
+        "wo21/wirehold_9" BEL "wo21/wirehold_10" BEL "wo20/wirehold_0" BEL
+        "wo20/wirehold_1" BEL "wo20/wirehold_2" BEL "wo20/wirehold_3" BEL
+        "wo20/wirehold_4" BEL "wo20/wirehold_5" BEL "wo20/wirehold_6" BEL
+        "wo20/wirehold_7" BEL "wo20/wirehold_8" BEL "wo20/wirehold_9" BEL
+        "wo20/wirehold_10" BEL "wo20/wirehold_11" BEL "wo20/wirehold_12" BEL
+        "wo20/wirehold_13" BEL "wo20/wirehold_14" BEL "wo20/wirehold_15" BEL
+        "host/core0/core0/state_FSM_FFd6" BEL
         "host/core0/core0/state_FSM_FFd7" BEL
         "host/core0/core0/state_FSM_FFd10" BEL
         "host/core0/core0/state_FSM_FFd13" BEL
