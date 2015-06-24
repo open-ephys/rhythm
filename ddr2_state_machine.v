@@ -11,13 +11,13 @@ module ddr2_state_machine
 	//DDR Input Buffer (ib_)
 	output reg           ib_re,
 	input  wire [31:0]   ib_data,
-	input  wire [9:0]    ib_count,
+	input  wire [10:0]    ib_count,
 	input  wire          ib_valid,
 	input  wire          ib_empty,
 	//DDR Output Buffer (ob_)
 	output reg           ob_we,
 	output reg  [31:0]   ob_data,
-	input  wire [9:0]    ob_count,
+	input  wire [10:0]    ob_count,
 	
 	output reg           p0_rd_en_o, 
 	input  wire          p0_rd_empty,
@@ -36,7 +36,7 @@ module ddr2_state_machine
 	output reg	[29:0]	cmd_byte_addr_rd
 	);
 
-localparam FIFO_SIZE      = 1024;
+localparam FIFO_SIZE      = 2048;
 localparam BURST_LEN      = 2;  // Number of 32bit user words per DRAM command (Must be Multiple of 2)
 
 wire        rd_fifo_afull;

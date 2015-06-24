@@ -106,11 +106,11 @@
     <file xil_pn:name="xem6310.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="fifo_w16_2048_r32_1024.v" xil_pn:type="FILE_VERILOG">
+    <file xil_pn:name="fifo_w16_4096_r32_2048.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="86"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
     </file>
-    <file xil_pn:name="fifo_w32_1024_r32_1024.v" xil_pn:type="FILE_VERILOG">
+    <file xil_pn:name="fifo_w32_2048_r32_2048.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="87"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
     </file>

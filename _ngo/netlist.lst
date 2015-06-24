@@ -1,11 +1,11 @@
-E:\CAD\hdl\rhythm\main.ngc 1435013251
+E:\CAD\hdl\rhythm\main.ngc 1435099728
 E:\CAD\hdl\rhythm/okWireIn.ngc 1400627188
 E:\CAD\hdl\rhythm/okTriggerIn.ngc 1400627188
 E:\CAD\hdl\rhythm/okWireOut.ngc 1400627188
 E:\CAD\hdl\rhythm/okBTPipeOut.ngc 1400627188
 E:\CAD\hdl\rhythm/okCoreHarness.ngc 1400627188
 E:\CAD\hdl\rhythm/TFIFO64x8a_64x8b.ngc 1400627188
-E:\CAD\hdl\rhythm/fifo_w16_2048_r32_1024.ngc 1434404206
-E:\CAD\hdl\rhythm/fifo_w32_1024_r32_1024.ngc 1400626788
+E:\CAD\hdl\rhythm/fifo_w16_4096_r32_2048.ngc 1435096986
+E:\CAD\hdl\rhythm/fifo_w32_2048_r32_2048.ngc 1435096771
 E:\CAD\hdl\rhythm/multiplier_18x18.ngc 1418714646
 OK

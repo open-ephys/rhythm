@@ -88,6 +88,7 @@ module SDRAM_FIFO  #(
 	input wire										  FIFO_read_from,
 	output wire [31:0]							  FIFO_data_out,
 	output reg										  FIFO_out_rdy,
+	input			[31:0]							  usb3_blocksize,
 
 
 	// FIFO capacity monitor
@@ -240,18 +241,18 @@ module SDRAM_FIFO  #(
 
 	wire        	pipe_in_read;
 	wire [63:0] 	pipe_in_data;
-	wire [9:0]  	pipe_in_count;
+	wire [10:0]  	pipe_in_count;
 	wire        	pipe_in_valid;
 	wire        	pipe_in_empty;
 	
 	wire        	pipe_out_write;
 	wire [63:0] 	pipe_out_data;
-	wire [9:0]  	pipe_out_count;
+	wire [10:0]  	pipe_out_count;
 	
-	wire [10:0]		pipe_in_word_count;
-	reg [10:0]		pipe_in_word_count_ti;
-	wire [9:0]		pipe_out_word_count;
-	reg [9:0]		pipe_out_word_count_ti;
+	wire [11:0]		pipe_in_word_count;
+	reg [11:0]		pipe_in_word_count_ti;
+	wire [10:0]		pipe_out_word_count;
+	reg [10:0]		pipe_out_word_count_ti;
 	
 	wire [29:0]		buffer_byte_addr_wr, buffer_byte_addr_rd;
 	reg [29:0]		buffer_byte_addr_wr_ti, buffer_byte_addr_rd_ti;
@@ -482,7 +483,7 @@ module SDRAM_FIFO  #(
 
 	// Input mini-FIFO (2048 x 16 bits in from Intan chips; 1024 x 32 bits out to SDRAM)
 
-	fifo_w16_2048_r32_1024 okPipeIn_fifo (
+	fifo_w16_4096_r32_2048 okPipeIn_fifo (
 		.rst(reset),
 		.wr_clk(data_in_clk),  // was ti_clk in ramtest.v
 		.rd_clk(c3_clk0),
@@ -498,7 +499,7 @@ module SDRAM_FIFO  #(
 
 	// Output mini-FIFO (1024 x 32 bits in from SDRAM; 1024 x 32 bits out to Opal Kelly interface)
 
-	fifo_w32_1024_r32_1024 okPipeOut_fifo (
+	fifo_w32_2048_r32_2048 okPipeOut_fifo (
 		.rst(reset),
 		.wr_clk(c3_clk0),
 		.rd_clk(ti_clk),
@@ -522,7 +523,7 @@ module SDRAM_FIFO  #(
 		pipe_in_word_count_ti <= pipe_in_word_count;
 		pipe_out_word_count_ti <= pipe_out_word_count;
 		
-		if (pipe_out_word_count >= BLOCK_SIZE ) begin
+		if (pipe_out_word_count >= usb3_blocksize ) begin
 			FIFO_out_rdy <= 1'b1;
 		end else begin
 			FIFO_out_rdy <= 1'b0;

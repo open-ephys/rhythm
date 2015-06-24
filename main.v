@@ -395,6 +395,7 @@ module main #(
 	wire				pipeout_override_en;
 	wire 				FIFO_out_rdy;
 	wire				pipeout_rdy;
+	reg [31:0]		usb3_blocksize;
 
 	// Opal Kelly USB Host Interface
 	
@@ -648,8 +649,22 @@ module main #(
 		external_digout_channel_D <=	ep1fwirein[3:0];
 	end
 	//Open-ephys triggers
-	always @(posedge ep5atrigin[0]) begin
+	always @(posedge ep5atrigin[0] or posedge reset) begin
+	if (reset) begin
+		ledsEnabled <= 1'b1;
+	end else begin
 		ledsEnabled <=	ep1fwirein[0];
+	end
+	end
+	
+	always @(posedge ep5atrigin[16] or posedge reset) begin
+		if (reset) begin
+			usb3_blocksize <= 32'd128;
+		end else begin
+			if (SPI_running) begin
+				usb3_blocksize <= ep1fwirein[31:0];
+			end
+		end
 	end
 
 	// USB WireOut outputs
@@ -786,6 +801,7 @@ module main #(
 		.FIFO_data_in					(FIFO_data_in),
 		.FIFO_read_from				(FIFO_read_from),
 		.FIFO_data_out					(FIFO_data_out),
+		.usb3_blocksize				(usb3_blocksize),
 		.FIFO_out_rdy					(FIFO_out_rdy),
 		.num_words_in_FIFO			(num_words_in_FIFO),
 		.ddr2_dq							(ddr2_dq),
