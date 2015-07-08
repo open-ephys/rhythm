@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.07 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: main.prj
 
@@ -175,9 +175,9 @@ Elaborating module <LED_controller>.
 WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\LED_controller.v" Line 101: Result of 17-bit expression is truncated to fit in 16-bit target.
 WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\LED_controller.v" Line 114: Result of 6-bit expression is truncated to fit in 5-bit target.
 WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\LED_controller.v" Line 131: Result of 17-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 738: Size mismatch in connection of port <led5>. Formal port size is 24-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 739: Size mismatch in connection of port <led6>. Formal port size is 24-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 742: Size mismatch in connection of port <led8>. Formal port size is 24-bit while actual signal size is 40-bit.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 753: Size mismatch in connection of port <led5>. Formal port size is 24-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 754: Size mismatch in connection of port <led6>. Formal port size is 24-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 757: Size mismatch in connection of port <led8>. Formal port size is 24-bit while actual signal size is 40-bit.
 
 Elaborating module <variable_freq_clk_generator(M_DEFAULT=42,D_DEFAULT=25)>.
 WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\variable_freq_clk_generator.v" Line 94: Result of 32-bit expression is truncated to fit in 9-bit target.
@@ -188,7 +188,7 @@ Elaborating module <DCM_CLKGEN(CLKFXDV_DIVIDE=2,CLKFX_DIVIDE=25,CLKFX_MD_MAX=0.0
 Elaborating module <BUFG>.
 
 Elaborating module <SDRAM_FIFO(C3_P0_MASK_SIZE=4,C3_P0_DATA_PORT_SIZE=32,C3_P1_MASK_SIZE=4,C3_P1_DATA_PORT_SIZE=32,DEBUG_EN=0,C3_MEMCLK_PERIOD=3200,C3_CALIB_SOFT_IP="TRUE",C3_SIMULATION="FALSE",C3_HW_TESTING="FALSE",C3_RST_ACT_LOW=0,C3_INPUT_CLK_TYPE="DIFFERENTIAL",C3_MEM_ADDR_ORDER="ROW_BANK_COLUMN",C3_NUM_DQ_PINS=16,C3_MEM_ADDR_WIDTH=13,C3_MEM_BANKADDR_WIDTH=3)>.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 273: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 278: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <memc3_infrastructure(C_MEMCLK_PERIOD=10000,C_RST_ACT_LOW=0,C_INPUT_CLK_TYPE="DIFFERENTIAL",C_CLKOUT0_DIVIDE=1,C_CLKOUT1_DIVIDE=1,C_CLKOUT2_DIVIDE=4,C_CLKOUT3_DIVIDE=8,C_CLKFBOUT_MULT=25,C_DIVCLK_DIVIDE=4)>.
 
@@ -310,33 +310,35 @@ WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\memc3_wrapper.v" Line 415: Assignm
 WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\memc3_wrapper.v" Line 416: Assignment to uo_cal_start ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\memc3_wrapper.v" Line 417: Assignment to uo_sdo ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\memc3_wrapper.v" Line 418: Assignment to status ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 423: Assignment to c3_p0_cmd_empty ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 430: Assignment to c3_p0_wr_empty ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 431: Assignment to c3_p0_wr_count ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 432: Assignment to c3_p0_wr_underrun ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 433: Assignment to c3_p0_wr_error ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 437: Assignment to c3_p0_rd_full ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 439: Assignment to c3_p0_rd_count ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 440: Assignment to c3_p0_rd_overflow ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 441: Assignment to c3_p0_rd_error ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 443: Assignment to selfrefresh_mode ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 428: Assignment to c3_p0_cmd_empty ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 435: Assignment to c3_p0_wr_empty ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 436: Assignment to c3_p0_wr_count ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 437: Assignment to c3_p0_wr_underrun ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 438: Assignment to c3_p0_wr_error ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 442: Assignment to c3_p0_rd_full ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 444: Assignment to c3_p0_rd_count ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 445: Assignment to c3_p0_rd_overflow ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 446: Assignment to c3_p0_rd_error ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 448: Assignment to selfrefresh_mode ignored, since the identifier is never used
 
 Elaborating module <ddr2_state_machine>.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 104: Result of 32-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 113: Result of 31-bit expression is truncated to fit in 30-bit target.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 123: Result of 31-bit expression is truncated to fit in 30-bit target.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 139: Result of 32-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 455: Size mismatch in connection of port <ib_data>. Formal port size is 32-bit while actual signal size is 64-bit.
-WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 461: Size mismatch in connection of port <ob_data>. Formal port size is 32-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 54: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 89: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 109: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 118: Result of 32-bit expression is truncated to fit in 30-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 128: Result of 32-bit expression is truncated to fit in 30-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\ddr2_state_machine.v" Line 144: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 460: Size mismatch in connection of port <ib_data>. Formal port size is 32-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 466: Size mismatch in connection of port <ob_data>. Formal port size is 32-bit while actual signal size is 64-bit.
 
 Elaborating module <fifo_w16_4096_r32_2048>.
 WARNING:HDLCompiler:1499 - "E:\CAD\hdl\rhythm\fifo_w16_4096_r32_2048.v" Line 39: Empty module <fifo_w16_4096_r32_2048> remains a black box.
-WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 493: Size mismatch in connection of port <dout>. Formal port size is 32-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 500: Size mismatch in connection of port <dout>. Formal port size is 32-bit while actual signal size is 64-bit.
 
 Elaborating module <fifo_w32_2048_r32_2048>.
 WARNING:HDLCompiler:1499 - "E:\CAD\hdl\rhythm\fifo_w32_2048_r32_2048.v" Line 39: Empty module <fifo_w32_2048_r32_2048> remains a black box.
-WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 506: Size mismatch in connection of port <din>. Formal port size is 32-bit while actual signal size is 64-bit.
-WARNING:HDLCompiler:634 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 239: Net <selfrefresh_enter> does not have a driver.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 513: Size mismatch in connection of port <din>. Formal port size is 32-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:634 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" Line 244: Net <selfrefresh_enter> does not have a driver.
 
 Elaborating module <RAM_bank>.
 
@@ -347,26 +349,26 @@ Elaborating module
 ,INIT_35=256'b0,INIT_36=256'b0,INIT_37=256'b0,INIT_38=256'b0,INIT_39=256'b0,INIT_3A=256'b0,INIT_3B=256'b0,INIT_3C=256'b0,INIT_3D=256'b0,INIT_3E=256'b0,INIT_3F=256'b0,INIT_A=36'b0,INIT_B=36'b0,INIT_FILE="NONE",RSTTYPE="SYNC",RST_PRIORITY_A="CE",RST_PRIORITY_B="CE",SIM_COLLISION_CHECK="ALL",SIM_DEVICE="SPARTAN6",SRVAL_A=36'b0,SRVAL_B=36'b0,WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST")>.
 
 Elaborating module <command_selector>.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 1147: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 1148: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 1149: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 1150: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 2209: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 2219: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 1167: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 1168: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 1169: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 1170: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 2229: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 2421: Result of 7-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 2426: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 2239: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 2249: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 2441: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\main.v" Line 2446: Result of 7-bit expression is truncated to fit in 6-bit target.
 
 Elaborating module <DAC_output_scalable_HPF(ms_wait=99,ms_clk1_a=100,ms_clk11_a=140)>.
 WARNING:HDLCompiler:413 - "E:\CAD\hdl\rhythm\DAC_output_scalable_HPF.v" Line 64: Result of 32-bit expression is truncated to fit in 19-bit target.
 
 Elaborating module <multiplier_18x18>.
-WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 2517: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 2541: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 2565: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 2589: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 2613: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 2637: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 2537: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 2561: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 2585: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 2609: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 2633: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:\CAD\hdl\rhythm\main.v" Line 2657: Size mismatch in connection of port <noise_suppress>. Formal port size is 7-bit while actual signal size is 32-bit.
 
 Elaborating module <ADC_input(ms_wait=99,ms_clk1_a=100,ms_clk11_a=140)>.
 
@@ -416,40 +418,41 @@ Synthesizing Unit <main>.
         C3_NUM_DQ_PINS = 16
         C3_MEM_ADDR_WIDTH = 13
         C3_MEM_BANKADDR_WIDTH = 3
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 831: Output port <RAM_data_out_A> of the instance <RAM_bank_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 866: Output port <RAM_data_out_A> of the instance <RAM_bank_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 888: Output port <RAM_data_out_A> of the instance <RAM_bank_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2485: Output port <DAC_SYNC> of the instance <DAC_output_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2485: Output port <DAC_SCLK> of the instance <DAC_output_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2509: Output port <DAC_SYNC> of the instance <DAC_output_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2509: Output port <DAC_SCLK> of the instance <DAC_output_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2533: Output port <DAC_SYNC> of the instance <DAC_output_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2533: Output port <DAC_SCLK> of the instance <DAC_output_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2557: Output port <DAC_SYNC> of the instance <DAC_output_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2557: Output port <DAC_SCLK> of the instance <DAC_output_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2581: Output port <DAC_SYNC> of the instance <DAC_output_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2581: Output port <DAC_SCLK> of the instance <DAC_output_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2605: Output port <DAC_SYNC> of the instance <DAC_output_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2605: Output port <DAC_SCLK> of the instance <DAC_output_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2629: Output port <DAC_SYNC> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2629: Output port <DAC_SCLK> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2671: Output port <ADC_CS> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2671: Output port <ADC_SCLK> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2687: Output port <ADC_CS> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2687: Output port <ADC_SCLK> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2703: Output port <ADC_CS> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2703: Output port <ADC_SCLK> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2719: Output port <ADC_CS> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2719: Output port <ADC_SCLK> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2735: Output port <ADC_CS> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2735: Output port <ADC_SCLK> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2751: Output port <ADC_CS> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2751: Output port <ADC_SCLK> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2767: Output port <ADC_CS> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2767: Output port <ADC_SCLK> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 3258: Output port <ep_blockstrobe> of the instance <poa0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 851: Output port <RAM_data_out_A> of the instance <RAM_bank_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 886: Output port <RAM_data_out_A> of the instance <RAM_bank_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 908: Output port <RAM_data_out_A> of the instance <RAM_bank_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2505: Output port <DAC_SYNC> of the instance <DAC_output_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2505: Output port <DAC_SCLK> of the instance <DAC_output_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2529: Output port <DAC_SYNC> of the instance <DAC_output_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2529: Output port <DAC_SCLK> of the instance <DAC_output_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2553: Output port <DAC_SYNC> of the instance <DAC_output_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2553: Output port <DAC_SCLK> of the instance <DAC_output_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2577: Output port <DAC_SYNC> of the instance <DAC_output_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2577: Output port <DAC_SCLK> of the instance <DAC_output_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2601: Output port <DAC_SYNC> of the instance <DAC_output_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2601: Output port <DAC_SCLK> of the instance <DAC_output_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2625: Output port <DAC_SYNC> of the instance <DAC_output_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2625: Output port <DAC_SCLK> of the instance <DAC_output_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2649: Output port <DAC_SYNC> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2649: Output port <DAC_SCLK> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2691: Output port <ADC_CS> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2691: Output port <ADC_SCLK> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2707: Output port <ADC_CS> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2707: Output port <ADC_SCLK> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2723: Output port <ADC_CS> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2723: Output port <ADC_SCLK> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2739: Output port <ADC_CS> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2739: Output port <ADC_SCLK> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2755: Output port <ADC_CS> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2755: Output port <ADC_SCLK> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2771: Output port <ADC_CS> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2771: Output port <ADC_SCLK> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2787: Output port <ADC_CS> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 2787: Output port <ADC_SCLK> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 3278: Output port <ep_blockstrobe> of the instance <poa0> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <ledsEnabled>.
     Found 32-bit register for signal <usb3_blocksize>.
+    Found 32-bit register for signal <ddr_blocksize>.
     Found 10-bit register for signal <loop_aux_cmd_index_1>.
     Found 10-bit register for signal <loop_aux_cmd_index_2>.
     Found 10-bit register for signal <loop_aux_cmd_index_3>.
@@ -1203,56 +1206,56 @@ INFO:Xst:3210 - "E:\CAD\hdl\rhythm\main.v" line 3258: Output port <ep_blockstrob
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 10-bit adder for signal <aux_cmd_index_1[9]_GND_1_o_add_360_OUT> created at line 2209.
-    Found 10-bit adder for signal <aux_cmd_index_2[9]_GND_1_o_add_368_OUT> created at line 2219.
-    Found 10-bit adder for signal <aux_cmd_index_3[9]_GND_1_o_add_376_OUT> created at line 2229.
-    Found 32-bit adder for signal <timestamp[31]_GND_1_o_add_426_OUT> created at line 2411.
-    Found 6-bit adder for signal <channel[5]_GND_1_o_add_429_OUT> created at line 2421.
-    Found 6-bit adder for signal <channel_MISO[5]_GND_1_o_add_432_OUT> created at line 2426.
-    Found 1-bit 16-to-1 multiplexer for signal <external_fast_settle_channel[3]_TTL_in[15]_Mux_172_o> created at line 1144.
-    Found 1-bit 16-to-1 multiplexer for signal <external_digout_channel_A[3]_TTL_in[15]_Mux_173_o> created at line 1147.
-    Found 1-bit 16-to-1 multiplexer for signal <external_digout_channel_B[3]_TTL_in[15]_Mux_175_o> created at line 1148.
-    Found 1-bit 16-to-1 multiplexer for signal <external_digout_channel_C[3]_TTL_in[15]_Mux_177_o> created at line 1149.
-    Found 1-bit 16-to-1 multiplexer for signal <external_digout_channel_D[3]_TTL_in[15]_Mux_179_o> created at line 1150.
-    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_1[4]_GND_1_o_wide_mux_402_OUT> created at line 2235.
-    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_2[4]_GND_1_o_wide_mux_405_OUT> created at line 2257.
-    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_3[4]_GND_1_o_wide_mux_408_OUT> created at line 2279.
-    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_4[4]_GND_1_o_wide_mux_411_OUT> created at line 2301.
-    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_5[4]_GND_1_o_wide_mux_414_OUT> created at line 2323.
-    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_6[4]_GND_1_o_wide_mux_417_OUT> created at line 2345.
-    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_7[4]_GND_1_o_wide_mux_420_OUT> created at line 2367.
-    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_8[4]_GND_1_o_wide_mux_423_OUT> created at line 2389.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_1> created at line 2830.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_2> created at line 2851.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_3> created at line 2872.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_4> created at line 2893.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_5> created at line 2914.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_6> created at line 2935.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_7> created at line 2956.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_8> created at line 2977.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_9> created at line 2998.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_10> created at line 3019.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_11> created at line 3040.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_12> created at line 3061.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_13> created at line 3082.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_14> created at line 3103.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_15> created at line 3124.
-    Found 16-bit 16-to-1 multiplexer for signal <data_stream_16> created at line 3145.
-    Found 10-bit comparator equal for signal <aux_cmd_index_1[9]_max_aux_cmd_index_1[9]_equal_360_o> created at line 2201
-    Found 10-bit comparator equal for signal <aux_cmd_index_2[9]_max_aux_cmd_index_2[9]_equal_368_o> created at line 2211
-    Found 10-bit comparator equal for signal <aux_cmd_index_3[9]_max_aux_cmd_index_3[9]_equal_376_o> created at line 2221
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_402_o> created at line 2234
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_405_o> created at line 2256
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_408_o> created at line 2278
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_411_o> created at line 2300
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_414_o> created at line 2322
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_417_o> created at line 2344
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_420_o> created at line 2366
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_423_o> created at line 2388
-    Found 32-bit comparator equal for signal <timestamp[31]_max_timestep[31]_equal_436_o> created at line 2434
+    Found 10-bit adder for signal <aux_cmd_index_1[9]_GND_1_o_add_362_OUT> created at line 2229.
+    Found 10-bit adder for signal <aux_cmd_index_2[9]_GND_1_o_add_370_OUT> created at line 2239.
+    Found 10-bit adder for signal <aux_cmd_index_3[9]_GND_1_o_add_378_OUT> created at line 2249.
+    Found 32-bit adder for signal <timestamp[31]_GND_1_o_add_428_OUT> created at line 2431.
+    Found 6-bit adder for signal <channel[5]_GND_1_o_add_431_OUT> created at line 2441.
+    Found 6-bit adder for signal <channel_MISO[5]_GND_1_o_add_434_OUT> created at line 2446.
+    Found 1-bit 16-to-1 multiplexer for signal <external_fast_settle_channel[3]_TTL_in[15]_Mux_174_o> created at line 1164.
+    Found 1-bit 16-to-1 multiplexer for signal <external_digout_channel_A[3]_TTL_in[15]_Mux_175_o> created at line 1167.
+    Found 1-bit 16-to-1 multiplexer for signal <external_digout_channel_B[3]_TTL_in[15]_Mux_177_o> created at line 1168.
+    Found 1-bit 16-to-1 multiplexer for signal <external_digout_channel_C[3]_TTL_in[15]_Mux_179_o> created at line 1169.
+    Found 1-bit 16-to-1 multiplexer for signal <external_digout_channel_D[3]_TTL_in[15]_Mux_181_o> created at line 1170.
+    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_1[4]_GND_1_o_wide_mux_404_OUT> created at line 2255.
+    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_2[4]_GND_1_o_wide_mux_407_OUT> created at line 2277.
+    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_3[4]_GND_1_o_wide_mux_410_OUT> created at line 2299.
+    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_4[4]_GND_1_o_wide_mux_413_OUT> created at line 2321.
+    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_5[4]_GND_1_o_wide_mux_416_OUT> created at line 2343.
+    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_6[4]_GND_1_o_wide_mux_419_OUT> created at line 2365.
+    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_7[4]_GND_1_o_wide_mux_422_OUT> created at line 2387.
+    Found 16-bit 21-to-1 multiplexer for signal <DAC_stream_sel_8[4]_GND_1_o_wide_mux_425_OUT> created at line 2409.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_1> created at line 2850.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_2> created at line 2871.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_3> created at line 2892.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_4> created at line 2913.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_5> created at line 2934.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_6> created at line 2955.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_7> created at line 2976.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_8> created at line 2997.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_9> created at line 3018.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_10> created at line 3039.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_11> created at line 3060.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_12> created at line 3081.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_13> created at line 3102.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_14> created at line 3123.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_15> created at line 3144.
+    Found 16-bit 16-to-1 multiplexer for signal <data_stream_16> created at line 3165.
+    Found 10-bit comparator equal for signal <aux_cmd_index_1[9]_max_aux_cmd_index_1[9]_equal_362_o> created at line 2221
+    Found 10-bit comparator equal for signal <aux_cmd_index_2[9]_max_aux_cmd_index_2[9]_equal_370_o> created at line 2231
+    Found 10-bit comparator equal for signal <aux_cmd_index_3[9]_max_aux_cmd_index_3[9]_equal_378_o> created at line 2241
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_404_o> created at line 2254
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_407_o> created at line 2276
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_410_o> created at line 2298
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_413_o> created at line 2320
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_416_o> created at line 2342
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_419_o> created at line 2364
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_422_o> created at line 2386
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_425_o> created at line 2408
+    Found 32-bit comparator equal for signal <timestamp[31]_max_timestep[31]_equal_438_o> created at line 2454
     Summary:
 	inferred   6 Adder/Subtractor(s).
-	inferred 1846 D-type flip-flop(s).
+	inferred 1878 D-type flip-flop(s).
 	inferred  12 Comparator(s).
 	inferred 141 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
@@ -1325,20 +1328,20 @@ Synthesizing Unit <SDRAM_FIFO>.
         C3_NUM_DQ_PINS = 16
         C3_MEM_ADDR_WIDTH = 13
         C3_MEM_BANKADDR_WIDTH = 3
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 390: Output port <p0_wr_count> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 390: Output port <p0_rd_count> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 390: Output port <p0_cmd_empty> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 390: Output port <p0_wr_empty> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 390: Output port <p0_wr_underrun> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 390: Output port <p0_wr_error> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 390: Output port <p0_rd_full> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 390: Output port <p0_rd_overflow> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 390: Output port <p0_rd_error> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 390: Output port <selfrefresh_mode> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 486: Output port <full> of the instance <okPipeIn_fifo> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 502: Output port <full> of the instance <okPipeOut_fifo> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 502: Output port <empty> of the instance <okPipeOut_fifo> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 502: Output port <valid> of the instance <okPipeOut_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 395: Output port <p0_wr_count> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 395: Output port <p0_rd_count> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 395: Output port <p0_cmd_empty> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 395: Output port <p0_wr_empty> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 395: Output port <p0_wr_underrun> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 395: Output port <p0_wr_error> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 395: Output port <p0_rd_full> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 395: Output port <p0_rd_overflow> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 395: Output port <p0_rd_error> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 395: Output port <selfrefresh_mode> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 493: Output port <full> of the instance <okPipeIn_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 509: Output port <full> of the instance <okPipeOut_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 509: Output port <empty> of the instance <okPipeOut_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CAD\hdl\rhythm\SDRAM_FIFO.v" line 509: Output port <valid> of the instance <okPipeOut_fifo> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <selfrefresh_enter> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 1-bit register for signal <c3_sys_rst_n>.
     Found 26-bit register for signal <buffer_byte_addr_rd_ti<26:1>>.
@@ -1347,12 +1350,12 @@ WARNING:Xst:653 - Signal <selfrefresh_enter> is used but never assigned. This so
     Found 11-bit register for signal <pipe_out_word_count_ti>.
     Found 1-bit register for signal <FIFO_out_rdy>.
     Found 4-bit register for signal <rst_cnt>.
-    Found 4-bit adder for signal <rst_cnt[3]_GND_8_o_add_2_OUT> created at line 273.
-    Found 27-bit adder for signal <n0064[26:0]> created at line 539.
-    Found 28-bit adder for signal <n0067[27:0]> created at line 539.
-    Found 26-bit subtractor for signal <buffer_word_addr_diff_ti<25:0>> created at line 260.
-    Found 4-bit comparator greater for signal <rst_cnt[3]_PWR_9_o_LessThan_2_o> created at line 272
-    Found 32-bit comparator lessequal for signal <n0008> created at line 526
+    Found 4-bit adder for signal <rst_cnt[3]_GND_8_o_add_2_OUT> created at line 278.
+    Found 27-bit adder for signal <n0074[26:0]> created at line 546.
+    Found 28-bit adder for signal <n0077[27:0]> created at line 546.
+    Found 26-bit subtractor for signal <buffer_word_addr_diff_ti<25:0>> created at line 265.
+    Found 4-bit comparator greater for signal <rst_cnt[3]_PWR_9_o_LessThan_2_o> created at line 277
+    Found 32-bit comparator lessequal for signal <n0008> created at line 533
     Summary:
 	inferred   4 Adder/Subtractor(s).
 	inferred  81 D-type flip-flop(s).
@@ -1846,7 +1849,7 @@ INFO:Xst:1799 - State 101010 is never reached in FSM <STATE>.
     Found 8-bit adder for signal <counter_inc[7]_GND_18_o_add_155_OUT> created at line 1189.
     Found 8-bit adder for signal <DQS_DELAY[7]_GND_18_o_add_158_OUT> created at line 1194.
     Found 8-bit adder for signal <counter_dec[7]_GND_18_o_add_169_OUT> created at line 1214.
-    Found 12-bit adder for signal <_n0713> created at line 437.
+    Found 12-bit adder for signal <_n0709> created at line 437.
     Found 12-bit adder for signal <n0420> created at line 437.
     Found 13-bit adder for signal <_n0715> created at line 437.
     Found 13-bit adder for signal <n0414> created at line 437.
@@ -1965,11 +1968,13 @@ WARNING:Xst:647 - Input <p0_wr_full> is never used. This port will be preserved 
     Found 30-bit register for signal <cmd_byte_addr_rd>.
     Found 3-bit register for signal <p0_cmd_instr>.
     Found 30-bit register for signal <p0_cmd_byte_addr>.
+    Found 32-bit register for signal <burst_size>.
     Found 1-bit register for signal <p0_cmd_en>.
     Found 1-bit register for signal <p0_wr_en>.
     Found 1-bit register for signal <ib_re>.
     Found 1-bit register for signal <p0_rd_en_o>.
     Found 1-bit register for signal <ob_we>.
+    Found 32-bit register for signal <active_burst_size>.
     Found 32-bit register for signal <p0_wr_data>.
     Found 32-bit register for signal <ob_data>.
     Found 1-bit register for signal <write_mode>.
@@ -1986,17 +1991,19 @@ WARNING:Xst:647 - Input <p0_wr_full> is never used. This port will be preserved 
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 30-bit adder for signal <cmd_byte_addr_wr[29]_GND_57_o_add_21_OUT> created at line 113.
-    Found 30-bit adder for signal <cmd_byte_addr_rd[29]_GND_57_o_add_26_OUT> created at line 123.
-    Found 6-bit subtractor for signal <GND_57_o_GND_57_o_sub_17_OUT<5:0>> created at line 104.
-    Found 11-bit comparator greater for signal <n0007> created at line 88
-    Found 11-bit comparator greater for signal <ob_count[10]_PWR_56_o_LessThan_12_o> created at line 90
-    Found 30-bit comparator equal for signal <n0015> created at line 90
+    Found 32-bit subtractor for signal <GND_57_o_burst_size[31]_sub_13_OUT> created at line 95.
+    Found 32-bit adder for signal <n0115> created at line 118.
+    Found 32-bit adder for signal <n0120> created at line 128.
+    Found 6-bit subtractor for signal <p0_cmd_bl_o> created at line 30.
+    Found 6-bit subtractor for signal <GND_57_o_GND_57_o_sub_19_OUT<5:0>> created at line 109.
+    Found 32-bit comparator greater for signal <n0008> created at line 93
+    Found 32-bit comparator greater for signal <GND_57_o_GND_57_o_LessThan_14_o> created at line 95
+    Found 30-bit comparator equal for signal <n0017> created at line 95
     Summary:
-	inferred   3 Adder/Subtractor(s).
-	inferred 171 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred 235 D-type flip-flop(s).
 	inferred   3 Comparator(s).
-	inferred   3 Multiplexer(s).
+	inferred   5 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <ddr2_state_machine> synthesized.
 
@@ -2230,7 +2237,7 @@ Unit <okWireOR> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 83
+# Adders/Subtractors                                   : 85
  10-bit adder                                          : 7
  11-bit adder                                          : 2
  12-bit adder                                          : 3
@@ -2241,18 +2248,18 @@ Macro Statistics
  27-bit adder                                          : 1
  28-bit adder                                          : 1
  3-bit adder                                           : 2
- 30-bit adder                                          : 2
- 32-bit adder                                          : 25
+ 32-bit adder                                          : 27
+ 32-bit subtractor                                     : 1
  4-bit adder                                           : 1
  5-bit adder                                           : 1
  6-bit adder                                           : 4
- 6-bit subtractor                                      : 1
+ 6-bit subtractor                                      : 2
  7-bit adder                                           : 1
  8-bit adder                                           : 3
  8-bit addsub                                          : 1
  8-bit subtractor                                      : 4
  9-bit adder                                           : 2
-# Registers                                            : 325
+# Registers                                            : 328
  1-bit register                                        : 152
  10-bit register                                       : 11
  11-bit register                                       : 1
@@ -2264,7 +2271,7 @@ Macro Statistics
  26-bit register                                       : 2
  3-bit register                                        : 3
  30-bit register                                       : 3
- 32-bit register                                       : 13
+ 32-bit register                                       : 16
  4-bit register                                        : 36
  5-bit register                                        : 2
  6-bit register                                        : 6
@@ -2275,12 +2282,12 @@ Macro Statistics
  1-bit comparator equal                                : 8
  10-bit comparator equal                               : 3
  10-bit comparator greater                             : 2
- 11-bit comparator greater                             : 2
  16-bit comparator lessequal                           : 16
  2-bit comparator equal                                : 8
  3-bit comparator equal                                : 8
  30-bit comparator equal                               : 1
  32-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 2
  32-bit comparator lessequal                           : 1
  4-bit comparator equal                                : 8
  4-bit comparator greater                              : 1
@@ -2290,7 +2297,7 @@ Macro Statistics
  7-bit comparator equal                                : 9
  8-bit comparator greater                              : 8
  8-bit comparator lessequal                            : 2
-# Multiplexers                                         : 1424
+# Multiplexers                                         : 1426
  1-bit 16-to-1 multiplexer                             : 5
  1-bit 2-to-1 multiplexer                              : 1026
  1-bit 24-to-1 multiplexer                             : 1
@@ -2305,7 +2312,7 @@ Macro Statistics
  24-bit 2-to-1 multiplexer                             : 8
  3-bit 2-to-1 multiplexer                              : 1
  30-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 36
  40-bit 2-to-1 multiplexer                             : 1
  6-bit 2-to-1 multiplexer                              : 9
@@ -2423,6 +2430,8 @@ WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_2> (without init value) has a constan
 WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_3> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <DQS_DELAY_INITIAL_7> has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <active_burst_size_30> of sequential type is unconnected in block <ddr2_state_machine_inst>.
+WARNING:Xst:2677 - Node <active_burst_size_31> of sequential type is unconnected in block <ddr2_state_machine_inst>.
 
 Synthesizing (advanced) Unit <DAC_output_scalable_HPF>.
 The following registers are absorbed into accumulator <HPF_state>: 1 register on signal <HPF_state>.
@@ -2458,16 +2467,20 @@ The following registers are absorbed into counter <DQS_DELAY>: 1 register on sig
 The following registers are absorbed into counter <counter_inc>: 1 register on signal <counter_inc>.
 The following registers are absorbed into counter <counter_dec>: 1 register on signal <counter_dec>.
 	The following adders/subtractors are grouped into adder tree <Madd_n0420_Madd1> :
- 	<Madd_n0610[8:0]> in block <mcb_soft_calibration>, 	<Madd_n0613[9:0]> in block <mcb_soft_calibration>, 	<Madd_n0616[10:0]_Madd> in block <mcb_soft_calibration>, 	<Madd__n0713_Madd> in block <mcb_soft_calibration>.
+ 	<Madd_n0610[8:0]> in block <mcb_soft_calibration>, 	<Madd_n0613[9:0]> in block <mcb_soft_calibration>, 	<Madd_n0616[10:0]_Madd> in block <mcb_soft_calibration>, 	<Madd__n0709_Madd> in block <mcb_soft_calibration>.
 	The following adders/subtractors are grouped into adder tree <Madd_n0592[9:0]1> :
  	<Madd_n0586[7:0]> in block <mcb_soft_calibration>, 	<Madd_n0589[8:0]> in block <mcb_soft_calibration>, 	<Madd_n0592[9:0]> in block <mcb_soft_calibration>.
 Unit <mcb_soft_calibration> synthesized (advanced).
+WARNING:Xst:2677 - Node <active_burst_size_28> of sequential type is unconnected in block <ddr2_state_machine>.
+WARNING:Xst:2677 - Node <active_burst_size_29> of sequential type is unconnected in block <ddr2_state_machine>.
+WARNING:Xst:2677 - Node <active_burst_size_30> of sequential type is unconnected in block <ddr2_state_machine>.
+WARNING:Xst:2677 - Node <active_burst_size_31> of sequential type is unconnected in block <ddr2_state_machine>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 46
+# Adders/Subtractors                                   : 48
  10-bit adder                                          : 5
  16-bit adder                                          : 8
  16-bit subtractor                                     : 8
@@ -2476,8 +2489,9 @@ Macro Statistics
  27-bit adder                                          : 1
  28-bit adder                                          : 1
  32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
  6-bit adder                                           : 3
- 6-bit subtractor                                      : 1
+ 6-bit subtractor                                      : 2
  7-bit adder                                           : 1
  8-bit subtractor                                      : 4
  9-bit adder                                           : 4
@@ -2495,18 +2509,18 @@ Macro Statistics
 # Accumulators                                         : 10
  30-bit up accumulator                                 : 2
  32-bit up accumulator                                 : 8
-# Registers                                            : 2569
- Flip-Flops                                            : 2569
+# Registers                                            : 2661
+ Flip-Flops                                            : 2661
 # Comparators                                          : 104
  1-bit comparator equal                                : 8
  10-bit comparator equal                               : 3
  10-bit comparator greater                             : 2
- 11-bit comparator greater                             : 2
  16-bit comparator lessequal                           : 16
  2-bit comparator equal                                : 8
  3-bit comparator equal                                : 8
  30-bit comparator equal                               : 1
  32-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 2
  32-bit comparator lessequal                           : 1
  4-bit comparator equal                                : 8
  4-bit comparator greater                              : 1
@@ -2516,7 +2530,7 @@ Macro Statistics
  7-bit comparator equal                                : 9
  8-bit comparator greater                              : 8
  8-bit comparator lessequal                            : 2
-# Multiplexers                                         : 1430
+# Multiplexers                                         : 1432
  1-bit 16-to-1 multiplexer                             : 5
  1-bit 2-to-1 multiplexer                              : 1039
  1-bit 24-to-1 multiplexer                             : 1
@@ -2531,7 +2545,7 @@ Macro Statistics
  24-bit 2-to-1 multiplexer                             : 8
  3-bit 2-to-1 multiplexer                              : 1
  30-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 36
  40-bit 2-to-1 multiplexer                             : 1
  6-bit 2-to-1 multiplexer                              : 8
@@ -2778,12 +2792,10 @@ Optimizing FSM <variable_freq_clk_generator_inst/FSM_1> on signal <DCM_prog_stat
  00000000000000000000000000101001 | 010000000000000000000000000000000
  00000000000000000000000000101010 | 100000000000000000000000000000000
 -----------------------------------------------------------------------
-WARNING:Xst:1710 - FF/Latch <cmd_byte_addr_wr_0> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_byte_addr_wr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_byte_addr_wr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_byte_addr_rd_0> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cmd_byte_addr_rd_0> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_byte_addr_rd_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_byte_addr_rd_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_byte_addr_wr_0> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_byte_addr_wr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_WRITE_DATA_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_DQS_DELAY_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <MCB_UIADDR_0> in Unit <mcb_soft_calibration> is equivalent to the following 3 FFs/Latches, which will be removed : <MCB_UIADDR_2> <MCB_UIADDR_3> <MCB_UIADDR_4> 
@@ -2792,19 +2804,17 @@ Optimizing unit <main> ...
 
 Optimizing unit <okHost> ...
 
-Optimizing unit <memc3_infrastructure> ...
-
 Optimizing unit <ddr2_state_machine> ...
 WARNING:Xst:1710 - FF/Latch <p0_cmd_instr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_instr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_0> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <p0_cmd_instr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_instr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_0> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_1> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_cmd_byte_addr_2> (without init value) has a constant value of 0 in block <ddr2_state_machine>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <memc3_infrastructure> ...
 
 Optimizing unit <mcb_soft_calibration> ...
 
@@ -2819,9 +2829,7 @@ Optimizing unit <variable_freq_clk_generator> ...
 Optimizing unit <LED_controller> ...
 
 Optimizing unit <DAC_output_scalable_HPF> ...
-WARNING:Xst:1710 - FF/Latch <SDRAM_FIFO_inst/buffer_byte_addr_wr_ti_2> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <SDRAM_FIFO_inst/buffer_byte_addr_wr_ti_1> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_2> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_1> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller/data_reg_7> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller/data_reg_7> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
@@ -2871,8 +2879,6 @@ INFO:Xst:2261 - The FF/Latch <SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_w
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 59.
-WARNING:Xst:387 - The KEEP property attached to the net <SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst> may hinder timing optimization.
-   You may achieve better results by removing this property
 INFO:Xst:2260 - The FF/Latch <core0/a0/pc0/sync_interrupt_flop> in Unit <host/core0> is equivalent to the following FF/Latch : <core0/a0/pc0/sync_sleep_flop> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> 
@@ -2904,9 +2910,7 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <SDRAM_FIFO_inst/okPipeOut_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <SDRAM_FIFO_inst/okPipeOut_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
 FlipFlop SDRAM_FIFO_inst/ddr2_state_machine_inst/reset_d has been replicated 1 time(s)
-FlipFlop SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1 has been replicated 2 time(s)
-FlipFlop SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2 has been replicated 1 time(s)
-FlipFlop SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3 has been replicated 2 time(s)
+FlipFlop SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1 has been replicated 1 time(s)
 FlipFlop SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked has been replicated 2 time(s)
 FlipFlop SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Pre_SYSRST has been replicated 2 time(s)
 FlipFlop TTL_out_user_15 has been replicated 1 time(s) to handle iob=true attribute.
@@ -2930,8 +2934,8 @@ Unit <main> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 3027
- Flip-Flops                                            : 3027
+# Registers                                            : 3120
+ Flip-Flops                                            : 3120
 # Shift Registers                                      : 3
  2-bit shift register                                  : 1
  6-bit shift register                                  : 2
@@ -2957,31 +2961,31 @@ Top Level Output File Name         : main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 15541
+# BELS                             : 15730
 #      GND                         : 46
-#      INV                         : 91
-#      LUT1                        : 255
-#      LUT2                        : 2346
-#      LUT3                        : 467
-#      LUT4                        : 1658
-#      LUT5                        : 1806
-#      LUT6                        : 5581
+#      INV                         : 123
+#      LUT1                        : 203
+#      LUT2                        : 2402
+#      LUT3                        : 513
+#      LUT4                        : 1695
+#      LUT5                        : 1840
+#      LUT6                        : 5556
 #      LUT6_2                      : 50
 #      MULT_AND                    : 6
-#      MUXCY                       : 1117
-#      MUXF7                       : 761
+#      MUXCY                       : 1163
+#      MUXF7                       : 752
 #      MUXF8                       : 309
 #      VCC                         : 12
-#      XORCY                       : 1036
-# FlipFlops/Latches                : 8269
-#      FD                          : 523
+#      XORCY                       : 1060
+# FlipFlops/Latches                : 8362
+#      FD                          : 557
 #      FDC                         : 1092
-#      FDCE                        : 318
-#      FDE                         : 1980
+#      FDCE                        : 349
+#      FDE                         : 2008
 #      FDP                         : 89
-#      FDPE                        : 12
-#      FDR                         : 576
-#      FDRE                        : 3665
+#      FDPE                        : 13
+#      FDR                         : 573
+#      FDRE                        : 3667
 #      FDS                         : 12
 #      FDSE                        : 2
 # RAMS                             : 74
@@ -2992,8 +2996,8 @@ Primitive and Black Box Usage:
 #      RAMB16BWER                  : 58
 # Shift Registers                  : 4
 #      SRLC16E                     : 4
-# Clock Buffers                    : 7
-#      BUFG                        : 7
+# Clock Buffers                    : 8
+#      BUFG                        : 8
 # IO Buffers                       : 179
 #      IBUF                        : 32
 #      IBUFDS                      : 8
@@ -3029,19 +3033,19 @@ Selected Device : 6slx45fgg484-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            8158  out of  54576    14%  
- Number of Slice LUTs:                12302  out of  27288    45%  
-    Number used as Logic:             12254  out of  27288    44%  
+ Number of Slice Registers:            8251  out of  54576    15%  
+ Number of Slice LUTs:                12430  out of  27288    45%  
+    Number used as Logic:             12382  out of  27288    45%  
     Number used as Memory:               48  out of   6408     0%  
        Number used as RAM:               44
        Number used as SRL:                4
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  17195
-   Number with an unused Flip Flop:    9037  out of  17195    52%  
-   Number with an unused LUT:          4893  out of  17195    28%  
-   Number of fully used LUT-FF pairs:  3265  out of  17195    18%  
-   Number of unique control sets:       269
+ Number of LUT Flip Flop pairs used:  17335
+   Number with an unused Flip Flop:    9084  out of  17335    52%  
+   Number with an unused LUT:          4905  out of  17335    28%  
+   Number of fully used LUT-FF pairs:  3346  out of  17335    19%  
+   Number of unique control sets:       271
 
 IO Utilization: 
  Number of IOs:                         203
@@ -3051,7 +3055,7 @@ IO Utilization:
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               58  out of    116    50%  
     Number using Block RAM only:         58
- Number of BUFG/BUFGCTRL/BUFHCEs:         7  out of     16    43%  
+ Number of BUFG/BUFGCTRL/BUFHCEs:         8  out of     16    50%  
  Number of DSP48A1s:                      8  out of     58    13%  
  Number of PLL_ADVs:                      1  out of      4    25%  
 
@@ -3079,6 +3083,7 @@ Clock Signal                             | Clock buffer(FF name)                
 ti5a/ep_trigger<0>                       | NONE(ledsEnabled)                                          | 1     |
 variable_freq_clk_generator_inst/clkout_i| BUFG                                                       | 2122  |
 ti5a/ep_trigger<16>                      | BUFG                                                       | 32    |
+ti5a/ep_trigger<17>                      | BUFG                                                       | 32    |
 ti43/ep_trigger<0>                       | NONE(DAC_thresh_1_0)                                       | 16    |
 ti43/ep_trigger<1>                       | NONE(DAC_thresh_2_0)                                       | 16    |
 ti43/ep_trigger<2>                       | NONE(DAC_thresh_3_0)                                       | 16    |
@@ -3107,9 +3112,9 @@ ti46/ep_trigger<4>                       | NONE(external_digout_channel_A_0)    
 ti46/ep_trigger<5>                       | NONE(external_digout_channel_B_0)                          | 4     |
 ti46/ep_trigger<6>                       | NONE(external_digout_channel_C_0)                          | 4     |
 ti46/ep_trigger<7>                       | NONE(external_digout_channel_D_0)                          | 4     |
-okUH<0>                                  | DCM_SP:CLK0                                                | 5138  |
+okUH<0>                                  | DCM_SP:CLK0                                                | 5140  |
 clk1_in_p                                | PLL_ADV:CLKOUT3                                            | 237   |
-clk1_in_p                                | PLL_ADV:CLKOUT2                                            | 383   |
+clk1_in_p                                | PLL_ADV:CLKOUT2                                            | 442   |
 clk1_in_p                                | IBUFGDS+BUFG                                               | 64    |
 DAC_output_8/state_clk                   | BUFG                                                       | 256   |
 host/core0/okHE<41>                      | NONE(host/core0/core0/a0/pm0/ram_1k_generate.s6.kcpsm6_rom)| 1     |
@@ -3124,7 +3129,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 28.987ns (Maximum Frequency: 34.498MHz)
+   Minimum period: 30.874ns (Maximum Frequency: 32.390MHz)
    Minimum input arrival time before clock: 6.602ns
    Maximum output required time after clock: 13.073ns
    Maximum combinational path delay: 3.593ns
@@ -3136,7 +3141,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'variable_freq_clk_generator_inst/clkout_i'
   Clock period: 21.908ns (frequency: 45.646MHz)
-  Total number of paths / destination ports: 10974544 / 3288
+  Total number of paths / destination ports: 10974430 / 3288
 -------------------------------------------------------------------------
 Delay:               21.908ns (Levels of Logic = 28)
   Source:            DAC_register_1_15 (FF)
@@ -3169,7 +3174,7 @@ Delay:               21.908ns (Levels of Logic = 28)
      LUT5:I4->O           22   0.254   1.334  DAC_output_1/DAC_input_suppressed[14]_DAC_input_suppressed[15]_equal_24_o7111 (DAC_output_1/DAC_input_suppressed[14]_DAC_input_suppressed[15]_equal_24_o711)
      LUT6:I5->O           25   0.254   1.403  DAC_output_1/DAC_input_suppressed[14]_DAC_input_suppressed[15]_equal_24_o712 (DAC_output_1/DAC_input_suppressed[14]_DAC_input_suppressed[15]_equal_24_o71)
      LUT6:I5->O           10   0.254   1.463  DAC_output_1/DAC_input_suppressed[14]_DAC_input_suppressed[15]_equal_24_o73 (DAC_output_1/DAC_input_suppressed[14]_DAC_input_suppressed[15]_equal_24_o)
-     LUT6:I0->O            1   0.254   0.910  DAC_output_1/Mmux_DAC_input_suppressed[15]_DAC_input_suppressed[0]_MUX_747_o161 (DAC_output_1/DAC_input_suppressed[15]_DAC_input_suppressed[6]_MUX_741_o)
+     LUT6:I0->O            1   0.254   0.910  DAC_output_1/Mmux_DAC_input_suppressed[15]_DAC_input_suppressed[0]_MUX_736_o161 (DAC_output_1/DAC_input_suppressed[15]_DAC_input_suppressed[6]_MUX_730_o)
      LUT6:I3->O            1   0.235   0.000  DAC_output_1/Mmux_DAC_input_scaled<13>_3 (DAC_output_1/Mmux_DAC_input_scaled<13>_3)
      MUXF7:I1->O           1   0.175   0.910  DAC_output_1/Mmux_DAC_input_scaled<13>_2_f7 (DAC_output_1/DAC_input_scaled<13>)
      LUT6:I3->O            1   0.235   0.682  DAC_output_1/SF2592 (DAC_output_1/SF2592)
@@ -3185,7 +3190,7 @@ Delay:               21.908ns (Levels of Logic = 28)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'okUH<0>'
   Clock period: 12.113ns (frequency: 82.555MHz)
-  Total number of paths / destination ports: 69414 / 9482
+  Total number of paths / destination ports: 72649 / 9530
 -------------------------------------------------------------------------
 Delay:               12.113ns (Levels of Logic = 10)
   Source:            host/core0/core0/ti_addr_1 (FF)
@@ -3217,27 +3222,26 @@ Delay:               12.113ns (Levels of Logic = 10)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk1_in_p'
-  Clock period: 28.987ns (frequency: 34.498MHz)
-  Total number of paths / destination ports: 21250 / 1695
+  Clock period: 30.874ns (frequency: 32.390MHz)
+  Total number of paths / destination ports: 23985 / 1783
 -------------------------------------------------------------------------
-Delay:               4.638ns (Levels of Logic = 3)
-  Source:            SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_4 (FF)
+Delay:               4.940ns (Levels of Logic = 2)
+  Source:            SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2 (FF)
   Destination:       SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_26 (FF)
   Source Clock:      clk1_in_p rising 6.3X
   Destination Clock: clk1_in_p rising 6.3X
 
-  Data Path: SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_4 to SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_26
+  Data Path: SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2 to SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_26
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              5   0.525   1.271  SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_4 (SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_4)
-     LUT6:I1->O            4   0.254   0.804  SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt[5]_GND_57_o_equal_21_o<5>1_1 (SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt[5]_GND_57_o_equal_21_o<5>1)
-     LUT4:I3->O           13   0.254   1.206  SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_cmd_byte_addr[29]_select_48_OUT<10>11 (SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_cmd_byte_addr[29]_select_48_OUT<10>1)
-     LUT6:I4->O            1   0.250   0.000  SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_cmd_byte_addr[29]_select_48_OUT<9>1 (SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_cmd_byte_addr[29]_select_48_OUT<9>)
+     FDR:C->Q            135   0.525   2.545  SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2 (SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2)
+     LUT3:I0->O           13   0.235   1.326  SDRAM_FIFO_inst/ddr2_state_machine_inst/state_state[31]_GND_57_o_equal_39_o1_1 (SDRAM_FIFO_inst/ddr2_state_machine_inst/state_state[31]_GND_57_o_equal_39_o1)
+     LUT6:I3->O            1   0.235   0.000  SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_cmd_byte_addr[29]_select_51_OUT<9>1 (SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_cmd_byte_addr[29]_select_51_OUT<9>)
      FDR:D                     0.074          SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_9
     ----------------------------------------
-    Total                      4.638ns (1.357ns logic, 3.281ns route)
-                                       (29.3% logic, 70.7% route)
+    Total                      4.940ns (1.069ns logic, 3.871ns route)
+                                       (21.6% logic, 78.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DAC_output_8/state_clk'
@@ -3297,9 +3301,9 @@ Offset:              4.243ns (Levels of Logic = 5)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             8   1.328   1.220  TTL_in_14_IBUF (TTL_in_14_IBUF)
-     LUT6:I2->O            1   0.254   0.000  Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_173_o_4 (Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_173_o_4)
-     MUXF7:I1->O           1   0.175   0.000  Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_173_o_3_f7 (Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_173_o_3_f7)
-     MUXF8:I1->O           1   0.152   0.790  Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_173_o_2_f8 (external_digout_channel_A[3]_TTL_in[15]_Mux_173_o)
+     LUT6:I2->O            1   0.254   0.000  Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_175_o_4 (Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_175_o_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_175_o_3_f7 (Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_175_o_3_f7)
+     MUXF8:I1->O           1   0.152   0.790  Mmux_external_digout_channel_A[3]_TTL_in[15]_Mux_175_o_2_f8 (external_digout_channel_A[3]_TTL_in[15]_Mux_175_o)
      LUT6:I4->O            1   0.250   0.000  external_digout_A_rstpot1 (external_digout_A_rstpot1)
      FD:D                      0.074          external_digout_A
     ----------------------------------------
@@ -3308,7 +3312,7 @@ Offset:              4.243ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk1_in_p'
-  Total number of paths / destination ports: 124 / 110
+  Total number of paths / destination ports: 120 / 107
 -------------------------------------------------------------------------
 Offset:              5.852ns (Levels of Logic = 5)
   Source:            ddr2_rzq (PAD)
@@ -3862,7 +3866,7 @@ Offset:              8.392ns (Levels of Logic = 11)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk1_in_p'
-  Total number of paths / destination ports: 186 / 132
+  Total number of paths / destination ports: 208 / 139
 -------------------------------------------------------------------------
 Offset:              5.303ns (Levels of Logic = 2)
   Source:            SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/syn_uiclk_pll_lock (FF)
@@ -3910,7 +3914,7 @@ Clock to Setup on destination clock DAC_output_8/state_clk
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
 DAC_output_8/state_clk                   |    3.020|         |         |         |
-okUH<0>                                  |    3.469|         |         |         |
+okUH<0>                                  |    3.479|         |         |         |
 variable_freq_clk_generator_inst/clkout_i|    3.406|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
@@ -3921,7 +3925,7 @@ Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fal
 -----------------------------------------+---------+---------+---------+---------+
 DAC_output_8/state_clk                   |   11.634|         |         |         |
 clk1_in_p                                |    8.901|         |         |         |
-okUH<0>                                  |    5.927|         |         |         |
+okUH<0>                                  |    5.936|         |         |         |
 ti43/ep_trigger<0>                       |    5.914|         |         |         |
 ti43/ep_trigger<10>                      |    2.935|         |         |         |
 ti43/ep_trigger<11>                      |    2.935|         |         |         |
@@ -3940,6 +3944,7 @@ ti43/ep_trigger<8>                       |    2.935|         |         |        
 ti43/ep_trigger<9>                       |    3.975|         |         |         |
 ti44/ep_trigger<0>                       |   10.118|         |         |         |
 ti5a/ep_trigger<0>                       |    3.299|         |         |         |
+ti5a/ep_trigger<17>                      |    1.788|         |         |         |
 variable_freq_clk_generator_inst/clkout_i|   11.631|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
@@ -3959,6 +3964,7 @@ Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fal
 clk1_in_p                                |    1.439|         |         |         |
 okUH<0>                                  |   12.113|         |         |         |
 ti5a/ep_trigger<16>                      |    2.596|         |         |         |
+ti5a/ep_trigger<17>                      |    1.324|         |         |         |
 variable_freq_clk_generator_inst/clkout_i|    1.908|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
@@ -3967,7 +3973,7 @@ Clock to Setup on destination clock ti43/ep_trigger<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<10>
@@ -3975,7 +3981,7 @@ Clock to Setup on destination clock ti43/ep_trigger<10>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<11>
@@ -3983,7 +3989,7 @@ Clock to Setup on destination clock ti43/ep_trigger<11>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<12>
@@ -3991,7 +3997,7 @@ Clock to Setup on destination clock ti43/ep_trigger<12>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<13>
@@ -3999,7 +4005,7 @@ Clock to Setup on destination clock ti43/ep_trigger<13>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<14>
@@ -4007,7 +4013,7 @@ Clock to Setup on destination clock ti43/ep_trigger<14>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<15>
@@ -4015,7 +4021,7 @@ Clock to Setup on destination clock ti43/ep_trigger<15>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<1>
@@ -4023,7 +4029,7 @@ Clock to Setup on destination clock ti43/ep_trigger<1>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<2>
@@ -4031,7 +4037,7 @@ Clock to Setup on destination clock ti43/ep_trigger<2>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<3>
@@ -4039,7 +4045,7 @@ Clock to Setup on destination clock ti43/ep_trigger<3>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<4>
@@ -4047,7 +4053,7 @@ Clock to Setup on destination clock ti43/ep_trigger<4>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<5>
@@ -4055,7 +4061,7 @@ Clock to Setup on destination clock ti43/ep_trigger<5>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<6>
@@ -4063,7 +4069,7 @@ Clock to Setup on destination clock ti43/ep_trigger<6>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<7>
@@ -4071,7 +4077,7 @@ Clock to Setup on destination clock ti43/ep_trigger<7>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<8>
@@ -4079,7 +4085,7 @@ Clock to Setup on destination clock ti43/ep_trigger<8>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<9>
@@ -4087,7 +4093,7 @@ Clock to Setup on destination clock ti43/ep_trigger<9>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti44/ep_trigger<0>
@@ -4095,7 +4101,7 @@ Clock to Setup on destination clock ti44/ep_trigger<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti44/ep_trigger<1>
@@ -4103,7 +4109,7 @@ Clock to Setup on destination clock ti44/ep_trigger<1>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti45/ep_trigger<0>
@@ -4111,7 +4117,7 @@ Clock to Setup on destination clock ti45/ep_trigger<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti45/ep_trigger<1>
@@ -4119,7 +4125,7 @@ Clock to Setup on destination clock ti45/ep_trigger<1>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti46/ep_trigger<0>
@@ -4127,7 +4133,7 @@ Clock to Setup on destination clock ti46/ep_trigger<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti46/ep_trigger<1>
@@ -4135,7 +4141,7 @@ Clock to Setup on destination clock ti46/ep_trigger<1>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti46/ep_trigger<2>
@@ -4143,7 +4149,7 @@ Clock to Setup on destination clock ti46/ep_trigger<2>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti46/ep_trigger<3>
@@ -4151,7 +4157,7 @@ Clock to Setup on destination clock ti46/ep_trigger<3>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti46/ep_trigger<4>
@@ -4159,7 +4165,7 @@ Clock to Setup on destination clock ti46/ep_trigger<4>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti46/ep_trigger<5>
@@ -4167,7 +4173,7 @@ Clock to Setup on destination clock ti46/ep_trigger<5>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti46/ep_trigger<6>
@@ -4175,7 +4181,7 @@ Clock to Setup on destination clock ti46/ep_trigger<6>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti46/ep_trigger<7>
@@ -4183,7 +4189,7 @@ Clock to Setup on destination clock ti46/ep_trigger<7>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    2.085|         |         |         |
+okUH<0>        |    2.101|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti5a/ep_trigger<0>
@@ -4191,7 +4197,7 @@ Clock to Setup on destination clock ti5a/ep_trigger<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-okUH<0>        |    3.469|         |         |         |
+okUH<0>        |    3.479|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti5a/ep_trigger<16>
@@ -4199,8 +4205,17 @@ Clock to Setup on destination clock ti5a/ep_trigger<16>
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-okUH<0>                                  |    3.469|         |         |         |
-variable_freq_clk_generator_inst/clkout_i|    3.910|         |         |         |
+okUH<0>                                  |    3.479|         |         |         |
+variable_freq_clk_generator_inst/clkout_i|    4.320|         |         |         |
+-----------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ti5a/ep_trigger<17>
+-----------------------------------------+---------+---------+---------+---------+
+                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------+---------+---------+---------+---------+
+okUH<0>                                  |    3.479|         |         |         |
+variable_freq_clk_generator_inst/clkout_i|    4.320|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock variable_freq_clk_generator_inst/clkout_i
@@ -4245,14 +4260,14 @@ variable_freq_clk_generator_inst/clkout_i|   21.908|         |         |        
 =========================================================================
 
 
-Total REAL time to Xst completion: 166.00 secs
-Total CPU time to Xst completion: 165.33 secs
+Total REAL time to Xst completion: 162.00 secs
+Total CPU time to Xst completion: 162.22 secs
  
 --> 
 
-Total memory usage is 607280 kilobytes
+Total memory usage is 608304 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  278 (   0 filtered)
+Number of warnings :  279 (   0 filtered)
 Number of infos    :  161 (   0 filtered)
 

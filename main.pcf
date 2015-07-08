@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.58f on Wed Jun 24 02:38:02 2015
+// Written by: Map P.58f on Mon Jul 06 00:43:21 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -347,49 +347,48 @@ TIMEGRP variable_freq_clk_generator_inst_clkout_i = BEL "data_stream_TTL_in_0"
         "data_stream_TTL_in_9" BEL "data_stream_TTL_in_10" BEL
         "data_stream_TTL_in_11" BEL "data_stream_TTL_in_12" BEL
         "data_stream_TTL_in_13" BEL "data_stream_TTL_in_14" BEL
-        "data_stream_TTL_in_15" BEL "channel_0" BEL "channel_1" BEL
-        "channel_2" BEL "channel_3" BEL "channel_4" BEL "channel_5" BEL
-        "timestamp_0" BEL "timestamp_1" BEL "timestamp_2" BEL "timestamp_3"
-        BEL "timestamp_4" BEL "timestamp_5" BEL "timestamp_6" BEL
-        "timestamp_7" BEL "timestamp_8" BEL "timestamp_9" BEL "timestamp_10"
-        BEL "timestamp_11" BEL "timestamp_12" BEL "timestamp_13" BEL
-        "timestamp_14" BEL "timestamp_15" BEL "timestamp_16" BEL
-        "timestamp_17" BEL "timestamp_18" BEL "timestamp_19" BEL
-        "timestamp_20" BEL "timestamp_21" BEL "timestamp_22" BEL
-        "timestamp_23" BEL "timestamp_24" BEL "timestamp_25" BEL
-        "timestamp_26" BEL "timestamp_27" BEL "timestamp_28" BEL
-        "timestamp_29" BEL "timestamp_30" BEL "timestamp_31" BEL "sample_clk"
-        BEL "SCLK" BEL "MOSI_A" BEL "MOSI_B" BEL "MOSI_C" BEL "FIFO_write_to"
-        BEL "MOSI_D" BEL "FIFO_data_in_0" BEL "FIFO_data_in_1" BEL
-        "FIFO_data_in_2" BEL "FIFO_data_in_3" BEL "FIFO_data_in_4" BEL
+        "data_stream_TTL_in_15" BEL "sample_clk" BEL "timestamp_0" BEL
+        "timestamp_1" BEL "timestamp_2" BEL "timestamp_3" BEL "timestamp_4"
+        BEL "timestamp_5" BEL "timestamp_6" BEL "timestamp_7" BEL
+        "timestamp_8" BEL "timestamp_9" BEL "timestamp_10" BEL "timestamp_11"
+        BEL "timestamp_12" BEL "timestamp_13" BEL "timestamp_14" BEL
+        "timestamp_15" BEL "timestamp_16" BEL "timestamp_17" BEL
+        "timestamp_18" BEL "timestamp_19" BEL "timestamp_20" BEL
+        "timestamp_21" BEL "timestamp_22" BEL "timestamp_23" BEL
+        "timestamp_24" BEL "timestamp_25" BEL "timestamp_26" BEL
+        "timestamp_27" BEL "timestamp_28" BEL "timestamp_29" BEL
+        "timestamp_30" BEL "timestamp_31" BEL "channel_0" BEL "channel_1" BEL
+        "channel_2" BEL "channel_3" BEL "channel_4" BEL "channel_5" BEL "SCLK"
+        BEL "MOSI_A" BEL "MOSI_B" BEL "FIFO_data_in_0" BEL "FIFO_data_in_1"
+        BEL "FIFO_data_in_2" BEL "FIFO_data_in_3" BEL "FIFO_data_in_4" BEL
         "FIFO_data_in_5" BEL "FIFO_data_in_6" BEL "FIFO_data_in_7" BEL
         "FIFO_data_in_8" BEL "FIFO_data_in_9" BEL "FIFO_data_in_10" BEL
         "FIFO_data_in_11" BEL "FIFO_data_in_12" BEL "FIFO_data_in_13" BEL
-        "FIFO_data_in_14" BEL "FIFO_data_in_15" BEL "CS_b" BEL
-        "channel_MISO_0" BEL "channel_MISO_1" BEL "channel_MISO_2" BEL
-        "channel_MISO_3" BEL "channel_MISO_4" BEL "channel_MISO_5" BEL
-        "aux_cmd_index_1_0" BEL "aux_cmd_index_1_1" BEL "aux_cmd_index_1_2"
-        BEL "aux_cmd_index_1_3" BEL "aux_cmd_index_1_4" BEL
-        "aux_cmd_index_1_5" BEL "aux_cmd_index_1_6" BEL "aux_cmd_index_1_7"
-        BEL "aux_cmd_index_1_8" BEL "aux_cmd_index_1_9" BEL
+        "FIFO_data_in_14" BEL "FIFO_data_in_15" BEL "MOSI_C" BEL "MOSI_D" BEL
+        "FIFO_write_to" BEL "CS_b" BEL "channel_MISO_0" BEL "channel_MISO_1"
+        BEL "channel_MISO_2" BEL "channel_MISO_3" BEL "channel_MISO_4" BEL
+        "channel_MISO_5" BEL "aux_cmd_index_1_0" BEL "aux_cmd_index_1_1" BEL
+        "aux_cmd_index_1_2" BEL "aux_cmd_index_1_3" BEL "aux_cmd_index_1_4"
+        BEL "aux_cmd_index_1_5" BEL "aux_cmd_index_1_6" BEL
+        "aux_cmd_index_1_7" BEL "aux_cmd_index_1_8" BEL "aux_cmd_index_1_9"
+        BEL "max_aux_cmd_index_1_0" BEL "max_aux_cmd_index_1_1" BEL
+        "max_aux_cmd_index_1_2" BEL "max_aux_cmd_index_1_3" BEL
+        "max_aux_cmd_index_1_4" BEL "max_aux_cmd_index_1_5" BEL
+        "max_aux_cmd_index_1_6" BEL "max_aux_cmd_index_1_7" BEL
+        "max_aux_cmd_index_1_8" BEL "max_aux_cmd_index_1_9" BEL
         "aux_cmd_index_2_0" BEL "aux_cmd_index_2_1" BEL "aux_cmd_index_2_2"
         BEL "aux_cmd_index_2_3" BEL "aux_cmd_index_2_4" BEL
         "aux_cmd_index_2_5" BEL "aux_cmd_index_2_6" BEL "aux_cmd_index_2_7"
         BEL "aux_cmd_index_2_8" BEL "aux_cmd_index_2_9" BEL
+        "aux_cmd_index_3_0" BEL "aux_cmd_index_3_1" BEL "aux_cmd_index_3_2"
+        BEL "aux_cmd_index_3_3" BEL "aux_cmd_index_3_4" BEL
+        "aux_cmd_index_3_5" BEL "aux_cmd_index_3_6" BEL "aux_cmd_index_3_7"
+        BEL "aux_cmd_index_3_8" BEL "aux_cmd_index_3_9" BEL
         "max_aux_cmd_index_2_0" BEL "max_aux_cmd_index_2_1" BEL
         "max_aux_cmd_index_2_2" BEL "max_aux_cmd_index_2_3" BEL
         "max_aux_cmd_index_2_4" BEL "max_aux_cmd_index_2_5" BEL
         "max_aux_cmd_index_2_6" BEL "max_aux_cmd_index_2_7" BEL
         "max_aux_cmd_index_2_8" BEL "max_aux_cmd_index_2_9" BEL
-        "aux_cmd_index_3_0" BEL "aux_cmd_index_3_1" BEL "aux_cmd_index_3_2"
-        BEL "aux_cmd_index_3_3" BEL "aux_cmd_index_3_4" BEL
-        "aux_cmd_index_3_5" BEL "aux_cmd_index_3_6" BEL "aux_cmd_index_3_7"
-        BEL "aux_cmd_index_3_8" BEL "aux_cmd_index_3_9" BEL
-        "max_aux_cmd_index_1_0" BEL "max_aux_cmd_index_1_1" BEL
-        "max_aux_cmd_index_1_2" BEL "max_aux_cmd_index_1_3" BEL
-        "max_aux_cmd_index_1_4" BEL "max_aux_cmd_index_1_5" BEL
-        "max_aux_cmd_index_1_6" BEL "max_aux_cmd_index_1_7" BEL
-        "max_aux_cmd_index_1_8" BEL "max_aux_cmd_index_1_9" BEL
         "max_aux_cmd_index_3_0" BEL "max_aux_cmd_index_3_1" BEL
         "max_aux_cmd_index_3_2" BEL "max_aux_cmd_index_3_3" BEL
         "max_aux_cmd_index_3_4" BEL "max_aux_cmd_index_3_5" BEL
@@ -398,22 +397,22 @@ TIMEGRP variable_freq_clk_generator_inst_clkout_i = BEL "data_stream_TTL_in_0"
         "aux_cmd_bank_1_A_0" BEL "aux_cmd_bank_1_A_1" BEL "aux_cmd_bank_1_A_2"
         BEL "aux_cmd_bank_1_A_3" BEL "aux_cmd_bank_1_B_0" BEL
         "aux_cmd_bank_1_B_1" BEL "aux_cmd_bank_1_B_2" BEL "aux_cmd_bank_1_B_3"
-        BEL "aux_cmd_bank_1_C_0" BEL "aux_cmd_bank_1_C_1" BEL
-        "aux_cmd_bank_1_C_2" BEL "aux_cmd_bank_1_C_3" BEL "aux_cmd_bank_2_B_0"
-        BEL "aux_cmd_bank_2_B_1" BEL "aux_cmd_bank_2_B_2" BEL
-        "aux_cmd_bank_2_B_3" BEL "aux_cmd_bank_1_D_0" BEL "aux_cmd_bank_1_D_1"
+        BEL "aux_cmd_bank_2_A_0" BEL "aux_cmd_bank_2_A_1" BEL
+        "aux_cmd_bank_2_A_2" BEL "aux_cmd_bank_2_A_3" BEL "aux_cmd_bank_1_C_0"
+        BEL "aux_cmd_bank_1_C_1" BEL "aux_cmd_bank_1_C_2" BEL
+        "aux_cmd_bank_1_C_3" BEL "aux_cmd_bank_1_D_0" BEL "aux_cmd_bank_1_D_1"
         BEL "aux_cmd_bank_1_D_2" BEL "aux_cmd_bank_1_D_3" BEL
-        "aux_cmd_bank_2_A_0" BEL "aux_cmd_bank_2_A_1" BEL "aux_cmd_bank_2_A_2"
-        BEL "aux_cmd_bank_2_A_3" BEL "aux_cmd_bank_2_C_0" BEL
+        "aux_cmd_bank_2_B_0" BEL "aux_cmd_bank_2_B_1" BEL "aux_cmd_bank_2_B_2"
+        BEL "aux_cmd_bank_2_B_3" BEL "aux_cmd_bank_2_C_0" BEL
         "aux_cmd_bank_2_C_1" BEL "aux_cmd_bank_2_C_2" BEL "aux_cmd_bank_2_C_3"
         BEL "aux_cmd_bank_2_D_0" BEL "aux_cmd_bank_2_D_1" BEL
         "aux_cmd_bank_2_D_2" BEL "aux_cmd_bank_2_D_3" BEL "aux_cmd_bank_3_A_0"
         BEL "aux_cmd_bank_3_A_1" BEL "aux_cmd_bank_3_A_2" BEL
-        "aux_cmd_bank_3_A_3" BEL "aux_cmd_bank_3_B_0" BEL "aux_cmd_bank_3_B_1"
-        BEL "aux_cmd_bank_3_B_2" BEL "aux_cmd_bank_3_B_3" BEL
-        "aux_cmd_bank_3_C_0" BEL "aux_cmd_bank_3_C_1" BEL "aux_cmd_bank_3_C_2"
-        BEL "aux_cmd_bank_3_C_3" BEL "aux_cmd_bank_3_D_0" BEL
-        "aux_cmd_bank_3_D_1" BEL "aux_cmd_bank_3_D_2" BEL "aux_cmd_bank_3_D_3"
+        "aux_cmd_bank_3_A_3" BEL "aux_cmd_bank_3_D_0" BEL "aux_cmd_bank_3_D_1"
+        BEL "aux_cmd_bank_3_D_2" BEL "aux_cmd_bank_3_D_3" BEL
+        "aux_cmd_bank_3_B_0" BEL "aux_cmd_bank_3_B_1" BEL "aux_cmd_bank_3_B_2"
+        BEL "aux_cmd_bank_3_B_3" BEL "aux_cmd_bank_3_C_0" BEL
+        "aux_cmd_bank_3_C_1" BEL "aux_cmd_bank_3_C_2" BEL "aux_cmd_bank_3_C_3"
         BEL "DAC_pre_register_1_0" BEL "DAC_pre_register_1_1" BEL
         "DAC_pre_register_1_2" BEL "DAC_pre_register_1_3" BEL
         "DAC_pre_register_1_4" BEL "DAC_pre_register_1_5" BEL
@@ -713,23 +712,23 @@ TIMEGRP variable_freq_clk_generator_inst_clkout_i = BEL "data_stream_TTL_in_0"
         "max_timestep_25" BEL "max_timestep_26" BEL "max_timestep_27" BEL
         "max_timestep_28" BEL "max_timestep_29" BEL "max_timestep_30" BEL
         "max_timestep_31" BEL "data_stream_1_en" BEL "data_stream_2_en" BEL
-        "data_stream_3_en" BEL "data_stream_4_en" BEL "data_stream_5_en" BEL
-        "data_stream_8_en" BEL "data_stream_6_en" BEL "data_stream_7_en" BEL
+        "data_stream_3_en" BEL "data_stream_4_en" BEL "data_stream_7_en" BEL
+        "data_stream_5_en" BEL "data_stream_6_en" BEL "data_stream_8_en" BEL
         "data_stream_9_en" BEL "data_stream_10_en" BEL "data_stream_11_en" BEL
-        "data_stream_12_en" BEL "data_stream_15_en" BEL "data_stream_13_en"
-        BEL "data_stream_14_en" BEL "data_stream_16_en" BEL
+        "data_stream_14_en" BEL "data_stream_12_en" BEL "data_stream_13_en"
+        BEL "data_stream_15_en" BEL "data_stream_16_en" BEL
         "data_stream_1_sel_0" BEL "data_stream_1_sel_1" BEL
         "data_stream_1_sel_2" BEL "data_stream_1_sel_3" BEL
         "data_stream_2_sel_0" BEL "data_stream_2_sel_1" BEL
         "data_stream_2_sel_2" BEL "data_stream_2_sel_3" BEL
         "data_stream_3_sel_0" BEL "data_stream_3_sel_1" BEL
         "data_stream_3_sel_2" BEL "data_stream_3_sel_3" BEL
-        "data_stream_6_sel_0" BEL "data_stream_6_sel_1" BEL
-        "data_stream_6_sel_2" BEL "data_stream_6_sel_3" BEL
         "data_stream_4_sel_0" BEL "data_stream_4_sel_1" BEL
         "data_stream_4_sel_2" BEL "data_stream_4_sel_3" BEL
         "data_stream_5_sel_0" BEL "data_stream_5_sel_1" BEL
         "data_stream_5_sel_2" BEL "data_stream_5_sel_3" BEL
+        "data_stream_6_sel_0" BEL "data_stream_6_sel_1" BEL
+        "data_stream_6_sel_2" BEL "data_stream_6_sel_3" BEL
         "data_stream_7_sel_0" BEL "data_stream_7_sel_1" BEL
         "data_stream_7_sel_2" BEL "data_stream_7_sel_3" BEL
         "data_stream_8_sel_0" BEL "data_stream_8_sel_1" BEL
@@ -1265,9 +1264,8 @@ TIMEGRP variable_freq_clk_generator_inst_clkout_i_0 = BEL
         "data_stream_TTL_in_8" BEL "data_stream_TTL_in_9" BEL
         "data_stream_TTL_in_10" BEL "data_stream_TTL_in_11" BEL
         "data_stream_TTL_in_12" BEL "data_stream_TTL_in_13" BEL
-        "data_stream_TTL_in_14" BEL "data_stream_TTL_in_15" BEL "channel_0"
-        BEL "channel_1" BEL "channel_2" BEL "channel_3" BEL "channel_4" BEL
-        "channel_5" BEL "timestamp_0" BEL "timestamp_1" BEL "timestamp_2" BEL
+        "data_stream_TTL_in_14" BEL "data_stream_TTL_in_15" BEL "sample_clk"
+        BEL "timestamp_0" BEL "timestamp_1" BEL "timestamp_2" BEL
         "timestamp_3" BEL "timestamp_4" BEL "timestamp_5" BEL "timestamp_6"
         BEL "timestamp_7" BEL "timestamp_8" BEL "timestamp_9" BEL
         "timestamp_10" BEL "timestamp_11" BEL "timestamp_12" BEL
@@ -1277,37 +1275,38 @@ TIMEGRP variable_freq_clk_generator_inst_clkout_i_0 = BEL
         "timestamp_22" BEL "timestamp_23" BEL "timestamp_24" BEL
         "timestamp_25" BEL "timestamp_26" BEL "timestamp_27" BEL
         "timestamp_28" BEL "timestamp_29" BEL "timestamp_30" BEL
-        "timestamp_31" BEL "sample_clk" BEL "SCLK" BEL "MOSI_A" BEL "MOSI_B"
-        BEL "MOSI_C" BEL "FIFO_write_to" BEL "MOSI_D" BEL "FIFO_data_in_0" BEL
-        "FIFO_data_in_1" BEL "FIFO_data_in_2" BEL "FIFO_data_in_3" BEL
-        "FIFO_data_in_4" BEL "FIFO_data_in_5" BEL "FIFO_data_in_6" BEL
-        "FIFO_data_in_7" BEL "FIFO_data_in_8" BEL "FIFO_data_in_9" BEL
-        "FIFO_data_in_10" BEL "FIFO_data_in_11" BEL "FIFO_data_in_12" BEL
-        "FIFO_data_in_13" BEL "FIFO_data_in_14" BEL "FIFO_data_in_15" BEL
-        "CS_b" BEL "channel_MISO_0" BEL "channel_MISO_1" BEL "channel_MISO_2"
-        BEL "channel_MISO_3" BEL "channel_MISO_4" BEL "channel_MISO_5" BEL
-        "aux_cmd_index_1_0" BEL "aux_cmd_index_1_1" BEL "aux_cmd_index_1_2"
-        BEL "aux_cmd_index_1_3" BEL "aux_cmd_index_1_4" BEL
-        "aux_cmd_index_1_5" BEL "aux_cmd_index_1_6" BEL "aux_cmd_index_1_7"
-        BEL "aux_cmd_index_1_8" BEL "aux_cmd_index_1_9" BEL
+        "timestamp_31" BEL "channel_0" BEL "channel_1" BEL "channel_2" BEL
+        "channel_3" BEL "channel_4" BEL "channel_5" BEL "SCLK" BEL "MOSI_A"
+        BEL "MOSI_B" BEL "FIFO_data_in_0" BEL "FIFO_data_in_1" BEL
+        "FIFO_data_in_2" BEL "FIFO_data_in_3" BEL "FIFO_data_in_4" BEL
+        "FIFO_data_in_5" BEL "FIFO_data_in_6" BEL "FIFO_data_in_7" BEL
+        "FIFO_data_in_8" BEL "FIFO_data_in_9" BEL "FIFO_data_in_10" BEL
+        "FIFO_data_in_11" BEL "FIFO_data_in_12" BEL "FIFO_data_in_13" BEL
+        "FIFO_data_in_14" BEL "FIFO_data_in_15" BEL "MOSI_C" BEL "MOSI_D" BEL
+        "FIFO_write_to" BEL "CS_b" BEL "channel_MISO_0" BEL "channel_MISO_1"
+        BEL "channel_MISO_2" BEL "channel_MISO_3" BEL "channel_MISO_4" BEL
+        "channel_MISO_5" BEL "aux_cmd_index_1_0" BEL "aux_cmd_index_1_1" BEL
+        "aux_cmd_index_1_2" BEL "aux_cmd_index_1_3" BEL "aux_cmd_index_1_4"
+        BEL "aux_cmd_index_1_5" BEL "aux_cmd_index_1_6" BEL
+        "aux_cmd_index_1_7" BEL "aux_cmd_index_1_8" BEL "aux_cmd_index_1_9"
+        BEL "max_aux_cmd_index_1_0" BEL "max_aux_cmd_index_1_1" BEL
+        "max_aux_cmd_index_1_2" BEL "max_aux_cmd_index_1_3" BEL
+        "max_aux_cmd_index_1_4" BEL "max_aux_cmd_index_1_5" BEL
+        "max_aux_cmd_index_1_6" BEL "max_aux_cmd_index_1_7" BEL
+        "max_aux_cmd_index_1_8" BEL "max_aux_cmd_index_1_9" BEL
         "aux_cmd_index_2_0" BEL "aux_cmd_index_2_1" BEL "aux_cmd_index_2_2"
         BEL "aux_cmd_index_2_3" BEL "aux_cmd_index_2_4" BEL
         "aux_cmd_index_2_5" BEL "aux_cmd_index_2_6" BEL "aux_cmd_index_2_7"
         BEL "aux_cmd_index_2_8" BEL "aux_cmd_index_2_9" BEL
+        "aux_cmd_index_3_0" BEL "aux_cmd_index_3_1" BEL "aux_cmd_index_3_2"
+        BEL "aux_cmd_index_3_3" BEL "aux_cmd_index_3_4" BEL
+        "aux_cmd_index_3_5" BEL "aux_cmd_index_3_6" BEL "aux_cmd_index_3_7"
+        BEL "aux_cmd_index_3_8" BEL "aux_cmd_index_3_9" BEL
         "max_aux_cmd_index_2_0" BEL "max_aux_cmd_index_2_1" BEL
         "max_aux_cmd_index_2_2" BEL "max_aux_cmd_index_2_3" BEL
         "max_aux_cmd_index_2_4" BEL "max_aux_cmd_index_2_5" BEL
         "max_aux_cmd_index_2_6" BEL "max_aux_cmd_index_2_7" BEL
         "max_aux_cmd_index_2_8" BEL "max_aux_cmd_index_2_9" BEL
-        "aux_cmd_index_3_0" BEL "aux_cmd_index_3_1" BEL "aux_cmd_index_3_2"
-        BEL "aux_cmd_index_3_3" BEL "aux_cmd_index_3_4" BEL
-        "aux_cmd_index_3_5" BEL "aux_cmd_index_3_6" BEL "aux_cmd_index_3_7"
-        BEL "aux_cmd_index_3_8" BEL "aux_cmd_index_3_9" BEL
-        "max_aux_cmd_index_1_0" BEL "max_aux_cmd_index_1_1" BEL
-        "max_aux_cmd_index_1_2" BEL "max_aux_cmd_index_1_3" BEL
-        "max_aux_cmd_index_1_4" BEL "max_aux_cmd_index_1_5" BEL
-        "max_aux_cmd_index_1_6" BEL "max_aux_cmd_index_1_7" BEL
-        "max_aux_cmd_index_1_8" BEL "max_aux_cmd_index_1_9" BEL
         "max_aux_cmd_index_3_0" BEL "max_aux_cmd_index_3_1" BEL
         "max_aux_cmd_index_3_2" BEL "max_aux_cmd_index_3_3" BEL
         "max_aux_cmd_index_3_4" BEL "max_aux_cmd_index_3_5" BEL
@@ -1316,22 +1315,22 @@ TIMEGRP variable_freq_clk_generator_inst_clkout_i_0 = BEL
         "aux_cmd_bank_1_A_0" BEL "aux_cmd_bank_1_A_1" BEL "aux_cmd_bank_1_A_2"
         BEL "aux_cmd_bank_1_A_3" BEL "aux_cmd_bank_1_B_0" BEL
         "aux_cmd_bank_1_B_1" BEL "aux_cmd_bank_1_B_2" BEL "aux_cmd_bank_1_B_3"
-        BEL "aux_cmd_bank_1_C_0" BEL "aux_cmd_bank_1_C_1" BEL
-        "aux_cmd_bank_1_C_2" BEL "aux_cmd_bank_1_C_3" BEL "aux_cmd_bank_2_B_0"
-        BEL "aux_cmd_bank_2_B_1" BEL "aux_cmd_bank_2_B_2" BEL
-        "aux_cmd_bank_2_B_3" BEL "aux_cmd_bank_1_D_0" BEL "aux_cmd_bank_1_D_1"
+        BEL "aux_cmd_bank_2_A_0" BEL "aux_cmd_bank_2_A_1" BEL
+        "aux_cmd_bank_2_A_2" BEL "aux_cmd_bank_2_A_3" BEL "aux_cmd_bank_1_C_0"
+        BEL "aux_cmd_bank_1_C_1" BEL "aux_cmd_bank_1_C_2" BEL
+        "aux_cmd_bank_1_C_3" BEL "aux_cmd_bank_1_D_0" BEL "aux_cmd_bank_1_D_1"
         BEL "aux_cmd_bank_1_D_2" BEL "aux_cmd_bank_1_D_3" BEL
-        "aux_cmd_bank_2_A_0" BEL "aux_cmd_bank_2_A_1" BEL "aux_cmd_bank_2_A_2"
-        BEL "aux_cmd_bank_2_A_3" BEL "aux_cmd_bank_2_C_0" BEL
+        "aux_cmd_bank_2_B_0" BEL "aux_cmd_bank_2_B_1" BEL "aux_cmd_bank_2_B_2"
+        BEL "aux_cmd_bank_2_B_3" BEL "aux_cmd_bank_2_C_0" BEL
         "aux_cmd_bank_2_C_1" BEL "aux_cmd_bank_2_C_2" BEL "aux_cmd_bank_2_C_3"
         BEL "aux_cmd_bank_2_D_0" BEL "aux_cmd_bank_2_D_1" BEL
         "aux_cmd_bank_2_D_2" BEL "aux_cmd_bank_2_D_3" BEL "aux_cmd_bank_3_A_0"
         BEL "aux_cmd_bank_3_A_1" BEL "aux_cmd_bank_3_A_2" BEL
-        "aux_cmd_bank_3_A_3" BEL "aux_cmd_bank_3_B_0" BEL "aux_cmd_bank_3_B_1"
-        BEL "aux_cmd_bank_3_B_2" BEL "aux_cmd_bank_3_B_3" BEL
-        "aux_cmd_bank_3_C_0" BEL "aux_cmd_bank_3_C_1" BEL "aux_cmd_bank_3_C_2"
-        BEL "aux_cmd_bank_3_C_3" BEL "aux_cmd_bank_3_D_0" BEL
-        "aux_cmd_bank_3_D_1" BEL "aux_cmd_bank_3_D_2" BEL "aux_cmd_bank_3_D_3"
+        "aux_cmd_bank_3_A_3" BEL "aux_cmd_bank_3_D_0" BEL "aux_cmd_bank_3_D_1"
+        BEL "aux_cmd_bank_3_D_2" BEL "aux_cmd_bank_3_D_3" BEL
+        "aux_cmd_bank_3_B_0" BEL "aux_cmd_bank_3_B_1" BEL "aux_cmd_bank_3_B_2"
+        BEL "aux_cmd_bank_3_B_3" BEL "aux_cmd_bank_3_C_0" BEL
+        "aux_cmd_bank_3_C_1" BEL "aux_cmd_bank_3_C_2" BEL "aux_cmd_bank_3_C_3"
         BEL "DAC_pre_register_1_0" BEL "DAC_pre_register_1_1" BEL
         "DAC_pre_register_1_2" BEL "DAC_pre_register_1_3" BEL
         "DAC_pre_register_1_4" BEL "DAC_pre_register_1_5" BEL
@@ -1631,23 +1630,23 @@ TIMEGRP variable_freq_clk_generator_inst_clkout_i_0 = BEL
         "max_timestep_25" BEL "max_timestep_26" BEL "max_timestep_27" BEL
         "max_timestep_28" BEL "max_timestep_29" BEL "max_timestep_30" BEL
         "max_timestep_31" BEL "data_stream_1_en" BEL "data_stream_2_en" BEL
-        "data_stream_3_en" BEL "data_stream_4_en" BEL "data_stream_5_en" BEL
-        "data_stream_8_en" BEL "data_stream_6_en" BEL "data_stream_7_en" BEL
+        "data_stream_3_en" BEL "data_stream_4_en" BEL "data_stream_7_en" BEL
+        "data_stream_5_en" BEL "data_stream_6_en" BEL "data_stream_8_en" BEL
         "data_stream_9_en" BEL "data_stream_10_en" BEL "data_stream_11_en" BEL
-        "data_stream_12_en" BEL "data_stream_15_en" BEL "data_stream_13_en"
-        BEL "data_stream_14_en" BEL "data_stream_16_en" BEL
+        "data_stream_14_en" BEL "data_stream_12_en" BEL "data_stream_13_en"
+        BEL "data_stream_15_en" BEL "data_stream_16_en" BEL
         "data_stream_1_sel_0" BEL "data_stream_1_sel_1" BEL
         "data_stream_1_sel_2" BEL "data_stream_1_sel_3" BEL
         "data_stream_2_sel_0" BEL "data_stream_2_sel_1" BEL
         "data_stream_2_sel_2" BEL "data_stream_2_sel_3" BEL
         "data_stream_3_sel_0" BEL "data_stream_3_sel_1" BEL
         "data_stream_3_sel_2" BEL "data_stream_3_sel_3" BEL
-        "data_stream_6_sel_0" BEL "data_stream_6_sel_1" BEL
-        "data_stream_6_sel_2" BEL "data_stream_6_sel_3" BEL
         "data_stream_4_sel_0" BEL "data_stream_4_sel_1" BEL
         "data_stream_4_sel_2" BEL "data_stream_4_sel_3" BEL
         "data_stream_5_sel_0" BEL "data_stream_5_sel_1" BEL
         "data_stream_5_sel_2" BEL "data_stream_5_sel_3" BEL
+        "data_stream_6_sel_0" BEL "data_stream_6_sel_1" BEL
+        "data_stream_6_sel_2" BEL "data_stream_6_sel_3" BEL
         "data_stream_7_sel_0" BEL "data_stream_7_sel_1" BEL
         "data_stream_7_sel_2" BEL "data_stream_7_sel_3" BEL
         "data_stream_8_sel_0" BEL "data_stream_8_sel_1" BEL
@@ -2340,6 +2339,7 @@ TIMEGRP host_dcm0_clk0 = BEL "SDRAM_FIFO_inst/rst_cnt_3" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_wr_ti_5" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_wr_ti_4" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_wr_ti_3" BEL
+        "SDRAM_FIFO_inst/buffer_byte_addr_wr_ti_2" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_26" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_25" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_24" BEL
@@ -2364,6 +2364,7 @@ TIMEGRP host_dcm0_clk0 = BEL "SDRAM_FIFO_inst/rst_cnt_3" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_5" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_4" BEL
         "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_3" BEL
+        "SDRAM_FIFO_inst/buffer_byte_addr_rd_ti_2" BEL
         "SDRAM_FIFO_inst/pipe_out_word_count_ti_10" BEL
         "SDRAM_FIFO_inst/pipe_out_word_count_ti_9" BEL
         "SDRAM_FIFO_inst/pipe_out_word_count_ti_8" BEL
@@ -2889,54 +2890,82 @@ TIMEGRP host_dcm0_clk0 = BEL "SDRAM_FIFO_inst/rst_cnt_3" BEL
         "wi00/ep_dataout_11" BEL "wi00/ep_dataout_12" BEL "wi00/ep_dataout_13"
         BEL "wi00/ep_dataout_14" BEL "wi00/ep_dataout_15" BEL
         "wi00/ep_dataout_16" BEL "ti5a/eptrig_0" BEL "ti5a/eptrig_16" BEL
-        "ti5a/trigff0_0" BEL "ti5a/trigff0_16" BEL "ti5a/trigff1_0" BEL
-        "ti5a/trigff1_16" BEL "ti5a/ep_trigger_0" BEL "ti5a/ep_trigger_16" BEL
-        "ti46/eptrig_0" BEL "ti46/eptrig_1" BEL "ti46/eptrig_2" BEL
-        "ti46/eptrig_3" BEL "ti46/eptrig_4" BEL "ti46/eptrig_5" BEL
-        "ti46/eptrig_6" BEL "ti46/eptrig_7" BEL "ti46/trigff0_0" BEL
-        "ti46/trigff0_1" BEL "ti46/trigff0_2" BEL "ti46/trigff0_3" BEL
-        "ti46/trigff0_4" BEL "ti46/trigff0_5" BEL "ti46/trigff0_6" BEL
-        "ti46/trigff0_7" BEL "ti46/trigff1_0" BEL "ti46/trigff1_1" BEL
-        "ti46/trigff1_2" BEL "ti46/trigff1_3" BEL "ti46/trigff1_4" BEL
-        "ti46/trigff1_5" BEL "ti46/trigff1_6" BEL "ti46/trigff1_7" BEL
-        "ti46/ep_trigger_0" BEL "ti46/ep_trigger_1" BEL "ti46/ep_trigger_2"
-        BEL "ti46/ep_trigger_3" BEL "ti46/ep_trigger_4" BEL
-        "ti46/ep_trigger_5" BEL "ti46/ep_trigger_6" BEL "ti46/ep_trigger_7"
-        BEL "ti45/eptrig_0" BEL "ti45/eptrig_1" BEL "ti45/trigff0_0" BEL
-        "ti45/trigff0_1" BEL "ti45/trigff1_0" BEL "ti45/trigff1_1" BEL
-        "ti45/ep_trigger_0" BEL "ti45/ep_trigger_1" BEL "ti44/eptrig_0" BEL
-        "ti44/eptrig_1" BEL "ti44/trigff0_0" BEL "ti44/trigff0_1" BEL
-        "ti44/trigff1_0" BEL "ti44/trigff1_1" BEL "ti44/ep_trigger_0" BEL
-        "ti44/ep_trigger_1" BEL "ti43/eptrig_0" BEL "ti43/eptrig_1" BEL
-        "ti43/eptrig_2" BEL "ti43/eptrig_3" BEL "ti43/eptrig_4" BEL
-        "ti43/eptrig_5" BEL "ti43/eptrig_6" BEL "ti43/eptrig_7" BEL
-        "ti43/eptrig_8" BEL "ti43/eptrig_9" BEL "ti43/eptrig_10" BEL
-        "ti43/eptrig_11" BEL "ti43/eptrig_12" BEL "ti43/eptrig_13" BEL
-        "ti43/eptrig_14" BEL "ti43/eptrig_15" BEL "ti43/trigff0_0" BEL
-        "ti43/trigff0_1" BEL "ti43/trigff0_2" BEL "ti43/trigff0_3" BEL
-        "ti43/trigff0_4" BEL "ti43/trigff0_5" BEL "ti43/trigff0_6" BEL
-        "ti43/trigff0_7" BEL "ti43/trigff0_8" BEL "ti43/trigff0_9" BEL
-        "ti43/trigff0_10" BEL "ti43/trigff0_11" BEL "ti43/trigff0_12" BEL
-        "ti43/trigff0_13" BEL "ti43/trigff0_14" BEL "ti43/trigff0_15" BEL
-        "ti43/trigff1_0" BEL "ti43/trigff1_1" BEL "ti43/trigff1_2" BEL
-        "ti43/trigff1_3" BEL "ti43/trigff1_4" BEL "ti43/trigff1_5" BEL
-        "ti43/trigff1_6" BEL "ti43/trigff1_7" BEL "ti43/trigff1_8" BEL
-        "ti43/trigff1_9" BEL "ti43/trigff1_10" BEL "ti43/trigff1_11" BEL
-        "ti43/trigff1_12" BEL "ti43/trigff1_13" BEL "ti43/trigff1_14" BEL
-        "ti43/trigff1_15" BEL "ti43/ep_trigger_0" BEL "ti43/ep_trigger_1" BEL
-        "ti43/ep_trigger_2" BEL "ti43/ep_trigger_3" BEL "ti43/ep_trigger_4"
-        BEL "ti43/ep_trigger_5" BEL "ti43/ep_trigger_6" BEL
-        "ti43/ep_trigger_7" BEL "ti43/ep_trigger_8" BEL "ti43/ep_trigger_9"
-        BEL "ti43/ep_trigger_10" BEL "ti43/ep_trigger_11" BEL
-        "ti43/ep_trigger_12" BEL "ti43/ep_trigger_13" BEL "ti43/ep_trigger_14"
-        BEL "ti43/ep_trigger_15" BEL "ti42/eptrig_0" BEL "ti42/eptrig_1" BEL
-        "ti42/eptrig_2" BEL "ti42/trigff0_0" BEL "ti42/trigff0_1" BEL
-        "ti42/trigff0_2" BEL "ti42/trigff1_0" BEL "ti42/trigff1_1" BEL
-        "ti42/trigff1_2" BEL "ti42/ep_trigger_0" BEL "ti42/ep_trigger_1" BEL
-        "ti42/ep_trigger_2" BEL "ti41/eptrig_0" BEL "ti40/eptrig_0" BEL
-        "ti40/trigff0_0" BEL "ti40/trigff1_0" BEL "ti40/ep_trigger_0" BEL
-        "wo3f/wirehold_0" BEL "wo3e/wirehold_3" BEL "wo3e/wirehold_4" BEL
-        "wo3e/wirehold_6" BEL "wo3e/wirehold_9" BEL "wo26/wirehold_0" BEL
+        "ti5a/eptrig_17" BEL "ti5a/trigff0_0" BEL "ti5a/trigff0_16" BEL
+        "ti5a/trigff0_17" BEL "ti5a/trigff1_0" BEL "ti5a/trigff1_16" BEL
+        "ti5a/trigff1_17" BEL "ti5a/ep_trigger_0" BEL "ti5a/ep_trigger_16" BEL
+        "ti5a/ep_trigger_17" BEL "ti46/eptrig_0" BEL "ti46/eptrig_1" BEL
+        "ti46/eptrig_2" BEL "ti46/eptrig_3" BEL "ti46/eptrig_4" BEL
+        "ti46/eptrig_5" BEL "ti46/eptrig_6" BEL "ti46/eptrig_7" BEL
+        "ti46/trigff0_0" BEL "ti46/trigff0_1" BEL "ti46/trigff0_2" BEL
+        "ti46/trigff0_3" BEL "ti46/trigff0_4" BEL "ti46/trigff0_5" BEL
+        "ti46/trigff0_6" BEL "ti46/trigff0_7" BEL "ti46/trigff1_0" BEL
+        "ti46/trigff1_1" BEL "ti46/trigff1_2" BEL "ti46/trigff1_3" BEL
+        "ti46/trigff1_4" BEL "ti46/trigff1_5" BEL "ti46/trigff1_6" BEL
+        "ti46/trigff1_7" BEL "ti46/ep_trigger_0" BEL "ti46/ep_trigger_1" BEL
+        "ti46/ep_trigger_2" BEL "ti46/ep_trigger_3" BEL "ti46/ep_trigger_4"
+        BEL "ti46/ep_trigger_5" BEL "ti46/ep_trigger_6" BEL
+        "ti46/ep_trigger_7" BEL "ti45/eptrig_0" BEL "ti45/eptrig_1" BEL
+        "ti45/trigff0_0" BEL "ti45/trigff0_1" BEL "ti45/trigff1_0" BEL
+        "ti45/trigff1_1" BEL "ti45/ep_trigger_0" BEL "ti45/ep_trigger_1" BEL
+        "ti44/eptrig_0" BEL "ti44/eptrig_1" BEL "ti44/trigff0_0" BEL
+        "ti44/trigff0_1" BEL "ti44/trigff1_0" BEL "ti44/trigff1_1" BEL
+        "ti44/ep_trigger_0" BEL "ti44/ep_trigger_1" BEL "ti43/eptrig_0" BEL
+        "ti43/eptrig_1" BEL "ti43/eptrig_2" BEL "ti43/eptrig_3" BEL
+        "ti43/eptrig_4" BEL "ti43/eptrig_5" BEL "ti43/eptrig_6" BEL
+        "ti43/eptrig_7" BEL "ti43/eptrig_8" BEL "ti43/eptrig_9" BEL
+        "ti43/eptrig_10" BEL "ti43/eptrig_11" BEL "ti43/eptrig_12" BEL
+        "ti43/eptrig_13" BEL "ti43/eptrig_14" BEL "ti43/eptrig_15" BEL
+        "ti43/trigff0_0" BEL "ti43/trigff0_1" BEL "ti43/trigff0_2" BEL
+        "ti43/trigff0_3" BEL "ti43/trigff0_4" BEL "ti43/trigff0_5" BEL
+        "ti43/trigff0_6" BEL "ti43/trigff0_7" BEL "ti43/trigff0_8" BEL
+        "ti43/trigff0_9" BEL "ti43/trigff0_10" BEL "ti43/trigff0_11" BEL
+        "ti43/trigff0_12" BEL "ti43/trigff0_13" BEL "ti43/trigff0_14" BEL
+        "ti43/trigff0_15" BEL "ti43/trigff1_0" BEL "ti43/trigff1_1" BEL
+        "ti43/trigff1_2" BEL "ti43/trigff1_3" BEL "ti43/trigff1_4" BEL
+        "ti43/trigff1_5" BEL "ti43/trigff1_6" BEL "ti43/trigff1_7" BEL
+        "ti43/trigff1_8" BEL "ti43/trigff1_9" BEL "ti43/trigff1_10" BEL
+        "ti43/trigff1_11" BEL "ti43/trigff1_12" BEL "ti43/trigff1_13" BEL
+        "ti43/trigff1_14" BEL "ti43/trigff1_15" BEL "ti43/ep_trigger_0" BEL
+        "ti43/ep_trigger_1" BEL "ti43/ep_trigger_2" BEL "ti43/ep_trigger_3"
+        BEL "ti43/ep_trigger_4" BEL "ti43/ep_trigger_5" BEL
+        "ti43/ep_trigger_6" BEL "ti43/ep_trigger_7" BEL "ti43/ep_trigger_8"
+        BEL "ti43/ep_trigger_9" BEL "ti43/ep_trigger_10" BEL
+        "ti43/ep_trigger_11" BEL "ti43/ep_trigger_12" BEL "ti43/ep_trigger_13"
+        BEL "ti43/ep_trigger_14" BEL "ti43/ep_trigger_15" BEL "ti42/eptrig_0"
+        BEL "ti42/eptrig_1" BEL "ti42/eptrig_2" BEL "ti42/trigff0_0" BEL
+        "ti42/trigff0_1" BEL "ti42/trigff0_2" BEL "ti42/trigff1_0" BEL
+        "ti42/trigff1_1" BEL "ti42/trigff1_2" BEL "ti42/ep_trigger_0" BEL
+        "ti42/ep_trigger_1" BEL "ti42/ep_trigger_2" BEL "ti41/eptrig_0" BEL
+        "ti40/eptrig_0" BEL "ti40/trigff0_0" BEL "ti40/trigff1_0" BEL
+        "ti40/ep_trigger_0" BEL "wo3f/wirehold_0" BEL "wo3e/wirehold_3" BEL
+        "wo3e/wirehold_4" BEL "wo3e/wirehold_6" BEL "wo3e/wirehold_9" BEL
+        "wo2a/wirehold_1" BEL "wo2a/wirehold_2" BEL "wo2a/wirehold_3" BEL
+        "wo2a/wirehold_4" BEL "wo2a/wirehold_5" BEL "wo2a/wirehold_6" BEL
+        "wo2a/wirehold_7" BEL "wo2a/wirehold_8" BEL "wo2a/wirehold_9" BEL
+        "wo2a/wirehold_10" BEL "wo2a/wirehold_11" BEL "wo2a/wirehold_12" BEL
+        "wo2a/wirehold_13" BEL "wo2a/wirehold_14" BEL "wo2a/wirehold_15" BEL
+        "wo2a/wirehold_16" BEL "wo2a/wirehold_17" BEL "wo2a/wirehold_18" BEL
+        "wo2a/wirehold_19" BEL "wo2a/wirehold_20" BEL "wo2a/wirehold_21" BEL
+        "wo2a/wirehold_22" BEL "wo2a/wirehold_23" BEL "wo2a/wirehold_24" BEL
+        "wo2a/wirehold_25" BEL "wo29/wirehold_1" BEL "wo29/wirehold_2" BEL
+        "wo29/wirehold_3" BEL "wo29/wirehold_4" BEL "wo29/wirehold_5" BEL
+        "wo29/wirehold_6" BEL "wo29/wirehold_7" BEL "wo29/wirehold_8" BEL
+        "wo29/wirehold_9" BEL "wo29/wirehold_10" BEL "wo29/wirehold_11" BEL
+        "wo28/wirehold_0" BEL "wo28/wirehold_1" BEL "wo28/wirehold_2" BEL
+        "wo28/wirehold_3" BEL "wo28/wirehold_4" BEL "wo28/wirehold_5" BEL
+        "wo28/wirehold_6" BEL "wo28/wirehold_7" BEL "wo28/wirehold_8" BEL
+        "wo28/wirehold_9" BEL "wo28/wirehold_10" BEL "wo28/wirehold_11" BEL
+        "wo27/wirehold_0" BEL "wo27/wirehold_1" BEL "wo27/wirehold_2" BEL
+        "wo27/wirehold_3" BEL "wo27/wirehold_4" BEL "wo27/wirehold_5" BEL
+        "wo27/wirehold_6" BEL "wo27/wirehold_7" BEL "wo27/wirehold_8" BEL
+        "wo27/wirehold_9" BEL "wo27/wirehold_10" BEL "wo27/wirehold_11" BEL
+        "wo27/wirehold_12" BEL "wo27/wirehold_13" BEL "wo27/wirehold_14" BEL
+        "wo27/wirehold_15" BEL "wo27/wirehold_16" BEL "wo27/wirehold_17" BEL
+        "wo27/wirehold_18" BEL "wo27/wirehold_19" BEL "wo27/wirehold_20" BEL
+        "wo27/wirehold_21" BEL "wo27/wirehold_22" BEL "wo27/wirehold_23" BEL
+        "wo27/wirehold_24" BEL "wo27/wirehold_25" BEL "wo27/wirehold_26" BEL
+        "wo27/wirehold_27" BEL "wo27/wirehold_28" BEL "wo27/wirehold_29" BEL
+        "wo27/wirehold_30" BEL "wo27/wirehold_31" BEL "wo26/wirehold_0" BEL
         "wo26/wirehold_1" BEL "wo26/wirehold_2" BEL "wo26/wirehold_3" BEL
         "wo26/wirehold_4" BEL "wo26/wirehold_5" BEL "wo26/wirehold_6" BEL
         "wo26/wirehold_7" BEL "wo26/wirehold_8" BEL "wo26/wirehold_9" BEL
@@ -5259,33 +5288,34 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in = PIN
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0_pins<129>"
         PIN
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0_pins<168>"
-        BEL "SDRAM_FIFO_inst/memc3_infrastructure_inst/U_BUFG_CLK0" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_24" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_23" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_22" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_21" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_20" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_19" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_18" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_17" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_16" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_15" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_14" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_13" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_12" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_11" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_10" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_9" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_8" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_7" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_6" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_5" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_4" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_3" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_2" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_1" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_0" BEL
+        BEL "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_29" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_28" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_27" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_26" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_25" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_24" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_23" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_22" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_21" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_20" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_19" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_18" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_17" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_16" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_15" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_14" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_13" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_12" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_11" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_10" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_9" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_8" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_7" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_6" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_5" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_4" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_3" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_29" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_28" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_27" BEL
@@ -5313,38 +5343,73 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_4" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_3" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_29" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_28" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_27" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_26" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_25" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_24" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_23" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_22" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_21" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_20" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_19" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_18" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_17" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_16" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_15" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_14" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_13" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_12" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_11" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_10" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_9" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_8" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_7" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_6" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_5" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_4" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_3" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_2" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_we" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/ib_re" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_we" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_27" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_26" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_25" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_24" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_23" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_22" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_21" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_20" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_19" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_18" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_17" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_16" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_15" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_14" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_13" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_12" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_11" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_10" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_9" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_8" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_7" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_6" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_5" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_4" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_3" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_2" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_1" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_0" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_31" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_30" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_29" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_28" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_27" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_26" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_25" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_24" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_23" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_22" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_21" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_20" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_19" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_18" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_17" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_16" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_15" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_14" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_13" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_12" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_11" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_10" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_9" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_8" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_7" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_6" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_5" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_4" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_3" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_2" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_1" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_0" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_en" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_26" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_25" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_24" BEL
@@ -5369,14 +5434,15 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_4" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_3" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_en" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_2" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_instr_0" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_4" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_3" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_1" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_0" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_instr_0" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/reset_d" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/read_mode" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_data_31" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_data_30" BEL
@@ -5410,7 +5476,6 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_data_2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_data_1" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_data_0" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/reset_d" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_31" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_30" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_29" BEL
@@ -5443,16 +5508,39 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_1" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_0" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/U_BUFG_CLK0" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_24" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_23" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_22" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_21" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_20" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_19" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_18" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_17" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_16" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_15" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_14" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_13" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_12" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_11" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_10" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_9" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_8" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_7" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_6" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_5" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_4" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_3" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_2" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_1" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_0" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_rd_en_o" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_en" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/reset_d_1" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked_1" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked_2" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3_1" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2_1" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3_2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1_1" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1_2" BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i"
         BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i"
@@ -5478,6 +5566,8 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in = PIN
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_2"
         BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_1"
+        BEL
+        "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_0"
         BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg"
         BEL
@@ -5844,33 +5934,34 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PIN
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0_pins<129>"
         PIN
         "SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0_pins<168>"
-        BEL "SDRAM_FIFO_inst/memc3_infrastructure_inst/U_BUFG_CLK0" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_24" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_23" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_22" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_21" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_20" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_19" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_18" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_17" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_16" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_15" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_14" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_13" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_12" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_11" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_10" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_9" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_8" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_7" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_6" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_5" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_4" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_3" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_2" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_1" BEL
-        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_0" BEL
+        BEL "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_29" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_28" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_27" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_26" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_25" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_24" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_23" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_22" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_21" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_20" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_19" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_18" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_17" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_16" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_15" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_14" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_13" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_12" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_11" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_10" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_9" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_8" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_7" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_6" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_5" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_4" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_3" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_29" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_28" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_27" BEL
@@ -5898,38 +5989,73 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_4" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_3" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_29" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_28" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_27" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_26" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_25" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_24" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_23" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_22" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_21" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_20" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_19" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_18" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_17" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_16" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_15" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_14" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_13" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_12" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_11" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_10" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_9" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_8" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_7" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_6" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_5" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_4" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_wr_3" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/cmd_byte_addr_rd_2" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_we" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/ib_re" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_we" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_27" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_26" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_25" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_24" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_23" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_22" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_21" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_20" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_19" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_18" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_17" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_16" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_15" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_14" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_13" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_12" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_11" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_10" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_9" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_8" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_7" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_6" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_5" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_4" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_3" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_2" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_1" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/active_burst_size_0" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_31" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_30" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_29" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_28" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_27" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_26" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_25" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_24" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_23" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_22" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_21" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_20" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_19" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_18" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_17" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_16" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_15" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_14" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_13" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_12" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_11" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_10" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_9" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_8" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_7" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_6" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_5" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_4" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_3" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_2" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_1" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_size_0" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_en" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_26" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_25" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_24" BEL
@@ -5954,14 +6080,15 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_4" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_3" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_en" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_byte_addr_2" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_instr_0" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_5" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_4" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_3" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_1" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/burst_cnt_0" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_cmd_instr_0" BEL
+        "SDRAM_FIFO_inst/ddr2_state_machine_inst/reset_d" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/read_mode" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_data_31" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_data_30" BEL
@@ -5995,7 +6122,6 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_data_2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_data_1" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/ob_data_0" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/reset_d" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_31" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_30" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_29" BEL
@@ -6028,16 +6154,39 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PIN
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_1" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_0" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/U_BUFG_CLK0" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_24" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_23" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_22" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_21" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_20" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_19" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_18" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_17" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_16" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_15" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_14" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_13" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_12" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_11" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_10" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_9" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_8" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_7" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_6" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_5" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_4" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_3" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_2" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_1" BEL
+        "SDRAM_FIFO_inst/memc3_infrastructure_inst/rst0_sync_r_0" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_rd_en_o" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_en" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/reset_d_1" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked_1" BEL
         "SDRAM_FIFO_inst/memc3_infrastructure_inst/powerup_pll_locked_2" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3_1" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd2_1" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3_2" BEL
         "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1_1" BEL
-        "SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd1_2" BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i"
         BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i"
@@ -6063,6 +6212,8 @@ TIMEGRP SDRAM_FIFO_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PIN
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_2"
         BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_1"
+        BEL
+        "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_0"
         BEL
         "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg"
         BEL

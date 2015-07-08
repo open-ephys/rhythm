@@ -396,6 +396,7 @@ module main #(
 	wire 				FIFO_out_rdy;
 	wire				pipeout_rdy;
 	reg [31:0]		usb3_blocksize;
+	reg [31:0]		ddr_blocksize;
 
 	// Opal Kelly USB Host Interface
 	
@@ -666,6 +667,20 @@ module main #(
 			end
 		end
 	end
+	
+	always @(posedge ep5atrigin[17] or posedge reset) begin
+		if (reset) begin
+			ddr_blocksize <= 32'd2;
+		end else begin
+			if (~SPI_running) begin
+				ddr_blocksize <= ep1fwirein[31:0];
+			end
+		end
+	end
+	
+	wire [31:0]							  in_FIFO_numwords;
+	wire [31:0]							  out_FIFO_numwords;
+	wire [31:0]							  DDR_numwords;
 
 	// USB WireOut outputs
 
@@ -683,10 +698,10 @@ module main #(
 
 	// Unused; future expansion
 	assign ep26wireout = 				usb3_blocksize;
-	assign ep27wireout = 				32'h0000;
-	assign ep28wireout = 				32'h0000;
-	assign ep29wireout = 				32'h0000;
-	assign ep2awireout = 				32'h0000;
+	assign ep27wireout = 				ddr_blocksize;
+	assign ep28wireout = 				in_FIFO_numwords;
+	assign ep29wireout = 				out_FIFO_numwords;
+	assign ep2awireout = 				DDR_numwords;
 	assign ep2bwireout = 				32'h0000;
 	assign ep2cwireout = 				32'h0000;
 	assign ep2dwireout = 				32'h0000;
@@ -802,8 +817,13 @@ module main #(
 		.FIFO_read_from				(FIFO_read_from),
 		.FIFO_data_out					(FIFO_data_out),
 		.usb3_blocksize				(usb3_blocksize),
+		.ddr_blocksize					(ddr_blocksize),
+		.ddr_burst_override			(pipeout_override_en),
 		.FIFO_out_rdy					(FIFO_out_rdy),
 		.num_words_in_FIFO			(num_words_in_FIFO),
+		.in_FIFO_numwords				(in_FIFO_numwords),
+		.out_FIFO_numwords			(out_FIFO_numwords),
+		.DDR_numwords					(DDR_numwords),
 		.ddr2_dq							(ddr2_dq),
 		.ddr2_a							(ddr2_a),
 		.ddr2_ba							(ddr2_ba),

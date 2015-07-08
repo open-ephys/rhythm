@@ -10,23 +10,23 @@ Target Device  : xc6slx45
 Target Package : fgg484
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Jun 24 02:35:10 2015
+Mapped Date    : Mon Jul 06 00:40:24 2015
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:   25
 Slice Logic Utilization:
-  Number of Slice Registers:                 5,123 out of  54,576    9%
-    Number used as Flip Flops:               5,123
+  Number of Slice Registers:                 5,301 out of  54,576    9%
+    Number used as Flip Flops:               5,301
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      9,468 out of  27,288   34%
-    Number used as logic:                    9,348 out of  27,288   34%
-      Number using O6 output only:           8,174
-      Number using O5 output only:             244
-      Number using O5 and O6:                  930
+  Number of Slice LUTs:                      9,706 out of  27,288   35%
+    Number used as logic:                    9,518 out of  27,288   34%
+      Number using O6 output only:           8,326
+      Number using O5 output only:             194
+      Number using O5 and O6:                  998
       Number used as ROM:                        0
     Number used as Memory:                      48 out of   6,408    1%
       Number used as Dual Port RAM:             20
@@ -41,21 +41,21 @@ Slice Logic Utilization:
         Number using O6 output only:             4
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:     72
-      Number with same-slice register load:     53
-      Number with same-slice carry load:        19
+    Number used exclusively as route-thrus:    140
+      Number with same-slice register load:    124
+      Number with same-slice carry load:        16
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 3,321 out of   6,822   48%
-  Number of MUXCYs used:                     1,536 out of  13,644   11%
-  Number of LUT Flip Flop pairs used:       10,943
-    Number with an unused Flip Flop:         6,035 out of  10,943   55%
-    Number with an unused LUT:               1,475 out of  10,943   13%
-    Number of fully used LUT-FF pairs:       3,433 out of  10,943   31%
-    Number of unique control sets:             186
+  Number of occupied Slices:                 3,348 out of   6,822   49%
+  Number of MUXCYs used:                     1,588 out of  13,644   11%
+  Number of LUT Flip Flop pairs used:       11,074
+    Number with an unused Flip Flop:         6,065 out of  11,074   54%
+    Number with an unused LUT:               1,368 out of  11,074   12%
+    Number of fully used LUT-FF pairs:       3,641 out of  11,074   32%
+    Number of unique control sets:             188
     Number of slice register sites lost
-      to control set restrictions:             621 out of  54,576    1%
+      to control set restrictions:             619 out of  54,576    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -108,11 +108,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.61
+Average Fanout of Non-Clock Nets:                4.57
 
-Peak Memory Usage:  662 MB
-Total REAL time to MAP completion:  2 mins 55 secs 
-Total CPU time to MAP completion (all processors):   3 mins 2 secs 
+Peak Memory Usage:  663 MB
+Total REAL time to MAP completion:  3 mins 1 secs 
+Total CPU time to MAP completion (all processors):   3 mins 6 secs 
 
 Table of Contents
 -----------------
@@ -148,6 +148,9 @@ WARNING:Pack:1653 - At least one timing constraint is impossible to meet because
 
    For more information about the Timing Analyzer, consult the Xilinx Timing Analyzer Reference manual; for more information on TRCE,
    consult the Xilinx Command Line Tools User Guide "TRACE" chapter.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep46trigin<5> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<11> is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
@@ -167,9 +170,6 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<5> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<7> is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep46trigin<5> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal
@@ -250,7 +250,7 @@ INFO:Map:284 - Map is running with the multi-threading option on. Map currently
    supports the use of up to 2 processors. Based on the the user options and
    machine load, Map will use 2 processors during this run.
 INFO:LIT:243 - Logical network okHE<111> has no load.
-INFO:LIT:395 - The above info message is repeated 970 more times for the
+INFO:LIT:395 - The above info message is repeated 968 more times for the
    following (max. 5 shown):
    okHE<110>,
    okHE<109>,
@@ -271,9 +271,9 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-2721 block(s) removed
-2267 block(s) optimized away
-2751 signal(s) removed
+2701 block(s) removed
+2107 block(s) optimized away
+2731 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -2460,7 +2460,6 @@ The signal "ti5a/ep_trigger<21>" is sourceless and has been removed.
 The signal "ti5a/ep_trigger<20>" is sourceless and has been removed.
 The signal "ti5a/ep_trigger<19>" is sourceless and has been removed.
 The signal "ti5a/ep_trigger<18>" is sourceless and has been removed.
-The signal "ti5a/ep_trigger<17>" is sourceless and has been removed.
 The signal "ti5a/ep_trigger<15>" is sourceless and has been removed.
 The signal "ti5a/ep_trigger<14>" is sourceless and has been removed.
 The signal "ti5a/ep_trigger<13>" is sourceless and has been removed.
@@ -2700,21 +2699,6 @@ removed.
 been removed.
          Sourceless block "ti5a/ep_trigger_15" (FF) removed.
    Sourceless block "ti5a/Mxor_eptrig[31]_ti_datain[31]_xor_13_OUT_15_xo<0>1" (ROM)
-removed.
-The signal "ti5a/eptrig[31]_ti_datain[31]_xor_13_OUT<17>" is sourceless and has
-been removed.
- Sourceless block "ti5a/eptrig_17" (SFF) removed.
-  The signal "ti5a/eptrig<17>" is sourceless and has been removed.
-   Sourceless block "ti5a/trigff0_17" (FF) removed.
-    The signal "ti5a/trigff0<17>" is sourceless and has been removed.
-     Sourceless block "ti5a/trigff1_17" (FF) removed.
-      The signal "ti5a/trigff1<17>" is sourceless and has been removed.
-       Sourceless block "ti5a/Mxor_trigff0[31]_trigff1[31]_xor_5_OUT_17_xo<0>1" (ROM)
-removed.
-        The signal "ti5a/trigff0[31]_trigff1[31]_xor_5_OUT<17>" is sourceless and has
-been removed.
-         Sourceless block "ti5a/ep_trigger_17" (FF) removed.
-   Sourceless block "ti5a/Mxor_eptrig[31]_ti_datain[31]_xor_13_OUT_17_xo<0>1" (ROM)
 removed.
 The signal "ti5a/eptrig[31]_ti_datain[31]_xor_13_OUT<18>" is sourceless and has
 been removed.
@@ -6115,34 +6099,6 @@ removed.
  Sourceless block "wo2b/ti_addr[7]_ep_addr[7]_equal_5_o83" (ROM) removed.
 The signal "wo2b/ti_addr[7]_ep_addr[7]_equal_5_o81" is sourceless and has been
 removed.
-The signal "wo2a/ti_addr[7]_ep_addr[7]_equal_5_o" is sourceless and has been
-removed.
-The signal "wo2a/ti_addr[7]_ep_addr[7]_equal_5_o8" is sourceless and has been
-removed.
- Sourceless block "wo2a/ti_addr[7]_ep_addr[7]_equal_5_o83" (ROM) removed.
-The signal "wo2a/ti_addr[7]_ep_addr[7]_equal_5_o81" is sourceless and has been
-removed.
-The signal "wo29/ti_addr[7]_ep_addr[7]_equal_5_o" is sourceless and has been
-removed.
-The signal "wo29/ti_addr[7]_ep_addr[7]_equal_5_o8" is sourceless and has been
-removed.
- Sourceless block "wo29/ti_addr[7]_ep_addr[7]_equal_5_o83" (ROM) removed.
-The signal "wo29/ti_addr[7]_ep_addr[7]_equal_5_o81" is sourceless and has been
-removed.
-The signal "wo28/ti_addr[7]_ep_addr[7]_equal_5_o" is sourceless and has been
-removed.
-The signal "wo28/ti_addr[7]_ep_addr[7]_equal_5_o8" is sourceless and has been
-removed.
- Sourceless block "wo28/ti_addr[7]_ep_addr[7]_equal_5_o83" (ROM) removed.
-The signal "wo28/ti_addr[7]_ep_addr[7]_equal_5_o81" is sourceless and has been
-removed.
-The signal "wo27/ti_addr[7]_ep_addr[7]_equal_5_o" is sourceless and has been
-removed.
-The signal "wo27/ti_addr[7]_ep_addr[7]_equal_5_o8" is sourceless and has been
-removed.
- Sourceless block "wo27/ti_addr[7]_ep_addr[7]_equal_5_o83" (ROM) removed.
-The signal "wo27/ti_addr[7]_ep_addr[7]_equal_5_o81" is sourceless and has been
-removed.
 The signal "poa0/ep_blockstrobe" is sourceless and has been removed.
 The signal "host/core0/core0/_n0333<1>" is sourceless and has been removed.
  Sourceless block "host/core0/core0/ti_reg_write_data_31" (FF) removed.
@@ -6313,17 +6269,7 @@ The signal "host/core0/core0/a0/pc0/active_interrupt_value" is sourceless and
 has been removed.
 The signal
 "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
-_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i<0>" is sourceless and has been removed.
-The signal
-"SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
 _sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
-The signal
-"SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
-_sync_fifo.gl0.rd/gras.grdc1.rdc/GND_213_o_GND_213_o_sub_2_OUT<0>" is sourceless
-and has been removed.
- Sourceless block
-"SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
-_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_0" (FF) removed.
 The signal
 "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
 _sync_fifo.gcx.clkx/wr_pntr_gc<0>" is sourceless and has been removed.
@@ -6469,10 +6415,6 @@ The signal "okHE<46>" is unused and has been removed.
 Unused block
 "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
 _sync_fifo.gcx.clkx/Mxor_WR_PNTR[0]_WR_PNTR[1]_XOR_11_o_xo<0>1" (ROM) removed.
-Unused block
-"SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
-_sync_fifo.gl0.rd/gras.grdc1.rdc/Msub_GND_213_o_GND_213_o_sub_2_OUT<10:0>_xor<0>
-" (XOR) removed.
 Unused block
 "SDRAM_FIFO_inst/okPipeIn_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
 _sync_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
@@ -7086,14 +7028,6 @@ Unused block "wi1e/ep_datahold_28" (SFF) removed.
 Unused block "wi1e/ep_datahold_29" (SFF) removed.
 Unused block "wi1e/ep_datahold_30" (SFF) removed.
 Unused block "wi1e/ep_datahold_31" (SFF) removed.
-Unused block "wo27/ti_addr[7]_ep_addr[7]_equal_5_o81" (ROM) removed.
-Unused block "wo27/ti_addr[7]_ep_addr[7]_equal_5_o82" (ROM) removed.
-Unused block "wo28/ti_addr[7]_ep_addr[7]_equal_5_o81" (ROM) removed.
-Unused block "wo28/ti_addr[7]_ep_addr[7]_equal_5_o82" (ROM) removed.
-Unused block "wo29/ti_addr[7]_ep_addr[7]_equal_5_o81" (ROM) removed.
-Unused block "wo29/ti_addr[7]_ep_addr[7]_equal_5_o82" (ROM) removed.
-Unused block "wo2a/ti_addr[7]_ep_addr[7]_equal_5_o81" (ROM) removed.
-Unused block "wo2a/ti_addr[7]_ep_addr[7]_equal_5_o82" (ROM) removed.
 Unused block "wo2b/ti_addr[7]_ep_addr[7]_equal_5_o81" (ROM) removed.
 Unused block "wo2b/ti_addr[7]_ep_addr[7]_equal_5_o82" (ROM) removed.
 Unused block "wo2c/ti_addr[7]_ep_addr[7]_equal_5_o81" (ROM) removed.
@@ -8404,142 +8338,10 @@ FDRE 		wo25/wirehold_8
 FDRE 		wo25/wirehold_9
    optimized to 0
 GND 		wo26/XST_GND
-LUT2 		wo27/Mmux_okEH<31:0>101
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>11
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>111
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>121
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>131
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>141
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>151
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>161
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>171
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>181
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>191
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>201
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>21
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>211
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>221
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>231
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>241
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>251
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>261
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>271
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>281
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>291
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>301
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>31
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>311
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>321
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>41
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>51
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>61
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>71
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>81
-   optimized to 0
-LUT2 		wo27/Mmux_okEH<31:0>91
-   optimized to 0
 GND 		wo27/XST_GND
-FDRE 		wo27/wirehold_0
-   optimized to 0
-FDRE 		wo27/wirehold_1
-   optimized to 0
-FDRE 		wo27/wirehold_10
-   optimized to 0
-FDRE 		wo27/wirehold_11
-   optimized to 0
-FDRE 		wo27/wirehold_12
-   optimized to 0
-FDRE 		wo27/wirehold_13
-   optimized to 0
-FDRE 		wo27/wirehold_14
-   optimized to 0
-FDRE 		wo27/wirehold_15
-   optimized to 0
-FDRE 		wo27/wirehold_16
-   optimized to 0
-FDRE 		wo27/wirehold_17
-   optimized to 0
-FDRE 		wo27/wirehold_18
-   optimized to 0
-FDRE 		wo27/wirehold_19
-   optimized to 0
-FDRE 		wo27/wirehold_2
-   optimized to 0
-FDRE 		wo27/wirehold_20
-   optimized to 0
-FDRE 		wo27/wirehold_21
-   optimized to 0
-FDRE 		wo27/wirehold_22
-   optimized to 0
-FDRE 		wo27/wirehold_23
-   optimized to 0
-FDRE 		wo27/wirehold_24
-   optimized to 0
-FDRE 		wo27/wirehold_25
-   optimized to 0
-FDRE 		wo27/wirehold_26
-   optimized to 0
-FDRE 		wo27/wirehold_27
-   optimized to 0
-FDRE 		wo27/wirehold_28
-   optimized to 0
-FDRE 		wo27/wirehold_29
-   optimized to 0
-FDRE 		wo27/wirehold_3
-   optimized to 0
-FDRE 		wo27/wirehold_30
-   optimized to 0
-FDRE 		wo27/wirehold_31
-   optimized to 0
-FDRE 		wo27/wirehold_4
-   optimized to 0
-FDRE 		wo27/wirehold_5
-   optimized to 0
-FDRE 		wo27/wirehold_6
-   optimized to 0
-FDRE 		wo27/wirehold_7
-   optimized to 0
-FDRE 		wo27/wirehold_8
-   optimized to 0
-FDRE 		wo27/wirehold_9
-   optimized to 0
 LUT2 		wo28/Mmux_okEH<31:0>101
    optimized to 0
-LUT2 		wo28/Mmux_okEH<31:0>11
-   optimized to 0
 LUT2 		wo28/Mmux_okEH<31:0>111
-   optimized to 0
-LUT2 		wo28/Mmux_okEH<31:0>121
    optimized to 0
 LUT2 		wo28/Mmux_okEH<31:0>131
    optimized to 0
@@ -8557,33 +8359,13 @@ LUT2 		wo28/Mmux_okEH<31:0>191
    optimized to 0
 LUT2 		wo28/Mmux_okEH<31:0>201
    optimized to 0
-LUT2 		wo28/Mmux_okEH<31:0>21
-   optimized to 0
 LUT2 		wo28/Mmux_okEH<31:0>211
    optimized to 0
 LUT2 		wo28/Mmux_okEH<31:0>221
    optimized to 0
-LUT2 		wo28/Mmux_okEH<31:0>231
-   optimized to 0
 LUT2 		wo28/Mmux_okEH<31:0>241
    optimized to 0
 LUT2 		wo28/Mmux_okEH<31:0>251
-   optimized to 0
-LUT2 		wo28/Mmux_okEH<31:0>261
-   optimized to 0
-LUT2 		wo28/Mmux_okEH<31:0>271
-   optimized to 0
-LUT2 		wo28/Mmux_okEH<31:0>281
-   optimized to 0
-LUT2 		wo28/Mmux_okEH<31:0>291
-   optimized to 0
-LUT2 		wo28/Mmux_okEH<31:0>301
-   optimized to 0
-LUT2 		wo28/Mmux_okEH<31:0>31
-   optimized to 0
-LUT2 		wo28/Mmux_okEH<31:0>311
-   optimized to 0
-LUT2 		wo28/Mmux_okEH<31:0>321
    optimized to 0
 LUT2 		wo28/Mmux_okEH<31:0>41
    optimized to 0
@@ -8598,14 +8380,6 @@ LUT2 		wo28/Mmux_okEH<31:0>81
 LUT2 		wo28/Mmux_okEH<31:0>91
    optimized to 0
 GND 		wo28/XST_GND
-FDRE 		wo28/wirehold_0
-   optimized to 0
-FDRE 		wo28/wirehold_1
-   optimized to 0
-FDRE 		wo28/wirehold_10
-   optimized to 0
-FDRE 		wo28/wirehold_11
-   optimized to 0
 FDRE 		wo28/wirehold_12
    optimized to 0
 FDRE 		wo28/wirehold_13
@@ -8621,8 +8395,6 @@ FDRE 		wo28/wirehold_17
 FDRE 		wo28/wirehold_18
    optimized to 0
 FDRE 		wo28/wirehold_19
-   optimized to 0
-FDRE 		wo28/wirehold_2
    optimized to 0
 FDRE 		wo28/wirehold_20
    optimized to 0
@@ -8644,31 +8416,15 @@ FDRE 		wo28/wirehold_28
    optimized to 0
 FDRE 		wo28/wirehold_29
    optimized to 0
-FDRE 		wo28/wirehold_3
-   optimized to 0
 FDRE 		wo28/wirehold_30
    optimized to 0
 FDRE 		wo28/wirehold_31
-   optimized to 0
-FDRE 		wo28/wirehold_4
-   optimized to 0
-FDRE 		wo28/wirehold_5
-   optimized to 0
-FDRE 		wo28/wirehold_6
-   optimized to 0
-FDRE 		wo28/wirehold_7
-   optimized to 0
-FDRE 		wo28/wirehold_8
-   optimized to 0
-FDRE 		wo28/wirehold_9
    optimized to 0
 LUT2 		wo29/Mmux_okEH<31:0>101
    optimized to 0
 LUT2 		wo29/Mmux_okEH<31:0>11
    optimized to 0
 LUT2 		wo29/Mmux_okEH<31:0>111
-   optimized to 0
-LUT2 		wo29/Mmux_okEH<31:0>121
    optimized to 0
 LUT2 		wo29/Mmux_okEH<31:0>131
    optimized to 0
@@ -8686,33 +8442,13 @@ LUT2 		wo29/Mmux_okEH<31:0>191
    optimized to 0
 LUT2 		wo29/Mmux_okEH<31:0>201
    optimized to 0
-LUT2 		wo29/Mmux_okEH<31:0>21
-   optimized to 0
 LUT2 		wo29/Mmux_okEH<31:0>211
    optimized to 0
 LUT2 		wo29/Mmux_okEH<31:0>221
    optimized to 0
-LUT2 		wo29/Mmux_okEH<31:0>231
-   optimized to 0
 LUT2 		wo29/Mmux_okEH<31:0>241
    optimized to 0
 LUT2 		wo29/Mmux_okEH<31:0>251
-   optimized to 0
-LUT2 		wo29/Mmux_okEH<31:0>261
-   optimized to 0
-LUT2 		wo29/Mmux_okEH<31:0>271
-   optimized to 0
-LUT2 		wo29/Mmux_okEH<31:0>281
-   optimized to 0
-LUT2 		wo29/Mmux_okEH<31:0>291
-   optimized to 0
-LUT2 		wo29/Mmux_okEH<31:0>301
-   optimized to 0
-LUT2 		wo29/Mmux_okEH<31:0>31
-   optimized to 0
-LUT2 		wo29/Mmux_okEH<31:0>311
-   optimized to 0
-LUT2 		wo29/Mmux_okEH<31:0>321
    optimized to 0
 LUT2 		wo29/Mmux_okEH<31:0>41
    optimized to 0
@@ -8729,12 +8465,6 @@ LUT2 		wo29/Mmux_okEH<31:0>91
 GND 		wo29/XST_GND
 FDRE 		wo29/wirehold_0
    optimized to 0
-FDRE 		wo29/wirehold_1
-   optimized to 0
-FDRE 		wo29/wirehold_10
-   optimized to 0
-FDRE 		wo29/wirehold_11
-   optimized to 0
 FDRE 		wo29/wirehold_12
    optimized to 0
 FDRE 		wo29/wirehold_13
@@ -8750,8 +8480,6 @@ FDRE 		wo29/wirehold_17
 FDRE 		wo29/wirehold_18
    optimized to 0
 FDRE 		wo29/wirehold_19
-   optimized to 0
-FDRE 		wo29/wirehold_2
    optimized to 0
 FDRE 		wo29/wirehold_20
    optimized to 0
@@ -8773,126 +8501,26 @@ FDRE 		wo29/wirehold_28
    optimized to 0
 FDRE 		wo29/wirehold_29
    optimized to 0
-FDRE 		wo29/wirehold_3
-   optimized to 0
 FDRE 		wo29/wirehold_30
    optimized to 0
 FDRE 		wo29/wirehold_31
    optimized to 0
-FDRE 		wo29/wirehold_4
-   optimized to 0
-FDRE 		wo29/wirehold_5
-   optimized to 0
-FDRE 		wo29/wirehold_6
-   optimized to 0
-FDRE 		wo29/wirehold_7
-   optimized to 0
-FDRE 		wo29/wirehold_8
-   optimized to 0
-FDRE 		wo29/wirehold_9
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>101
-   optimized to 0
 LUT2 		wo2a/Mmux_okEH<31:0>11
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>111
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>121
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>131
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>141
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>151
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>161
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>171
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>181
    optimized to 0
 LUT2 		wo2a/Mmux_okEH<31:0>191
    optimized to 0
 LUT2 		wo2a/Mmux_okEH<31:0>201
    optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>21
-   optimized to 0
 LUT2 		wo2a/Mmux_okEH<31:0>211
    optimized to 0
 LUT2 		wo2a/Mmux_okEH<31:0>221
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>231
    optimized to 0
 LUT2 		wo2a/Mmux_okEH<31:0>241
    optimized to 0
 LUT2 		wo2a/Mmux_okEH<31:0>251
    optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>261
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>271
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>281
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>291
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>301
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>31
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>311
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>321
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>41
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>51
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>61
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>71
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>81
-   optimized to 0
-LUT2 		wo2a/Mmux_okEH<31:0>91
-   optimized to 0
 GND 		wo2a/XST_GND
 FDRE 		wo2a/wirehold_0
-   optimized to 0
-FDRE 		wo2a/wirehold_1
-   optimized to 0
-FDRE 		wo2a/wirehold_10
-   optimized to 0
-FDRE 		wo2a/wirehold_11
-   optimized to 0
-FDRE 		wo2a/wirehold_12
-   optimized to 0
-FDRE 		wo2a/wirehold_13
-   optimized to 0
-FDRE 		wo2a/wirehold_14
-   optimized to 0
-FDRE 		wo2a/wirehold_15
-   optimized to 0
-FDRE 		wo2a/wirehold_16
-   optimized to 0
-FDRE 		wo2a/wirehold_17
-   optimized to 0
-FDRE 		wo2a/wirehold_18
-   optimized to 0
-FDRE 		wo2a/wirehold_19
-   optimized to 0
-FDRE 		wo2a/wirehold_2
-   optimized to 0
-FDRE 		wo2a/wirehold_20
-   optimized to 0
-FDRE 		wo2a/wirehold_21
-   optimized to 0
-FDRE 		wo2a/wirehold_22
-   optimized to 0
-FDRE 		wo2a/wirehold_23
-   optimized to 0
-FDRE 		wo2a/wirehold_24
-   optimized to 0
-FDRE 		wo2a/wirehold_25
    optimized to 0
 FDRE 		wo2a/wirehold_26
    optimized to 0
@@ -8902,23 +8530,9 @@ FDRE 		wo2a/wirehold_28
    optimized to 0
 FDRE 		wo2a/wirehold_29
    optimized to 0
-FDRE 		wo2a/wirehold_3
-   optimized to 0
 FDRE 		wo2a/wirehold_30
    optimized to 0
 FDRE 		wo2a/wirehold_31
-   optimized to 0
-FDRE 		wo2a/wirehold_4
-   optimized to 0
-FDRE 		wo2a/wirehold_5
-   optimized to 0
-FDRE 		wo2a/wirehold_6
-   optimized to 0
-FDRE 		wo2a/wirehold_7
-   optimized to 0
-FDRE 		wo2a/wirehold_8
-   optimized to 0
-FDRE 		wo2a/wirehold_9
    optimized to 0
 LUT2 		wo2b/Mmux_okEH<31:0>101
    optimized to 0
@@ -11725,8 +11339,8 @@ Derived Constraints for TS_okHostClk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_okHostClk                   |      9.920ns|      5.340ns|      5.990ns|            0|           56|            0|        51710|
-| TS_host_dcm0_clk0             |      9.920ns|      5.990ns|          N/A|           56|            0|        51710|            0|
+|TS_okHostClk                   |      9.920ns|      5.340ns|      5.990ns|            0|           56|            0|        55760|
+| TS_host_dcm0_clk0             |      9.920ns|      5.990ns|          N/A|           56|            0|        55760|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for TS_okSysClk
@@ -11755,17 +11369,17 @@ Derived Constraints for TS_SYS_CLK3
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_SYS_CLK3                    |     10.000ns|     87.169ns|   1105.718ns|           39|           22|        25977|     10992440|
-| TS_SDRAM_FIFO_inst_memc3_infra|     12.800ns|      3.204ns|          N/A|            0|            0|        13911|            0|
+|TS_SYS_CLK3                    |     10.000ns|     87.169ns|   1105.718ns|           39|           22|        25977|     10995082|
+| TS_SDRAM_FIFO_inst_memc3_infra|     12.800ns|      3.204ns|          N/A|            0|            0|        14178|            0|
 | structure_inst_mcb_drp_clk_buf|             |             |             |             |             |             |             |
 | g_in_0                        |             |             |             |             |             |             |             |
 | TS_SDRAM_FIFO_inst_memc3_infra|      1.600ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | structure_inst_clk_2x_180_0   |             |             |             |             |             |             |             |
 | TS_SDRAM_FIFO_inst_memc3_infra|      1.600ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | structure_inst_clk_2x_0_0     |             |             |             |             |             |             |             |
-| TS_SDRAM_FIFO_inst_memc3_infra|      6.400ns|     38.720ns|          N/A|           11|            0|         4120|            0|
+| TS_SDRAM_FIFO_inst_memc3_infra|      6.400ns|     38.720ns|          N/A|           11|            0|         6609|            0|
 | structure_inst_clk0_bufg_in_0 |             |             |             |             |             |             |             |
-| TS_variable_freq_clk_generator|     11.905ns|   1316.331ns|          N/A|           11|            0|     10974409|            0|
+| TS_variable_freq_clk_generator|     11.905ns|   1316.331ns|          N/A|           11|            0|     10974295|            0|
 | _inst_clkout_i_0              |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 

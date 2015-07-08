@@ -88,11 +88,16 @@ module SDRAM_FIFO  #(
 	input wire										  FIFO_read_from,
 	output wire [31:0]							  FIFO_data_out,
 	output reg										  FIFO_out_rdy,
-	input			[31:0]							  usb3_blocksize,
+	input	 wire	[31:0]							  usb3_blocksize,
+	input	 wire [31:0]							  ddr_blocksize,
+	input wire										  ddr_burst_override,
 
 
 	// FIFO capacity monitor
 	output wire [31:0]							  num_words_in_FIFO,
+	output wire [31:0]							  in_FIFO_numwords,
+	output wire [31:0]							  out_FIFO_numwords,
+	output wire [31:0]							  DDR_numwords,
 	
 
 	// I/O connections from Xilinx FPGA to 128-MiByte SDRAM
@@ -477,7 +482,9 @@ module SDRAM_FIFO  #(
 		.p0_wr_mask(c3_p0_wr_mask),
 		
 		.cmd_byte_addr_wr(buffer_byte_addr_wr),
-		.cmd_byte_addr_rd(buffer_byte_addr_rd)
+		.cmd_byte_addr_rd(buffer_byte_addr_rd),
+		.BURST_LEN(ddr_blocksize),
+		.burst_override(ddr_burst_override)
 		);
 
 
@@ -523,7 +530,7 @@ module SDRAM_FIFO  #(
 		pipe_in_word_count_ti <= pipe_in_word_count;
 		pipe_out_word_count_ti <= pipe_out_word_count;
 		
-		if (pipe_out_word_count >= usb3_blocksize ) begin
+		if ({16'b0, pipe_out_word_count} >= usb3_blocksize ) begin
 			FIFO_out_rdy <= 1'b1;
 		end else begin
 			FIFO_out_rdy <= 1'b0;
@@ -537,5 +544,9 @@ module SDRAM_FIFO  #(
 	assign buffer_word_addr_diff_ti = buffer_word_addr_wr_ti - buffer_word_addr_rd_ti;
 	
 	assign num_words_in_FIFO = { 5'b00000, { 1'b0, buffer_word_addr_diff_ti[25:0] } + { 16'b0, pipe_in_word_count_ti } + { 16'b0, pipe_out_word_count_ti, 1'b0 }};
+	
+	assign in_FIFO_numwords = {16'b0, pipe_in_word_count_ti};
+	assign out_FIFO_numwords = { 16'b0, pipe_out_word_count_ti, 1'b0 };
+	assign DDR_numwords = { 1'b0, buffer_word_addr_diff_ti[25:0] };
 	
 endmodule
