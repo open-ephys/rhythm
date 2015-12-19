@@ -385,13 +385,8 @@ module main #(
 	
 	//Open-Ephys specific registers
 	reg				ledsEnabled;
-	//reg				sync_enabled = 1'b0;
-	reg [32:0]   	sync_divide;
+	reg [16:0]   	sync_divide = 0;
 	reg				sample_clk;
-	//reg 				sample_clk2 = 1'b0;
-	//reg 				sync1 = 1'b0;
-	//reg [31:0] 		ncount = 32'b0;
-	
 
 	// Opal Kelly USB Host Interface
 	
@@ -418,7 +413,6 @@ module main #(
 	assign SPI_run_continuous = 		ep00wirein[1];
 	assign DSP_settle =     			ep00wirein[2];
 	assign TTL_out_mode = 				ep00wirein[3];
-	assign DAC_noise_suppress = 		ep00wirein[12:6];
 	assign DAC_gain = 					ep00wirein[15:13];
 
 	assign max_timestep_in[15:0] = 	ep01wirein;
@@ -629,6 +623,9 @@ module main #(
 	always @(posedge ep5atrigin[0]) begin
 		ledsEnabled <=	ep1fwirein[0];
 	end
+	always @(posedge ep5atrigin[1]) begin
+		sync_divide <=	ep1fwirein;
+	end
 
 	// USB WireOut outputs
 
@@ -696,7 +693,8 @@ module main #(
 	);
 	
 	// Open-ephys clock divider
-	freqdiv #(500) sample_clock_div(
+	freqdiv sample_clock_div(
+	 .N(sync_divide),
 	 .out(sync),
 	 .clk(sample_clk),
     .reset(reset)

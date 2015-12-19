@@ -11,10 +11,12 @@ module freqdiv_tb;
         //$dumpvars(0, freqdiv_tb);
         
         // Start in ready state
-        reset = 0;
+		reset = 1;
+		#10
+      reset = 0;
 		#100
 		reset = 1;
-		#5
+		#10
 		$stop;
     end
 
@@ -32,12 +34,12 @@ wire clk_div0;
     wire clk_div10;
 
     // Frequency dividers instantiation
-	 freqdiv #(0) clockdiv0(clk_div0, clk, reset);
-	freqdiv #(1) clockdiv1(clk_div1, clk, reset);
-    freqdiv #(2) clockdiv2(clk_div2, clk, reset);
-    freqdiv #(3) clockdiv3(clk_div3, clk, reset);
-    freqdiv #(4) clockdiv4(clk_div4, clk, reset);
-    freqdiv #(5) clockdiv5(clk_div5, clk, reset);
-    freqdiv #(10) clockdiv10(clk_div10, clk, reset);
+	 freqdiv clockdiv0(.N(0), .clk(clk), .reset(reset), .out(clk_div0));
+	 freqdiv clockdiv1(.N(1), .clk(clk), .reset(reset), .out(clk_div1));
+    freqdiv clockdiv2(.N(2), .clk(clk), .reset(reset), .out(clk_div2));
+    freqdiv clockdiv3(.N(3), .clk(clk), .reset(reset), .out(clk_div3));
+    freqdiv clockdiv4(.N(4), .clk(clk), .reset(reset), .out(clk_div4));
+    freqdiv clockdiv5(.N(5), .clk(clk), .reset(reset), .out(clk_div5));
+    freqdiv clockdiv10(.N(10), .clk(clk), .reset(reset), .out(clk_div10));
 
 endmodule
