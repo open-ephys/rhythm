@@ -1,0 +1,28 @@
+# The Xilinx tools vomit intermediate build files and log files all
+# over your build directory. Try to deal with that..
+
+# Ignore everything
+*
+
+# Except these files
+!.gitignore
+!*.vhd
+!*.ucf
+!*.v
+!*.vh
+!*.xcf
+!*.xise
+!*.swp
+!*.ngc
+
+## And these special ngf modules, which are pre-sythesized by OK, so they need
+## to be kept
+#!okHostInterfaceCore.ngc
+#!okWireIn.ngc
+#!okWireOut.ngc
+
+# Even if they are in sub dirs
+!*/
+
+# But reignore vhd files created during compilation
+netgen/
