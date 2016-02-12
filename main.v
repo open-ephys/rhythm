@@ -413,6 +413,7 @@ module main #(
 	assign SPI_run_continuous = 		ep00wirein[1];
 	assign DSP_settle =     			ep00wirein[2];
 	assign TTL_out_mode = 				ep00wirein[3];
+	assign DAC_noise_suppress = 		ep00wirein[12:6];
 	assign DAC_gain = 					ep00wirein[15:13];
 
 	assign max_timestep_in[15:0] = 	ep01wirein;
