@@ -167,7 +167,10 @@ module main #(
 	output reg                               MOSI_C,
 	output reg                               MOSI_D,
 	
-	output reg										  sample_clk,
+	// Open-ephys
+	// Replace sample_clk output with variable freq sync output
+	//output reg										  sample_clk,
+	output wire 									  sync, // BNC-clock output
 	
 	input wire [15:0]								  TTL_in,
 	output wire [15:0]							  TTL_out,
@@ -196,6 +199,7 @@ module main #(
 	
 	input wire [3:0]								  board_mode,
 	output wire										  LED_OUT
+	
 	);
 
 //	assign i2c_sda    = 1'bz;
@@ -392,6 +396,8 @@ module main #(
 	
 	//Open-Ephys specific registers
 	reg				ledsEnabled;
+	reg [16:0]   	sync_divide = 0;
+	reg				sample_clk;
 	wire				pipeout_override_en;
 	wire 				FIFO_out_rdy;
 	wire				pipeout_rdy;
@@ -423,9 +429,7 @@ module main #(
 	assign SPI_run_continuous = 		ep00wirein[1];
 	assign DSP_settle =     			ep00wirein[2];
 	assign TTL_out_mode = 				ep00wirein[3];
-	assign DAC_noise_suppress = 		ep00wirein[12:6];
 	assign DAC_gain = 					ep00wirein[15:13];
-	assign pipeout_override_en =		ep00wirein[16]; //Open-ephys USB 3 support
 
 	assign max_timestep_in[15:0] = 	ep01wirein[15:0];
 	assign max_timestep_in[31:16] =	ep02wirein[15:0];
@@ -651,11 +655,15 @@ module main #(
 	end
 	//Open-ephys triggers
 	always @(posedge ep5atrigin[0] or posedge reset) begin
-	if (reset) begin
-		ledsEnabled <= 1'b1;
-	end else begin
-		ledsEnabled <=	ep1fwirein[0];
+		if (reset) begin
+			ledsEnabled <= 1'b1;
+		end else begin
+			ledsEnabled <=	ep1fwirein[0];
+		end
 	end
+
+	always @(posedge ep5atrigin[1]) begin
+		sync_divide <=	ep1fwirein;
 	end
 	
 	always @(posedge ep5atrigin[16] or posedge reset) begin
@@ -726,7 +734,7 @@ module main #(
 	assign ep3fwireout = 				{16'b0, BOARD_VERSION};
 	
 	
-	// OPen Ephys board status LEDs
+	// Open-ephys board status LEDs
 	//assign LED_OUT = 				1'b0; // use to set to 0
 	
 	// led controller for 
@@ -735,16 +743,6 @@ module main #(
     .dat_out(LED_OUT), // output to led string
     .reset(reset), 
     .clk(clk1),  // 100MHz clock 
-   /* .led1(24'b000000000000000000000000), 
-    .led2(24'b000000000000000000000000), 
-    .led3(24'b000000000000000000000000), 
-    .led4(24'b000000000000000000000000), 
-    .led5(24'b000000000000000000000000), 
-    .led6(24'b000000000000000000000000), 
-    .led7(24'b000000000000000000000000),  
-    .led8(24'b101010101010101010101010)
-    );
-	  */
 	 .enable(ledsEnabled),
 	 .led1({data_stream_7_en_in ?  {8'b00010010,8'b01000000,8'b10000000} : {8'b10000010,8'b10000010,8'b10000010}}), // 4 SPI cable status LEDs
     .led2({data_stream_5_en_in ?  {8'b00010010,8'b01000000,8'b10000000} : {8'b10000010,8'b10000010,8'b10000010}}), 
@@ -755,13 +753,17 @@ module main #(
     .led7({8'b10000010,8'b10000010,8'b10000010}), // Ain  
     //.led8({DAC_register_1,DAC_register_2,8'b00000000}) //Aout
 	 .led8({SPI_running ?  {DAC_register_1,DAC_register_2,8'b00000000} : {8'b10000010,8'b10000010,8'b10000010}})
-	 
-	 
 	);
 	
-	
+	// Open-ephys clock divider
+	freqdiv sample_clock_div(
+	 .N(sync_divide),
+	 .out(sync),
+	 .clk(sample_clk),
+    .reset(reset)
+	 );
+
 	// 8-LED Display on Opal Kelly board
-	
 	assign led = ~{ led_in };
 	
 	

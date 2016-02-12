@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=E:\CAD\hdl\rhythm\main.ncd
-OUTFILE=E:\CAD\hdl\rhythm\main.bit
-FAMILY=Spartan6
-PART=xc6slx45-2fgg484
-WORKINGDIR=E:\CAD\hdl\rhythm
-LICENSE=WebPack
-USER_INFO=__0_0_0
