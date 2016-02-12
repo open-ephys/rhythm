@@ -372,14 +372,14 @@ NET  "MOSI_D_n"     LOC="A11"  | IOSTANDARD="LVDS_33";
 # Diagnostic pins for testing with oscilloscope
 NET  "CS_b"         LOC="G16"  | IOSTANDARD="LVCMOS33";
 NET  "SCLK"         LOC="G17"  | IOSTANDARD="LVCMOS33";
-NET  "MOSI_A"       LOC="H19"  | IOSTANDARD="LVCMOS33";
+NET  "MOSI_A"       LOC="U20"  | IOSTANDARD="LVCMOS33";
 NET  "MOSI_B"       LOC="H18"  | IOSTANDARD="LVCMOS33";
 NET  "MOSI_C"       LOC="F16"  | IOSTANDARD="LVCMOS33";
 NET  "MOSI_D"       LOC="F17"  | IOSTANDARD="LVCMOS33";
 
 
 # Sample clock output
-NET  "sample_clk"   LOC="U20"  | IOSTANDARD="LVCMOS33";
+NET  "sync"   LOC="H19"  | IOSTANDARD="LVCMOS33";
 
 
 # TTL inputs
