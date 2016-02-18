@@ -621,8 +621,12 @@ module main #(
 		external_digout_channel_D <=	ep1fwirein[3:0];
 	end
 	//Open-ephys triggers
-	always @(posedge ep5atrigin[0]) begin
-		ledsEnabled <=	ep1fwirein[0];
+	always @(posedge ep5atrigin[0] or posedge reset) begin
+		if (reset) begin
+			ledsEnables <= 1'b1;
+		end else begin
+			ledsEnabled <=	ep1fwirein[0];
+		end
 	end
 	
 	always @(posedge ep5atrigin[1] or posedge reset) begin
