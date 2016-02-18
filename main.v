@@ -431,6 +431,7 @@ module main #(
 	assign TTL_out_mode = 				ep00wirein[3];
 	assign DAC_noise_suppress = 		ep00wirein[12:6];
 	assign DAC_gain = 					ep00wirein[15:13];
+	assign pipeout_override_en =		ep00wirein[16]; //Open-ephys USB 3 support
 
 	assign max_timestep_in[15:0] = 	ep01wirein[15:0];
 	assign max_timestep_in[31:16] =	ep02wirein[15:0];
