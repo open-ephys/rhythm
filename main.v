@@ -623,7 +623,7 @@ module main #(
 	//Open-ephys triggers
 	always @(posedge ep5atrigin[0] or posedge reset) begin
 		if (reset) begin
-			ledsEnables <= 1'b1;
+			ledsEnabled <= 1'b1;
 		end else begin
 			ledsEnabled <=	ep1fwirein[0];
 		end
