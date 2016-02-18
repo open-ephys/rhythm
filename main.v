@@ -385,7 +385,7 @@ module main #(
 	
 	//Open-Ephys specific registers
 	reg				ledsEnabled;
-	reg [16:0]   	sync_divide = 0;
+	reg [15:0]   	sync_divide;
 	reg				sample_clk;
 
 	// Opal Kelly USB Host Interface
@@ -624,8 +624,13 @@ module main #(
 	always @(posedge ep5atrigin[0]) begin
 		ledsEnabled <=	ep1fwirein[0];
 	end
-	always @(posedge ep5atrigin[1]) begin
-		sync_divide <=	ep1fwirein;
+	
+	always @(posedge ep5atrigin[1] or posedge reset) begin
+		if (reset) begin
+			sync_divide <= 15'b0;
+		end else begin
+			sync_divide <=	ep1fwirein[15:0];
+		end
 	end
 
 	// USB WireOut outputs
