@@ -5,7 +5,7 @@
 -- XEM6310
 --
 -- Copyright (c) 2004-2011 Opal Kelly Incorporated
--- $Rev: 6 $ $Date: 2014-06-16 14:05:00 -0700 (Mon, 16 Jun 2014) $
+-- $Rev$ $Date$
 ------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
