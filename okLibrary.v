@@ -6,7 +6,7 @@
 // timing for particular devices on particular products.
 //
 // Copyright (c) 2004-2011 Opal Kelly Incorporated
-// $Rev: 980 $ $Date: 2011-08-19 12:17:52 -0700 (Fri, 19 Aug 2011) $
+// $Rev$ $Date$
 //------------------------------------------------------------------------
 
 module okHost
