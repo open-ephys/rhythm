@@ -289,12 +289,12 @@ NET  "MOSI_D_n"     LOC="A11"  | IOSTANDARD="LVDS_33";
 
 
 # Diagnostic pins for testing with oscilloscope
-NET  "CS_b"         LOC="G16"  | IOSTANDARD="LVCMOS33";
-NET  "SCLK"         LOC="G17"  | IOSTANDARD="LVCMOS33";
-NET  "MOSI_A"       LOC="U20"  | IOSTANDARD="LVCMOS33";
-NET  "MOSI_B"       LOC="H18"  | IOSTANDARD="LVCMOS33";
-NET  "MOSI_C"       LOC="F16"  | IOSTANDARD="LVCMOS33";
-NET  "MOSI_D"       LOC="F17"  | IOSTANDARD="LVCMOS33";
+#NET  "CS_b"         LOC="G16"  | IOSTANDARD="LVCMOS33"; #Pin G16 corresponds to i2c data
+#NET  "SCLK"         LOC="G17"  | IOSTANDARD="LVCMOS33"; #Pin G16 corresponds to i2c clk
+#NET  "MOSI_A"       LOC="U20"  | IOSTANDARD="LVCMOS33";
+#NET  "MOSI_B"       LOC="H18"  | IOSTANDARD="LVCMOS33";
+#NET  "MOSI_C"       LOC="F16"  | IOSTANDARD="LVCMOS33";
+#NET  "MOSI_D"       LOC="F17"  | IOSTANDARD="LVCMOS33";
 
 # Open-Ephys sample-clock sync output (BNC)
 NET  "sync"   		  LOC="H19"  | IOSTANDARD="LVCMOS33";

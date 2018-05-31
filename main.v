@@ -159,12 +159,13 @@ module main #(
 	output wire                              MOSI_D_p,
 	output wire                              MOSI_D_n,
 	
-	output reg                               CS_b,
-	output reg                               SCLK,
-	output reg                               MOSI_A,
-	output reg                               MOSI_B,
-	output reg                               MOSI_C,
-	output reg                               MOSI_D,
+	//debug output disabled by default
+	//output												CS_b,
+	//output 	                              SCLK,
+	//output    	                           MOSI_A,
+	//output       	                        MOSI_B,
+	//output          	                     MOSI_C,
+	//output             	                  MOSI_D,
 	
 	// Open-ephys
 	// Replace sample_clk output with variable freq sync output
@@ -204,6 +205,13 @@ module main #(
 	assign i2c_sda    = 1'bz;
 	assign i2c_scl    = 1'bz;
 	assign hi_muxsel  = 1'b0;
+	
+	reg                               CS_b;
+	reg                               SCLK;
+	reg                               MOSI_A;
+	reg                               MOSI_B;
+	reg                               MOSI_C;
+	reg                               MOSI_D;
 
 
 	// LVDS output pins
