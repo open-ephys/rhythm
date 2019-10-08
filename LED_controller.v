@@ -47,7 +47,8 @@ module LED_controller#(
     input wire [23:0] led8
     );
 	
-	reg [15:0] bit_state, LED_state; // state registers
+	reg [6:0] bit_state;
+	reg [4:0] LED_state; // state registers
 	reg [4:0] GRB_state;
 	reg led_bit; // hold the current bit being sent
 	reg LED_reset; // sets output to zero, is called from the per-led loop on the last 2 states (twice, after led 8)
@@ -56,7 +57,7 @@ module LED_controller#(
 	
 	always @(posedge clk) begin // per-bit loop
 		if (reset) begin
-			bit_state <= 1'b0;
+			bit_state <= 'd100;
 			//LED_reset <= 1'b0;
 			dat_out   <= 1'b0;
 			//led_bit   <= 1'b0;
@@ -73,7 +74,7 @@ module LED_controller#(
 							dat_out <= 1'b1;
 						end
 
-						35: begin // go to low after 3.5us
+						40: begin // go to low after 4us
 							dat_out <= 1'b0;
 						end
 						
@@ -86,7 +87,7 @@ module LED_controller#(
 							dat_out <= 1'b1;
 						end
 
-						70: begin  // go to low after 7us
+						80: begin  // go to low after 8us
 							dat_out <= 1'b0;
 						end
 						
@@ -95,21 +96,22 @@ module LED_controller#(
 				end // was led reset?
 			end// reset
 			
-			if (bit_state==125) // loop this after 1.25us
+			bit_state<=bit_state+1;
+			if (bit_state==110) // loop this after 1.10us
 				bit_state<=0;	
-			else 
-				bit_state<=bit_state+1;
+				
 			
 	 end
 end
 
 always @(posedge clk) begin // per-led loop going through 24 bits
 		if (reset) begin
-			GRB_state <= 23'b0;
+			GRB_state <= 'b0;
+			led_bit <= 1'b0;
 		end else begin
-			if (bit_state==1) begin // loop this after each bit state
+			if (bit_state==102) begin // loop this after each bit state
 				
-				led_bit<=GRB_reg[GRB_state]; // set bit
+				led_bit<=GRB_reg[23-GRB_state]; // set bit
 				
 					GRB_state<=GRB_state+1;
 				
@@ -122,10 +124,12 @@ end
 
 always @(posedge clk) begin // main loop going through 8 leds and 2 wait states
 		if (reset) begin
-			LED_state   <= 16'b0;
+			LED_state   <= 'd8;
+			LED_reset <= 1'b1;
+			GRB_reg <= 24'b0;
 		end else begin
 		
-		if (GRB_state==23 &&  bit_state==0) begin
+		if (GRB_state==0 &&  bit_state==101) begin
 				
 				
 				LED_state<=LED_state+1; // loop this after each 24 bit led state loop
@@ -169,14 +173,12 @@ always @(posedge clk) begin // main loop going through 8 leds and 2 wait states
 						LED_reset <=1'b1;
 					end
 					
-					9: begin
-						GRB_reg <= 24'b0;
-					end
+
 					endcase
 					
 			
 				
-			if (LED_state == 9) // reset after 8 leds and 2 wait states
+			if (LED_state == 19) // reset after 8 leds and 11 wait states, so all versions of LED can register the reset command
 					LED_state <= 0; 
 					
 			if (~enable)
