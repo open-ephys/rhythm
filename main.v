@@ -751,6 +751,73 @@ module main #(
 	// Open-ephys board status LEDs
 	//assign LED_OUT = 				1'b0; // use to set to 0
 	
+	wire [23:0] ledA, ledB, ledC, ledD;
+	wire [23:0] ledTTLin, ledTTLout, ledADC, ledDAC;
+	
+	LED_status LED_colors(
+		.dataclk(dataclk),
+		.sampleclk(sample_clk),
+		.reset(reset),
+		.running(SPI_running),
+		
+		.stream_1_en(data_stream_1_en),
+		.stream_2_en(data_stream_2_en),
+		.stream_3_en(data_stream_3_en),
+		.stream_4_en(data_stream_4_en),
+		.stream_5_en(data_stream_5_en),
+		.stream_6_en(data_stream_6_en),
+		.stream_7_en(data_stream_7_en),
+		.stream_8_en(data_stream_8_en),
+		.stream_9_en(data_stream_9_en),
+		.stream_10_en(data_stream_10_en),
+		.stream_11_en(data_stream_11_en),
+		.stream_12_en(data_stream_12_en),
+		.stream_13_en(data_stream_13_en),
+		.stream_14_en(data_stream_14_en),
+		.stream_15_en(data_stream_15_en),
+		.stream_16_en(data_stream_16_en),
+		
+		.stream_1_sel(data_stream_1_sel),
+		.stream_2_sel(data_stream_2_sel),
+		.stream_3_sel(data_stream_3_sel),
+		.stream_4_sel(data_stream_4_sel),
+		.stream_5_sel(data_stream_5_sel),
+		.stream_6_sel(data_stream_6_sel),
+		.stream_7_sel(data_stream_7_sel),
+		.stream_8_sel(data_stream_8_sel),
+		.stream_9_sel(data_stream_9_sel),
+		.stream_10_sel(data_stream_10_sel),
+		.stream_11_sel(data_stream_11_sel),
+		.stream_12_sel(data_stream_12_sel),
+		.stream_13_sel(data_stream_13_sel),
+		.stream_14_sel(data_stream_14_sel),
+		.stream_15_sel(data_stream_15_sel),
+		.stream_16_sel(data_stream_16_sel),
+		
+		.DAC_en_array({DAC_en_1, DAC_en_2, DAC_en_3, DAC_en_4, DAC_en_5, DAC_en_6, DAC_en_7, DAC_en_8}),
+		
+		.TTL_in(TTL_in[7:0]),
+		
+		.ADC_1(data_stream_ADC_1),
+		.ADC_2(data_stream_ADC_2),
+		.ADC_3(data_stream_ADC_3),
+		.ADC_4(data_stream_ADC_4),
+		.ADC_5(data_stream_ADC_5),
+		.ADC_6(data_stream_ADC_6),
+		.ADC_7(data_stream_ADC_7),
+		.ADC_8(data_stream_ADC_8),
+		
+		.ledA(ledA),
+		.ledB(ledB),
+		.ledC(ledC),
+		.ledD(ledD),
+		.ledTTLin(ledTTLin),
+		.ledTTLout(ledTTLout),
+		.ledADC(ledADC),
+		.ledDAC(ledDAC)
+		
+	);
+	
 	// led controller for 
 	// format is 24 bit red,blue,green, least? significant bit first color cor current led
    LED_controller WS2812controller(
@@ -758,15 +825,15 @@ module main #(
     .reset(reset), 
     .clk(clk1),  // 100MHz clock 
 	 .enable(ledsEnabled),
-	 .led1({data_stream_7_en_in ?  {8'b00010010,8'b01000000,8'b10000000} : {8'b10000010,8'b10000010,8'b10000010}}), // 4 SPI cable status LEDs
-    .led2({data_stream_5_en_in ?  {8'b00010010,8'b01000000,8'b10000000} : {8'b10000010,8'b10000010,8'b10000010}}), 
-    .led3({data_stream_3_en_in ?  {8'b00010010,8'b01000000,8'b10000000} : {8'b10000010,8'b10000010,8'b10000010}}), 
-    .led4({data_stream_1_en_in ?  {8'b00010010,8'b01000000,8'b10000000} : {8'b10000010,8'b10000010,8'b10000010}}), 
-    .led5({{8'b00010010,8'b01000010},TTL_in}),  // TTL in
-    .led6({{8'b00010010,8'b01000010},TTL_out}),  // TTL out
-    .led7({8'b10000010,8'b10000010,8'b10000010}), // Ain  
+	 .led1(ledD), // 4 SPI cable status LEDs
+    .led2(ledC), 
+    .led3(ledB), 
+    .led4(ledA), 
+    .led5(ledTTLin),  // TTL in
+    .led6(ledTTLout),  // TTL out
+    .led7(ledADC), // Ain  
     //.led8({DAC_register_1,DAC_register_2,8'b00000000}) //Aout
-	 .led8({SPI_running ?  {DAC_register_1,DAC_register_2,8'b00000000} : {8'b10000010,8'b10000010,8'b10000010}})
+	 .led8(ledDAC)
 	);
 	
 	// Open-ephys clock divider
