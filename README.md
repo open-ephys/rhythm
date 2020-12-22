@@ -59,6 +59,18 @@ LED_controller WS2812controller(
 );
 ```
 
+### LED_controller.v
+
+The WS2812 LEDs are driven by a single data line using a timing code consisting of different patterns for 1s and 0s. After 24-bit (8 bits x 3 colors) brightness levels are received by an LED, it passes on all subsequent codes to the next LED in the chain. Once a reset code (gap of >50 us) is sent, the first LED will receive data again, repeating the cycle.
+
+We therefore want to send 24 x 8 codes, wait a bit, then repeat.
+
+Here's a quick description of the state machine used to generate the data driving the 8 LEDs, running as a nested loop off the 100 MHz master clock:
+
+* An inner loop bit_state checks the `led_bit` register and goes through 125 states, each clk cycle lasting 0.01 us, it sets the out either to the 1 pattern, 0 pattern, or all zeros for reset
+* The `GRB_state` (green-red-blue) state loops every time the `bit_state` is 0; this loops 24 times, setting `led_bit` to a value from `GRB_reg`.
+* A third loop increments `LED_state` every time `GRB_state` is 0, and loops 8+2 times for 8 LEDs and 2 LED cycles of 30 us each to get the required >50 us of zeros for the reset. It sets `LED_reg` to a 24-bit color from some source value, or 0 for reset in the last 2 states.
+
 ### ADC control
 
 Instead of the Analog Devices AD7680 ADC used by Intan, we're using the Texas Instruments DS8325. The usage of the chips is almost identical, but the data timing is a bit different, requiring a small edit in ADC_input.v - instead of populating the register from channel states 4-19, we're populating from 7-22. Everything else can stay the same.
