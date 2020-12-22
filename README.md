@@ -59,7 +59,7 @@ LED_controller WS2812controller(
 );
 ```
 
-### LED_controller.v
+#### LED_controller.v
 
 The WS2812 LEDs are driven by a single data line using a timing code consisting of different patterns for 1s and 0s. After 24-bit (8 bits x 3 colors) brightness levels are received by an LED, it passes on all subsequent codes to the next LED in the chain. Once a reset code (gap of >50 us) is sent, the first LED will receive data again, repeating the cycle.
 
