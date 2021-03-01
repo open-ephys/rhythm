@@ -199,7 +199,10 @@ module main #(
 	input wire										  ADC_DOUT_8,
 	
 	input wire [3:0]								  board_mode,
-	output wire										  LED_OUT
+	output wire										  LED_OUT,
+	
+	output wire										  harp_tx,
+	output wire										  harp_led
 	
 	);
 	
@@ -3361,6 +3364,27 @@ module main #(
 	okBTPipeOut    poa0 (.okHE(okHE), .okEH(okEHx[ 32*65 +: 65 ]), .ep_addr(8'ha0), .ep_read(FIFO_read_from), 
 		.ep_blockstrobe(), .ep_datain({FIFO_data_out[15:0], FIFO_data_out[31:16]}), .ep_ready(pipeout_rdy));
 
+	//HARP sync module
+	
+	//cross-domain signal
+	reg [2:0] SPI_running_sync = 3'b000;
+	always @(posedge clk1 or posedge reset)
+	begin
+		if (reset)
+			SPI_running_sync = 3'b000;
+		else
+			SPI_running_sync = {SPI_running_sync[1:0], SPI_running};
+	end
+	
+	harp_sync #(
+		.CLK_HZ(100000000)
+	) harp (
+		 .clk(clk1),
+		 .reset(reset),
+		 .run(SPI_running_sync[2]),
+		 .TX(harp_tx),
+		 .LED(harp_led)
+	 );
 
 endmodule
 
