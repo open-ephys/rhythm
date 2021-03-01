@@ -371,3 +371,6 @@ NET "board_mode[3]"  LOC="C10"  | IOSTANDARD=LVCMOS33 | PULLDOWN;
 # LED data out
 NET "LED_OUT"      	LOC="B14"  | IOSTANDARD=LVCMOS33;
 
+#Harp/i2c pins
+NET "harp_tx"			LOC="G17"  | IOSTANDARD=LVCMOS33;
+NET "harp_led"			LOC="G16"  | IOSTANDARD=LVCMOS33;
