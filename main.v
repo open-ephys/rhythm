@@ -591,8 +591,10 @@ module main #(
 	assign DAC_stream_sel_8 = 			ep1dwirein[9:5];
 	assign DAC_en_8 = 					ep1dwirein[10];
 	
+	assign manual_triggers =			ep1ewirein[15:0];
+
 	always @(posedge dataclk) begin
-		DAC_manual <= 						ep1ewirein[15:0];
+		DAC_manual <= 						ep1ewirein[31:16];
 	end
 
 	// USB TriggerIn inputs
