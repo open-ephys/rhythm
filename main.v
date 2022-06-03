@@ -174,7 +174,7 @@ module main #(
 	output wire 									  sync, // BNC-clock output
 	
 	input wire [15:0]								  TTL_in,
-	output wire [15:0]							  TTL_out,
+	output wire [15:0]							  TTL_out_direct,
 	
 	output wire										  DAC_SYNC,
 	output wire										  DAC_SCLK,
@@ -346,8 +346,7 @@ module main #(
 	wire [15:0]		data_stream_ADC_1, data_stream_ADC_2, data_stream_ADC_3, data_stream_ADC_4;
 	wire [15:0]		data_stream_ADC_5, data_stream_ADC_6, data_stream_ADC_7, data_stream_ADC_8;
 	
-	wire				TTL_out_mode;
-	reg [15:0]		TTL_out_user;
+	wire [7:0]			TTL_out_mode;
 	
 	wire				reset, SPI_start, SPI_run_continuous;
 	reg				SPI_running;
@@ -399,9 +398,13 @@ module main #(
 	reg [3:0]		external_fast_settle_channel;
 	reg				external_fast_settle, external_fast_settle_prev;
 
+	//PMT - Stimulation
 	reg				external_digout_enable_A, external_digout_enable_B, external_digout_enable_C, external_digout_enable_D;
+	reg				external_digout_enable_E, external_digout_enable_F, external_digout_enable_G, external_digout_enable_H;
 	reg [3:0]		external_digout_channel_A, external_digout_channel_B, external_digout_channel_C, external_digout_channel_D;
+	reg [3:0]		external_digout_channel_E, external_digout_channel_F, external_digout_channel_G, external_digout_channel_H;
 	reg				external_digout_A, external_digout_B, external_digout_C, external_digout_D;
+	reg				external_digout_E, external_digout_F, external_digout_G, external_digout_H;
 	
 	wire [7:0]		led_in;
 	
@@ -414,6 +417,10 @@ module main #(
 	wire				pipeout_rdy;
 	reg [31:0]		usb3_blocksize;
 	reg [31:0]		ddr_blocksize;
+	
+	//Stimulation - PMT
+	wire reset_sequences;
+	wire [15:0] manual_triggers;
 
 	// Opal Kelly USB Host Interface
 	
@@ -432,6 +439,15 @@ module main #(
 	wire [31:0] ep38wireout, ep39wireout, ep3awireout, ep3bwireout, ep3cwireout, ep3dwireout, ep3ewireout, ep3fwireout;
 
 	wire [31:0] ep40trigin, ep41trigin, ep42trigin, ep43trigin, ep44trigin, ep45trigin, ep46trigin, ep5atrigin;
+	
+	//Stimulation - PMT ep41 second bit will be for resetting sequencers, back 16 bits of ep43 will be for enabling digital output
+	wire [31:0] ep5btrigin;
+	
+	//Stimulation - PMT
+	wire stim_cm_en, prog_trig;
+	wire [3:0] prog_channel, prog_address;
+	wire [4:0] prog_module;
+	wire [31:0] prog_word;
 
 
 	// USB WireIn inputs
@@ -443,6 +459,7 @@ module main #(
 	assign DAC_noise_suppress = 		ep00wirein[12:6];
 	assign DAC_gain = 					ep00wirein[15:13];
 	assign pipeout_override_en =		ep00wirein[16]; //Open-ephys USB 3 support
+	assign TTL_out_mode =				ep00wirein[24:17]; // PMT - stimulation
 
 	assign max_timestep_in[15:0] = 	ep01wirein[15:0];
 	assign max_timestep_in[31:16] =	ep02wirein[15:0];
@@ -574,10 +591,13 @@ module main #(
 	assign DCM_prog_trigger = 			ep40trigin[0];
 	
 	assign SPI_start = 					ep41trigin[0];
+	assign reset_sequences =			ep41trigin[1]; // PMT for stimulation
 
 	assign RAM_we_1 = 					ep42trigin[0];
 	assign RAM_we_2 = 					ep42trigin[1];
 	assign RAM_we_3 = 					ep42trigin[2];
+	
+	assign prog_trig = 					ep5btrigin[1]; // PMT for stimulation
 
 	always @(posedge ep43trigin[0]) begin
 		DAC_thresh_1 <= 					ep1fwirein[15:0];
@@ -626,6 +646,57 @@ module main #(
 	end
 	always @(posedge ep43trigin[15]) begin
 		DAC_thresh_pol_8 <= 				ep1fwirein[0];
+	end
+	
+	//Stimulation PMT
+	always @(posedge ep43trigin[16]) begin
+		external_digout_enable_A <=	ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[17]) begin
+		external_digout_enable_B <=	ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[18]) begin
+		external_digout_enable_C <=	ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[19]) begin
+		external_digout_enable_D <=	ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[20]) begin
+		external_digout_enable_E <=	ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[21]) begin
+		external_digout_enable_F <=	ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[22]) begin
+		external_digout_enable_G <=	ep1fwirein[0];
+	end
+	always @(posedge ep43trigin[23]) begin
+		external_digout_enable_H <=	ep1fwirein[0];
+	end
+	
+	always @(posedge ep43trigin[24]) begin
+		external_digout_channel_A <=	ep1fwirein[3:0];
+	end
+	always @(posedge ep43trigin[25]) begin
+		external_digout_channel_B <=	ep1fwirein[3:0];
+	end
+	always @(posedge ep43trigin[26]) begin
+		external_digout_channel_C <=	ep1fwirein[3:0];
+	end
+	always @(posedge ep43trigin[27]) begin
+		external_digout_channel_D <=	ep1fwirein[3:0];
+	end
+	always @(posedge ep43trigin[28]) begin
+		external_digout_channel_E <=	ep1fwirein[3:0];
+	end
+	always @(posedge ep43trigin[29]) begin
+		external_digout_channel_F <=	ep1fwirein[3:0];
+	end
+	always @(posedge ep43trigin[30]) begin
+		external_digout_channel_G <=	ep1fwirein[3:0];
+	end
+	always @(posedge ep43trigin[31]) begin
+		external_digout_channel_H <=	ep1fwirein[3:0];
 	end
 
 	always @(posedge ep44trigin[0]) begin
@@ -2555,6 +2626,29 @@ module main #(
 			endcase
 		end
 	end
+	
+	//Digital output Control - PMT
+	wire [31:0] triggers;
+	assign triggers = {manual_triggers[7:0], ADC_triggers, TTL_in };
+	
+	wire [15:0] digout_sequencer, digout_sequencer_enabled, TTL_out_DAC_thres;
+	
+	digout_sequencer #(16) digout_sequencer_1 (.reset(reset), .dataclk(dataclk), .main_state(main_state), .channel(channel),
+		.prog_channel(prog_channel), .prog_address(prog_address), .prog_module(prog_module), .prog_word(prog_word), .prog_trig(prog_trig),
+		.triggers(triggers), .digout(digout_sequencer), .digout_enabled(digout_sequencer_enabled), .shutdown(shutdown),
+		.reset_sequencer(reset_sequencers));
+		
+	assign TTL_out_DAC_thres = { 8'b00000000, DAC_thresh_out };
+	
+	assign TTL_out_direct[0] = TTL_out_mode[0] ? manual_triggers[0] : digout_sequencer[0];
+	assign TTL_out_direct[1] = TTL_out_mode[1] ? manual_triggers[1] : digout_sequencer[1];
+	assign TTL_out_direct[2] = TTL_out_mode[2] ? manual_triggers[2] : digout_sequencer[2];
+	assign TTL_out_direct[3] = TTL_out_mode[3] ? manual_triggers[3] : digout_sequencer[3];
+	assign TTL_out_direct[4] = TTL_out_mode[4] ? TTL_out_DAC_thres[4] : digout_sequencer[4];
+	assign TTL_out_direct[5] = TTL_out_mode[5] ? TTL_out_DAC_thres[5] : digout_sequencer[5];
+	assign TTL_out_direct[6] = TTL_out_mode[6] ? TTL_out_DAC_thres[6] : digout_sequencer[6];
+	assign TTL_out_direct[7] = TTL_out_mode[7] ? TTL_out_DAC_thres[7] : digout_sequencer[7];
+	assign TTL_out_direct[15:8] = digout_sequencer[15:8];
 
 
 	// Evaluation board 16-bit DAC outputs
@@ -3324,6 +3418,7 @@ module main #(
 	okTriggerIn  ti45 (.okHE(okHE),                            .ep_addr(8'h45), .ep_clk(ti_clk),  .ep_trigger(ep45trigin));
 	okTriggerIn  ti46 (.okHE(okHE),                            .ep_addr(8'h46), .ep_clk(ti_clk),  .ep_trigger(ep46trigin));
 	okTriggerIn	 ti5a (.okHE(okHE),										.ep_addr(8'h5a), .ep_clk(ti_clk),  .ep_trigger(ep5atrigin));
+	okTriggerIn	 ti5b (.okHE(okHE),										.ep_addr(8'h5b), .ep_clk(ti_clk),  .ep_trigger(ep5btrigin));
 	
 	okWireOut    wo20 (.okHE(okHE), .okEH(okEHx[ 0*65 +: 65 ]),  .ep_addr(8'h20), .ep_datain(ep20wireout));
 	okWireOut    wo21 (.okHE(okHE), .okEH(okEHx[ 1*65 +: 65 ]),  .ep_addr(8'h21), .ep_datain(ep21wireout));
