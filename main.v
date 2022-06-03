@@ -287,8 +287,9 @@ module main #(
 	reg [15:0]		RAM_data_out_1, RAM_data_out_2, RAM_data_out_3;
 	wire				RAM_we_1, RAM_we_2, RAM_we_3;
 		
+	reg shutdown; // PMT 
 	reg [5:0] 		channel, channel_MISO;  // varies from 0-34 (amplfier channels 0-31, plus 3 auxiliary commands)
-	reg [15:0] 		MOSI_cmd_A, MOSI_cmd_B, MOSI_cmd_C, MOSI_cmd_D;
+	reg [15:0] 		MOSI_cmd_A, MOSI_cmd_B, MOSI_cmd_C, MOSI_cmd_D, MOSI_cmd_E, MOSI_cmd_F, MOSI_cmd_G, MOSI_cmd_H;
 	
 	reg [73:0] 		in4x_A1, in4x_A2;
 	reg [73:0] 		in4x_B1, in4x_B2;
@@ -346,6 +347,7 @@ module main #(
 	wire [15:0]		data_stream_ADC_1, data_stream_ADC_2, data_stream_ADC_3, data_stream_ADC_4;
 	wire [15:0]		data_stream_ADC_5, data_stream_ADC_6, data_stream_ADC_7, data_stream_ADC_8;
 	
+	reg [7:0]			ADC_triggers;
 	wire [7:0]			TTL_out_mode;
 	
 	wire				reset, SPI_start, SPI_run_continuous;
@@ -356,8 +358,9 @@ module main #(
 	wire           DSP_settle;
 
 	wire [15:0] 	MOSI_cmd_selected_A, MOSI_cmd_selected_B, MOSI_cmd_selected_C, MOSI_cmd_selected_D;
+	wire [15:0]		MOSI_cmd_selected_E, MOSI_cmd_selected_F, MOSI_cmd_selected_G, MOSI_cmd_selected_H;
 
-	reg [15:0] 		aux_cmd_A, aux_cmd_B, aux_cmd_C, aux_cmd_D;
+	reg [15:0] 		aux_cmd_A, aux_cmd_B, aux_cmd_C, aux_cmd_D, aux_cmd_E, aux_cmd_F, aux_cmd_G, aux_cmd_H;
 	reg [9:0] 		aux_cmd_index_1, aux_cmd_index_2, aux_cmd_index_3;
 	wire [9:0] 		max_aux_cmd_index_1_in, max_aux_cmd_index_2_in, max_aux_cmd_index_3_in;
 	reg [9:0] 		max_aux_cmd_index_1, max_aux_cmd_index_2, max_aux_cmd_index_3;
@@ -444,7 +447,7 @@ module main #(
 	wire [31:0] ep5btrigin;
 	
 	//Stimulation - PMT
-	wire stim_cm_en, prog_trig;
+	wire stim_cmd_en, prog_trig;
 	wire [3:0] prog_channel, prog_address;
 	wire [4:0] prog_module;
 	wire [31:0] prog_word;
@@ -455,11 +458,9 @@ module main #(
 	assign reset = 						ep00wirein[0];
 	assign SPI_run_continuous = 		ep00wirein[1];
 	assign DSP_settle =     			ep00wirein[2];
-	assign TTL_out_mode = 				ep00wirein[3];
 	assign DAC_noise_suppress = 		ep00wirein[12:6];
 	assign DAC_gain = 					ep00wirein[15:13];
 	assign pipeout_override_en =		ep00wirein[16]; //Open-ephys USB 3 support
-	assign TTL_out_mode =				ep00wirein[24:17]; // PMT - stimulation
 
 	assign max_timestep_in[15:0] = 	ep01wirein[15:0];
 	assign max_timestep_in[31:16] =	ep02wirein[15:0];
@@ -495,14 +496,16 @@ module main #(
 	assign aux_cmd_bank_3_C_in = 		ep0awirein[11:8];
 	assign aux_cmd_bank_3_D_in = 		ep0awirein[15:12];
 		
-	assign max_aux_cmd_index_1_in = 	ep0bwirein[9:0];
-	assign max_aux_cmd_index_2_in = 	ep0cwirein[9:0];
-	assign max_aux_cmd_index_3_in = 	ep0dwirein[9:0];
+	// PMT Combined these to save a few wireins
+	// We will now have 0d, 0e, 0f and 10 available because they are consolidated to 0b and 0c
+	assign max_aux_cmd_index_1_in = 	ep0bwirein[9:0]; 
+	assign max_aux_cmd_index_2_in = 	ep0bwirein[19:10];
+	assign max_aux_cmd_index_3_in = 	ep0bwirein[29:20];
 
 	always @(posedge dataclk) begin
-		loop_aux_cmd_index_1 <=			ep0ewirein[9:0];
-		loop_aux_cmd_index_2 <=			ep0fwirein[9:0];
-		loop_aux_cmd_index_3 <=			ep10wirein[9:0];
+		loop_aux_cmd_index_1 <=			ep0cwirein[9:0];
+		loop_aux_cmd_index_2 <=			ep0cwirein[19:10];
+		loop_aux_cmd_index_3 <=			ep0cwirein[29:20];
 	end
 
 	assign led_in =  		   			ep11wirein[7:0];
@@ -543,12 +546,19 @@ module main #(
    assign data_stream_15_en_in = 		ep14wirein[14];
    assign data_stream_16_en_in = 		ep14wirein[15];
 
-	always @(posedge dataclk) begin
-		TTL_out_user <= 					ep15wirein[15:0];
-	end
-		
-	assign TTL_out = TTL_out_mode ? {TTL_out_user[15:8], DAC_thresh_out} : TTL_out_user;
-		
+	// Stimulation - PMT
+	assign stim_cmd_en =				ep0dwirein[0]; // single bit
+	assign prog_address =				ep0ewirein[3:0];
+	assign prog_channel =				ep0ewirein[7:4];
+	assign prog_module =				ep0ewirein[12:8];
+
+	assign prog_word =					ep0fwirein; // 32 bit
+
+
+	assign TTL_out_mode = 				ep15wirein[7:0];
+	assign manual_triggers =			ep15wirein[31:16];
+
+	
 	assign DAC_channel_sel_1 = 		ep16wirein[4:0];
 	assign DAC_stream_sel_1 = 			ep16wirein[9:5];
 	assign DAC_en_1 = 					ep16wirein[10];
@@ -585,7 +595,6 @@ module main #(
 		DAC_manual <= 						ep1ewirein[15:0];
 	end
 
-	
 	// USB TriggerIn inputs
 
 	assign DCM_prog_trigger = 			ep40trigin[0];
@@ -713,30 +722,6 @@ module main #(
 		external_fast_settle_channel <=	ep1fwirein[3:0];
 	end
 
-	always @(posedge ep46trigin[0]) begin
-		external_digout_enable_A <=	ep1fwirein[0];
-	end
-	always @(posedge ep46trigin[1]) begin
-		external_digout_enable_B <=	ep1fwirein[0];
-	end
-	always @(posedge ep46trigin[2]) begin
-		external_digout_enable_C <=	ep1fwirein[0];
-	end
-	always @(posedge ep46trigin[3]) begin
-		external_digout_enable_D <=	ep1fwirein[0];
-	end
-	always @(posedge ep46trigin[4]) begin
-		external_digout_channel_A <=	ep1fwirein[3:0];
-	end
-	always @(posedge ep46trigin[5]) begin
-		external_digout_channel_B <=	ep1fwirein[3:0];
-	end
-	always @(posedge ep46trigin[6]) begin
-		external_digout_channel_C <=	ep1fwirein[3:0];
-	end
-	always @(posedge ep46trigin[7]) begin
-		external_digout_channel_D <=	ep1fwirein[3:0];
-	end
 	//Open-ephys triggers
 	always @(posedge ep5atrigin[0] or posedge reset) begin
 		if (reset) begin
@@ -1097,7 +1082,17 @@ module main #(
 	command_selector command_selector_D (
 		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_D), .digout_override(external_digout_D), .MOSI_cmd(MOSI_cmd_selected_D));
 
+	command_selector command_selector_E (
+		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_E), .digout_override(external_digout_E), .MOSI_cmd(MOSI_cmd_selected_E));
 
+	command_selector command_selector_F (
+		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_F), .digout_override(external_digout_F), .MOSI_cmd(MOSI_cmd_selected_F));
+
+	command_selector command_selector_G (
+		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_G), .digout_override(external_digout_G), .MOSI_cmd(MOSI_cmd_selected_G));
+
+	command_selector command_selector_H (
+		.channel(channel), .DSP_settle(DSP_settle), .aux_cmd(aux_cmd_H), .digout_override(external_digout_H), .MOSI_cmd(MOSI_cmd_selected_H));
 	assign header_magic_number = 64'hC691199927021942;  // Fixed 64-bit "magic number" that begins each data frame
 																		 // to aid in synchronization.
 	assign data_stream_filler = 16'd0;
@@ -1202,7 +1197,9 @@ module main #(
 			MOSI_C <= 1'b0;
 			MOSI_D <= 1'b0;
 			FIFO_data_in <= 16'b0;
-			FIFO_write_to <= 1'b0;	
+			FIFO_write_to <= 1'b0;
+			ADC_triggers <= 1'b0;
+			shutdown <= 1'b0;	
 		end else begin
 			CS_b <= 1'b0;
 			SCLK <= 1'b0;
@@ -1289,6 +1286,7 @@ module main #(
 					DAC_pre_register_8 <= 16'h8000;
 					
 					SPI_running <= 1'b0;
+					shutdown <= 1'b0;
 
 					if (SPI_start) begin
 						main_state <= ms_cs_n;
@@ -1301,6 +1299,10 @@ module main #(
 					MOSI_cmd_B <= MOSI_cmd_selected_B;
 					MOSI_cmd_C <= MOSI_cmd_selected_C;
 					MOSI_cmd_D <= MOSI_cmd_selected_D;
+					MOSI_cmd_E <= MOSI_cmd_selected_E;
+					MOSI_cmd_F <= MOSI_cmd_selected_F;
+					MOSI_cmd_G <= MOSI_cmd_selected_G;
+					MOSI_cmd_H <= MOSI_cmd_selected_H;
 					CS_b <= 1'b1;
 					main_state <= ms_clk1_a;
 				end
@@ -1314,7 +1316,7 @@ module main #(
 
 					if (channel == 0) begin				// grab TTL inputs, and grab current state of TTL outputs and manual DAC outputs
 						data_stream_TTL_in <= TTL_in;
-						data_stream_TTL_out <= TTL_out;
+						data_stream_TTL_out <= TTL_out_direct;
 						
 						// Route selected TTL input to external fast settle signal
 						external_fast_settle_prev <= external_fast_settle;	// save previous value so we can detecting rising/falling edges
@@ -1324,7 +1326,11 @@ module main #(
 						external_digout_A <= external_digout_enable_A ? TTL_in[external_digout_channel_A] : 0;
 						external_digout_B <= external_digout_enable_B ? TTL_in[external_digout_channel_B] : 0;
 						external_digout_C <= external_digout_enable_C ? TTL_in[external_digout_channel_C] : 0;
-						external_digout_D <= external_digout_enable_D ? TTL_in[external_digout_channel_D] : 0;						
+						external_digout_D <= external_digout_enable_D ? TTL_in[external_digout_channel_D] : 0;
+						external_digout_E <= external_digout_enable_E ? TTL_in[external_digout_channel_E] : 0;
+						external_digout_F <= external_digout_enable_F ? TTL_in[external_digout_channel_F] : 0;
+						external_digout_G <= external_digout_enable_G ? TTL_in[external_digout_channel_G] : 0;
+						external_digout_H <= external_digout_enable_H ? TTL_in[external_digout_channel_H] : 0;						
 					end
 
 					if (channel == 0) begin				// update all DAC registers simultaneously
@@ -1558,6 +1564,13 @@ module main #(
 				end
 				
 				ms_clk3_d: begin
+					if (channel == 31) begin
+						aux_cmd_E <= RAM_data_out_1;
+					end else if (channel == 32) begin
+						aux_cmd_E <= RAM_data_out_2;
+					end else if (channel == 33) begin
+						aux_cmd_E <= RAM_data_out_3;
+					end
 					if (data_stream_5_en == 1'b1) begin
 						FIFO_data_in <= data_stream_5;
 						FIFO_write_to <= 1'b1;
@@ -1589,6 +1602,13 @@ module main #(
 				end
 
 				ms_clk4_b: begin
+					if (channel == 31) begin
+						aux_cmd_F <= RAM_data_out_1;
+					end else if (channel == 32) begin
+						aux_cmd_F <= RAM_data_out_2;
+					end else if (channel == 33) begin
+						aux_cmd_F <= RAM_data_out_3;
+					end
 					if (data_stream_7_en == 1'b1) begin
 						FIFO_data_in <= data_stream_7;
 						FIFO_write_to <= 1'b1;
@@ -1616,6 +1636,13 @@ module main #(
 				end
 				
 				ms_clk4_d: begin
+					if (channel == 31) begin
+						aux_cmd_G <= RAM_data_out_1;
+					end else if (channel == 32) begin
+						aux_cmd_G <= RAM_data_out_2;
+					end else if (channel == 33) begin
+						aux_cmd_G <= RAM_data_out_3;
+					end
 					if (data_stream_9_en == 1'b1) begin
 						FIFO_data_in <= data_stream_9;
 						FIFO_write_to <= 1'b1;
@@ -1647,6 +1674,13 @@ module main #(
 				end
 
 				ms_clk5_b: begin
+					if (channel == 31) begin
+						aux_cmd_H <= RAM_data_out_1;
+					end else if (channel == 32) begin
+						aux_cmd_H <= RAM_data_out_2;
+					end else if (channel == 33) begin
+						aux_cmd_H <= RAM_data_out_3;
+					end
 					if (data_stream_11_en == 1'b1) begin
 						FIFO_data_in <= data_stream_11;
 						FIFO_write_to <= 1'b1;
